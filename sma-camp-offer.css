@@ -1,0 +1,34 @@
+/* SMA Barcelona camp editorial / intake offer */
+.sma-camp-offer{--ivory:#f4f1e9;--gold:#d4bb83;position:relative;background:#091811;color:#f4f1e9;margin:0 auto;padding:clamp(28px,5vw,86px) clamp(20px,6vw,90px);overflow:hidden;isolation:isolate}
+.sma-camp-offer:before{content:"SMA";position:absolute;font:900 clamp(170px,30vw,450px)/1 Arial,sans-serif;letter-spacing:-.12em;direction:ltr;left:-.08em;top:-.13em;color:#ffffff06;pointer-events:none;z-index:-1}
+.sma-offer-overline,.sma-offer-divider{display:flex;align-items:center;gap:12px;font:600 11px/1.5 Arial,sans-serif;letter-spacing:.18em;color:#d4bb83;direction:ltr;justify-content:flex-end}
+.sma-offer-dot{width:7px;height:7px;border-radius:50%;background:#d4bb83}
+.sma-offer-head{display:grid;grid-template-columns:minmax(0,1.4fr) minmax(260px,.65fr);gap:clamp(25px,6vw,100px);align-items:end;margin-top:clamp(35px,5vw,75px)}
+.sma-offer-kicker{font-size:14px;letter-spacing:.08em;color:#d4bb83}
+.sma-offer-head h2{font-size:clamp(36px,5.5vw,83px);line-height:1.16;letter-spacing:-.045em;margin:17px 0 24px;font-weight:800}
+.sma-offer-head h2 em{color:#d4bb83;font-style:normal}
+.sma-offer-head p{max-width:640px;color:#c9d0c9;line-height:2;font-size:clamp(14px,1.4vw,17px)}
+.sma-offer-price{border:1px solid #b8a47766;background:linear-gradient(145deg,#17281d,#0b1a12);padding:clamp(23px,3vw,40px);box-shadow:0 24px 80px #0005}
+.sma-offer-price>span{display:block;font-size:14px;color:#e7d8b4}
+.sma-offer-price strong{display:block;white-space:nowrap;direction:ltr;text-align:right;font:700 clamp(35px,4vw,62px)/1.6 Arial,sans-serif;letter-spacing:-.035em;color:#fff}
+.sma-offer-price strong small{font-size:15px;letter-spacing:0}
+.sma-offer-installment{border-block:1px solid #ffffff2c;padding:16px 0;color:#edd9aa;font-weight:700;font-size:15px}
+.sma-offer-installment span{margin-inline-end:8px}
+.sma-offer-price p{font-size:12px;line-height:1.9;color:#b7bcb5;margin:15px 0 21px}
+.sma-offer-action{display:flex;justify-content:space-between;align-items:center;background:#d4bb83;color:#0a1912;text-decoration:none;padding:15px 18px;font-weight:800}
+.sma-offer-divider{margin-top:clamp(48px,7vw,115px);border-bottom:1px solid #ffffff36;padding-bottom:16px;justify-content:space-between}
+.sma-offer-benefits{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));border-bottom:1px solid #ffffff36}
+.sma-offer-benefits article{padding:36px 24px 42px;border-bottom:1px solid #ffffff22}
+.sma-offer-benefits article:not(:nth-child(3n)){border-inline-end:1px solid #ffffff22}
+.sma-offer-benefits article:nth-last-child(-n+3){border-bottom:0}
+.sma-offer-benefits article>span{font:700 11px Arial,sans-serif;letter-spacing:.16em;color:#d4bb83}
+.sma-offer-benefits h3{font-size:clamp(19px,2vw,27px);margin:22px 0 10px;color:#fff}
+.sma-offer-benefits p{color:#b6c1b9;font-size:14px;line-height:2;max-width:320px;margin:0}
+.sma-offer-footer{display:flex;gap:28px;align-items:center;justify-content:space-between;padding:44px 0 22px}
+.sma-offer-footer b{font-size:23px}
+.sma-offer-footer p{color:#b8c0b7;font-size:14px;line-height:1.8}
+.sma-offer-download{display:inline-flex;align-items:center;justify-content:center;text-align:center;white-space:nowrap;border:1px solid #d4bb83;color:#f0dcb5;text-decoration:none;padding:17px 25px;font-weight:700;transition:background .2s}
+.sma-offer-download:hover{background:#d4bb8325}
+.sma-offer-note{font-size:12px;line-height:1.9;color:#a1afa2;border-top:1px solid #ffffff22;padding-top:18px}
+@media(max-width:760px){.sma-offer-head{grid-template-columns:1fr}.sma-offer-benefits{grid-template-columns:repeat(2,minmax(0,1fr))}.sma-offer-benefits article:nth-child(n){border-bottom:1px solid #ffffff22;border-inline-end:0}.sma-offer-benefits article:nth-child(odd){border-inline-end:1px solid #ffffff22}.sma-offer-footer{align-items:stretch;flex-direction:column}.sma-offer-download{white-space:normal}}
+@media(max-width:470px){.sma-offer-benefits{grid-template-columns:1fr}.sma-offer-benefits article:nth-child(n){border-inline-end:0}.sma-offer-benefits article{padding:26px 4px}.sma-offer-head h2{font-size:38px}.sma-offer-price strong{font-size:42px}}
