@@ -1,0 +1,21 @@
+/* SMA premium hero refinement — no benefits strip or sharp gold slabs. */
+.sma-premium-camp .sma-quick-benefits,.sma-premium-camp .sma-hero-filmstrip{display:none!important}
+.sma-premium-camp .sma-live-hero{min-height:min(92svh,950px);padding-bottom:clamp(90px,10vh,145px);background:#05130d;isolation:isolate}
+.sma-premium-camp .sma-live-hero__media img{transform:scaleX(-1) scale(1.045);animation:none;object-position:center 52%;filter:brightness(.92) contrast(1.09) saturate(1.02)}
+.sma-premium-camp .sma-live-hero__media:after{background:linear-gradient(270deg,#06160ff5 0%,#06160fba 33%,#06160f23 72%),linear-gradient(0deg,#06150ff1 0%,transparent 49%)}
+.sma-premium-camp .sma-live-hero__content{max-width:850px}
+.sma-premium-camp .sma-live-hero h1{font-size:clamp(50px,6.5vw,106px);line-height:1.26}
+.sma-premium-camp .sma-live-actions{gap:14px;margin-top:35px}
+.sma-premium-camp .sma-primary-cta,.sma-premium-camp .sma-secondary-cta,
+.sma-premium-camp .sma-investment__card>.sma-primary-cta,
+.sma-premium-camp .sma-final-cta .sma-primary-cta{border-radius:999px!important;min-height:56px;padding:14px 30px;font-family:'Alexandria','IBM Plex Sans Arabic',sans-serif;font-size:14px;font-weight:700;box-shadow:none;transition:background .3s,border-color .3s,color .3s,transform .3s,box-shadow .3s}
+.sma-premium-camp .sma-primary-cta{background:#e8eee4!important;color:#0b291a!important;border:1px solid #e8eee4!important}
+.sma-premium-camp .sma-primary-cta:before{display:none}
+.sma-premium-camp .sma-primary-cta:hover{background:#fff!important;transform:translateY(-3px);box-shadow:0 9px 28px #0005}
+.sma-premium-camp .sma-secondary-cta{background:#ffffff0a!important;border:1px solid #e8eee49b!important;color:#fff!important;backdrop-filter:blur(8px)}
+.sma-premium-camp .sma-secondary-cta:hover{background:#ffffff29!important;border-color:#fff!important;transform:translateY(-3px)}
+.sma-premium-camp .sma-live-hero__badge{border-color:#ffffff88;color:#ecefe6}
+.sma-premium-camp .sma-live-caption{opacity:.83}
+.sma-premium-camp .sma-live-hero+.sma-exp-section{padding-top:clamp(95px,10vw,140px)}
+@media(max-width:700px){.sma-premium-camp .sma-live-hero{min-height:790px;padding-bottom:110px}.sma-premium-camp .sma-live-hero__media img{object-position:37% center;transform:scaleX(-1) scale(1.02)}.sma-premium-camp .sma-live-hero__media:after{background:linear-gradient(0deg,#05140ef7 0%,#06150fba 44%,#06150f21 90%)}.sma-premium-camp .sma-live-hero h1{font-size:clamp(42px,10vw,62px)}}
+@media(prefers-reduced-motion:reduce){.sma-premium-camp .sma-live-hero__media img{animation:none!important}}
