@@ -1,0 +1,9 @@
+/* Restore pre-hero-change coach feature while retaining latest header image and all other homepage sections. */
+html[lang="ar"] .d-a #a-coach{scroll-margin-top:95px}
+html[lang="ar"] .d-a #a-coach .a-coach__grid{max-width:1240px;margin-inline:auto;align-items:center}
+html[lang="ar"] .d-a #a-coach .a-coach__frame img{display:block;width:100%;height:auto;object-fit:cover;object-position:center 20%}
+html[lang="ar"] .d-a #a-coach .a-coach__txt{min-width:0}
+html[lang="ar"] .d-a #a-coach .a-coach__txt .sma-restored-coach-link{margin-top:1.7rem}
+html[lang="ar"] .d-a #a-coach .sma-restored-coach-link a{color:#e2d6a5;display:inline-block;border-bottom:1px solid #cdbd83;padding-bottom:6px;text-decoration:none;font-weight:700}
+html[lang="ar"] .d-a #a-coach .sma-restored-coach-link a:hover{color:#fff}
+@media(max-width:760px){html[lang="ar"] .d-a #a-coach .a-coach__grid{grid-template-columns:minmax(0,1fr)}html[lang="ar"] .d-a #a-coach .a-coach__frame{max-width:480px;margin-inline:auto}html[lang="ar"] .d-a #a-coach .a-coach__frame img{max-height:600px;object-fit:cover}}

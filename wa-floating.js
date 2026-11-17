@@ -11,7 +11,10 @@
     var visible=window.scrollY>threshold;
     // The fixed shortcut must never sit over the contact form or KAMAYA footer.
     // Both sections now contain their own primary WhatsApp / contact actions.
-    var contact=document.getElementById('a-contact');
+    // The form moved to support.html#contact on 2026-11-16, so look for the
+    // new id first and keep the old one as a fallback; either may be absent,
+    // and intersects() already treats a missing element as "not in the way".
+    var contact=document.getElementById('contact')||document.getElementById('a-contact');
     var footer=document.getElementById('site-footer');
     function intersects(element){
       if(!element)return false;

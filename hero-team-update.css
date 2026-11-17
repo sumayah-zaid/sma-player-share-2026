@@ -1,0 +1,10 @@
+/* SMA Players team photo hero 2026-11-15 */
+html[lang="ar"] .d-a .a-hero__img {position:absolute!important;inset:0!important;width:100%!important;height:100%!important;object-fit:cover!important;object-position:center 52%!important;transform:none!important;filter:contrast(1.03) saturate(.96)!important}
+html[lang="ar"] .d-a .a-hero__veil {background:linear-gradient(270deg,rgba(5,18,14,.88),rgba(5,18,14,.55) 48%,rgba(5,18,14,.16) 100%),linear-gradient(0deg,rgba(5,18,14,.64),transparent 42%)!important}
+html[lang="ar"] .d-a .a-hero__beam{opacity:.22!important}
+html[lang="ar"] .d-a .a-hero__lede{max-width:55ch;line-height:1.9}
+@media(max-width:760px){html[lang="ar"] .d-a .a-hero__img{object-position:center 49%!important}html[lang="ar"] .d-a .a-hero__veil{background:linear-gradient(to top,#07100b,rgba(7,16,11,.76) 22%,rgba(7,16,11,.08) 67%)!important}}
+
+/* Keep both hero CTAs equal in shape and height */
+html[lang="ar"] .d-a .a-hero__acts > .btn{display:inline-flex;align-items:center;justify-content:center;gap:.65rem;min-height:48px;min-width:180px;text-align:center;text-decoration:none}
+@media(max-width:760px){html[lang="ar"] .d-a .a-hero__acts>.btn{flex:1 1 145px;min-width:0}}

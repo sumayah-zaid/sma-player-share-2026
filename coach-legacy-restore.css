@@ -1,0 +1,198 @@
+/* SMA Players · قسم المدرب — تحرير كامل (2026-11-15)
+   The second homepage section, directly under the team hero. Restores the
+   original photograph from the first site (assets/coach.jpg — the coach in a
+   black jacket, leaning on the goalpost with his notes) and replaces the
+   generic training copy with his own achievement: Portugal, the Saudi team he
+   chose, and the Moura cup.
+
+   Earlier revisions of this file ended in a block that assumed a landscape
+   white-jersey source — object-fit:contain, a bright green (#087e48) media
+   background and !important resets. That source is gone and so is that block:
+   the portrait is now framed deliberately inside an editorial panel, so it
+   needs no letterboxing and no colour behind it, and it sits on the page's own
+   Emerald Cinema dark ground (#07100b) instead of a brighter green.
+
+   Only the team hero above it opens the page; this band is a chapter, not a
+   second full-height hero. The CTA is the shared .btn.btn--ghost pill — no new
+   button, no new colour tokens. */
+
+.d-a .coach-legacy{
+  position:relative; isolation:isolate; overflow:hidden;
+  padding:clamp(4rem,7.5vw,7rem) clamp(1.25rem,5vw,5rem);
+  border-top:1px solid rgba(245,242,234,.08);
+  background:#07100b;
+  color:var(--ivory,#f5f2ea);
+}
+/* Emerald beam + champagne hint, placed by gradient stops only — never a box
+   edge, same rule the hero follows. */
+.d-a .coach-legacy::before{
+  content:""; position:absolute; inset:0; z-index:-2; pointer-events:none;
+  background:
+    radial-gradient(85% 70% at 82% 6%, rgba(55,168,99,.18), transparent 62%),
+    radial-gradient(70% 60% at 12% 96%, rgba(201,168,106,.10), transparent 68%);
+}
+.d-a .coach-legacy::after{
+  content:""; position:absolute; inset:0; z-index:-1; pointer-events:none;
+  opacity:.13; mix-blend-mode:overlay;
+  background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.82' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='160' height='160' filter='url(%23n)' opacity='.52'/%3E%3C/svg%3E");
+  background-size:160px 160px;
+}
+
+.d-a .coach-legacy__inner{
+  max-width:1180px; margin:0 auto;
+  display:grid; gap:clamp(1.9rem,4.5vw,4.5rem);
+  align-items:center;
+}
+
+/* ---- the photograph: framed, not letterboxed ----
+   Source is 854×1280 (2:3). The frame is 3:4, so cover trims ~11% of the
+   height only; the face stays well inside it and the goalpost keeps its full
+   width. No excessive crop, no contain, no colour band behind it. */
+.d-a .coach-legacy__portrait{
+  position:relative; margin:0; overflow:hidden; isolation:isolate;
+  aspect-ratio:3/4;
+  border-radius:4px;
+  border:1px solid rgba(245,242,234,.12);
+  background:#0b1710;
+  box-shadow:var(--shadow-lg,0 40px 90px -40px rgba(0,0,0,.65));
+}
+.d-a .coach-legacy__img{
+  display:block; width:100%; height:100%;
+  object-fit:cover; object-position:50% 20%;
+  filter:saturate(.93) contrast(1.05) brightness(.97);
+}
+/* reads the caption against the photograph, and ties the frame into the ground */
+.d-a .coach-legacy__portrait::after{
+  content:""; position:absolute; inset:42% 0 0; pointer-events:none;
+  background:linear-gradient(to top, rgba(7,16,11,.94) 4%, rgba(7,16,11,.45) 48%, transparent 100%);
+}
+.d-a .coach-legacy__caption{
+  position:absolute; z-index:1; inset:auto clamp(1.1rem,2.2vw,1.6rem) clamp(1rem,2vw,1.4rem);
+  display:grid; gap:.3rem; color:#fff;
+}
+/* Arabic connected glyphs are never stroked or outlined — client correction. */
+.d-a .coach-legacy__name{
+  font-family:var(--font-display); font-weight:800; letter-spacing:0;
+  font-size:clamp(1.45rem,2.4vw,2rem); line-height:1.35;
+  -webkit-text-stroke:0; text-shadow:none;
+}
+.d-a .coach-legacy__caption small{
+  font-family:var(--font-sans);
+  font-size:.78rem; line-height:1.6; color:var(--gold-soft,#e3cfa3);
+}
+
+/* ---- body ---- */
+.d-a .coach-legacy__body{ min-width:0; }
+
+.d-a .coach-legacy__eyebrow{
+  display:flex; align-items:center; gap:.6rem;
+  font-family:var(--font-sans); font-weight:500; letter-spacing:0;
+  font-size:clamp(12px,1vw,14px);
+  color:rgba(245,242,234,.74);
+  margin:0 0 1.15rem;
+}
+.d-a .coach-legacy__eyebrow .dot{
+  width:7px; height:7px; border-radius:50%; background:var(--sma-lift,#37a863);
+  box-shadow:0 0 0 5px rgba(55,168,99,.22);
+}
+
+.d-a .coach-legacy__title{
+  text-wrap:balance; margin:0 0 1.25rem;
+  font-family:var(--font-display); font-weight:800; letter-spacing:0;
+  font-size:clamp(2.1rem,4.2vw,3.5rem); line-height:1.38;
+  color:#fff;
+}
+.d-a .coach-legacy__title-sub{
+  display:block; margin-top:.55rem;
+  font-size:.56em; line-height:1.6; font-weight:650;
+  color:var(--sma-voice,#b8e8bf);
+}
+
+.d-a .coach-legacy__lead{
+  text-wrap:pretty; margin:0;
+  font-size:clamp(16px,1.35vw,20px); line-height:1.95;
+  color:rgba(245,242,234,.88);
+  max-width:50ch;
+}
+
+/* the one raised line in the section — his own words */
+.d-a .coach-legacy__quote{
+  margin:clamp(1.6rem,3vw,2.2rem) 0;
+  padding-inline-start:clamp(1rem,1.6vw,1.4rem);
+  border-inline-start:2px solid var(--gold,#c9a86a);
+  max-width:34ch;
+}
+.d-a .coach-legacy__quote p{
+  margin:0; text-wrap:balance;
+  font-family:var(--font-display); font-weight:650;
+  font-size:clamp(1.25rem,2.2vw,1.95rem); line-height:1.7;
+  color:#fff;
+}
+.d-a .coach-legacy__quote cite{
+  display:block; margin-top:.7rem; font-style:normal;
+  font-family:var(--font-sans); font-size:.8rem; letter-spacing:0;
+  color:var(--gold-soft,#e3cfa3);
+}
+
+.d-a .coach-legacy__copy{
+  text-wrap:pretty; margin:0;
+  font-size:clamp(15px,1.1vw,17px); line-height:2;
+  color:rgba(245,242,234,.78);
+  max-width:54ch;
+}
+
+/* four grounded facts — a documented row, not a stat wall */
+.d-a .coach-legacy__facts{
+  display:grid; grid-template-columns:repeat(2,minmax(0,1fr));
+  gap:clamp(1rem,2.2vw,1.6rem) clamp(1.2rem,3vw,2.4rem);
+  margin:clamp(1.9rem,3.4vw,2.6rem) 0 0; padding:0;
+  list-style:none;
+}
+.d-a .coach-legacy__facts li{
+  display:grid; gap:.3rem;
+  padding-top:.85rem;
+  border-top:1px solid rgba(201,168,106,.34);
+}
+.d-a .coach-legacy__facts b{
+  font-family:var(--font-display); font-weight:750;
+  font-size:clamp(1rem,1.45vw,1.2rem); line-height:1.5;
+  color:var(--gold,#c9a86a);
+}
+.d-a .coach-legacy__facts span{
+  font-size:.82rem; line-height:1.7; color:rgba(245,242,234,.72);
+}
+
+.d-a .coach-legacy__acts{
+  display:flex; flex-wrap:wrap; gap:1rem;
+  margin-top:clamp(2rem,3.4vw,2.8rem);
+}
+
+/* ---- desktop: photograph on the left of the RTL spread, type on the right.
+   DOM order stays photo-first so the mobile stack needs no reordering. ---- */
+@media(min-width:861px){
+  .d-a .coach-legacy__inner{
+    grid-template-columns:minmax(0,1.12fr) minmax(290px,.88fr);
+  }
+  .d-a .coach-legacy__portrait{ grid-column:2; grid-row:1; }
+  .d-a .coach-legacy__body{ grid-column:1; grid-row:1; }
+}
+
+/* ---- mobile: the portrait reads first, then one clean stack ending in the
+   story link. ---- */
+@media(max-width:860px){
+  .d-a .coach-legacy{ padding:clamp(2.8rem,9vw,4rem) clamp(1.1rem,5vw,2rem); }
+  .d-a .coach-legacy__inner{ grid-template-columns:1fr; }
+  .d-a .coach-legacy__portrait{ aspect-ratio:4/5; }
+  .d-a .coach-legacy__img{ object-position:50% 18%; }
+  .d-a .coach-legacy__title{ font-size:clamp(1.9rem,7.4vw,2.6rem); line-height:1.42; }
+  .d-a .coach-legacy__title-sub{ font-size:.6em; }
+  .d-a .coach-legacy__lead{ font-size:16px; line-height:1.9; max-width:none; }
+  .d-a .coach-legacy__copy{ font-size:15.5px; line-height:1.95; max-width:none; }
+  .d-a .coach-legacy__quote{ max-width:none; }
+  .d-a .coach-legacy__quote p{ font-size:clamp(1.15rem,5.4vw,1.5rem); }
+  .d-a .coach-legacy__acts .btn{ width:100%; justify-content:center; text-align:center; }
+}
+
+@media(max-width:520px){
+  .d-a .coach-legacy__facts{ grid-template-columns:1fr; gap:1rem; }
+}
