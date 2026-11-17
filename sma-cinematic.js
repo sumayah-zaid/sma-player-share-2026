@@ -1,7 +1,7 @@
 /* SMA cinematic motion. No changes to the server-driven application contract. */
 (()=>{'use strict';
 const reduced=window.matchMedia&&window.matchMedia('(prefers-reduced-motion: reduce)').matches;
-const reveals=document.querySelectorAll('.sma-story-chapter,.sma-story-lead,.sma-exp-card,.sma-exp-heading,.sma-feature-strip__content,.sma-live-gallery figure,.sma-day-steps article,.sma-investment__card,.sma-steps-grid article');
+const reveals=document.querySelectorAll('.sma-story-chapter,.sma-story-lead,.sma-exp-card,.sma-exp-heading,.sma-feature-strip__content,.sma-live-gallery figure,.sma-day-steps article,.sma-investment__card,.sma-steps-grid article,.sma-facility,.sma-facilities__intro,.sma-facilities__more');
 reveals.forEach(el=>el.classList.add('sma-reveal'));
 if(!reduced&&'IntersectionObserver' in window){
   const io=new IntersectionObserver(entries=>{entries.forEach(entry=>{if(entry.isIntersecting){entry.target.classList.add('is-visible');io.unobserve(entry.target);}});},{threshold:.1,rootMargin:'0px 0px -30px 0px'});

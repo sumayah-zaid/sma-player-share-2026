@@ -1,0 +1,31 @@
+
+/* Camp facilities: original SMA brochure evidence, cinema editorial */
+.sma-facilities{position:relative;background:#0a1b12;padding:clamp(82px,9vw,145px) clamp(18px,5.8vw,105px);color:#f7f2e8;overflow:hidden}
+.sma-facilities:before{content:"THE EXPERIENCE";position:absolute;pointer-events:none;left:-5vw;top:3vw;direction:ltr;font:800 clamp(80px,13vw,200px)/1 'Alexandria',sans-serif;white-space:nowrap;color:#ffffff06}
+.sma-facilities__intro{position:relative;text-align:center;max-width:900px;margin:0 auto 65px}
+.sma-facilities__intro h2{font-family:'El Messiri','Alexandria',sans-serif;font-size:clamp(40px,5.3vw,79px);line-height:1.38;margin:25px 0 23px;color:#fff}
+.sma-facilities__intro h2 em{font-style:normal;color:#d7bb82}
+.sma-facilities__intro p{font-size:clamp(14px,1.25vw,18px);line-height:2.15;color:#cbd6cc}
+.sma-facilities__intro a{display:inline-flex;gap:18px;align-items:center;margin-top:20px;padding-bottom:10px;border-bottom:1px solid #cab284;color:#e7cea0;font-weight:700;text-decoration:none;transition:color .25s,transform .25s}
+.sma-facilities__intro a:hover{color:#fff;transform:translateY(-3px)}
+.sma-facilities__grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:15px}
+.sma-facility{position:relative;overflow:hidden;background:#12291c;min-width:0;border:1px solid #ffffff20;transition:transform .45s cubic-bezier(.2,.7,.2,1),border-color .3s,box-shadow .4s}
+.sma-facility:hover{transform:translateY(-7px);border-color:#cbb27a8c;box-shadow:0 28px 60px #0005}
+.sma-facility--large{grid-column:span 2;grid-row:span 1}
+.sma-facility__photo{height:clamp(220px,23vw,350px);overflow:hidden;position:relative;background:#203c2a}
+.sma-facility--large .sma-facility__photo{height:clamp(260px,27vw,410px)}
+.sma-facility__photo:after{content:'';inset:0;position:absolute;background:linear-gradient(0deg,#061b0f52,transparent 45%);pointer-events:none}
+.sma-facility__photo img{display:block;width:100%;height:100%;object-fit:cover;object-position:center;filter:brightness(.94) saturate(1.1);transition:transform .85s ease,filter .6s}
+.sma-facility:hover img{transform:scale(1.06);filter:brightness(1.08) saturate(1.1)}
+.sma-facility__copy{padding:clamp(22px,2.6vw,40px)}
+.sma-facility__copy small{font:600 10px 'Alexandria',sans-serif;letter-spacing:.14em;color:#d6bd87}
+.sma-facility__copy h3{font-family:'El Messiri','Alexandria',sans-serif;font-size:clamp(23px,2.3vw,34px);line-height:1.35;margin:15px 0 10px;color:#fff}
+.sma-facility__copy p{font-size:clamp(12px,1vw,15px);line-height:2.15;color:#cfdbd0;margin:0}
+.sma-facilities__more{margin-top:40px;padding:30px 0 0;border-top:1px solid #d4b98153}
+.sma-facilities__more>span{font-family:'El Messiri','Alexandria',sans-serif;font-size:27px;color:#e1c990}
+.sma-facilities__more>div{display:flex;gap:9px;flex-wrap:wrap;margin:20px 0}
+.sma-facilities__more>div span{display:inline-block;border:1px solid #cdb78362;padding:12px 17px;color:#e6ebe4;font-size:12px;background:#ffffff08;transition:background .25s}
+.sma-facilities__more>div span:hover{background:#ffffff20}
+.sma-facilities__more p{font-size:12px;color:#aebab0;line-height:1.9}
+@media(max-width:900px){.sma-facilities__grid{grid-template-columns:repeat(2,minmax(0,1fr))}.sma-facility--large{grid-column:span 2}}
+@media(max-width:570px){.sma-facilities{padding:78px 18px}.sma-facilities__intro{margin-bottom:40px}.sma-facilities__grid{grid-template-columns:1fr;gap:15px}.sma-facility--large{grid-column:span 1}.sma-facility__photo,.sma-facility--large .sma-facility__photo{height:245px}.sma-facility__copy{padding:25px}.sma-facilities__more>div span{font-size:11px;padding:9px 12px}}
