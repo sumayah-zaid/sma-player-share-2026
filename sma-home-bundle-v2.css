@@ -1,0 +1,3704 @@
+
+/* source: webfonts.css */
+/* Self-hosted OFL licensed fonts; Google Fonts source, original OFL in assets/fonts/licenses. */
+/* arabic */
+@font-face {
+  font-family: 'Alexandria';
+  font-style: normal;
+  font-weight: 300 900;
+  font-display: swap;
+  src: url(assets/fonts/alexandria-arabic-300900.woff2) format('woff2');
+  unicode-range: U+0600-06FF, U+0750-077F, U+0870-0891, U+0897-08E1, U+08E3-08FF, U+200C-200E, U+2010-2011, U+204F, U+2E41, U+FB50-FDFF, U+FE70-FE74, U+FE76-FEFC, U+102E0-102FB, U+10E60-10E7E, U+10EC2-10EC7, U+10EC9-10EEE, U+10EF0-10EFF, U+1EE00-1EE03, U+1EE05-1EE1F, U+1EE21-1EE22, U+1EE24, U+1EE27, U+1EE29-1EE32, U+1EE34-1EE37, U+1EE39, U+1EE3B, U+1EE42, U+1EE47, U+1EE49, U+1EE4B, U+1EE4D-1EE4F, U+1EE51-1EE52, U+1EE54, U+1EE57, U+1EE59, U+1EE5B, U+1EE5D, U+1EE5F, U+1EE61-1EE62, U+1EE64, U+1EE67-1EE6A, U+1EE6C-1EE72, U+1EE74-1EE77, U+1EE79-1EE7C, U+1EE7E, U+1EE80-1EE89, U+1EE8B-1EE9B, U+1EEA1-1EEA3, U+1EEA5-1EEA9, U+1EEAB-1EEBB, U+1EEF0-1EEF1;
+}
+/* latin */
+@font-face {
+  font-family: 'Alexandria';
+  font-style: normal;
+  font-weight: 300 900;
+  font-display: swap;
+  src: url(assets/fonts/alexandria-latin-300900.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* arabic */
+@font-face {
+  font-family: 'El Messiri';
+  font-style: normal;
+  font-weight: 400 700;
+  font-display: swap;
+  src: url(assets/fonts/elmessiri-arabic-400700.woff2) format('woff2');
+  unicode-range: U+0600-06FF, U+0750-077F, U+0870-0891, U+0897-08E1, U+08E3-08FF, U+200C-200E, U+2010-2011, U+204F, U+2E41, U+FB50-FDFF, U+FE70-FE74, U+FE76-FEFC, U+102E0-102FB, U+10E60-10E7E, U+10EC2-10EC7, U+10EC9-10EEE, U+10EF0-10EFF, U+1EE00-1EE03, U+1EE05-1EE1F, U+1EE21-1EE22, U+1EE24, U+1EE27, U+1EE29-1EE32, U+1EE34-1EE37, U+1EE39, U+1EE3B, U+1EE42, U+1EE47, U+1EE49, U+1EE4B, U+1EE4D-1EE4F, U+1EE51-1EE52, U+1EE54, U+1EE57, U+1EE59, U+1EE5B, U+1EE5D, U+1EE5F, U+1EE61-1EE62, U+1EE64, U+1EE67-1EE6A, U+1EE6C-1EE72, U+1EE74-1EE77, U+1EE79-1EE7C, U+1EE7E, U+1EE80-1EE89, U+1EE8B-1EE9B, U+1EEA1-1EEA3, U+1EEA5-1EEA9, U+1EEAB-1EEBB, U+1EEF0-1EEF1;
+}
+/* latin */
+@font-face {
+  font-family: 'El Messiri';
+  font-style: normal;
+  font-weight: 400 700;
+  font-display: swap;
+  src: url(assets/fonts/elmessiri-latin-400700.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* arabic */
+@font-face {
+  font-family: 'IBM Plex Sans Arabic';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(assets/fonts/plex-arabic-400.woff2) format('woff2');
+  unicode-range: U+0600-06FF, U+0750-077F, U+0870-0891, U+0897-08E1, U+08E3-08FF, U+200C-200E, U+2010-2011, U+204F, U+2E41, U+FB50-FDFF, U+FE70-FE74, U+FE76-FEFC, U+102E0-102FB, U+10E60-10E7E, U+10EC2-10EC7, U+10EC9-10EEE, U+10EF0-10EFF, U+1EE00-1EE03, U+1EE05-1EE1F, U+1EE21-1EE22, U+1EE24, U+1EE27, U+1EE29-1EE32, U+1EE34-1EE37, U+1EE39, U+1EE3B, U+1EE42, U+1EE47, U+1EE49, U+1EE4B, U+1EE4D-1EE4F, U+1EE51-1EE52, U+1EE54, U+1EE57, U+1EE59, U+1EE5B, U+1EE5D, U+1EE5F, U+1EE61-1EE62, U+1EE64, U+1EE67-1EE6A, U+1EE6C-1EE72, U+1EE74-1EE77, U+1EE79-1EE7C, U+1EE7E, U+1EE80-1EE89, U+1EE8B-1EE9B, U+1EEA1-1EEA3, U+1EEA5-1EEA9, U+1EEAB-1EEBB, U+1EEF0-1EEF1;
+}
+/* latin */
+@font-face {
+  font-family: 'IBM Plex Sans Arabic';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(assets/fonts/plex-latin-400.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* arabic */
+@font-face {
+  font-family: 'IBM Plex Sans Arabic';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url(assets/fonts/plex-arabic-500.woff2) format('woff2');
+  unicode-range: U+0600-06FF, U+0750-077F, U+0870-0891, U+0897-08E1, U+08E3-08FF, U+200C-200E, U+2010-2011, U+204F, U+2E41, U+FB50-FDFF, U+FE70-FE74, U+FE76-FEFC, U+102E0-102FB, U+10E60-10E7E, U+10EC2-10EC7, U+10EC9-10EEE, U+10EF0-10EFF, U+1EE00-1EE03, U+1EE05-1EE1F, U+1EE21-1EE22, U+1EE24, U+1EE27, U+1EE29-1EE32, U+1EE34-1EE37, U+1EE39, U+1EE3B, U+1EE42, U+1EE47, U+1EE49, U+1EE4B, U+1EE4D-1EE4F, U+1EE51-1EE52, U+1EE54, U+1EE57, U+1EE59, U+1EE5B, U+1EE5D, U+1EE5F, U+1EE61-1EE62, U+1EE64, U+1EE67-1EE6A, U+1EE6C-1EE72, U+1EE74-1EE77, U+1EE79-1EE7C, U+1EE7E, U+1EE80-1EE89, U+1EE8B-1EE9B, U+1EEA1-1EEA3, U+1EEA5-1EEA9, U+1EEAB-1EEBB, U+1EEF0-1EEF1;
+}
+/* latin */
+@font-face {
+  font-family: 'IBM Plex Sans Arabic';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url(assets/fonts/plex-latin-500.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* arabic */
+@font-face {
+  font-family: 'IBM Plex Sans Arabic';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url(assets/fonts/plex-arabic-600.woff2) format('woff2');
+  unicode-range: U+0600-06FF, U+0750-077F, U+0870-0891, U+0897-08E1, U+08E3-08FF, U+200C-200E, U+2010-2011, U+204F, U+2E41, U+FB50-FDFF, U+FE70-FE74, U+FE76-FEFC, U+102E0-102FB, U+10E60-10E7E, U+10EC2-10EC7, U+10EC9-10EEE, U+10EF0-10EFF, U+1EE00-1EE03, U+1EE05-1EE1F, U+1EE21-1EE22, U+1EE24, U+1EE27, U+1EE29-1EE32, U+1EE34-1EE37, U+1EE39, U+1EE3B, U+1EE42, U+1EE47, U+1EE49, U+1EE4B, U+1EE4D-1EE4F, U+1EE51-1EE52, U+1EE54, U+1EE57, U+1EE59, U+1EE5B, U+1EE5D, U+1EE5F, U+1EE61-1EE62, U+1EE64, U+1EE67-1EE6A, U+1EE6C-1EE72, U+1EE74-1EE77, U+1EE79-1EE7C, U+1EE7E, U+1EE80-1EE89, U+1EE8B-1EE9B, U+1EEA1-1EEA3, U+1EEA5-1EEA9, U+1EEAB-1EEBB, U+1EEF0-1EEF1;
+}
+/* latin */
+@font-face {
+  font-family: 'IBM Plex Sans Arabic';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url(assets/fonts/plex-latin-600.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* arabic */
+@font-face {
+  font-family: 'IBM Plex Sans Arabic';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(assets/fonts/plex-arabic-700.woff2) format('woff2');
+  unicode-range: U+0600-06FF, U+0750-077F, U+0870-0891, U+0897-08E1, U+08E3-08FF, U+200C-200E, U+2010-2011, U+204F, U+2E41, U+FB50-FDFF, U+FE70-FE74, U+FE76-FEFC, U+102E0-102FB, U+10E60-10E7E, U+10EC2-10EC7, U+10EC9-10EEE, U+10EF0-10EFF, U+1EE00-1EE03, U+1EE05-1EE1F, U+1EE21-1EE22, U+1EE24, U+1EE27, U+1EE29-1EE32, U+1EE34-1EE37, U+1EE39, U+1EE3B, U+1EE42, U+1EE47, U+1EE49, U+1EE4B, U+1EE4D-1EE4F, U+1EE51-1EE52, U+1EE54, U+1EE57, U+1EE59, U+1EE5B, U+1EE5D, U+1EE5F, U+1EE61-1EE62, U+1EE64, U+1EE67-1EE6A, U+1EE6C-1EE72, U+1EE74-1EE77, U+1EE79-1EE7C, U+1EE7E, U+1EE80-1EE89, U+1EE8B-1EE9B, U+1EEA1-1EEA3, U+1EEA5-1EEA9, U+1EEAB-1EEBB, U+1EEF0-1EEF1;
+}
+/* latin */
+@font-face {
+  font-family: 'IBM Plex Sans Arabic';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(assets/fonts/plex-latin-700.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+/* source: style.css */
+@charset "UTF-8";
+/* ============================================================
+   SMA PLAYER — سيف آل نمرة
+   Direction A — سينما زمردية / Emerald Cinema (client-selected 2026-11-10).
+   Single-direction build. B and C were retired from this production
+   candidate after the client's selection; they remain in the historical
+   public comparison at commit fb56dd2, not here.
+   No dependencies. No build step. RTL-first.
+
+   TYPEFACE NOTE — خط ثمانية (Thmanyah)
+   The client-approved typeface is "ثمانية 'Thmanyah'" (font.thmanyah.com).
+   It is NOT installed here and its licence does not permit rehosting or
+   bundling, so nothing is packaged or fetched. It is declared first in the
+   stacks below so that authorising it later is a no-op change.
+   Shipping type is Alexandria + IBM Plex Sans Arabic, self-hosted under OFL.
+   ============================================================ */
+:root{
+  /* ---- Fonts: Thmanyah first, then the honest fallbacks actually available ---- */
+  --font-sans:
+    "Thmanyah", "Thmanyah Sans", "ثمانية",
+    "Noto Sans Arabic", "Noto Kufi Arabic",
+    "SF Arabic", "Geeza Pro", system-ui, -apple-system, "Segoe UI", sans-serif;
+  --font-display:
+    "Thmanyah Serif Display", "Thmanyah", "ثمانية",
+    "Noto Naskh Arabic", "Noto Sans Arabic",
+    "Al Bayan", "Geeza Pro", Georgia, serif;
+  --font-latin: "Thmanyah", ui-sans-serif, -apple-system, "Helvetica Neue", Arial, sans-serif;
+
+  /* ---- Brand colour, sampled from the untouched original SMA logo ---- */
+  --sma-deep:   #1b522e;   /* rgb(10.72%, 32.01%, 18.05%) */
+  --sma-green:  #2a8950;   /* rgb(16.56%, 53.64%, 31.32%) */
+  --sma-lift:   #37a863;
+  --gold:       #c9a86a;   /* restrained champagne accent */
+  --gold-soft:  #e3cfa3;
+  --ink:        #0c0f0d;
+  --graphite:   #14171a;
+  --graphite-2: #1d2124;
+  --ivory:      #f5f2ea;
+  --ivory-2:    #ebe6da;
+  --paper:      #fdfcf9;
+
+  --ease: cubic-bezier(.2,.75,.25,1);
+  --shadow-lg: 0 40px 90px -40px rgba(0,0,0,.65);
+  --shadow-md: 0 24px 60px -30px rgba(0,0,0,.5);
+  --nav-h: 76px;
+
+  /* R5 — the voice tier: this mint is his family name, and nothing else. */
+  --sma-voice: #b8e8bf;
+}
+
+*, *::before, *::after{ box-sizing:border-box; }
+
+html{
+  scroll-behavior:smooth;
+  -webkit-text-size-adjust:100%;
+}
+@media (prefers-reduced-motion:reduce){
+  html{ scroll-behavior:auto; }
+  *, *::before, *::after{ animation-duration:.001ms !important; transition-duration:.001ms !important; }}
+
+body{
+  margin:0;
+  font-family:var(--font-sans);
+  font-size:clamp(15.5px,.45vw + 14px,17.5px);
+  line-height:1.85;
+  background:var(--ink);
+  color:var(--ivory);
+  overflow-x:clip;
+  text-rendering:optimizeLegibility;
+  -webkit-font-smoothing:antialiased;
+}
+
+img, svg{ max-width:100%; display:block; }
+a{ color:inherit; }
+button{ font:inherit; color:inherit; }
+h1, h2, h3{ margin:0; line-height:1.18; font-weight:800; letter-spacing:-.005em; }
+p{ margin:0 0 1em; }
+ul, ol, dl{ margin:0; padding:0; list-style:none; }
+
+:focus-visible{
+  outline:2px solid var(--sma-lift);
+  outline-offset:3px;
+  border-radius:3px;
+}
+
+.sr-only{
+  position:absolute; width:1px; height:1px; padding:0; margin:-1px;
+  overflow:hidden; clip-path:inset(50%); white-space:nowrap; border:0;
+}
+.skip-link{
+  position:fixed; inset-inline-start:50%; top:-100px; transform:translateX(50%);
+  z-index:200; background:var(--sma-green); color:#fff;
+  padding:.7rem 1.4rem; border-radius:0 0 12px 12px; font-weight:700;
+  transition:top .22s var(--ease);
+}
+.skip-link:focus{ top:0; }
+
+/* Latin / numerals keep their own face so Arabic metrics stay clean.
+   BILINGUAL: `:not(html)` matters. On /en/ the root element itself carries
+   lang="en", and an unscoped `[lang="en"]` would hand the entire English
+   document the Latin *fallback* stack instead of the locale's own type system
+   (see the English type system block at the end of this file). */
+.latin, [lang="en"]:not(html){ font-family:var(--font-latin); }
+
+/* ============================================================
+   DESIGN SWITCHER  (shared chrome, sits above all three)
+   ============================================================ */
+.design[hidden]{ display:none !important; }
+/* PD §3.1 — the open mobile menu is modal: the page behind it must not scroll. */
+body.nav-locked{ overflow:hidden; }
+
+/* ============================================================
+   LOGO PLAQUE
+   The original SMA logo contains white glyph parts, so it is never
+   recoloured, filtered or redrawn — it is only ever placed on a deep
+   green plaque so every part of it stays legible, on dark and light alike.
+   ============================================================ */
+.logo-plaque{
+  display:inline-grid; place-items:center;
+  background:linear-gradient(160deg,#20603a,var(--sma-deep) 70%);
+  border:1px solid rgba(201,168,106,.3);
+  border-radius:14px; padding:.6rem .7rem;
+  box-shadow:0 10px 26px -14px rgba(0,0,0,.75), inset 0 1px 0 rgba(255,255,255,.08);
+}
+.logo-plaque img{ width:40px; height:auto; }
+.logo-plaque--sm{ border-radius:11px; padding:.4rem .48rem; }
+.logo-plaque--sm img{ width:26px; }
+
+/* ============================================================
+   SHARED PRIMITIVES
+   ============================================================ */
+.btn{
+  display:inline-flex; align-items:center; justify-content:center; gap:.5rem;
+  padding:.95rem 1.9rem; border:1px solid transparent; border-radius:999px;
+  font-weight:700; text-decoration:none; cursor:pointer;
+  transition:transform .3s var(--ease), box-shadow .3s var(--ease),
+             background .3s var(--ease), color .3s var(--ease), border-color .3s var(--ease);
+}
+.btn:hover{ transform:translateY(-2px); }
+.btn--emerald{
+  background:linear-gradient(135deg,var(--sma-lift),var(--sma-deep));
+  color:#fff; box-shadow:0 18px 38px -18px rgba(42,137,80,.9);
+}
+.btn--emerald:hover{ box-shadow:0 26px 50px -18px rgba(42,137,80,1); }
+.btn--ghost{
+  border-color:rgba(245,242,234,.3); color:var(--ivory);
+  background:rgba(255,255,255,.03); backdrop-filter:blur(6px);
+}
+.btn--ghost:hover{ border-color:var(--gold); color:#fff; }
+.btn--gold{
+  background:transparent; color:var(--gold-soft);
+  border-color:rgba(201,168,106,.6); border-radius:4px;
+  letter-spacing:.04em;
+}
+.btn--gold:hover{ background:var(--gold); color:#171310; border-color:var(--gold); }
+.btn--ink{
+  background:var(--sma-deep); color:#fff; border-radius:4px;
+  box-shadow:0 14px 30px -16px rgba(27,82,46,.8);
+}
+.btn--ink:hover{ background:var(--ink); }
+
+.kicker{
+  font-size:.74rem; letter-spacing:.3em; text-transform:uppercase;
+  color:var(--sma-lift); margin:0 0 1rem;
+}
+.kicker--gold{ color:var(--gold); }
+
+.h2{ font-size:clamp(1.9rem,3.4vw,3.1rem); }
+.h2--serif{ font-family:var(--font-display); font-weight:700; letter-spacing:0; }
+
+.section{ padding:clamp(4.5rem,9vw,9rem) 0; }
+.sec-head{ max-width:48ch; margin:0 auto clamp(2.5rem,5vw,4rem); padding-inline:clamp(1.25rem,5vw,2rem); }
+.sec-head--center{ text-align:center; }
+.sec-head__sub{ color:rgba(245,242,234,.6); margin:1rem 0 0; }
+
+.claim{
+  display:grid; gap:.5rem;
+  border-inline-start:3px solid var(--gold);
+  background:rgba(201,168,106,.09);
+  padding:.95rem 1.2rem; border-radius:0 10px 10px 0;
+  margin:1.4rem 0;
+}
+.claim p{ margin:0; font-size:.95rem; }
+.claim b{ font-size:1.15rem; color:var(--gold-soft); }
+.claim__tag{
+  justify-self:start;
+  font-size:.66rem; letter-spacing:.18em;
+  background:var(--gold); color:#1a1510;
+  padding:.18rem .6rem; border-radius:3px; font-weight:800;
+}
+.verify{
+  font-size:.83rem; line-height:1.7;
+  color:rgba(245,242,234,.55);
+  border-top:1px dashed rgba(245,242,234,.18);
+  padding-top:.8rem; margin-top:1.2rem;
+}
+
+/* reveal on scroll */
+.reveal{ opacity:0; transform:translateY(26px); transition:opacity .9s var(--ease), transform .9s var(--ease); }
+.reveal.is-in{ opacity:1; transform:none; }
+
+/* ---------------- forms ---------------- */
+.form{ display:grid; gap:1rem; }
+.form__row{ display:grid; gap:1rem; grid-template-columns:1fr 1fr; }
+.form label{ display:grid; gap:.45rem; font-size:.82rem; letter-spacing:.06em; color:rgba(245,242,234,.7); }
+.form input, .form textarea{
+  font:inherit; font-size:.95rem; color:var(--ivory);
+  background:rgba(255,255,255,.05);
+  border:1px solid rgba(245,242,234,.18);
+  border-radius:10px; padding:.8rem .95rem; width:100%;
+  transition:border-color .25s var(--ease), background .25s var(--ease);
+}
+.form textarea{ resize:vertical; min-height:110px; }
+.form input:focus, .form textarea:focus{ border-color:var(--sma-lift); background:rgba(255,255,255,.08); }
+.form input:focus-visible, .form textarea:focus-visible{ outline:2px solid var(--sma-lift); outline-offset:2px; }
+.form input:user-invalid, .form textarea:user-invalid{ border-color:#c7684f; }
+.form__acts{ display:flex; align-items:center; gap:1rem; flex-wrap:wrap; }
+.form__out{ font-size:.85rem; color:var(--sma-lift); }
+.form__out[data-state="err"]{ color:#e39379; }
+
+/* ---------------- burger ---------------- */
+.burger{
+  display:none; width:46px; height:46px; border:1px solid rgba(245,242,234,.22);
+  border-radius:12px; background:rgba(0,0,0,.25); cursor:pointer;
+  position:relative; flex:0 0 auto;
+}
+.burger span{
+  position:absolute; inset-inline:12px; height:1.6px; background:var(--ivory);
+  transition:transform .3s var(--ease), opacity .25s var(--ease);
+}
+.burger span:nth-child(1){ top:16px; }
+.burger span:nth-child(2){ top:22px; }
+.burger span:nth-child(3){ top:28px; }
+.burger--gold{ border-radius:3px; border-color:rgba(201,168,106,.45); }
+.burger--gold span{ background:var(--gold-soft); }
+.burger--dark{ border-color:rgba(12,15,13,.2); background:rgba(255,255,255,.6); border-radius:3px; }
+.burger--dark span{ background:var(--ink); }
+.nav-open .burger span:nth-child(1){ transform:translateY(6px) rotate(45deg); }
+.nav-open .burger span:nth-child(2){ opacity:0; }
+.nav-open .burger span:nth-child(3){ transform:translateY(-6px) rotate(-45deg); }
+
+/* ---------------- lightbox ---------------- */
+.lightbox{
+  position:fixed; inset:0; z-index:300;
+  background:rgba(6,8,7,.94);
+  display:grid; place-items:center; padding:clamp(1rem,4vw,3rem);
+  backdrop-filter:blur(10px);
+  animation:lbIn .3s var(--ease);
+}
+.lightbox[hidden]{ display:none; }
+@keyframes lbIn{ from{opacity:0} to{opacity:1} }
+.lightbox__fig{ margin:0; max-width:min(1100px,100%); }
+.lightbox__fig img{
+  max-height:78vh; width:auto; margin-inline:auto; border-radius:6px;
+  box-shadow:var(--shadow-lg);
+}
+.lightbox__fig figcaption{
+  text-align:center; margin-top:1rem; font-size:.85rem;
+  color:rgba(245,242,234,.65); letter-spacing:.06em;
+}
+.lightbox__close{
+  position:absolute; top:clamp(1rem,3vw,2rem); inset-inline-end:clamp(1rem,3vw,2rem);
+  width:46px; height:46px; border-radius:50%; cursor:pointer;
+  border:1px solid rgba(245,242,234,.3); background:rgba(255,255,255,.06);
+  font-size:1rem;
+}
+.lightbox__close:hover{ background:rgba(255,255,255,.14); }
+.lb{ cursor:zoom-in; }
+
+/* ============================================================
+   ██  A — EMERALD CINEMA
+   Full-bleed, photo-led, ambient overlays, ivory + deep SMA green.
+   ============================================================ */
+.d-a{ background:#07100b; }
+.d-a section{ scroll-margin-top:var(--nav-h); }
+
+.a-top{
+  position:fixed; inset-block-start:0; inset-inline:0; z-index:110;
+  transition:background .4s var(--ease), border-color .4s var(--ease), backdrop-filter .4s var(--ease);
+  border-bottom:1px solid transparent;
+}
+.a-top.is-stuck{
+  background:rgba(7,16,11,.82);
+  backdrop-filter:blur(16px) saturate(1.2);
+  -webkit-backdrop-filter:blur(16px) saturate(1.2);
+  border-bottom-color:rgba(245,242,234,.1);
+}
+.a-top__inner{
+  max-width:1480px; margin-inline:auto;
+  padding:.9rem clamp(1.1rem,3.5vw,2.6rem);
+  display:flex; align-items:center; gap:1.5rem;
+}
+.a-brand{ display:flex; align-items:center; gap:.75rem; text-decoration:none; }
+.a-brand__txt{ display:grid; line-height:1.3; }
+.a-brand__txt b{ font-family:var(--font-latin); font-size:.95rem; letter-spacing:.2em; }
+.a-brand__txt i{ font-style:normal; font-size:.78rem; color:rgba(245,242,234,.6); }
+
+.a-nav{ margin-inline-start:auto; display:flex; align-items:center; gap:.3rem; }
+.a-nav a{
+  text-decoration:none; font-size:.92rem; padding:.55rem .95rem; border-radius:999px;
+  color:rgba(245,242,234,.78);
+  transition:color .25s var(--ease), background .25s var(--ease);
+}
+.a-nav a:hover{ color:#fff; background:rgba(255,255,255,.07); }
+.a-nav a.is-active{ color:#fff; background:rgba(42,137,80,.26); }
+.a-nav__cta{
+  margin-inline-start:.6rem;
+  background:linear-gradient(135deg,var(--sma-lift),var(--sma-deep));
+  color:#fff !important; padding:.6rem 1.4rem !important;
+  box-shadow:0 12px 26px -14px rgba(42,137,80,.9);
+}
+
+/* ---- hero ---- */
+.a-hero{
+  position:relative; min-height:100svh;
+  display:grid; align-items:center;
+  padding:calc(var(--nav-h) + 3rem) clamp(1.25rem,5vw,5rem) clamp(5rem,9vw,8rem);
+  isolation:isolate; overflow:hidden;
+}
+.a-hero__media{ position:absolute; inset:0; z-index:-1; }
+.a-hero__img{
+  width:100%; height:100%; object-fit:cover; object-position:22% 18%;
+  filter:saturate(.92) contrast(1.06);
+  transform:scale(1.04);
+}
+.a-hero__veil{
+  position:absolute; inset:0;
+  background:
+    linear-gradient(255deg, rgba(7,16,11,.97) 8%, rgba(7,16,11,.86) 38%, rgba(7,16,11,.35) 66%, rgba(7,16,11,.6) 100%),
+    linear-gradient(to top, #07100b 2%, rgba(7,16,11,0) 46%),
+    radial-gradient(120% 90% at 85% 10%, rgba(42,137,80,.3), transparent 60%);
+}
+/* R1 — the beam backs the TYPE, never the face.
+   The document is dir="rtl", so `inset-inline-end:-10%` resolved to the
+   physical LEFT edge — putting a blurred, screen-blended emerald wash directly
+   over Saif's face and producing the plasticky green cast the client rejected.
+
+   The beam is now full-bleed rather than a 62%-wide box: its emerald is placed
+   by the gradients' own stops (70%/75% from the physical left = the type side),
+   not by the element's edge. A 62% box re-pinned to the right left a hard
+   vertical seam down the middle of the frame that blur(12px) could not soften —
+   this is the same full-bleed approach the mobile breakpoint already used, and
+   which renders without any cast.
+
+   The photograph itself is untouched. The cast was light that was never in the
+   frame, not a grading problem — and the portrait's rights/provenance are still
+   OPEN, so altering the asset is doubly out of bounds. */
+.a-hero__beam{
+  position:absolute; inset:0; width:100%;
+  background:
+    conic-gradient(from 210deg at 70% 0%, rgba(55,168,99,.22), transparent 38%),
+    radial-gradient(60% 70% at 75% 15%, rgba(201,168,106,.2), transparent 70%);
+  filter:blur(12px);
+  mask-image:linear-gradient(to bottom,#000,transparent 85%);
+  -webkit-mask-image:linear-gradient(to bottom,#000,transparent 85%);
+  mix-blend-mode:screen;
+}
+/* R2 — film grain, not a screen door.
+   The previous 3px radial-gradient lattice was strictly periodic, so at .3 it
+   read as a dot grid on the face and moiréd against the net in the photograph's
+   own background. feTurbulence is non-periodic, so it reads as grain. Kept
+   present and deliberately low: the film texture is part of A's cinema
+   character and removing it outright would flatten the mood. */
+.a-hero__grain{
+  position:absolute; inset:0; opacity:.16; mix-blend-mode:overlay;
+  background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.82' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='160' height='160' filter='url(%23n)' opacity='.52'/%3E%3C/svg%3E");
+  background-size:160px 160px;
+}
+
+.a-hero__body{ max-width:min(640px,100%); }
+.a-hero__eyebrow{
+  display:flex; align-items:center; gap:.6rem;
+  font-size:.8rem; letter-spacing:.2em; color:rgba(245,242,234,.78);
+  margin:0 0 1.5rem;
+}
+.a-hero__eyebrow .dot{
+  width:7px; height:7px; border-radius:50%; background:var(--sma-lift);
+  box-shadow:0 0 0 5px rgba(55,168,99,.22);
+}
+.a-hero__title{
+  font-size:clamp(3.2rem,10.5vw,8rem);
+  line-height:.94; letter-spacing:-.03em; margin:0 0 1.6rem;
+  display:grid;
+}
+.a-hero__lede{
+  text-wrap:pretty;
+  font-size:clamp(1rem,1.25vw,1.2rem);
+  color:rgba(245,242,234,.86);
+  max-width:46ch; margin:0 0 2.3rem;
+}
+.a-hero__acts{ display:flex; gap:.9rem; flex-wrap:wrap; }
+.a-hero__rail{
+  display:flex; gap:clamp(1rem,3vw,2.6rem); flex-wrap:wrap;
+  margin-top:clamp(2.5rem,5vw,4rem);
+  padding-top:1.6rem; border-top:1px solid rgba(245,242,234,.16);
+}
+.a-hero__rail li{ display:grid; gap:.15rem; }
+.a-hero__rail b{ font-size:1.02rem; }
+.a-hero__rail span{ font-size:.82rem; color:rgba(245,242,234,.68); }
+
+.a-hero__scroll{
+  position:absolute; inset-block-end:2.5rem; inset-inline-end:clamp(1.25rem,5vw,5rem);
+  display:none; align-items:center; gap:.6rem;
+  font-size:.78rem; letter-spacing:.2em; text-decoration:none;
+  color:rgba(245,242,234,.6);
+}
+.a-hero__scroll span{
+  width:1px; height:44px; background:linear-gradient(to bottom,var(--sma-lift),transparent);
+}
+@media (min-width:1100px){ .a-hero__scroll{ display:flex; }}
+
+/* ---- coach ---- */
+.a-coach__grid{
+  max-width:1320px; margin-inline:auto;
+  padding-inline:clamp(1.25rem,5vw,3rem);
+  display:grid; gap:clamp(2rem,5vw,4.5rem);
+  grid-template-columns:minmax(0,.9fr) minmax(0,1.1fr);
+  align-items:center;
+}
+.a-coach__frame{ margin:0; position:relative; }
+.a-coach__frame::before{
+  content:""; position:absolute; inset:-14px -14px auto auto; width:58%; height:58%;
+  border:1px solid rgba(201,168,106,.42); border-radius:20px 20px 0 0; z-index:0;
+}
+.a-coach__frame img{
+  position:relative; z-index:1;
+  width:100%; aspect-ratio:4/5; object-fit:cover; object-position:30% 20%;
+  border-radius:18px; box-shadow:var(--shadow-lg);
+}
+.a-coach__frame figcaption{
+  position:absolute; z-index:2; inset-block-end:-1px; inset-inline-start:-1px;
+  background:linear-gradient(135deg,var(--sma-green),var(--sma-deep));
+  padding:.6rem 1.2rem; border-radius:18px 0 18px 0;
+  font-size:.86rem; font-weight:700;
+}
+.a-coach__txt p{ color:rgba(245,242,234,.76); max-width:52ch; }
+.a-coach__txt .h2{ margin-bottom:1.5rem; }
+.a-coach__list{ display:grid; gap:1.1rem; margin-top:2.2rem; }
+.a-coach__list li{ display:grid; grid-template-columns:auto 1fr; gap:1rem; align-items:start; }
+.a-coach__list span{
+  display:grid; place-items:center; width:38px; height:38px; border-radius:50%;
+  border:1px solid rgba(55,168,99,.5); color:var(--sma-lift); font-weight:800;
+  background:rgba(42,137,80,.12);
+}
+.a-coach__list b{ display:block; }
+.a-coach__list p{ margin:.15rem 0 0; font-size:.92rem; }
+
+/* ---- moura ---- */
+.a-moura{ position:relative; padding:clamp(4.5rem,9vw,8rem) 0; isolation:isolate; overflow:hidden; }
+.a-moura__bg{ position:absolute; inset:0; z-index:-1; }
+.a-moura__bg img{
+  width:100%; height:100%; object-fit:cover; object-position:center 30%;
+  opacity:.4; filter:grayscale(.3) contrast(1.1);
+  mask-image:radial-gradient(85% 70% at 70% 40%, #000 20%, transparent 78%);
+  -webkit-mask-image:radial-gradient(85% 70% at 70% 40%, #000 20%, transparent 78%);
+}
+.a-moura::after{
+  content:""; position:absolute; inset:0; z-index:-1;
+  background:linear-gradient(to left, rgba(7,16,11,.2), rgba(7,16,11,.92) 55%);
+}
+.a-moura__inner{
+  max-width:1320px; margin-inline:auto; padding-inline:clamp(1.25rem,5vw,3rem);
+  display:grid; gap:clamp(2rem,4vw,3.5rem); grid-template-columns:1.05fr .95fr; align-items:center;
+}
+.a-moura__card{
+  background:rgba(10,20,14,.72);
+  border:1px solid rgba(201,168,106,.26);
+  border-radius:20px; padding:clamp(1.6rem,3.5vw,2.8rem);
+  backdrop-filter:blur(14px); box-shadow:var(--shadow-md);
+}
+.a-moura__note{ color:rgba(245,242,234,.78); margin-bottom:0; }
+.a-moura__card .h2{ margin-bottom:1.1rem; }
+.a-moura__shot{ margin:0; }
+.a-moura__shot img{
+  width:100%; aspect-ratio:3/4; object-fit:cover;
+  border-radius:200px 200px 20px 20px;
+  border:1px solid rgba(245,242,234,.14);
+  box-shadow:var(--shadow-lg);
+}
+
+/* ---- story: the coach's own published account ----
+   Sits between a-coach (institutional, third person) and a-moura (the result).
+   Narrower measure and a gold-ruled pull-quote so a reported quotation reads as
+   quotation, never as the page's own voice. No hero token is touched. */
+.a-story{
+  padding:clamp(4rem,8vw,7rem) 0;
+  background:linear-gradient(#07100b,#081610);
+  border-block:1px solid rgba(245,242,234,.08);
+}
+.a-story__inner{
+  max-width:1200px; margin-inline:auto;
+  padding-inline:clamp(1.25rem,5vw,3rem);
+  display:grid; gap:clamp(2rem,5vw,3.5rem);
+  grid-template-columns:.9fr 1.1fr; align-items:center;
+}
+.a-story__shot{ margin:0; }
+.a-story__shot img{
+  width:100%; aspect-ratio:4/5; object-fit:cover; object-position:50% 32%;
+  border-radius:20px;
+  border:1px solid rgba(245,242,234,.14);
+  box-shadow:var(--shadow-lg);
+}
+.a-story__txt p{ color:rgba(245,242,234,.78); max-width:54ch; }
+.a-story__quote{
+  margin:1.6rem 0; padding-top:1.2rem;
+  border-top:1px solid rgba(201,168,106,.3);
+}
+.a-story__quote blockquote{
+  margin:0; max-width:46ch;
+  font-size:clamp(1.02rem,1.6vw,1.22rem); line-height:1.8; color:#f5f2ea;
+}
+.a-story__quote cite{
+  display:block; margin-top:.85rem; font-style:normal;
+  font-size:.82rem; color:rgba(245,242,234,.55);
+}
+.a-story__src{
+  display:inline-flex; align-items:center; min-height:44px;
+  font-size:.85rem; font-weight:700; color:var(--gold-soft); text-decoration:none;
+  border-bottom:1px solid rgba(201,168,106,.45); padding-bottom:2px;
+}
+.a-story__src:hover{ color:#fff; border-color:#fff; }
+
+/* ---- camps ---- */
+.a-camps__grid{
+  max-width:1320px; margin-inline:auto; padding-inline:clamp(1.25rem,5vw,3rem);
+  display:grid; gap:1.2rem;
+  grid-template-columns:repeat(3,1fr);
+  grid-template-rows:auto;
+}
+.a-camp{
+  position:relative; overflow:hidden; border-radius:18px; min-height:340px;
+  display:flex; align-items:flex-end; isolation:isolate;
+  border:1px solid rgba(245,242,234,.1);
+}
+.a-camp--tall{ grid-row:span 2; min-height:520px; }
+.a-camp img{
+  position:absolute; inset:0; z-index:-1; width:100%; height:100%;
+  object-fit:cover; transition:transform 1.1s var(--ease), filter .6s var(--ease);
+  filter:saturate(.9);
+}
+/* Portrait trophy frame in a landscape card — bias the crop up to the rim and handles
+   so the card actually shows the cup it names. Scoped to this one card; the Moura
+   section's own 3/4 plate keeps the full composition. */
+.a-camp--trophy img{ object-position:50% 24%; }
+.a-camp::after{
+  content:""; position:absolute; inset:0; z-index:-1;
+  background:linear-gradient(to top, rgba(5,12,8,.95) 6%, rgba(5,12,8,.45) 46%, rgba(5,12,8,.08) 85%);
+}
+.a-camp:hover img{ transform:scale(1.06); filter:saturate(1.05); }
+.a-camp__body{ padding:clamp(1.2rem,2.5vw,2rem); }
+.a-camp__body h3{ font-size:1.35rem; margin-bottom:.5rem; }
+.a-camp__body p{ font-size:.93rem; color:rgba(245,242,234,.78); max-width:34ch; }
+.a-camp__body a{
+  display:inline-flex; align-items:center; min-height:44px;
+  font-size:.85rem; font-weight:700; color:var(--gold-soft); text-decoration:none;
+  border-bottom:1px solid rgba(201,168,106,.45); padding-bottom:2px;
+}
+.a-camp__body a:hover{ color:#fff; border-color:#fff; }
+@media (min-width:860px){
+  /* feature card beside a stacked pair — no empty cell */
+  .a-camps__grid{ grid-template-columns:1.15fr .85fr; }
+  .a-camp--tall{ grid-row:1 / span 2; grid-column:1; min-height:620px; }
+  .a-camp{ min-height:298px; }}
+
+/* ---- method ---- */
+.a-method{
+  padding:clamp(4.5rem,9vw,8rem) 0;
+  background:
+    radial-gradient(90% 60% at 50% 0%, rgba(42,137,80,.2), transparent 70%),
+    linear-gradient(#081610,#07100b);
+  border-block:1px solid rgba(245,242,234,.08);
+}
+.a-method__inner{ max-width:1200px; margin-inline:auto; padding-inline:clamp(1.25rem,5vw,3rem); }
+.a-method__grid{ display:grid; gap:1.2rem; grid-template-columns:repeat(4,1fr); }
+.a-method__grid article{
+  background:rgba(255,255,255,.035);
+  border:1px solid rgba(245,242,234,.1);
+  border-radius:16px; padding:1.6rem 1.5rem;
+  transition:transform .4s var(--ease), border-color .4s var(--ease), background .4s var(--ease);
+}
+.a-method__grid article:hover{
+  transform:translateY(-6px); border-color:rgba(55,168,99,.5); background:rgba(42,137,80,.1);
+}
+.a-method__grid h3{ font-size:1.15rem; margin-bottom:.6rem; color:#fff; }
+.a-method__grid p{ font-size:.92rem; color:rgba(245,242,234,.7); margin:0; }
+
+/* ---- media ---- */
+.a-media__list{
+  max-width:1000px; margin-inline:auto; padding-inline:clamp(1.25rem,5vw,3rem);
+  display:grid; gap:1rem;
+}
+.a-media__list a, .a-media__list div{
+  display:grid; gap:.3rem; text-decoration:none;
+  border:1px solid rgba(245,242,234,.12); border-radius:16px;
+  padding:1.4rem 1.6rem; background:rgba(255,255,255,.03);
+  transition:border-color .3s var(--ease), background .3s var(--ease), transform .3s var(--ease);
+}
+.a-media__list a:hover{ border-color:var(--sma-lift); background:rgba(42,137,80,.1); transform:translateX(-5px); }
+.a-media__list .src{ font-family:var(--font-latin); font-size:.76rem; letter-spacing:.16em; color:var(--sma-lift); }
+/* The .src token was authored as a Latin micro-label. On the Arabic page it carries
+   Arabic outlet names, and A-PRODUCTION-COPY-AR.md's fixed writing rules forbid
+   letter-spacing in Arabic outright — tracked Arabic breaks the joins. Family and
+   tracking are therefore dropped in RTL; the English page keeps the Latin token. */
+[dir="rtl"] .a-media__list .src{ font-family:inherit; letter-spacing:0; font-size:.8rem; }
+.a-media__list b{ font-size:1.06rem; }
+.a-media__list em{ font-style:normal; font-size:.86rem; color:rgba(245,242,234,.55); }
+.a-media__list .is-empty div{ border-style:dashed; background:transparent; }
+
+/* ---- contact ---- */
+.a-contact{
+  padding:clamp(4.5rem,9vw,8rem) clamp(1.25rem,5vw,3rem) clamp(7rem,10vw,9rem);
+  background:radial-gradient(100% 80% at 80% 0%, rgba(42,137,80,.18), transparent 65%);
+}
+.a-contact__inner{
+  max-width:1200px; margin-inline:auto;
+  display:grid; gap:clamp(2rem,5vw,4rem); grid-template-columns:.85fr 1.15fr; align-items:start;
+}
+.a-contact__txt p{ color:rgba(245,242,234,.76); }
+.a-contact__txt .h2{ margin-bottom:1.2rem; }
+
+/* ---- footer ---- */
+.a-foot{ border-top:1px solid rgba(245,242,234,.1); background:#050c08; }
+.a-foot__inner{
+  max-width:1320px; margin-inline:auto;
+  padding:2.6rem clamp(1.25rem,5vw,3rem) 7rem;
+  display:grid; gap:1.4rem; grid-template-columns:auto 1fr auto; align-items:center;
+}
+.a-foot__inner b{ font-family:var(--font-latin); letter-spacing:.18em; }
+.a-foot__inner p{ margin:.3rem 0 0; font-size:.85rem; color:rgba(245,242,234,.5); max-width:60ch; }
+.a-foot__font{ font-size:.8rem !important; color:rgba(201,168,106,.8) !important; max-width:30ch; }
+
+/* ============================================================
+   ██  B — GRAPHITE PRESTIGE
+   Asymmetric luxury editorial. Dark graphite, champagne gold hairlines,
+   dominant portrait, offset typographic grid, numbered chapters.
+   ============================================================ */
+
+
+/* ---- hero: asymmetric split, type leading ---- */
+
+
+/* ---- chapter index marker ---- */
+
+
+/* ---- coach: 12-col asymmetric ---- */
+
+
+/* ---- moura ---- */
+
+
+/* ---- camps: numbered editorial rows ---- */
+
+
+/* ---- method ---- */
+
+
+/* ---- media ---- */
+
+
+/* ---- contact ---- */
+
+
+/* ============================================================
+   ██  C — EDITORIAL LIGHT
+   Off-white premium magazine. Deep green chapters, rules, serif display,
+   wide margins, a structurally different (column-rule) grid.
+   ============================================================ */
+
+
+/* ---- hero: centred masthead + offset plate ---- */
+
+
+/* ---- chapters ---- */
+
+
+/* ---- moura: inverted deep-green chapter ---- */
+
+.verify--inv{ color:rgba(245,242,234,.6); border-top-color:rgba(245,242,234,.25); }
+
+/* ---- camps ---- */
+
+
+/* ---- principles: 2x2 with column rules ---- */
+
+
+/* ---- media ---- */
+
+
+@media (max-width:1024px){
+  .a-coach__grid, .a-story__inner, .a-moura__inner, .a-contact__inner{ grid-template-columns:1fr; }
+  /* Stacked, the portrait becomes a wide plate rather than a tall one, so the
+     text below it is still above the fold on a phone. */
+  .a-story__shot img{ aspect-ratio:4/3; object-position:50% 26%; }
+
+  .a-method__grid{ grid-template-columns:repeat(2,1fr); }
+  .a-camps__grid{ grid-template-columns:repeat(2,1fr); }
+  .a-camp--tall{ grid-row:span 1; grid-column:1/-1; min-height:400px; }}
+
+@media (max-width:860px){
+  :root{ --nav-h:68px; }
+  .a-nav{
+    position:absolute; inset-inline:0; inset-block-start:100%;
+    flex-direction:column; align-items:stretch; gap:0;
+    padding:.6rem clamp(1.25rem,5vw,2rem) 1.4rem;
+    opacity:0; visibility:hidden; transform:translateY(-10px);
+    /* visibility is stepped, not eased: delayed on close so the fade-out is
+       still seen, immediate on open so the panel is focusable in the same
+       frame the class lands. Transitioning it eased left the menu
+       computed-hidden — and therefore unfocusable — for ~50ms after opening. */
+    transition:opacity .28s var(--ease), transform .28s var(--ease), visibility 0s .28s;
+    max-height:min(76svh,560px); overflow-y:auto;
+  }
+  .a-nav{
+    background:rgba(7,16,11,.97); border-bottom:1px solid rgba(245,242,234,.14);
+    backdrop-filter:blur(18px); margin-inline-start:0;
+  }
+  .nav-open .a-nav{
+    opacity:1; visibility:visible; transform:none;
+    transition:opacity .28s var(--ease), transform .28s var(--ease), visibility 0s;
+  }
+  .a-nav a{
+    padding:.95rem .4rem; border-radius:0; font-size:1rem;
+  }
+  .a-nav a{ border-bottom:1px solid rgba(245,242,234,.1); }
+  .a-nav__cta{ margin:.9rem 0 0; border-radius:999px; text-align:center; justify-content:center; }
+  .burger{ display:block; margin-inline-start:auto; }
+  .a-nav{ margin-inline-start:0; }
+
+  .a-top{ position:sticky; background:rgba(7,16,11,.9); backdrop-filter:blur(14px); }
+  .a-top__inner{ position:relative; }
+
+  .a-method__grid, .a-camps__grid{ grid-template-columns:1fr; }
+
+  .a-camp--tall{ min-height:340px; }
+  .a-hero{ min-height:auto; padding-block:calc(var(--nav-h) + 2.5rem) 4.5rem; }
+  .a-hero__img{ object-position:30% 12%; }
+  .a-hero__veil{
+    background:
+      linear-gradient(195deg, rgba(7,16,11,.6) 0%, rgba(7,16,11,.9) 42%, #07100b 88%),
+      radial-gradient(90% 60% at 80% 5%, rgba(42,137,80,.3), transparent 65%);
+  }
+
+  .form__row{ grid-template-columns:1fr; }
+  .a-foot__inner{ grid-template-columns:auto 1fr; }
+  .a-foot__font{ grid-column:1/-1; max-width:none; }}
+
+@media (max-width:560px){
+  body{ line-height:1.8; }
+  .a-hero__rail{ gap:1.2rem 2rem; }
+  .a-hero__rail li{ min-width:40%; }
+  .btn{ width:100%; }
+  .form__acts .btn{ width:auto; }
+  .a-hero__acts .btn{ width:100%; }
+  .lightbox__fig img{ max-height:68vh; }}
+
+/* print: give the client a sane PDF of whichever direction is on screen */
+@media print{
+  .burger, .a-hero__scroll, .lightbox{ display:none !important; }
+  body{ background:#fff; color:#000; }
+  .a-top{ position:static; }}
+
+
+/* ============================================================
+   2026-11-10 · KAMAYA art-direction quality upgrade
+   A kept structurally/stylistically unchanged except KAMAYA credit.
+   B: Luxury sports editorial / C: football journal.
+   All new motion is reduced-motion friendly.
+   ============================================================ */
+.kamaya-credit{display:flex;justify-content:flex-end;align-items:center;gap:.5rem;padding:14px max(26px,5vw);border-bottom:1px solid currentColor;opacity:.65;font:500 10px/1.6 Arial,sans-serif;letter-spacing:.16em;direction:ltr}
+.kamaya-credit strong{font-weight:900;letter-spacing:.28em}
+.kamaya-credit--a{color:#9cc7a9;background:#091911}
+/* B — sharper personal editorial identity with deliberate depth */
+
+@keyframes b-line-reveal{from{transform:scaleX(0)}to{transform:scaleX(1)}}
+@keyframes b-photo-in{from{opacity:0;transform:translateY(22px)}to{opacity:1;transform:translateY(0)}}
+@keyframes b-copy-in{from{opacity:0;transform:translateY(17px)}to{opacity:1;transform:translateY(0)}}
+/* C — art-directed, gallery-like football journal */
+
+@keyframes c-headline-in{from{opacity:0;transform:translateY(16px)}to{opacity:1;transform:translateY(0)}}
+/* interactive on-scroll effects for all choices, A markup remains unmodified */
+
+@media(max-width:480px){
+ .kamaya-credit{font-size:8px}}
+
+/* Mobile art-direction correction 2026-11-10: Saif's portrait must be its
+   own editorial frame, never a backdrop behind text on small screens. */
+@media (max-width:760px){
+ .a-hero{display:flex;flex-direction:column;align-items:stretch;min-height:0;padding:0 0 2.5rem;background:#07100b;overflow:hidden;isolation:isolate}
+ .a-hero__media{position:relative;inset:auto;z-index:0;flex:none;width:100%;height:clamp(355px,102vw,495px);overflow:hidden;background:#162b20}
+ .a-hero__img{width:100%;height:100%;object-fit:cover;object-position:center 23%;animation:none;transform:none;filter:saturate(.92) contrast(1.04)}
+ .a-hero__veil{background:linear-gradient(to top,rgba(7,16,11,.84) 0%,rgba(7,16,11,.09) 36%,transparent 77%)}
+ .a-hero__beam{opacity:.42;inset:0;width:100%}
+ /* text-align:start, not :right — identical in Arabic, correctly left in English. */
+ .a-hero__body{position:relative;z-index:2;max-width:none;margin:0;padding:clamp(22px,5vw,36px) clamp(22px,6vw,42px) 0;text-align:start}
+ .a-hero__eyebrow{margin:0 0 1.2rem}
+ .a-hero__title{font-size:clamp(3.4rem,15vw,5.5rem);line-height:1.1;letter-spacing:-.035em;margin:0 0 1.1rem}
+ .a-hero__lede{font-size:1rem;max-width:38ch;line-height:1.85;margin-bottom:1.4rem}
+ .a-hero__rail{margin-top:1.8rem;padding-top:1.2rem}}
+
+
+/* Professional Arabic type system · 2026-11-10. 
+   All 3 families self-hosted under OFL (license files included).
+   Thmanyah proprietary font is not shipped or implied here. */
+.d-a{
+  --font-sans: 'IBM Plex Sans Arabic',system-ui,sans-serif;
+  --font-display: 'Alexandria','IBM Plex Sans Arabic',system-ui,sans-serif;
+}
+.d-a{font-family:var(--font-sans);font-synthesis:none}
+.d-a .a-hero__title{font-family:var(--font-display);font-weight:800;letter-spacing:0;line-height:1.17}
+.d-a .a-hero__eyebrow{letter-spacing:0;font-family:var(--font-sans);font-weight:500;font-size:clamp(12px,1vw,15px)}
+.d-a p{letter-spacing:0}
+.d-a .a-hero__lede{font-size:clamp(16px,1.4vw,21px);line-height:1.85}
+.d-a .btn{font-family:var(--font-sans);font-weight:650}
+.d-a nav a{font-family:var(--font-sans);letter-spacing:0}
+/* Calibrated, intentional cinematic movement - no shimmer or infinite bounce */
+.d-a .a-hero__body{animation:sma-soft-arrive 850ms cubic-bezier(.2,.72,.17,1) both}
+.d-a .a-hero__acts .btn{transition:transform .3s ease,box-shadow .3s ease,background .3s ease}
+.d-a .a-hero__acts .btn:hover{transform:translateY(-3px);box-shadow:0 16px 35px -18px #4fac6d}
+@keyframes sma-soft-arrive{from{opacity:.3;transform:translateY(19px)}to{opacity:1;transform:translateY(0)}}
+/* Scroll chapter entrance is driven by IntersectionObserver for all directions,
+   once each (no replay to avoid distracting the client). */
+.sma-motion-in{transition:opacity 630ms cubic-bezier(.2,.72,.17,1),transform 630ms cubic-bezier(.2,.72,.17,1)}
+.sma-motion-in:not(.sma-motion-visible){opacity:0;transform:translateY(22px)}
+.sma-motion-in.sma-motion-visible{opacity:1;transform:none}
+@media(max-width:760px){
+ .d-a .a-hero__body{animation:sma-soft-arrive 650ms both}
+ .d-a .a-hero__title{font-size:clamp(3.1rem,13vw,5rem);line-height:1.22;letter-spacing:0}}
+@media(prefers-reduced-motion:reduce){
+ .sma-motion-in, .d-a .a-hero__body{opacity:1!important;transform:none!important;transition:none!important;animation:none!important}}
+
+
+/* RELEASE QA 2026-11-10: Arabic script must NEVER use character tracking.
+   BILINGUAL 2026-11-10: the blanket `.d-a` arm is scoped to the Arabic document.
+   Unscoped it also stripped tracking from the English locale, where letterspaced
+   Latin kickers and the SMA PLAYER wordmark are correct typography rather than a
+   defect. `[lang="ar"]` stays global and unscoped, so an Arabic run inside the
+   English page — the language switch, the Moura Cup sub-line — is still never
+   tracked. The Arabic page's rendering is unchanged: html[lang="ar"] always matches there. */
+[lang="ar"],
+html[lang="ar"] .d-a,
+html[lang="ar"] .d-a :not(.latin):not([lang="en"]){
+  letter-spacing:0!important;
+}
+/* B keywords were tracked, in a tiny muted strip: replace with a real, readable
+   elegant list rather than six letterspaced labels. */
+
+/* Chapter labels are elegant small-caps only for Latin, never for Arabic. */
+
+/* Cinematic scroll sequence: actual scroll-triggered movement with distinct
+   reveal styling and visual section separators, not merely hover effects. */
+.motion-stage{
+  transition: opacity .94s cubic-bezier(.19,1,.22,1),
+              transform .94s cubic-bezier(.19,1,.22,1),
+              filter .94s cubic-bezier(.19,1,.22,1);
+  will-change:opacity,transform;
+}
+.motion-stage.is-pending{
+  opacity:.13;
+  transform:translate3d(0,44px,0);
+  filter:blur(3px);
+}
+.motion-stage.is-shown{opacity:1;transform:none;filter:none}
+.d-a .a-hero__media img{animation:cinema-film-move 12s cubic-bezier(.3,.1,.3,.9) both}
+.d-a .a-hero__title{
+  animation:coach-title-reveal 1.05s cubic-bezier(.19,1,.22,1) both;
+}
+@keyframes coach-title-reveal {
+  0%{opacity:0;transform:translate3d(0,25px,0);filter:blur(2px)}
+  100%{opacity:1;transform:none;filter:none}
+}
+@keyframes coach-push-in{0%{opacity:.55;filter:saturate(.55);transform:scale(1.065)}100%{opacity:1;filter:saturate(.9);transform:scale(1)}}
+@keyframes cinema-film-move{0%{transform:scale(1.09) translateY(1.1%)}100%{transform:scale(1.035) translateY(0)}}
+.d-a .a-camp img{
+  transition:transform .9s cubic-bezier(.19,1,.22,1),filter .9s;
+}
+.d-a .a-camp:hover img{transform:scale(1.04);filter:saturate(1.1)}
+/* High visibility on touch: animate photo clip plates on entrance. */
+.motion-stage.is-shown:after{transition:transform .9s}
+@media(max-width:760px){
+  .motion-stage.is-pending{transform:translateY(26px);filter:none;opacity:.18}}
+@media(prefers-reduced-motion:reduce){
+ .motion-stage, .motion-stage.is-pending, .motion-stage.is-shown{transition:none!important;transform:none!important;opacity:1!important;filter:none!important}
+ .d-a .a-hero__media img, .d-a .a-hero__title{animation:none!important}}
+
+/* Client review correction: never stroke or outline Arabic connected glyphs.
+   The original outlined lettering overlaps Arabic joins and looks broken. */
+.d-a .a-hero__title .a-hero__title-family{
+  -webkit-text-stroke:0 !important;
+  -webkit-text-fill-color:var(--sma-voice) !important;
+  color:var(--sma-voice) !important;
+  text-shadow:none !important;
+  font-family:'Alexandria','IBM Plex Sans Arabic',system-ui,sans-serif !important;
+  font-weight:650 !important;
+  letter-spacing:0 !important;
+  font-size:.85em;
+  line-height:1.32;
+  display:block;
+  overflow:visible;
+}
+@media(max-width:760px) {
+ .d-a .a-hero__title{font-size:clamp(48px,12.5vw,74px);line-height:1.32!important;}
+}
+
+
+/* ============================================================
+   KAMAYA confirmed brand identity · November 10, 2026
+   THREE ACTUALLY DIFFERENT DIRECTIONS:
+   A Emerald Cinema (original approved)
+   B Ivory Prestige (warm off-white and emerald)
+   C Monochrome Performance (black, white, signal green)
+   ============================================================ */
+.kamaya-credit{width:100%;justify-content:flex-end;gap:14px;padding:12px clamp(22px,5vw,65px);opacity:1;font-family:'IBM Plex Sans Arabic',system-ui,sans-serif!important;letter-spacing:0!important}
+.kamaya-credit .kamaya-credit__role{font-size:12px;letter-spacing:0;color:inherit;font-weight:600}
+/* Box matches the canonical v1.0 lockup ratio (viewBox 634x162) at h=38, so
+   `contain` letterboxes nothing and the signature sits optically correct. */
+.kamaya-credit img{display:block;width:clamp(112px,12vw,149px);height:38px;object-fit:contain;object-position:center;opacity:.86}
+.kamaya-credit--a{background:#07140d;color:#a4c3ae}
+/* -------- B — Bright gallery-grade editorial, not another dark-green site -------- */
+
+/* -------- C — Monochrome Performance: high-contrast sports editorial -------- */
+
+/* Ensure original SMA mark remains prominent on a fixed green plaque */
+
+@media(max-width:900px){
+ .kamaya-credit{padding:10px 20px}}
+
+
+/* 2026-11-10 DIRECT CLIENT FIX: original A has photo-overlay text on mobile.
+   Face is clear in top two-thirds and name is legibly at the lower edge. */
+.a-hero__mobile-overlay{display:none}
+@media(max-width:760px){
+ .d-a .a-hero{display:flex;flex-direction:column;background:#07100b;isolation:isolate}
+ .d-a .a-hero__media{height:clamp(510px,147vw,740px);min-height:0;position:relative;isolation:isolate;overflow:hidden}
+ .d-a .a-hero__img{object-fit:cover;object-position:center 24%;width:100%;height:100%;filter:contrast(1.055) saturate(.93)}
+ .d-a .a-hero__veil{background:linear-gradient(to top,#07100b 0%,rgba(7,16,11,.88) 17%,rgba(7,16,11,.34) 42%,transparent 69%)!important}
+ .d-a .a-hero__mobile-overlay{
+  position:absolute;z-index:4;inset:auto clamp(20px,6vw,40px) 27px;display:flex;flex-direction:column;align-items:flex-start;
+  color:#fff;text-align:start;pointer-events:none;animation:sma-soft-arrive .75s .2s both;
+ }
+ .d-a .a-hero__mobile-kicker{font-family:'IBM Plex Sans Arabic',sans-serif;color:#e1e7db;font-size:clamp(14px,3.5vw,18px);margin-bottom:4px}
+ .d-a .a-hero__mobile-overlay h1{font-family:'Alexandria',sans-serif;display:flex;gap:3px;flex-direction:column;font-size:clamp(48px,12vw,84px);line-height:1.22;margin:0;text-align:start;letter-spacing:0!important}
+ .d-a .a-hero__mobile-overlay .a-hero__mobile-given{color:#fff;font-weight:800}
+ .d-a .a-hero__mobile-overlay .a-hero__mobile-family{color:var(--sma-voice);font-weight:750;font-size:.78em}
+ .d-a .a-hero__mobile-tag{align-self:flex-end;direction:ltr;font:600 11px 'IBM Plex Sans','IBM Plex Sans Arabic',system-ui,sans-serif;letter-spacing:.16em;margin-top:3px;color:#a1c4a6}
+ .d-a .a-hero__body{padding:28px clamp(20px,6vw,40px) 54px;max-width:none}
+ .d-a .a-hero__body .a-hero__eyebrow, .d-a .a-hero__body .a-hero__title{display:none!important}
+ .d-a .a-hero__lede{font-size:16px;line-height:1.85;margin:0 0 24px;max-width:40ch}}
+/* C — ATLAS OF THE JOURNEY · warm sandstone / copper / forest green.
+   An intentionally DIFFERENT design, not monochrome or Ivory Prestige.
+   Landscape editorial, asymmetric documentary photography and warm color. */
+
+
+
+/* Editorial motion system: Neves Academy reference studied visually; original
+   implementation, using SMA's own layout, genuine photography and typography.
+   Progress line, staggered reveal, chapter rules and image masks. */
+.sma-scrollbar{
+ position:fixed;inset:0 0 auto; height:3px;z-index:2000;pointer-events:none;
+ background:transparent;overflow:hidden;
+}
+.sma-scrollbar__fill{
+ display:block;width:100%;height:100%;background:linear-gradient(90deg,#b9e6bd,#208d55);
+ transform-origin:right;transform:scaleX(0);will-change:transform;
+}
+/* One chapter per row: lines grow from 0 to full length during reveal. */
+.sma-chapter-motion{
+ transition:opacity 750ms cubic-bezier(.19,1,.22,1),transform 750ms cubic-bezier(.19,1,.22,1);
+ will-change:opacity,transform;
+}
+.sma-chapter-motion.sma-chapter--before{opacity:0;transform:translate3d(0,44px,0)}
+.sma-chapter-motion.sma-chapter--visible{opacity:1;transform:translate3d(0,0,0)}
+.sma-photo-mask{position:relative;isolation:isolate;overflow:hidden}
+.sma-photo-mask:after{
+ content:'';pointer-events:none;position:absolute;inset:0;z-index:3;background:#276440;
+ transform-origin:right;transform:scaleX(1);
+ transition:transform 960ms cubic-bezier(.19,1,.22,1);mix-blend-mode:normal;
+}
+.sma-photo-mask.sma-photo--visible:after{transform:scaleX(0)}
+.sma-photo-mask img{
+ transform:scale(1.09);transition:transform 1.5s cubic-bezier(.19,1,.22,1);
+}
+.sma-photo-mask.sma-photo--visible img{transform:scale(1)}
+/* Mobile hero A already builds over Saif's real portrait. Layered arrival. */
+.d-a .a-hero__mobile-overlay h1 span{
+ display:block;animation:sma-hero-letters 780ms cubic-bezier(.19,1,.22,1) both;
+}
+.d-a .a-hero__mobile-overlay .a-hero__mobile-family{animation-delay:130ms}
+@keyframes sma-hero-letters{from{opacity:0;transform:translateY(26px)}to{opacity:1;transform:none}}
+/* Soft image shift on scroll: script only changes this custom property, and only
+   when element is in view; capped at 18px, no scroll hijacking. */
+.d-a .a-coach__grid figure img{
+ translate:0 var(--sma-scroll-depth,0px);will-change:translate;
+}
+/* C: Neves-inspired chapter-by-chapter progression, adapted to SMA atlas. */
+
+@keyframes sma-photo-arrive{from{opacity:.1;transform:translateY(25px) scale(1.03)}to{opacity:1;transform:none}}
+/* Lower intensity on smaller devices and requested reduced-motion. */
+@media(max-width:760px){
+ .sma-chapter-motion.sma-chapter--before{transform:translateY(24px)}
+ .sma-photo-mask:after{transition-duration:760ms}}
+@media(prefers-reduced-motion:reduce){
+ .sma-scrollbar__fill{transform:scaleX(0)!important}
+ .sma-chapter-motion, .sma-chapter-motion.sma-chapter--before, .sma-chapter-motion.sma-chapter--visible{transform:none!important;opacity:1!important;transition:none!important}
+ .sma-photo-mask:after{display:none!important}
+ .sma-photo-mask img, .sma-photo-mask.sma-photo--visible img{transform:none!important;transition:none!important}
+ .d-a .a-hero__mobile-overlay h1 span, .d-a .a-hero__mobile-overlay, .d-a .a-hero__mobile-overlay *{animation:none!important}
+ .d-a .a-coach__grid figure img{translate:0!important}}
+
+/* ════════════════════════════════════════════════════════════════════════
+   BILINGUAL LAYER · 2026-11-10
+   Arabic `/` (dir=rtl, default) + English `/en/` (dir=ltr), one stylesheet.
+
+   Governing constraint: direction A's *composition* was selected by the client
+   and is not up for redesign here. So this layer only does three things —
+     1. styles the elements the sourced copy introduced,
+     2. gives the English locale a real self-hosted type system,
+     3. corrects the handful of PHYSICAL-axis declarations that logical
+        properties could not mirror on their own.
+   Everything else already mirrors for free: the build is written in logical
+   properties throughout, so the grids, the nav, the footer and the reading
+   order flip to a genuine LTR layout without a single extra rule.
+   ════════════════════════════════════════════════════════════════════════ */
+
+/* ---- 1 · elements introduced by the sourced copy -------------------- */
+
+/* Full name + territory strip, one quiet line under the display name.
+   Negative top margin pulls it into the title's own leading so the lede
+   does not move down and the hero's vertical rhythm is preserved. */
+.a-hero__ident{
+  display:flex; flex-wrap:wrap; align-items:center;
+  gap:.5rem .9rem;
+  margin:-1.1rem 0 1.7rem;
+  font-size:.95rem; line-height:1.6;
+  color:rgba(245,242,234,.72);
+}
+.a-hero__latin{
+  display:inline-flex; align-items:center; gap:.9rem;
+  font-family:var(--font-latin);
+  font-size:.74rem; letter-spacing:.2em;
+  color:rgba(201,168,106,.85);
+}
+.a-hero__latin::before{
+  content:""; width:28px; height:1px; background:rgba(201,168,106,.45);
+}
+@media (max-width:760px){ .d-a .a-hero__body .a-hero__ident{ display:none; } }
+
+/* Moura: the tournament's other-script name, set as a quiet second line so the
+   card keeps the two-line display rhythm it was selected with. */
+.a-moura__latin{
+  display:block; margin-top:.35rem;
+  font-size:.42em; font-weight:600;
+  color:rgba(201,168,106,.85);
+}
+[lang="en"].a-moura__latin{ font-family:var(--font-latin); letter-spacing:.22em; }
+.a-moura__close{
+  margin:1.4rem 0 0; padding-top:1.1rem;
+  border-top:1px solid rgba(201,168,106,.26);
+  font-size:.95rem; color:rgba(245,242,234,.6);
+}
+.a-camps__note{
+  max-width:1320px; margin:1.6rem auto 0;
+  padding-inline:clamp(1.25rem,5vw,3rem);
+  font-size:.86rem; color:rgba(245,242,234,.5);
+}
+/* Attribution line under the press cards — same quiet register as the camps note,
+   but on the media section's own 1000px measure so it aligns with the cards. */
+.a-media__note{
+  max-width:1000px; margin:1.4rem auto 0;
+  padding-inline:clamp(1.25rem,5vw,3rem);
+  font-size:.82rem; color:rgba(245,242,234,.45);
+}
+
+/* ---- 2 · language switch ------------------------------------------- */
+/* Lives inside <nav>, so it is in the desktop bar AND inside the mobile
+   menu — and inside the menu's existing focus trap — without a second
+   control to keep in sync. */
+/* Specificity note: these are written as `.a-nav .a-lang__*` (0,2,0) because
+   `.a-nav a` (0,1,1) already gives every link in the bar a 999px pill. Left to
+   inherit it, the switch's underline followed that radius and rendered as a
+   stray arc under the word rather than a rule. */
+.a-lang{
+  display:inline-flex; align-items:center; gap:.2rem;
+  margin-inline-start:1rem;
+  font-size:.8rem;
+  border:1px solid rgba(245,242,234,.2);
+  border-radius:999px;
+  background:rgba(7,16,11,.45);
+  -webkit-backdrop-filter:blur(10px); backdrop-filter:blur(10px);
+}
+.a-nav .a-lang__cur{
+  display:inline-flex; align-items:center; min-height:44px;
+  padding:0 .85rem; border-radius:999px;
+  color:rgba(245,242,234,.58);
+  white-space:nowrap;
+}
+.a-lang__sep{ display:none; }
+.a-nav .a-lang__alt{
+  display:inline-flex; align-items:center; min-height:44px;
+  padding:0 .9rem; margin:0; border:0; border-radius:999px;
+  background:rgba(245,242,234,.1);
+  color:#fff; font-size:.82rem; text-decoration:none;
+  white-space:nowrap;
+  transition:background .25s var(--ease), color .25s var(--ease);
+}
+.a-nav .a-lang__alt:hover{ background:rgba(42,137,80,.55); color:#fff; }
+@media (max-width:860px){
+  /* In the open menu the switch is a full-width pair of equal halves, so the
+     language you are not in is as easy to hit as any nav row. */
+  .a-lang{ display:flex; margin:1rem 0 .2rem; font-size:.95rem; }
+  .a-nav .a-lang__cur,
+  .a-nav .a-lang__alt{ flex:1 1 0; justify-content:center; min-height:48px; font-size:.95rem; }
+}
+
+/* ---- 3 · prepared, not yet rendered (blocked on confirmation D-1) ---- */
+/* These rules are live but currently match nothing: the markup they dress
+   sits inside <template> in both locales until the real WhatsApp number and
+   the real profile URLs arrive. Styling them now keeps activation to a
+   markup move, with no styling pass needed at that point. */
+.a-social{ margin-top:2.2rem; }
+.a-social__head{
+  font-size:.74rem; letter-spacing:.3em; text-transform:uppercase;
+  color:var(--sma-lift); margin:0 0 .9rem;
+}
+.a-social ul{ display:flex; flex-wrap:wrap; gap:.6rem; }
+.a-social a{
+  display:inline-flex; align-items:center; justify-content:center;
+  min-width:44px; min-height:44px; padding:0 1rem;
+  border:1px solid rgba(245,242,234,.18); border-radius:999px;
+  font-size:.82rem; text-decoration:none; color:rgba(245,242,234,.85);
+  transition:border-color .25s var(--ease), color .25s var(--ease);
+}
+.a-social a:hover{ border-color:var(--sma-lift); color:#fff; }
+
+/* ---- 4 · English type system --------------------------------------- */
+/* Both shipped OFL families carry a Latin subset as well as an Arabic one
+   (see webfonts.css), so English is set in the SAME two faces as Arabic —
+   Alexandria for display, IBM Plex Sans for text. No new font is fetched,
+   nothing proprietary is implied, and the two locales stay one typeface
+   system rather than two unrelated ones.
+   Thmanyah stays first in --font-latin exactly as the stylesheet header
+   describes: it is never fetched, and authorising it later stays a no-op. */
+html[lang="en"] .d-a{
+  --font-sans:    'IBM Plex Sans Arabic', ui-sans-serif, system-ui, -apple-system, 'Segoe UI', sans-serif;
+  --font-display: 'Alexandria', 'IBM Plex Sans Arabic', ui-sans-serif, system-ui, sans-serif;
+}
+/* The small letterspaced Latin lockups — the header wordmark, the footer
+   wordmark, the hero's territory strip — are given a real, self-hosted face
+   in BOTH locales. Previously --font-latin resolved to whatever sans the
+   operating system happened to offer, so "SMA PLAYER" rendered differently
+   on every machine; Alexandria is already the display face of this build. */
+:root{
+  --font-latin: "Thmanyah", "Alexandria", ui-sans-serif, -apple-system, "Helvetica Neue", Arial, sans-serif;
+}
+/* English body copy wants a touch more leading than the Arabic setting and
+   does not want Arabic's optical size compensation. */
+html[lang="en"] .d-a p{ text-wrap:pretty; }
+html[lang="en"] .d-a .a-hero__title{ letter-spacing:-.025em; }
+html[lang="en"] .d-a .a-hero__eyebrow,
+html[lang="en"] .d-a .kicker{ letter-spacing:.2em; }
+
+/* ---- 5 · LTR: the physical-axis declarations logical properties miss -- */
+
+/* transform is physical, so a centred fixed element needs the opposite sign. */
+[dir="ltr"] .skip-link{ transform:translateX(-50%); }
+
+/* transform-origin is physical: progress must grow from the reading origin. */
+[dir="ltr"] .sma-scrollbar__fill{ transform-origin:left; }
+[dir="ltr"] .sma-photo-mask:after{ transform-origin:left; }
+
+/* nudge-on-hover travels with the reading direction. */
+[dir="ltr"] .a-media__list a:hover{ transform:translateX(5px); }
+
+/* The bracket on the portrait frame is a mirrored ornament, not a fixed mark. */
+[dir="ltr"] .a-coach__frame::before{ inset:-14px auto auto -14px; }
+[dir="ltr"] .a-coach__frame figcaption{ border-radius:0 18px 0 18px; }
+
+/* Hand-tuned gradient geometry: these carry percentages and angles measured
+   from the physical left, so each one is mirrored explicitly. */
+[dir="ltr"] .a-moura::after{
+  background:linear-gradient(to right, rgba(7,16,11,.2), rgba(7,16,11,.92) 55%);
+}
+[dir="ltr"] .a-moura__bg img{
+  mask-image:radial-gradient(85% 70% at 30% 40%, #000 20%, transparent 78%);
+  -webkit-mask-image:radial-gradient(85% 70% at 30% 40%, #000 20%, transparent 78%);
+}
+[dir="ltr"] .a-contact{
+  background:radial-gradient(100% 80% at 20% 0%, rgba(42,137,80,.18), transparent 65%);
+}
+
+/* THE HERO IS HANDLED IN ITS OWN FILE — `hero-direction.css`, loaded after
+   this one by both locales. Deliberately NOT duplicated here.
+
+   The problem it solves: A's veil and beam are cut so one physical side of the
+   frame stays clear for Saif and the other is heavily veiled to carry the type.
+   Those are hand-tuned physical angles and percentages, and the photograph
+   underneath them is of a real person — so it is never mirrored. Flipping an
+   identity portrait would falsify it, and its rights/provenance are open besides.
+
+   An earlier revision of this file pinned the English type block to the same
+   physical side it occupies in Arabic (`justify-self:end`) and left the crop
+   alone. That was the conservative answer, and it was superseded: panning the
+   crop moves the subject to the opposite side of the frame instead, so English
+   gets a true LTR composition — copy left, subject right — with the veil and
+   beam mirrored to match and the photograph still untouched. The two rules
+   fought (`justify-self:start !important` vs `:end`), so the weaker one is
+   withdrawn here rather than left to win by accident.
+
+   `.a-hero__scroll` is likewise left to its own `inset-inline-end`: with the
+   subject mirrored, that resolves to the clear side of the frame in both
+   locales on its own, which is exactly where it belongs.
+   Provenance and the open question on the Arabic crop: A-BILINGUAL-QA.md §6. */
+
+/* ---- 6 · camps cards: text-over-photography legibility -------------- */
+/* A-PRODUCTION-REVIEW.md §7.5 carried "text over photography is not
+   contrast-computable" as an open item. It is computable from the real
+   render, and `qa/photo-contrast.mjs` now measures it: 13 of 36 text runs
+   over the camp photographs failed WCAG AA, the worst at 1.25:1 — the Spain
+   card's heading over the pale turtleneck in the portrait. Both locales,
+   identically; the sourced copy is longer than the placeholder copy it
+   replaced, which pushed more text up into the bright part of each frame.
+
+   The card-wide `::after` scrim could not fix this on its own: it is a
+   percentage gradient, so darkening it enough for the short cards also
+   drowns the tall feature card, which already passed. This wash is anchored
+   to the text block instead, so it scales with the amount of copy rather
+   than with the card — the 620px Dammam card keeps its photograph open and
+   the 298px cards get the density exactly where their text sits. */
+.a-camp__body{
+  flex:1 1 auto;
+  background:linear-gradient(to top,
+    rgba(5,12,8,.96) 0%,
+    rgba(5,12,8,.9) 55%,
+    rgba(5,12,8,.72) 82%,
+    rgba(5,12,8,.28) 94%,
+    rgba(5,12,8,0) 100%);
+}
+
+/* ============================================================
+   ██  IDENTITY · GALLERY · CHANNELS            added 2026-11-10
+   Three blocks commissioned by the Founder on top of the
+   client-selected A build: the organisation behind Saif, the
+   photographic archive, and the contact-channel placement.
+   Written to live inside Emerald Cinema, not beside it — same
+   container widths, same 16px radii, same ivory-on-deep-green
+   value structure, same single gold accent used sparingly.
+   ============================================================ */
+
+/* ---- shared sub-heading for the stacked blocks inside a section ---- */
+.a-sub{
+  font-size:clamp(1.15rem,1.7vw,1.45rem);
+  color:#fff; margin:0 0 1.4rem;
+  display:flex; align-items:center; gap:.9rem;
+}
+.a-sub::after{
+  content:""; flex:1 1 auto; height:1px;
+  background:linear-gradient(to left, transparent, rgba(245,242,234,.16));
+}
+
+/* ============================ IDENTITY ============================ */
+.a-identity{ background:linear-gradient(to bottom, #07100b, #081611 55%, #07100b); }
+.a-identity > *:not(.sec-head){
+  max-width:1200px; margin-inline:auto;
+  padding-inline:clamp(1.25rem,5vw,3rem);
+}
+
+/* The vision statement is the one piece of the client's own language that
+   deserves to be read as language, not as a card. It gets the page's only
+   large-measure pull quote, with the gold rule the Moura card also uses. */
+.a-vision{
+  margin:0 auto clamp(3rem,6vw,4.5rem);
+  border-inline-start:3px solid var(--gold);
+  background:linear-gradient(to left, rgba(201,168,106,.07), rgba(201,168,106,0) 70%);
+  padding-block:1.6rem;
+}
+.a-vision__label{
+  font-size:.72rem; letter-spacing:.3em; color:var(--gold);
+  margin:0 0 1.1rem; text-transform:uppercase;
+}
+.a-vision__label span{ opacity:.5; margin-inline-start:.5rem; letter-spacing:.2em; }
+.a-vision blockquote{
+  margin:0; font-family:var(--font-display);
+  font-size:clamp(1.12rem,1.9vw,1.6rem); line-height:1.9;
+  color:var(--ivory); max-width:62ch;
+}
+.a-vision figcaption{
+  margin-top:1.2rem; font-size:.8rem; letter-spacing:.06em;
+  color:rgba(245,242,234,.45);
+}
+
+.a-offer{ margin-bottom:clamp(3rem,6vw,4.5rem); }
+.a-offer__list{ display:grid; gap:1rem; grid-template-columns:repeat(5,1fr); }
+.a-offer__list li{
+  background:rgba(255,255,255,.035);
+  border:1px solid rgba(245,242,234,.1);
+  border-radius:16px; padding:1.4rem 1.3rem;
+  display:grid; gap:.5rem; align-content:start;
+  transition:transform .4s var(--ease), border-color .4s var(--ease), background .4s var(--ease);
+}
+.a-offer__list li:hover{
+  transform:translateY(-4px); border-color:rgba(55,168,99,.45);
+  background:rgba(42,137,80,.09);
+}
+.a-offer__list b{ color:#fff; font-size:1rem; line-height:1.5; }
+.a-offer__list span{ font-size:.9rem; color:rgba(245,242,234,.68); line-height:1.75; }
+
+/* ---- leadership ---- */
+.a-lead{ margin-bottom:clamp(3rem,6vw,4.5rem); }
+.a-lead__note{
+  max-width:62ch; color:rgba(245,242,234,.72);
+  font-size:.98rem; margin:0 0 1.8rem;
+}
+.a-lead__note b{ color:var(--sma-voice); font-weight:700; }
+.a-lead__grid{ display:grid; gap:1.2rem; grid-template-columns:repeat(3,1fr); }
+.a-lead__card{
+  background:rgba(255,255,255,.035);
+  border:1px solid rgba(245,242,234,.1);
+  border-radius:16px; padding:1.7rem 1.5rem;
+}
+/* Saif's card is the only one lifted, because this is his profile — but it is
+   lifted by one border and one tint, not by being bigger or first. The order
+   on the page is the profile's own order of seniority. */
+.a-lead__card--focus{
+  border-color:rgba(55,168,99,.4);
+  background:linear-gradient(to bottom, rgba(42,137,80,.12), rgba(255,255,255,.03));
+}
+.a-lead__role{
+  font-size:.7rem; letter-spacing:.26em; text-transform:uppercase;
+  color:var(--sma-lift); margin:0 0 .7rem;
+}
+.a-lead__card--focus .a-lead__role{ color:var(--gold); }
+.a-lead__card h4{
+  margin:0 0 1.1rem; font-size:1.1rem; font-weight:800;
+  color:#fff; line-height:1.5;
+}
+.a-lead__card > ul{ display:grid; gap:.65rem; }
+.a-lead__card > ul li{
+  font-size:.9rem; line-height:1.7; color:rgba(245,242,234,.7);
+  padding-inline-start:1.1rem; position:relative;
+}
+.a-lead__card > ul li::before{
+  content:""; position:absolute; inset-inline-start:0; inset-block-start:.68em;
+  width:5px; height:5px; border-radius:50%; background:var(--sma-lift);
+}
+.a-lead__card--focus > ul li::before{ background:var(--gold); }
+
+/* ---- successes ---- */
+.a-wins__list{ display:grid; gap:1rem; grid-template-columns:repeat(3,1fr); }
+.a-wins__list li{
+  display:flex; gap:1rem; align-items:flex-start;
+  background:rgba(255,255,255,.03);
+  border:1px solid rgba(245,242,234,.09);
+  border-radius:16px; padding:1.5rem 1.4rem;
+}
+.a-wins__list span{
+  flex:0 0 auto; width:34px; height:34px; border-radius:50%;
+  display:grid; place-items:center; font-weight:800; font-size:.95rem;
+  background:rgba(201,168,106,.14); color:var(--gold-soft);
+  border:1px solid rgba(201,168,106,.3);
+}
+.a-wins__list p{ margin:0; font-size:.95rem; line-height:1.8; color:rgba(245,242,234,.82); }
+.a-wins__note{
+  margin:1.4rem 0 0; font-size:.82rem; color:rgba(245,242,234,.45);
+}
+
+/* ============================= GALLERY ============================= */
+.a-gallery{ background:#060d09; }
+.a-gallery__note,
+.a-gallery__tools,
+.a-gallery__grid,
+.a-gallery__more,
+.a-gallery__empty{
+  max-width:1320px; margin-inline:auto;
+  padding-inline:clamp(1.25rem,5vw,3rem);
+}
+.a-gallery__note{
+  max-width:min(70ch, 1320px); font-size:.86rem; line-height:1.85;
+  color:rgba(245,242,234,.5);
+  margin:-1.5rem auto 2rem; text-align:center;
+}
+.a-gallery__tools{ margin-bottom:1.8rem; }
+.a-gallery__filters{
+  display:flex; flex-wrap:wrap; gap:.6rem; justify-content:center;
+}
+.a-gallery__filter{
+  cursor:pointer; border-radius:999px;
+  padding:.55rem 1.15rem; font-size:.86rem; font-weight:600;
+  background:rgba(255,255,255,.04);
+  border:1px solid rgba(245,242,234,.14);
+  color:rgba(245,242,234,.72);
+  transition:background .3s var(--ease), border-color .3s var(--ease), color .3s var(--ease);
+  min-height:44px;                       /* real tap target on mobile */
+}
+.a-gallery__filter:hover{ color:#fff; border-color:rgba(55,168,99,.5); }
+.a-gallery__filter[aria-pressed="true"]{
+  background:var(--sma-green); border-color:var(--sma-lift); color:#fff;
+}
+.a-gallery__filter em{ font-style:normal; opacity:.6; margin-inline-start:.4rem; font-size:.8em; }
+
+/* A dense, even archive grid. Deliberately NOT a masonry of hero-sized
+   frames: this is 99 photographs, and the page already has its heroes. */
+.a-gallery__grid{
+  display:grid; gap:.7rem;
+  grid-template-columns:repeat(auto-fill, minmax(190px, 1fr));
+  grid-auto-rows:1fr;
+}
+.a-gallery__item{ margin:0; }
+.a-gallery__item[hidden]{ display:none; }
+/* The sixteen curated frames carry the section; the archive sits under them
+   at the same size, so «عرض جميع الصور» reads as more of the same thing
+   rather than as a second, lesser gallery. */
+.a-gallery__item--featured{ grid-column:span 2; grid-row:span 2; }
+.a-gallery__btn{
+  display:block; width:100%; height:100%; padding:0; cursor:zoom-in;
+  background:none; border:0; border-radius:12px; overflow:hidden;
+  position:relative; line-height:0;
+}
+.a-gallery__btn img{
+  width:100%; height:100%; object-fit:cover; aspect-ratio:1/1;
+  transition:transform .7s var(--ease), filter .5s var(--ease);
+  background:rgba(255,255,255,.04);
+}
+.a-gallery__item--featured .a-gallery__btn img{ aspect-ratio:1/1; }
+.a-gallery__btn::after{
+  content:""; position:absolute; inset:0; border-radius:12px;
+  box-shadow:inset 0 0 0 1px rgba(245,242,234,.1);
+  transition:box-shadow .4s var(--ease);
+}
+.a-gallery__btn:hover img, .a-gallery__btn:focus-visible img{ transform:scale(1.05); }
+.a-gallery__btn:hover::after, .a-gallery__btn:focus-visible::after{
+  box-shadow:inset 0 0 0 2px var(--sma-lift);
+}
+.a-gallery__empty{ text-align:center; color:rgba(245,242,234,.5); padding-block:3rem; }
+
+.a-gallery__more{ text-align:center; margin-top:2.2rem; }
+.a-gallery__rights{
+  margin:1.4rem auto 0; max-width:60ch;
+  font-size:.78rem; line-height:1.8; color:rgba(201,168,106,.72);
+}
+
+/* ---- lightbox: gallery navigation ---- */
+.lightbox__nav{
+  position:absolute; inset-block-start:50%; translate:0 -50%;
+  width:52px; height:52px; border-radius:50%; cursor:pointer;
+  display:grid; place-items:center;
+  border:1px solid rgba(245,242,234,.26); background:rgba(255,255,255,.07);
+  transition:background .3s var(--ease), border-color .3s var(--ease);
+}
+.lightbox__nav[hidden]{ display:none; }
+.lightbox__nav:hover{ background:rgba(255,255,255,.16); border-color:var(--sma-lift); }
+.lightbox__nav svg{ width:22px; height:22px; }
+/* RTL: «previous» sits on the right, where the reading order starts. */
+.lightbox__nav--prev{ inset-inline-end:clamp(.6rem,2.5vw,2rem); }
+.lightbox__nav--next{ inset-inline-start:clamp(.6rem,2.5vw,2rem); }
+.lightbox__nav--next svg{ transform:scaleX(-1); }
+html[dir="ltr"] .lightbox__nav--prev svg{ transform:scaleX(-1); }
+html[dir="ltr"] .lightbox__nav--next svg{ transform:none; }
+.lightbox__count{
+  position:absolute; inset-block-end:clamp(.8rem,3vw,1.8rem); inset-inline:0;
+  text-align:center; margin:0; font-size:.78rem; letter-spacing:.14em;
+  color:rgba(245,242,234,.5);
+}
+.lightbox__count[hidden]{ display:none; }
+
+/* ============================= CHANNELS ============================= */
+/* Everything in this block is an inert <span>/<li>. The styling says
+   "this is where the control goes", never "this control works": no pointer
+   cursor, no hover lift, no link colour, and a permanent state chip. */
+.a-channels{
+  max-width:1100px; margin:clamp(3rem,6vw,4.5rem) auto 0;
+  padding-inline:clamp(1.25rem,5vw,3rem);
+  display:grid; gap:2.5rem; grid-template-columns:1fr 1fr; align-items:start;
+}
+.a-channels__head{
+  font-size:.72rem; letter-spacing:.28em; text-transform:uppercase;
+  color:var(--sma-lift); margin:0 0 1rem;
+}
+.a-channels__note{
+  margin:1rem 0 0; font-size:.8rem; line-height:1.8;
+  color:rgba(245,242,234,.46); max-width:46ch;
+}
+.a-chip{
+  display:inline-block; font-style:normal;
+  font-size:.68rem; letter-spacing:.1em; font-weight:700;
+  background:rgba(201,168,106,.16); color:var(--gold-soft);
+  border:1px dashed rgba(201,168,106,.5);
+  border-radius:999px; padding:.22rem .7rem; white-space:nowrap;
+}
+.a-chip--block{ margin-top:1rem; }
+
+.a-wa{
+  display:inline-flex; align-items:center; gap:.7rem; flex-wrap:wrap;
+  border-radius:999px; padding:.85rem 1.3rem;
+  background:rgba(42,137,80,.16);
+  border:1px dashed rgba(55,168,99,.55);
+  color:rgba(245,242,234,.82);
+  cursor:default;                       /* it is not a link, and must not look like one */
+}
+.a-wa b{ font-weight:700; font-size:.98rem; }
+.a-wa .a-ic{ width:22px; height:22px; fill:var(--sma-lift); }
+/* The activated state, used by script.js once D-1 lands: a real <a> with a
+   real href replaces the span, and these rules make it read as the primary
+   action it is. Kept here so activation is a data change, not a CSS change. */
+.a-wa.is-live{
+  background:var(--sma-green); border:1px solid var(--sma-lift);
+  color:#fff; cursor:pointer; text-decoration:none;
+  transition:background .3s var(--ease), transform .3s var(--ease);
+}
+.a-wa.is-live:hover{ background:var(--sma-lift); transform:translateY(-2px); }
+.a-wa.is-live .a-ic{ fill:#fff; }
+
+.a-social{ display:flex; flex-wrap:wrap; gap:.6rem; }
+.a-social li{
+  display:inline-flex; align-items:center; gap:.5rem;
+  border-radius:12px; padding:.6rem .9rem;
+  min-height:44px;
+  background:rgba(255,255,255,.04);
+  border:1px dashed rgba(245,242,234,.22);
+  color:rgba(245,242,234,.62);
+  font-size:.85rem;
+}
+.a-social .a-ic{ width:19px; height:19px; fill:currentColor; }
+.a-social--sm li{ padding:.5rem; border-radius:10px; }
+.a-foot__social{ margin-top:1.2rem; }
+/* Live state, again applied by script.js only when a real https URL exists. */
+.a-social li.is-live{
+  border-style:solid; border-color:rgba(245,242,234,.2); color:var(--ivory);
+}
+.a-social li.is-live a{
+  display:inline-flex; align-items:center; gap:.5rem;
+  text-decoration:none; color:inherit;
+}
+.a-social li.is-live:hover{ border-color:var(--sma-lift); color:#fff; }
+
+/* ---------------------------- responsive --------------------------- */
+@media (max-width:1100px){
+  .a-offer__list{ grid-template-columns:repeat(3,1fr); }
+}
+@media (max-width:900px){
+  .a-lead__grid, .a-wins__list{ grid-template-columns:1fr; }
+  .a-channels{ grid-template-columns:1fr; gap:2.2rem; }
+}
+@media (max-width:760px){
+  .a-offer__list{ grid-template-columns:repeat(2,1fr); }
+  .a-gallery__grid{ grid-template-columns:repeat(auto-fill, minmax(130px,1fr)); gap:.5rem; }
+  .a-gallery__note{ margin-top:-.5rem; }
+  .a-vision blockquote{ font-size:1.06rem; line-height:1.95; }
+}
+@media (max-width:480px){
+  .a-offer__list{ grid-template-columns:1fr; }
+  /* Below 480 the featured frames stop spanning: a 2×2 span inside a 2-column
+     grid is just a single full-width image, which starves the archive. */
+  .a-gallery__item--featured{ grid-column:span 1; grid-row:span 1; }
+  .a-gallery__filter{ font-size:.8rem; padding:.5rem .85rem; }
+  .a-wa{ width:100%; justify-content:center; text-align:center; }
+}
+@media (prefers-reduced-motion:reduce){
+  .a-gallery__btn img{ transition:none; }
+  .a-gallery__btn:hover img, .a-gallery__btn:focus-visible img{ transform:none; }
+  .a-offer__list li:hover{ transform:none; }
+}
+@media print{
+  .a-gallery__tools, .a-gallery__more{ display:none !important; }
+}
+
+/* The archive loader's sentinel row: a zero-height full-width grid item the
+   IntersectionObserver watches so batches append as the visitor reaches the
+   end, rather than all at once. Never shown, never focusable. */
+.a-gallery__sentinel{
+  grid-column:1 / -1; height:1px; margin:0; padding:0;
+  pointer-events:none; visibility:hidden;
+}
+
+/* source: hero-direction.css */
+/* SMA PLAYER Direction A — founder-approved directional hero composition
+   2026-11-10. Language-specific positioning and luminance scrim put Saif's
+   face on the opposite side of the text from the copy.
+   Kept separate from the KAMAYA Claude Code bilingual base to avoid file races.
+
+   AMENDED 2026-11-10, founder correction FOUNDER-ENGLISH-FACE-ORIENTATION:
+   the Arabic hero is accepted and is byte-for-byte untouched below. The
+   English hero is corrected — the earlier revision moved Saif to the physical
+   right but left his head turned the same way, so in English he addressed the
+   empty right-hand edge and turned his back on the copy. The English image is
+   now horizontally mirrored, on a crop proven to exclude the uniform marks.
+   See ENGLISH-FACE-CORRECTION-REVIEW.md for the evidence, and for the
+   disclosure that the English desktop portrait is a MIRRORED rendering of the
+   authentic photograph, not an authentic-orientation photograph. The source
+   file assets/coach.jpg is unmodified. */
+
+/* ---- 1 · the accepted Arabic hero. Do not touch. ------------------- */
+@media (min-width: 761px) {
+  html[lang="ar"] .a-hero__img {
+    position: absolute;
+    max-width: none;
+    width: 122%;
+    height: 100%;
+    left: -22%;
+    right: auto;
+  }
+}
+@media (max-width: 760px) {
+  html[lang="ar"] .d-a .a-hero__img {
+    position: absolute;
+    max-width: none;
+    width: 116%;
+    height: 100%;
+    left: -16%;
+    right: auto;
+  }
+}
+
+/* ---- 2 · English mobile. Also deliberately unchanged. --------------- */
+/* Below 761px the hero stacks — photograph above, copy beneath — so there is
+   no left/right relationship between his gaze and the text to correct, and
+   nothing is gained by mirroring. There is a great deal to lose: at this crop
+   the adidas wordmark and the Moura Atletico Clube crest are both plainly
+   legible, and a flip would render both backwards. English mobile therefore
+   keeps the accepted, unmirrored portrait exactly as it is. */
+@media (max-width: 760px) {
+  html[lang="en"] .d-a .a-hero__img {
+    position: absolute;
+    max-width: none;
+    width: 116%;
+    height: 100%;
+    left: 0;
+    right: auto;
+  }
+}
+
+/* ---- 3 · English desktop: the corrected composition ----------------- */
+/* THE CROP IS THE SAFETY MECHANISM, and it is geometric, not eyeballed.
+   Measured off the source: the Moura Atletico crest begins at y 0.486 of the
+   source height and the adidas trefoil at 0.509. Nothing below 0.46 may ever
+   enter the frame, or the flip puts reversed lettering on the page.
+
+   With object-fit:cover on a box far wider than the 854x1280 source the scale
+   is width-governed, so the visible source band is 0.667 x heroHeight /
+   boxWidth deep. A percentage width cannot hold that steady — this hero is
+   content-tall, so its height drifts with viewport width and the band drifts
+   with it, which is how the marks walk into frame at laptop widths. Pinning
+   the box to aspect-ratio 37/25 against height:100% makes boxWidth track the
+   hero's own height, and the band collapses to a constant 0.45 of the source
+   at every size. object-position 1% then seats that band at 0.005-0.456:
+   clear above the 0.486 crest, and starting above the 0.085 crown so the
+   scalp is never cut. Verified at 761/900/1024/1280/1440/1680/1920 by
+   qa/english-face-correction/bandcheck.cjs. */
+@media (min-width: 761px) {
+  html[lang="en"] .a-hero__img {
+    position: absolute;
+    max-width: none;
+    width: auto;
+    height: 100%;
+    aspect-ratio: 37 / 25;
+    object-position: 50% 1%;
+    /* 761-1279: the hero is tall here, so the box is far wider than the
+       viewport and his head alone is most of the frame — "subject on the
+       right" is not physically available. Centre him instead. The mirror
+       still turns him toward the copy, which is the correction that matters. */
+    right: 50%;
+    left: auto;
+    transform: translateX(43.9%) scaleX(-1) scale(1.04);
+  }
+  html[lang="en"] .d-a .a-hero__media img {
+    animation-name: cinema-film-move-mirror-centred;
+  }
+
+  /* The left column. The block keeps its 640px so the name still sets as
+     "Saif / Al Namrah" over two lines; it is the lede that takes a real
+     measure, and that is what opens the air between the copy and his face. */
+  html[lang="en"] .a-hero__body { justify-self: start !important; }
+  html[lang="en"] .a-hero__lede { max-width: 32ch; }
+
+  /* Mirroring swaps the photograph's luminance across the frame: the bright
+     window side lands on the physical LEFT, under the copy, and the dark
+     jacket on the right — the opposite of what A's veil was cut for. These
+     stops put the weight back over the type and take the glare off the top
+     right. */
+  html[lang="en"] .a-hero__veil {
+    background:
+      linear-gradient(105deg,
+        rgba(7,16,11,.985) 6%,
+        rgba(7,16,11,.93) 34%,
+        rgba(7,16,11,.42) 64%,
+        rgba(7,16,11,.68) 100%),
+      linear-gradient(to top, #07100b 2%, rgba(7,16,11,0) 46%),
+      radial-gradient(85% 60% at 88% 0%, rgba(7,16,11,.6), transparent 70%),
+      radial-gradient(120% 90% at 15% 10%, rgba(42,137,80,.3), transparent 60%);
+  }
+  html[lang="en"] .a-hero__beam {
+    background:
+      conic-gradient(from 150deg at 30% 0%, rgba(55,168,99,.22), transparent 38%),
+      radial-gradient(60% 70% at 25% 15%, rgba(201,168,106,.2), transparent 70%);
+  }
+}
+
+@media (min-width: 1280px) {
+  html[lang="en"] .a-hero__img {
+    /* Wide enough for the real composition: subject right, copy left. His
+       mirrored head centres at 0.561 of the box, so a box 1.29x the hero width
+       seats his face near 72% with the box's left edge still flush at 0 — no
+       uncovered strip, and no seam against the #07100b page behind it. */
+    left: 0;
+    right: auto;
+    min-width: 129%;
+    transform: scaleX(-1) scale(1.04);
+  }
+  html[lang="en"] .d-a .a-hero__media img {
+    animation-name: cinema-film-move-mirror;
+  }
+}
+
+/* The hero's cinematic push-in is a transform animation, so it overrides any
+   static transform while it runs. The mirror has to live inside the keyframes
+   or the photograph un-flips the moment the animation starts. Under
+   prefers-reduced-motion style.css sets animation:none on this image and the
+   static transform above takes over, mirror included. */
+@keyframes cinema-film-move-mirror {
+  0%   { transform: scaleX(-1) scale(1.09) translateY(1.1%); }
+  100% { transform: scaleX(-1) scale(1.035) translateY(0); }
+}
+@keyframes cinema-film-move-mirror-centred {
+  0%   { transform: translateX(43.9%) scaleX(-1) scale(1.09) translateY(1.1%); }
+  100% { transform: translateX(43.9%) scaleX(-1) scale(1.035) translateY(0); }
+}
+
+/* source: camp-source-gallery.css */
+/* KAMAYA — Founder-approved camp-folder swipe gallery, Arabic site only. */
+html[lang="ar"] .a-gallery__filters{justify-content:flex-start;flex-wrap:nowrap;overflow-x:auto;scrollbar-width:thin;padding:8px 2px 14px;scroll-snap-type:x proximity}
+html[lang="ar"] .a-gallery__folder-filter{white-space:nowrap;flex:0 0 auto;scroll-snap-align:start}
+html[lang="ar"] .a-gallery__grid[data-swipe-gallery]{
+ display:flex;align-items:stretch;flex-wrap:nowrap;
+ gap:14px;overflow-x:auto;overflow-y:hidden;
+ scroll-snap-type:x mandatory;scroll-padding-inline:clamp(12px,4vw,36px);
+ overscroll-behavior-inline:contain;-webkit-overflow-scrolling:touch;
+ padding-block:12px 21px;user-select:none;
+ scrollbar-color:#3e7550 #13271a;scrollbar-width:thin;
+}
+html[lang="ar"] .a-gallery__grid[data-swipe-gallery] .a-gallery__item{
+ flex:0 0 clamp(220px,36vw,345px);min-width:0;
+ grid-column:auto!important;grid-row:auto!important;
+ scroll-snap-align:start;scroll-snap-stop:normal;
+}
+html[lang="ar"] .a-gallery__grid[data-swipe-gallery] .a-gallery__item[hidden]{display:none!important}
+html[lang="ar"] .a-gallery__grid[data-swipe-gallery] .a-gallery__btn{width:100%;height:100%;aspect-ratio:3/3.75;cursor:zoom-in}
+html[lang="ar"] .a-gallery__grid[data-swipe-gallery] .a-gallery__btn img,
+html[lang="ar"] .a-gallery__grid[data-swipe-gallery] .a-gallery__item--featured .a-gallery__btn img{
+ height:100%;width:100%;aspect-ratio:auto;object-fit:cover;
+}
+html[lang="ar"] .a-gallery__swipebar{
+ max-width:1320px;margin:0 auto 9px;
+ padding-inline:clamp(1.25rem,5vw,3rem);
+ display:flex;align-items:center;gap:12px;flex-wrap:wrap;
+}
+html[lang="ar"] .a-gallery__swipehint{
+ font-size:.85rem;font-weight:650;color:#cee1c3;
+}
+html[lang="ar"] .a-gallery__swipetotal{
+ margin-inline-start:auto;color:#a6c3a9;font-size:.81rem;
+}
+html[lang="ar"] .a-gallery__swipecontrols{display:flex;gap:8px}
+html[lang="ar"] .a-gallery__slide-arrow{
+ border:1px solid rgba(201,168,106,.4);border-radius:999px;
+ width:44px;height:44px;display:inline-grid;place-items:center;
+ background:#14261a;color:#eef5e8;cursor:pointer;font-size:1.65rem;line-height:1;
+}
+html[lang="ar"] .a-gallery__slide-arrow:hover{background:#275b39}
+html[lang="ar"] .a-gallery__slide-arrow:focus-visible{outline:2px solid #a8c78e}
+html[lang="ar"] .a-camp__photo-links{display:flex;flex-wrap:wrap;gap:11px}
+html[lang="ar"] .a-camp__photo-links .a-camp__photo-link{display:inline-flex;align-items:center}
+html[lang="ar"] .a-camp__photo-links .a-camp__photo-link:first-child{margin-inline-end:8px}
+html[lang="ar"] .a-gallery__more[hidden]{display:none!important}
+@media(max-width:600px){
+ html[lang="ar"] .a-gallery__grid[data-swipe-gallery]{
+  padding-inline:18px!important;scroll-padding-inline:18px;
+ }
+ html[lang="ar"] .a-gallery__grid[data-swipe-gallery] .a-gallery__item{
+  flex-basis:min(75vw,300px);
+ }
+ html[lang="ar"] .a-gallery__swipehint{font-size:.8rem}
+ html[lang="ar"] .a-gallery__slide-arrow{width:40px;height:40px}
+}
+@media(prefers-reduced-motion:reduce){
+ html[lang="ar"] .a-gallery__grid[data-swipe-gallery]{scroll-behavior:auto}
+}
+/* source: club-pathways.css */
+/* SMA PLAYER A · original five client-provided player-to-club posters.
+   Source-backed and intentionally high-prominence. No new illustration or faces.
+   Founder art direction: a hero-like chapter, just ahead of Moura Cup. */
+html[lang="ar"] .a-clubs{
+ position:relative;isolation:isolate;overflow:hidden;
+ background:
+  radial-gradient(ellipse 69% 62% at 8% 5%,rgba(107,155,89,.13),transparent 73%),
+  radial-gradient(ellipse 50% 75% at 100% 94%,rgba(195,156,77,.14),transparent 73%),
+  linear-gradient(157deg,#08130d 0%,#14281b 52%,#08120d 100%);
+ color:#f5f3e8;padding:clamp(78px,9vw,145px) 0 clamp(75px,7vw,120px);
+ border-top:1px solid rgba(200,180,126,.2);
+ border-bottom:1px solid rgba(200,180,126,.18);
+}
+html[lang="ar"] .a-clubs::before{
+ content:"";position:absolute;z-index:-1;inset:0;opacity:.18;pointer-events:none;
+ background-image:repeating-linear-gradient(120deg,transparent 0,transparent 53px,rgba(235,222,176,.07) 54px,transparent 55px);
+}
+html[lang="ar"] .a-clubs__halo{
+ position:absolute;inset:auto 0 0 auto;pointer-events:none;width:min(60vw,720px);
+ aspect-ratio:1;transform:translate(20%,30%);border-radius:50%;
+ background:radial-gradient(circle,rgba(115,174,101,.09),transparent 66%);
+}
+html[lang="ar"] .a-clubs__inner{width:min(100% - 64px,1320px);margin-inline:auto;position:relative}
+html[lang="ar"] .a-clubs__head{display:flex;justify-content:space-between;gap:clamp(25px,5vw,80px);align-items:center;margin-bottom:50px}
+html[lang="ar"] .a-clubs__intro{max-width:860px;min-width:0}
+html[lang="ar"] .a-clubs .kicker{margin-bottom:18px;color:#d2b87c}
+html[lang="ar"] .a-clubs h2{
+ font-family:inherit;font-size:clamp(2.65rem,5.6vw,6.1rem);
+ font-weight:800;line-height:1.25;letter-spacing:0;
+ color:#f7f5eb;margin:0 0 20px;text-wrap:balance;
+}
+html[lang="ar"] .a-clubs h2 strong{display:block;font-weight:800;color:#d8bc84}
+html[lang="ar"] .a-clubs__lede{
+ font-size:clamp(1rem,1.45vw,1.22rem);line-height:2;color:#c4d0c0;
+ max-width:650px;font-weight:430;margin:0;
+}
+html[lang="ar"] .a-clubs__count{
+ display:flex;flex-direction:column;align-items:center;justify-content:center;flex-shrink:0;
+ width:clamp(100px,16vw,225px);height:clamp(100px,16vw,225px);
+ border:1px solid rgba(218,194,130,.5);border-radius:50%;
+ background:radial-gradient(circle at 30% 25%,rgba(214,178,106,.14),transparent 71%);
+ transform:rotate(-6deg)
+}
+html[lang="ar"] .a-clubs__count span{
+ font-size:clamp(3.4rem,7vw,7.6rem);font-weight:740;line-height:1;
+ letter-spacing:-.06em;color:#f0d59b;font-family:Georgia,serif
+}
+html[lang="ar"] .a-clubs__count small{font-size:.83rem;color:#d9d7c6;letter-spacing:0;margin-top:6px;font-weight:650}
+html[lang="ar"] .a-clubs__toolbar{
+ display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap;
+ padding:0 2px 17px;margin-bottom:14px;border-bottom:1px solid rgba(219,203,156,.18)
+}
+html[lang="ar"] .a-clubs__toolbar>p{margin:0;font-size:.85rem;color:#aebeb0}
+html[lang="ar"] .a-clubs__controls{display:flex;gap:10px;align-items:center}
+html[lang="ar"] .a-clubs__progress{font-size:.85rem;color:#decb9a;min-width:65px}
+html[lang="ar"] .a-clubs__arrow{
+ display:grid;place-items:center;width:44px;height:44px;border-radius:50%;cursor:pointer;
+ border:1px solid rgba(205,187,126,.45);background:rgba(34,59,40,.8);
+ color:#f4ecda;transition:background .2s,border-color .2s;
+}
+html[lang="ar"] .a-clubs__arrow:hover{background:#375c40;border-color:#d6b875}
+html[lang="ar"] .a-clubs__arrow span{font-size:1.8rem;line-height:1}
+html[lang="ar"] .a-clubs__arrow:focus-visible,html[lang="ar"] .a-clubs__rail:focus-visible{outline:2px solid #f7d690;outline-offset:3px}
+html[lang="ar"] .a-clubs__rail{
+ display:flex;gap:clamp(14px,2vw,28px);
+ overflow-x:auto;overflow-y:hidden;overscroll-behavior-x:contain;
+ padding:6px 3px 23px;scroll-snap-type:x mandatory;
+ scroll-padding-inline:3px;scrollbar-width:thin;
+ scrollbar-color:#68836a rgba(12,33,18,.6);
+ -webkit-overflow-scrolling:touch;touch-action:pan-x pan-y;
+}
+html[lang="ar"] .a-clubs__card{
+ flex:0 0 clamp(230px,24vw,350px);min-width:0;max-width:350px;
+ scroll-snap-align:start;margin:0;position:relative;
+}
+html[lang="ar"] .a-clubs__poster{
+ position:relative;overflow:hidden;border-radius:19px;aspect-ratio:720/1280;
+ border:1px solid rgba(209,182,113,.29);
+ background:#0b160f;box-shadow:0 24px 65px -35px #000;
+ transition:transform .25s,border-color .25s;
+}
+html[lang="ar"] .a-clubs__card:hover .a-clubs__poster{transform:translateY(-4px);border-color:#d1b47a}
+html[lang="ar"] .a-clubs__poster img{
+ width:100%;height:100%;object-fit:cover;display:block;
+ cursor:zoom-in;user-select:none;
+}
+html[lang="ar"] .a-clubs__card figcaption{
+ padding:21px 3px 6px;display:flex;justify-content:space-between;
+ align-items:baseline;gap:14px;flex-wrap:wrap;
+}
+html[lang="ar"] .a-clubs__player{font-weight:750;color:#f6f6ef;font-size:clamp(1.04rem,1.45vw,1.27rem)}
+html[lang="ar"] .a-clubs__dest{font-weight:570;color:#d8ba80;font-size:.91rem}
+html[lang="ar"] .a-clubs__contract{
+ position:absolute;top:16px;inset-inline-start:15px;z-index:1;
+ background:#e4c78c;color:#132013;font-weight:800;font-size:.82rem;
+ padding:8px 15px;border-radius:40px;pointer-events:none;
+ box-shadow:0 5px 15px rgba(0,0,0,.26);
+}
+html[lang="ar"] .a-clubs__end{
+ margin-top:35px;padding-top:22px;border-top:1px solid rgba(217,204,170,.19);
+ display:flex;align-items:flex-start;justify-content:space-between;gap:24px;
+}
+html[lang="ar"] .a-clubs__end p{color:#98ab9b;font-size:.79rem;line-height:1.95;max-width:730px;margin:0}
+html[lang="ar"] .a-clubs__index{font-weight:650;color:#dbbe8c;font-size:.81rem;white-space:nowrap;direction:ltr}
+@media(max-width:920px){
+ html[lang="ar"] .a-clubs__head{margin-bottom:35px}
+ html[lang="ar"] .a-clubs__count{width:125px;height:125px}
+ html[lang="ar"] .a-clubs__card{flex-basis:clamp(250px,38vw,330px)}
+}
+@media(max-width:620px){
+ html[lang="ar"] .a-clubs{padding-block:74px 74px}
+ html[lang="ar"] .a-clubs__inner{width:min(100% - 36px,1320px)}
+ html[lang="ar"] .a-clubs__head{gap:14px;align-items:flex-start}
+ html[lang="ar"] .a-clubs h2{font-size:clamp(2.4rem,10vw,3.8rem);line-height:1.25}
+ html[lang="ar"] .a-clubs__lede{font-size:.91rem;line-height:1.85}
+ html[lang="ar"] .a-clubs__count{width:78px;height:78px;margin-top:16px}
+ html[lang="ar"] .a-clubs__count span{font-size:2.75rem}
+ html[lang="ar"] .a-clubs__count small{font-size:.68rem}
+ html[lang="ar"] .a-clubs__toolbar>p{font-size:.77rem;max-width:155px}
+ html[lang="ar"] .a-clubs__card{flex:0 0 min(76vw,330px)}
+ html[lang="ar"] .a-clubs__end{flex-wrap:wrap;gap:7px}
+ html[lang="ar"] .a-clubs__poster{border-radius:14px}
+}
+@media(max-width:350px){
+ html[lang="ar"] .a-clubs__count{display:none}
+ html[lang="ar"] .a-clubs__card{flex-basis:82vw}
+}
+@media(prefers-reduced-motion:reduce){
+ html[lang="ar"] .a-clubs__rail{scroll-behavior:auto}
+ html[lang="ar"] .a-clubs__poster{transition:none}
+}
+
+/* source: media-coverage.css */
+/* SMA PLAYER Arabic editorial archive: 15 verified publication URLs.
+   5 featured articles + 10 syndicated publications deliberately separated.
+   Premium typographic treatment; no unsourced press logos or fabricated imagery. */
+html[lang="ar"] .a-media {
+ position:relative;isolation:isolate;overflow:hidden;
+ background:linear-gradient(150deg,#0d1c14 0%,#0c1712 54%,#111c15 100%);
+ color:#f4f4eb;padding:clamp(70px,9vw,120px) 0;
+ border-top:1px solid rgba(215,190,129,.25);
+}
+html[lang="ar"] .a-media::before {
+ content:"";position:absolute;z-index:-1;inset:0;pointer-events:none;
+ background:radial-gradient(ellipse 53% 56% at 95% 0%,rgba(45,106,62,.23),transparent 75%),
+ radial-gradient(ellipse 44% 60% at 0% 100%,rgba(201,168,106,.11),transparent 71%);
+}
+html[lang="ar"] .a-press__inner {width:min(100% - 58px,1240px);margin:0 auto}
+html[lang="ar"] .a-press__head {
+ display:flex;align-items:center;justify-content:space-between;gap:40px;
+ padding-bottom:clamp(28px,5vw,62px);border-bottom:1px solid rgba(203,183,125,.25)
+}
+html[lang="ar"] .a-press__head>div:first-child{max-width:820px}
+html[lang="ar"] .a-press__head .kicker{color:#d4b77e;font-size:.85rem;margin-bottom:15px}
+html[lang="ar"] .a-press__head .h2 {
+ margin:0 0 20px;font-size:clamp(2.4rem,5.5vw,5.9rem);
+ line-height:1.25;letter-spacing:0;color:#f7f6ee;text-wrap:balance;
+}
+html[lang="ar"] .a-press__head .h2 em{font-style:normal;color:#d7bc84;display:block}
+html[lang="ar"] .a-press__intro{
+ color:#bed0c2;font-size:clamp(.96rem,1.2vw,1.14rem);
+ line-height:1.95;max-width:660px;margin:0
+}
+html[lang="ar"] .a-press__total{
+ flex-shrink:0;display:flex;flex-direction:column;align-items:center;justify-content:center;
+ width:clamp(118px,14vw,190px);height:clamp(118px,14vw,190px);
+ border:1px solid rgba(224,197,128,.6);border-radius:50%;
+ background:radial-gradient(circle,rgba(207,167,81,.12),transparent 75%);
+ transform:rotate(-6deg);
+}
+html[lang="ar"] .a-press__total strong{color:#f0d49c;font-size:clamp(3.5rem,6vw,6rem);font-family:Georgia,serif;line-height:1}
+html[lang="ar"] .a-press__total span{color:#d9dbc9;font-size:.79rem;font-weight:680;margin-top:7px}
+html[lang="ar"] .a-press__eyebrow {
+ display:flex;align-items:end;justify-content:space-between;gap:14px;
+ margin:44px 0 19px;
+}
+html[lang="ar"] .a-press__eyebrow h3{
+ font-size:clamp(1.25rem,2vw,1.8rem);font-weight:750;color:#f0ede3
+}
+html[lang="ar"] .a-press__eyebrow>span{color:#adbbad;font-size:.83rem}
+html[lang="ar"] .a-press__features{
+ display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:15px;
+ margin:0;padding:0;max-width:none;list-style:none
+}
+html[lang="ar"] .a-press__card {min-width:0;display:block;list-style:none}
+html[lang="ar"] .a-press__card--lead {grid-column:span 2}
+html[lang="ar"] .a-press__card a {
+ display:flex;flex-direction:column;min-width:0;height:100%;gap:14px;
+ padding:clamp(22px,3vw,38px);border:1px solid #35513c;
+ border-radius:20px;background:linear-gradient(135deg,#1a3021 0%,#142219 90%);
+ text-decoration:none;color:#f5f4eb;box-shadow:0 20px 50px -42px rgba(0,0,0,.8);
+ transition:transform .2s ease,border-color .2s ease,background .2s ease;
+}
+html[lang="ar"] .a-press__card--lead a{
+ padding:clamp(29px,4vw,52px);border-color:rgba(217,188,116,.65);
+ background:radial-gradient(ellipse at 0% 0%,rgba(90,131,72,.26),transparent 60%),
+ linear-gradient(120deg,#1f3427,#111d16);
+}
+html[lang="ar"] .a-press__card a:hover{
+ transform:translateY(-4px);border-color:#d0b57e;background-color:#294333
+}
+html[lang="ar"] .a-press__card a:focus-visible,html[lang="ar"] .a-press__syndication a:focus-visible{outline:2px solid #e2c586;outline-offset:3px}
+html[lang="ar"] .a-press__meta{display:flex;align-items:center;flex-wrap:wrap;gap:12px;font-size:.78rem;color:#b9c7b7}
+html[lang="ar"] .a-press__type{
+ padding:4px 11px;border-radius:100px;border:1px solid rgba(221,187,111,.45);
+ color:#ead29b;background:rgba(223,183,99,.075);font-weight:730
+}
+html[lang="ar"] .a-press__outlet{
+ color:#a9d4af;font-size:.85rem;font-weight:750
+}
+html[lang="ar"] .a-press__card strong{
+ font-size:clamp(1.2rem,1.8vw,1.7rem);font-weight:800;line-height:1.6;
+ color:#fff;letter-spacing:0
+}
+html[lang="ar"] .a-press__card--lead strong{font-size:clamp(1.65rem,2.8vw,2.5rem);max-width:880px}
+html[lang="ar"] .a-press__description{color:#b7c9bb;font-size:.85rem;line-height:1.85;max-width:950px}
+html[lang="ar"] .a-press__read{
+ margin-top:auto;align-self:start;display:flex;align-items:center;gap:9px;
+ font-size:.84rem;font-weight:760;color:#e2cf9d
+}
+html[lang="ar"] .a-press__read>span{font-size:1.15rem}
+html[lang="ar"] .a-press__morehead{
+ margin:clamp(44px,6vw,83px) 0 22px;padding-top:31px;
+ border-top:1px solid rgba(215,192,140,.24)
+}
+html[lang="ar"] .a-press__morehead h3{color:#f3f1e9;font-size:clamp(1.2rem,1.7vw,1.65rem);margin:0 0 10px}
+html[lang="ar"] .a-press__morehead p{color:#acc0b0;font-size:.85rem;line-height:1.85;max-width:850px}
+html[lang="ar"] .a-press__syndication{
+ list-style:none;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));
+ gap:9px;margin:0;padding:0
+}
+html[lang="ar"] .a-press__syndication li{min-width:0}
+html[lang="ar"] .a-press__syndication a{
+ display:grid;grid-template-columns:1fr;gap:4px;height:100%;
+ padding:18px 22px;border-radius:13px;border:1px solid rgba(159,194,163,.2);
+ background:#17251b;text-decoration:none;color:#e5ebdf;
+ transition:border-color .2s,background .2s;
+}
+html[lang="ar"] .a-press__syndication a:hover{border-color:#93b48e;background:#213729}
+html[lang="ar"] .a-press__synd-outlet{font-size:.78rem;font-weight:780;color:#c5d4c1}
+html[lang="ar"] .a-press__synd-title{font-size:.92rem;font-weight:650;line-height:1.65}
+html[lang="ar"] .a-press__synd-date{font-size:.74rem;color:#bca875}
+html[lang="ar"] .a-press__disclosure{
+ border-right:2px solid #967e49;padding:0 16px;margin:25px 0 0;
+ color:#9fb0a3;font-size:.77rem;line-height:1.8
+}
+@media(max-width:700px){
+ html[lang="ar"] .a-press__inner{width:min(100% - 36px,1240px)}
+ html[lang="ar"] .a-press__head{gap:12px;align-items:flex-start}
+ html[lang="ar"] .a-press__head .h2{font-size:clamp(2rem,8.5vw,3.7rem)}
+ html[lang="ar"] .a-press__total{width:78px;height:78px;flex:0 0 78px;margin-top:32px}
+ html[lang="ar"] .a-press__total strong{font-size:2.65rem}
+ html[lang="ar"] .a-press__total span{font-size:.63rem;white-space:nowrap}
+ html[lang="ar"] .a-press__features{grid-template-columns:1fr;gap:12px}
+ html[lang="ar"] .a-press__card--lead{grid-column:auto}
+ html[lang="ar"] .a-press__card a{padding:22px}
+ html[lang="ar"] .a-press__card--lead strong{font-size:1.55rem}
+ html[lang="ar"] .a-press__syndication{grid-template-columns:1fr}
+ html[lang="ar"] .a-press__eyebrow{align-items:start;flex-direction:column}
+}
+@media(max-width:355px){
+ html[lang="ar"] .a-press__total{display:none}
+}
+@media(prefers-reduced-motion:reduce){
+ html[lang="ar"] .a-press__card a,
+ html[lang="ar"] .a-press__syndication a{transition:none}
+}
+
+/* source: editorial-final.css */
+/* SMA PLAYER A · Founder visual/editorial corrections · 2026-11-11
+   Real HTML/CSS implementation, Arabic first. No source photo edits.
+   Avoid overriding approved English gaze and composition. */
+
+/* Scroll choreography, part 2 — its own file, as commissioned. It is pulled
+   in from here rather than from a <link> in index.html because the
+   2026-11-11 dispatch had no file-edit tool and index.html is 1,061 lines;
+   see the BOOTSTRAP SHIM note at the top of camp-source-gallery.js, and
+   SCROLL-COVER-CORRECTION-REVIEW.md §3 for the one-line undo. @import must
+   stay first in this file. */
+
+/* Inlined scroll-cinematic.css to preserve cascade and avoid blocking import */
+/* ═══════════════════════════════════════════════════════════════════════
+   SMA PLAYER · Direction A (Emerald Cinema) — scroll choreography, part 2
+   KAMAYA Design · Senior Creative Director · 2026-11-11
+   Commission: projects/SMA-PLAYER/FOUNDER-SCROLL-ANIMATION-CAMP-COVERS-2026-11-11.md
+
+   ARABIC PAGE ONLY. This file is linked from `/index.html` and from nowhere
+   else; `/en/index.html` is untouched until Saif approves the Arabic.
+
+   WHAT THIS IS NOT
+   ----------------
+   It is not a second reveal system. `script.js` §3 already owns `.reveal`
+   (coach grid, Moura card/shot, THE THREE CAMP CARDS, method articles,
+   vision, offer list, leadership cards, wins list, channels) and §6 already
+   owns the chapter motion on `.a-coach__grid, .a-camps__grid,
+   .a-method__grid`, the scroll-progress bar, and the hero film move.
+   Nothing in this file touches any of those elements. It covers only the
+   four sections that were added after that choreography was written and
+   that therefore arrive completely still —
+
+     #a-identity (section head) · #a-clubs (head/count/toolbar)
+     #a-gallery (section head)  · #a-media (head, total, press cards)
+
+   — plus one new idea the page did not have at all: real photographic depth
+   on the three camp covers.
+
+   TWO RULES THIS FILE OBEYS
+   -------------------------
+   1. Nothing is hidden unless JavaScript is running. Every pre-state below
+      is scoped under `html.sc-on`, a class only `scroll-cinematic.js` adds.
+      With JS off, or if the script throws, the page renders exactly as it
+      does today — no invisible paragraphs, ever.
+   2. One arrival per section, then the element is left alone. No element
+      animates twice, nothing re-hides on scroll-up, and no transform is
+      left running when it is off screen.
+   ═══════════════════════════════════════════════════════════════════════ */
+
+
+/* ── 1 · Section arrival ────────────────────────────────────────────────
+   A 16px rise and a fade. Deliberately not a blur, not a scale, not a
+   clip-path wipe: this page already carries a film move, a push-in and a
+   chapter lift, and a fourth texture of motion would read as noise rather
+   than as direction. The curve is the same cubic-bezier(.19,1,.22,1) the
+   existing choreography uses, so the new sections feel like the same hand.
+   Opacity and translate only — no property here can move the layout. */
+html.sc-on .sc-rise {
+  opacity: 0;
+  transform: translate3d(0, 16px, 0);
+  transition:
+    opacity .60s cubic-bezier(.19, 1, .22, 1),
+    transform .78s cubic-bezier(.19, 1, .22, 1);
+  will-change: opacity, transform;
+}
+html.sc-on .sc-rise.sc-in {
+  opacity: 1;
+  transform: none;
+  will-change: auto;
+}
+
+/* Headlines carry a touch more travel than the small print under them;
+   that difference is what makes the stagger read as one gesture instead of
+   three separate fades. */
+html.sc-on .sc-rise.sc-rise--lead { transform: translate3d(0, 22px, 0); }
+html.sc-on .sc-rise.sc-rise--lead.sc-in { transform: none; }
+
+@media (max-width: 760px) {
+  /* Shorter travel on a short viewport: 16px of rise inside a 640px window
+     is a lurch, 10px is a settle. */
+  html.sc-on .sc-rise { transform: translate3d(0, 10px, 0); }
+  html.sc-on .sc-rise.sc-rise--lead { transform: translate3d(0, 14px, 0); }
+  html.sc-on .sc-rise.sc-in,
+  html.sc-on .sc-rise.sc-rise--lead.sc-in { transform: none; }
+}
+
+
+/* ── 2 · Camp cover depth ───────────────────────────────────────────────
+   The one genuinely new move. As a camp card crosses the viewport its
+   photograph drifts vertically against the card by at most ±10px (the
+   commission caps this at 12px), which gives the three covers a shallow
+   physical depth instead of three flat rectangles.
+
+   HOW IT STAYS OUT OF THE WAY OF THE EXISTING HOVER ZOOM
+   `style.css` animates `transform` on `.a-camp img` over .9s and uses it
+   for the hover `scale(1.04)`. Driving the parallax through `transform`
+   would therefore either fight that rule or inherit a .9s lag on every
+   frame. So the parallax is written to the INDEPENDENT `translate`
+   property instead. `translate` is composited with `transform`, is not
+   covered by the existing `transition: transform .9s`, and is applied with
+   no transition of its own — so it tracks the scroll exactly, and the hover
+   zoom keeps working untouched. Not one line of the hover rule is overridden.
+
+   THE BLEED IS LOAD-BEARING. `.a-camp img` is `inset:0; height:100%`, i.e.
+   the photograph exactly fills the card. Translating it by 10px without
+   compensation would expose a 10px strip of bare card. The 14px of bleed
+   top and bottom (28px of extra height) covers the full ±10px of travel
+   with 4px to spare at both ends. */
+.d-a .a-camp img {
+  top: -14px;
+  bottom: auto;
+  height: calc(100% + 28px);
+}
+html.sc-on .d-a .a-camp img { will-change: translate; }
+
+
+/* ── 3 · Reduced motion ─────────────────────────────────────────────────
+   Belt and braces. `scroll-cinematic.js` watches the media query live and
+   also reveals everything and clears every translate the moment it flips —
+   but the CSS alone is enough: if the script never runs, nothing was hidden
+   in the first place, and if it ran before the preference changed, these
+   rules win anyway.
+
+   `[data-sc-motion="off"]` is the QA hook. `tools/qa-scroll-cover.html`
+   loads the page with `?scmotion=off` so the reduced-motion path can be
+   proved in a browser that cannot be told to emulate the OS setting. It is
+   never set by the page itself. */
+@media (prefers-reduced-motion: reduce) {
+  html.sc-on .sc-rise,
+  html.sc-on .sc-rise.sc-rise--lead {
+    opacity: 1 !important;
+    transform: none !important;
+    transition: none !important;
+    will-change: auto !important;
+  }
+  .d-a .a-camp img {
+    translate: none !important;
+    will-change: auto !important;
+  }
+}
+html[data-sc-motion="off"].sc-on .sc-rise,
+html[data-sc-motion="off"].sc-on .sc-rise.sc-rise--lead {
+  opacity: 1 !important;
+  transform: none !important;
+  transition: none !important;
+  will-change: auto !important;
+}
+html[data-sc-motion="off"] .d-a .a-camp img {
+  translate: none !important;
+  will-change: auto !important;
+}
+
+/* Printing is not scrolling. */
+@media print {
+  html.sc-on .sc-rise { opacity: 1 !important; transform: none !important; }
+  .d-a .a-camp img { translate: none !important; }
+}
+
+
+
+/* ─────────────────────────────────────────────────────────────────────────
+   1. The Arabic hero head position.
+
+   FOUNDER, 2026-11-11: «احس الراس نازل بزياده كمان هذب شعره من فوق» —
+   the head sits too low, and tidy the hair at the crown.
+
+   WHAT MOVED. `object-position` on a cover-fitted image slides the visible
+   window DOWN the photograph as the percentage rises, which lifts the
+   subject UP inside the frame. The previous pass had taken this all the way
+   down to 9% to stop the crown clipping; this pass walks it back up as far
+   as the crown allows, and no further.
+
+   THE ARITHMETIC, because the margin here is genuinely thin.
+   `assets/coach.jpg` is 854×1280 and the topmost hair sits at ~0.090 of its
+   height. On desktop `hero-direction.css` renders the image 122% of the
+   viewport width, so the cover scale is width-driven and the visible
+   vertical window is f = 0.5468 × (viewport height ÷ viewport width) of the
+   source. `style.css` then applies a scale(1.035) at the end of the film
+   move, which trims the window a further 3.5% about its centre. Visible top
+   therefore lands at:
+
+        top = p × (1 − f) + 0.0169 × f
+
+   At 16:10 (f ≈ 0.342) p = 0.105 puts the top of the window at 0.075 — the
+   crown stays inside with ~1.5 points of source height, about 34px of
+   headroom at 900px tall, and the face rises roughly 3% of the hero height
+   against the old 9%. At 16:9 the figure is ~1.3 points. On a 2:1-or-wider
+   desktop the same p has more leverage and the margin closes to under a
+   point, which is inside the error bar on the 0.090 hair measurement — so
+   that band gets its own, more conservative value below.
+
+   Values higher than this were considered and rejected on the arithmetic,
+   not on taste: 14% puts the window top at 0.0978 at 16:10, i.e. BELOW the
+   hair line — it cuts the crown, which is the exact defect the 9% pass
+   existed to fix. If the Founder wants the face higher still, the lever is
+   not this property: it is the 122% oversize in hero-direction.css, which
+   is part of the approved Direction A composition and is not changed here
+   without his say-so. That is called out in the review document, not
+   quietly worked around.
+
+   MOBILE is a different geometry: the stacked media box shows ~85% of the
+   photograph's height, so the same five points of object-position move the
+   head by about nine pixels. 14% is used there — a real nudge up, with
+   roughly seven points of headroom still above the hair, so there is no
+   crown risk at any phone width.
+
+   English is untouched at every width. ──────────────────────────────── */
+@media (min-width: 761px) {
+  html[lang="ar"] .d-a .a-hero__img {
+    object-position: 50% 10.5%;
+  }
+}
+/* Wide-and-short desktops: the visible window is smaller, so each point of
+   object-position travels further and the crown clips sooner. */
+@media (min-width: 761px) and (min-aspect-ratio: 2/1) {
+  html[lang="ar"] .d-a .a-hero__img {
+    object-position: 50% 9.5%;
+  }
+}
+@media (max-width: 760px) {
+  html[lang="ar"] .d-a .a-hero__img {
+    object-position: 50% 14%;
+  }
+}
+
+/* 1b. «هذب شعره من فوق» — the hair, honestly.
+
+   NOTHING IS RETOUCHED. No pixel of the photograph is edited, no strand is
+   painted out, no hairline is moved, no face is regenerated or replaced.
+   `assets/coach.jpg` is byte-identical to the file the client supplied.
+
+   What this does is lighting, which is the only truthful tool available:
+   a soft luminance scrim across the top edge of the Arabic hero, so the
+   stray strands stop reading as bright flyaways against the white netting
+   behind him and settle into the frame. It is the same move a photographer
+   makes by flagging a light, and it is the same vocabulary the hero already
+   uses three times over (`__veil`, `__beam`, `__grain`).
+
+   If the Founder wants the hair itself genuinely tidied, that needs a
+   different photograph or a retoucher — not this file, and not a generated
+   face. Flagged as such in the review document. */
+html[lang="ar"] .d-a .a-hero__media::before {
+  content: "";
+  position: absolute;
+  inset: 0 0 auto 0;
+  height: 30%;
+  z-index: 2;
+  pointer-events: none;
+  background: linear-gradient(to bottom,
+    rgba(6, 14, 10, .36) 0%,
+    rgba(6, 14, 10, .17) 32%,
+    rgba(6, 14, 10, 0) 74%);
+}
+@media (max-width: 760px) {
+  html[lang="ar"] .d-a .a-hero__media::before {
+    height: 24%;
+    background: linear-gradient(to bottom,
+      rgba(6, 14, 10, .30) 0%,
+      rgba(6, 14, 10, .13) 34%,
+      rgba(6, 14, 10, 0) 76%);
+  }
+}
+
+/* 2. Editorial rhythm; do NOT justify Arabic (no distracting word rivers).
+   Arabic glyph shaping, punctuation and first-line direction remain natural.
+   Nav, poster images, headline art direction and centered emblems excluded. */
+html[lang="ar"] .d-a main :is(p, blockquote) {
+  text-align: start;
+  direction: rtl;
+  letter-spacing: 0;
+  overflow-wrap: break-word;
+  text-wrap: pretty;
+}
+html[lang="ar"] .d-a main :is(h1, h2, h3, h4) {
+  text-wrap: balance;
+  word-break: normal;
+  letter-spacing: 0;
+}
+html[lang="ar"] .d-a main :is(.a-coach, .a-story, .a-identity, .a-wins, .a-camps, .a-method, .a-gallery, .a-media, .a-contact) :is(p, blockquote) {
+  line-height: 1.95;
+}
+html[lang="ar"] .d-a main :is(.a-coach, .a-story, .a-method, .a-identity, .a-camps, .a-contact) :is(h2, h3, h4, p) {
+  text-align: start;
+}
+html[lang="ar"] .d-a main :is(.a-coach, .a-story, .a-method, .a-identity, .a-camps) :is(p,blockquote) {
+  max-width: 72ch;
+}
+html[lang="ar"] .d-a .a-hero__lede {
+  line-height: 1.95;
+  max-width: 45ch;
+}
+html[lang="ar"] .d-a .a-press__head .a-press__intro,
+html[lang="ar"] .d-a .a-press__description,
+html[lang="ar"] .d-a .a-press__morehead p,
+html[lang="ar"] .d-a .a-clubs__lede {
+  max-width: 72ch;
+}
+html[lang="ar"] .d-a .a-social a,
+html[lang="ar"] .d-a .a-channels a {
+  text-align: start;
+}
+
+/* 3. The actual verified WhatsApp Business chat stays reachable on scroll. */
+html[lang="ar"] .sma-whatsapp-float {
+  position: fixed;
+  inset-inline-start: max(18px, env(safe-area-inset-right));
+  bottom: max(24px, calc(env(safe-area-inset-bottom) + 16px));
+  z-index: 190;
+  min-height: 54px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  border: 1px solid rgba(240,255,236,.26);
+  border-radius: 999px;
+  padding: 10px 18px;
+  background: linear-gradient(135deg, #17834a, #086638);
+  color: #fff;
+  text-decoration: none;
+  font: 700 15px/1.3 'IBM Plex Sans Arabic', system-ui, sans-serif;
+  box-shadow: 0 10px 36px rgba(0,0,0,.52), 0 2px 12px rgba(9,109,56,.22);
+  transform: translateZ(0);
+  transition: box-shadow .2s ease, transform .2s ease, background .2s ease;
+  -webkit-tap-highlight-color: transparent;
+}
+html[lang="ar"] .sma-whatsapp-float svg { flex: none; display: block; width: 25px; height: 25px; fill: currentColor; }
+html[lang="ar"] .sma-whatsapp-float:hover {
+  background: linear-gradient(135deg, #218e51, #117744);
+  transform: translateY(-2px) translateZ(0);
+  box-shadow: 0 15px 37px rgba(0,0,0,.57);
+}
+html[lang="ar"] .sma-whatsapp-float:focus-visible {
+  outline: 3px solid #f6df9d;
+  outline-offset: 4px;
+}
+html[lang="ar"] body.nav-open .sma-whatsapp-float {
+  visibility: hidden;
+  pointer-events: none;
+}
+html[lang="ar"] body:has(.lightbox:not([hidden])) .sma-whatsapp-float {
+  visibility: hidden;
+  pointer-events: none;
+}
+@media (max-width: 760px) {
+  html[lang="ar"] .sma-whatsapp-float {
+    width: 57px;
+    height: 57px;
+    min-height: 57px;
+    padding: 0;
+    inset-inline-start: max(16px, env(safe-area-inset-right));
+    bottom: max(19px, calc(env(safe-area-inset-bottom) + 15px));
+    border-radius: 50%;
+  }
+  html[lang="ar"] .sma-whatsapp-float .sma-whatsapp-float__label { display: none; }
+  html[lang="ar"] .sma-whatsapp-float svg {width: 29px; height: 29px;}
+}
+@media print {html[lang="ar"] .sma-whatsapp-float {display:none!important}}
+@media (prefers-reduced-motion:reduce) {
+  html[lang="ar"] .sma-whatsapp-float {transition:none!important}
+}
+
+/* Scrolling control: appear after the hero CTA leaves the thumb zone. */
+html[lang="ar"] .sma-whatsapp-float {
+ visibility:hidden;opacity:0;pointer-events:none;
+ transform:translateY(10px) translateZ(0);
+}
+html[lang="ar"] .sma-whatsapp-float.is-visible {
+ visibility:visible;opacity:1;pointer-events:auto;
+ transform:translateY(0) translateZ(0);
+}
+html[lang="ar"] .sma-whatsapp-float.is-visible:hover {
+ transform:translateY(-2px) translateZ(0);
+}
+@media (prefers-reduced-motion: no-preference) {
+ html[lang="ar"] .sma-whatsapp-float {transition:opacity .22s ease,transform .22s ease,box-shadow .22s ease;}
+}
+
+/* Lightbox and expanded navigation outrank any scroll-visible state. */
+html[lang="ar"] body.nav-locked .sma-whatsapp-float,
+html[lang="ar"] body:has(.lightbox:not([hidden])) .sma-whatsapp-float {
+  visibility: hidden !important;
+  pointer-events: none !important;
+  opacity: 0 !important;
+}
+
+/* ─────────────────────────────────────────────────────────────────────────
+   4. Camp cover framing and tone · 2026-11-11
+
+   FOUNDER: «غلاف المعسكرات احس يغالها تحسين او تغيير او تعديل».
+
+   The three photographs themselves are swapped in `camp-covers.js`, which
+   carries the full provenance for each frame — archive index, source path,
+   SHA-256 and the exact non-generative operations the project's own
+   `tools/build-photo-library.py` applied. Read that file first.
+
+   Everything below is framing and tone, done in CSS so that it is
+   non-destructive and reversible: no derivative file is baked, no original
+   is touched, and anyone can read exactly what was done to each picture
+   without opening an image editor. The crops are not guesses — each one is
+   the window that `object-fit: cover` produces at the card's real aspect,
+   worked out against the subject's measured position in the frame. The
+   grades are deliberately small (nothing exceeds 10%): these frames have
+   already been levelled, white-balanced and S-curved by the photo pipeline,
+   so this layer is only seating them in Direction A's dark emerald palette
+   and holding the white body copy legible over the bottom of each card.
+
+   Every rule is scoped to the Arabic page and to the specific card. The
+   English page and the archive gallery see none of it, and the full-size
+   file in the lightbox and the archive is the ungraded derivative. */
+
+/* CARD 1 · الدمام — add-164, 720×1280 portrait in the tall feature card.
+   The card is wider than it is tall, so cover is width-driven and the full
+   width of the frame is always visible — his outstretched arm reaches the
+   left edge of the photograph and must not be cropped, and at 50% it never
+   is. 25% seats the window at roughly 0.13–0.61 of the frame at desktop:
+   clear headroom above his head, his face in the top third, the instructing
+   arm and the ball across the middle, and the card's text sitting over his
+   legs rather than over his face. */
+html[lang="ar"] .d-a .a-camp--dammam img {
+  object-position: 50% 25%;
+  filter: saturate(.96) contrast(1.07) brightness(.95);
+}
+html[lang="ar"] .d-a .a-camp--dammam:hover img {
+  filter: saturate(1.08) contrast(1.07) brightness(.98);
+}
+
+/* CARD 2 · البرتغال — por-158, 828×804, near-square, in a ~1.8:1 letterbox.
+   15% keeps both players' heads in frame with about a tenth of the card's
+   height above them and cuts at the knees; raising it any further to chase
+   the ball at the bottom of the frame would decapitate the contest, which
+   is the whole subject. The frame came out of the pipeline hot (gamma 1.18
+   was needed to recover it) and still carries a large pale wall, so it
+   takes the firmest grade of the three — contrast up a tenth, brightness
+   down seven points — which also buys the white heading real contrast. */
+html[lang="ar"] .d-a .a-camp--portugal img {
+  object-position: 50% 15%;
+  filter: saturate(.93) contrast(1.1) brightness(.93);
+}
+html[lang="ar"] .d-a .a-camp--portugal:hover img {
+  filter: saturate(1.05) contrast(1.1) brightness(.96);
+}
+
+/* CARD 3 · إسبانيا — esp26-052, 828×1020, in the same letterbox.
+   35% puts the window at roughly 0.18–0.66 at desktop: both players whole
+   from head to thigh, the strike and the block both legible. A low crop
+   would have kept the ball and lost the faces, which is precisely the
+   defect this card is being corrected for. On a phone the card is nearly
+   square, the window opens to ~85% of the frame, and the ball comes back
+   in on its own. It is the darkest of the three frames (median 0.44) under
+   a blown overcast sky, so it gets the only brightness lift here — two
+   points, enough to separate the players from the grass without touching
+   the legibility of the copy, which sits on the card's own scrim. */
+html[lang="ar"] .d-a .a-camp--spain img {
+  object-position: 50% 35%;
+  filter: saturate(.95) contrast(1.05) brightness(1.02);
+}
+html[lang="ar"] .d-a .a-camp--spain:hover img {
+  filter: saturate(1.07) contrast(1.05) brightness(1.04);
+}
+
+/* source: profile-completeness.css */
+/* SMA Player — faithful client profile completeness, sourced to official 28-page PDF.
+   Preserves approved A Emerald Cinema. Source materials visual treatment only;
+   no third-party claims elevated to independently verified statements. */
+html[lang="ar"] .a-brand-profile {
+  width:min(100% - 48px,1120px);
+  margin:0 auto clamp(45px,5vw,75px);
+  display:grid;grid-template-columns:minmax(180px,.4fr) minmax(0,1fr);
+  align-items:center;gap:clamp(20px,5vw,80px);
+  padding:clamp(20px,3vw,48px);
+  border:1px solid rgba(202,180,115,.38);
+  border-radius:26px;
+  background:radial-gradient(ellipse 57% 100% at 0 0,rgba(50,125,71,.32),transparent 90%),
+    linear-gradient(138deg,#12321f,#0c1e14);
+  box-shadow:0 28px 70px -44px rgba(0,0,0,.8);
+}
+html[lang="ar"] .a-brand-profile__mark {
+  min-height:228px;display:flex;flex-direction:column;
+  align-items:center;justify-content:center;
+  background:radial-gradient(circle at 45% 35%,#167a47 0%,#085d36 70%,#0e492e 100%);
+  border:1px solid rgba(240,235,214,.17);border-radius:22px;padding:23px;
+}
+html[lang="ar"] .a-brand-profile__mark img {
+  display:block;width:clamp(90px,11vw,145px);height:auto;
+  max-height:176px;object-fit:contain;
+}
+html[lang="ar"] .a-brand-profile__mark p {
+  font-size:.73rem;line-height:1.65;color:#e1ede1;
+  margin:13px 0 0;text-align:center;
+}
+html[lang="ar"] .a-brand-profile__eyebrow {
+  font-size:.86rem;color:#d3c18a;font-weight:750;
+  letter-spacing:0;line-height:1.9;margin:0 0 11px;
+}
+html[lang="ar"] .a-brand-profile__copy h3 {
+  font-size:clamp(2.15rem,3.3vw,3.65rem);
+  line-height:1.2;letter-spacing:0;margin:0 0 17px;color:#fffaf0;
+}
+html[lang="ar"] .a-brand-profile__copy > p:not(.a-brand-profile__eyebrow) {
+  font-size:clamp(.97rem,1.24vw,1.12rem);
+  line-height:2.05;color:#e2e9db;
+  max-width:70ch;text-align:start;margin:0 0 14px;
+}
+html[lang="ar"] .a-brand-profile__copy small {
+  display:block;font-size:.77rem;line-height:1.9;color:#a9bda8;
+}
+html[lang="ar"] .a-camps__source-detail {
+  width:min(100% - 48px,1180px);
+  margin:clamp(65px,8vw,110px) auto 45px;
+}
+html[lang="ar"] .a-camps__source-head{max-width:840px;margin:0 0 28px}
+html[lang="ar"] .a-camps__source-head h3 {
+  font-size:clamp(1.8rem,3vw,3.3rem);
+  color:#f5f3e8;letter-spacing:0;line-height:1.35;margin:7px 0 12px;
+}
+html[lang="ar"] .a-camps__source-head > p:last-child {
+  color:#bac7b9;max-width:70ch;font-size:.95rem;line-height:1.85;
+}
+html[lang="ar"] .a-camps__detail-grid{
+  display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px;
+}
+html[lang="ar"] .a-camps__detail {
+  min-width:0;border-radius:17px;
+  background:linear-gradient(152deg,#1a3523,#101f16);
+  border:1px solid #385441;
+  padding:clamp(21px,2.8vw,34px);
+}
+html[lang="ar"] .a-camps__detail-num {
+  color:#c6ac76;font-family:Georgia,serif;font-size:2.7rem;line-height:1;
+  display:block;margin-bottom:20px;direction:ltr;text-align:start;
+}
+html[lang="ar"] .a-camps__detail h4 {font-size:1.22rem;color:#f8f3e5;margin:0 0 13px}
+html[lang="ar"] .a-camps__detail p {
+  color:#d0dcce;line-height:1.92;font-size:.91rem;text-align:start;margin:0 0 20px
+}
+html[lang="ar"] .a-camps__detail small{
+  display:block;color:#b3bc9c;font-size:.75rem;line-height:1.65
+}
+html[lang="ar"] .a-camps__facility {
+  margin:30px 0 0;padding:0;
+  display:grid;grid-template-columns:minmax(0,.95fr) minmax(0,.62fr);
+  align-items:center;gap:clamp(20px,3vw,48px);
+  border-top:1px solid rgba(203,184,124,.25);padding-top:36px;
+}
+html[lang="ar"] .a-camps__facility img {
+  display:block;width:100%;aspect-ratio:16/9;object-fit:cover;
+  border-radius:16px;border:1px solid rgba(229,204,131,.28);
+  box-shadow:0 16px 42px rgba(0,0,0,.3);
+}
+html[lang="ar"] .a-camps__facility figcaption {
+  color:#bbccb9;line-height:1.96;font-size:.89rem;text-align:start;
+}
+html[lang="ar"] .a-camps__facility figcaption b{
+  color:#f0dfb2;display:block;font-size:1.25rem;line-height:1.6;margin-bottom:7px;
+}
+html[lang="ar"] .a-method__values {
+  margin:clamp(38px,5vw,65px) auto 0;
+  padding-top:clamp(20px,3vw,37px);
+  border-top:1px solid rgba(219,196,142,.25);
+  max-width:1050px;
+}
+html[lang="ar"] .a-method__values h3 {
+  margin:0 0 20px;color:#e6d9b4;
+  font-size:clamp(1.2rem,2vw,1.75rem);
+  text-align:center;line-height:1.4;
+}
+html[lang="ar"] .a-method__values ul {
+  list-style:none;padding:0;margin:0;
+  display:flex;flex-wrap:wrap;justify-content:center;gap:9px;
+}
+html[lang="ar"] .a-method__values li {
+  border:1px solid rgba(181,213,173,.3);
+  border-radius:100px;
+  background:rgba(38,86,49,.3);
+  padding:12px 17px;
+  font-size:.88rem;
+  line-height:1.7;color:#e2ead8;
+}
+html[lang="ar"] .a-method__values small{
+  display:block;margin-top:16px;
+  text-align:center;color:#a8b5a1;font-size:.76rem;
+}
+html[lang="ar"] .a-client-closing{
+  background:linear-gradient(160deg,#092113,#0b321d 58%,#0a2818);
+  border-block:1px solid rgba(218,196,129,.25);
+  color:#f6f4e7;padding:clamp(70px,9vw,130px) max(21px,5vw);
+}
+html[lang="ar"] .a-client-closing__inner{
+  width:min(100%,920px);margin-inline:auto;text-align:center
+}
+html[lang="ar"] .a-client-closing .kicker{color:#d0b77a;text-align:center}
+html[lang="ar"] .a-client-closing h2 {
+  color:#fcf8ec;
+  font-size:clamp(2.25rem,4.7vw,5.1rem);
+  line-height:1.35;margin:16px 0 27px;letter-spacing:0;
+}
+html[lang="ar"] .a-client-closing__inner > p:not(.kicker) {
+  max-width:850px;margin:0 auto 21px;
+  text-align:center;color:#dee9dc;
+  line-height:2.15;font-size:clamp(1.05rem,1.4vw,1.3rem);
+}
+html[lang="ar"] .a-client-closing small{
+  color:#a9bba6;font-size:.79rem;line-height:1.8
+}
+@media(max-width:850px){
+ html[lang="ar"] .a-brand-profile{grid-template-columns:180px minmax(0,1fr)}
+ html[lang="ar"] .a-camps__detail-grid{grid-template-columns:1fr}
+ html[lang="ar"] .a-camps__facility{grid-template-columns:1fr}
+}
+@media(max-width:600px){
+ html[lang="ar"] .a-brand-profile{grid-template-columns:1fr;width:min(100% - 32px,1120px);gap:21px;padding:17px}
+ html[lang="ar"] .a-brand-profile__mark{min-height:178px}
+ html[lang="ar"] .a-brand-profile__mark img{width:108px}
+ html[lang="ar"] .a-brand-profile__copy{padding:4px 9px 13px}
+ html[lang="ar"] .a-brand-profile__copy h3{font-size:2.3rem}
+ html[lang="ar"] .a-camps__source-detail{width:min(100% - 36px,1180px)}
+ html[lang="ar"] .a-camps__detail{padding:24px}
+ html[lang="ar"] .a-client-closing__inner > p:not(.kicker){line-height:2}
+}
+/* Source-backed leadership portraits from the original PDF p4. */
+html[lang="ar"] .a-lead__portrait {
+  display:block;
+  width:100%;
+  height:auto;
+  aspect-ratio:1.3 / 1;
+  object-fit:cover;
+  object-position:center 21%;
+  border:1px solid rgba(207,183,112,.32);
+  border-radius:14px;
+  margin-bottom:20px;
+  background:#12693b;
+}
+
+/* source: story-solo-restore.css */
+/* Founder direction 2026-11-11: show Saif alone in the story photograph.
+   Client-supplied photo, conservative non-generative color and crop.
+   Restores solo portrait on Arabic; no group collage or artificial faces. */
+html[lang="ar"] #a-story .a-story__shot{margin:0;max-width:100%;display:flex;align-items:center;justify-content:center}
+html[lang="ar"] #a-story .a-story__shot img{
+  display:block;width:min(100%,480px);height:auto;aspect-ratio:674 / 824;
+  object-fit:cover;object-position:center;border-radius:17px;
+  border:1px solid rgba(213,187,128,.4);box-shadow:0 24px 72px rgba(0,0,0,.42);
+}
+@media(max-width:1024px){
+  html[lang="ar"] #a-story .a-story__shot img{width:min(100%,480px);aspect-ratio:674 / 824;object-position:center}
+}
+@media(max-width:560px){
+  html[lang="ar"] #a-story .a-story__shot img{width:min(100%,390px);border-radius:13px}
+}
+
+/* source: client-source-links.css */
+/* Source documents: preserves original client identity and full 28-page profile. */
+html[lang="ar"] .a-source-files{
+  display:grid;grid-template-columns:1fr auto;align-items:center;gap:28px;
+  margin:42px auto 32px;max-width:1130px;padding:25px clamp(20px,3vw,38px);
+  border:1px solid rgba(209,178,110,.35);border-radius:16px;
+  background:linear-gradient(118deg,rgba(29,60,42,.46),rgba(7,20,13,.6));
+}
+html[lang="ar"] .a-source-files__intro h3{margin:.35rem 0 .6rem;font-size:clamp(1.15rem,1.6vw,1.55rem);color:#f3e8d1}
+html[lang="ar"] .a-source-files__intro p:last-child{max-width:62ch;margin:0;color:#c6d0c8;font-size:.91rem;line-height:1.85}
+html[lang="ar"] .a-source-files__links{display:flex;flex-direction:column;gap:10px;min-width:225px}
+html[lang="ar"] .a-source-files__links a{display:block;border:1px solid rgba(206,178,118,.5);border-radius:10px;padding:12px 17px;color:#f6e7bf;text-decoration:none;font-weight:700;line-height:1.5;background:rgba(8,20,14,.5)}
+html[lang="ar"] .a-source-files__links a:hover, html[lang="ar"] .a-source-files__links a:focus-visible{background:#1c4430;border-color:#d9c18c}
+html[lang="ar"] .a-source-files__links small{display:block;font-weight:400;color:#c8d2c6;font-size:.73rem}
+@media(max-width:740px){html[lang="ar"] .a-source-files{grid-template-columns:1fr;gap:16px;margin:28px 0}html[lang="ar"] .a-source-files__links{min-width:0}}
+
+/* source: method-cinematic-review.css */
+
+/* Four-axis method — dedicated visual upgrade, client review 11 Nov 2026 */
+html[lang="ar"] .a-method{position:relative;isolation:isolate;overflow:hidden;padding:clamp(82px,10vw,146px) 0 clamp(85px,8vw,118px);background:linear-gradient(130deg,rgba(3,14,9,.96),rgba(3,20,13,.93) 60%,rgba(3,10,8,.97)),url('assets/gallery/full/esp26-152.jpg') 50% 50%/cover no-repeat;border-top:1px solid rgba(198,175,113,.25)}
+html[lang="ar"] .a-method::before{content:"";position:absolute;inset:0;z-index:-1;opacity:.4;pointer-events:none;background:radial-gradient(40% 52% at 80% 10%,rgba(37,144,85,.35),transparent),repeating-linear-gradient(90deg,transparent 0,transparent calc(25% - 1px),rgba(255,255,255,.027) calc(25% - 1px),rgba(255,255,255,.027) 25%)}
+html[lang="ar"] .a-method__inner{position:relative;max-width:1320px;padding-inline:clamp(20px,4vw,56px)}
+html[lang="ar"] .a-method .sec-head{margin-bottom:clamp(38px,5vw,72px)}
+html[lang="ar"] .a-method .sec-head .kicker{color:#e3c687;letter-spacing:.035em}
+html[lang="ar"] .a-method .sec-head .h2{font-size:clamp(2.2rem,4vw,4.65rem);line-height:1.3;margin:12px 0 17px;color:#faf7eb;letter-spacing:-.035em}
+html[lang="ar"] .a-method .sec-head__sub{max-width:55ch;font-size:clamp(.91rem,1.22vw,1.14rem);line-height:1.9;color:#bdcfc0}
+html[lang="ar"] .a-method__grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:clamp(12px,1.5vw,20px);counter-reset:none;direction:rtl}
+html[lang="ar"] .a-method__grid .a-method__card{min-width:0;position:relative;isolation:isolate;display:flex;flex-direction:column;align-items:flex-start;text-align:right;gap:0;min-height:370px;padding:clamp(24px,2.2vw,34px);border-radius:17px;background:linear-gradient(152deg,rgba(22,52,36,.9),rgba(9,27,20,.94) 61%,rgba(11,21,16,.96));border:1px solid rgba(183,208,172,.23);box-shadow:0 25px 45px rgba(0,0,0,.19);transition:transform .3s ease,border-color .3s ease,box-shadow .3s ease;overflow:hidden}
+html[lang="ar"] .a-method__grid .a-method__card::before{content:"";position:absolute;inset-inline:0;top:0;height:3px;background:linear-gradient(90deg,transparent,#ccae72,transparent);opacity:.84}
+html[lang="ar"] .a-method__grid .a-method__card::after{content:attr(data-axis);position:absolute;left:-5px;bottom:-32px;font:900 170px/1 system-ui,sans-serif;letter-spacing:-.11em;color:rgba(255,255,255,.03);direction:ltr;pointer-events:none}
+html[lang="ar"] .a-method__grid .a-method__card:hover{transform:translateY(-7px);border-color:rgba(219,190,123,.67);box-shadow:0 35px 68px rgba(0,0,0,.3)}
+html[lang="ar"] .a-method__card-top{width:100%;display:flex;align-items:center;justify-content:space-between;gap:12px;margin-bottom:clamp(30px,4vw,47px)}
+html[lang="ar"] .a-method__number{font:400 .85rem/1.3 system-ui,sans-serif;color:#ddc38b;letter-spacing:.18em}
+html[lang="ar"] .a-method__card-top svg{width:38px;height:38px;stroke:#d8c395;stroke-width:1.7;opacity:.91}
+html[lang="ar"] .a-method__category{font:500 .64rem/1.4 system-ui,sans-serif;color:#95bba0;direction:ltr;letter-spacing:.16em}
+html[lang="ar"] .a-method__grid h3{font-size:clamp(1.7rem,2vw,2.45rem);line-height:1.45;color:#f6f5e8;margin:5px 0 12px;letter-spacing:-.025em}
+html[lang="ar"] .a-method__grid p{font-size:clamp(.84rem,.93vw,1rem);line-height:2.03;color:#d1ddd0;margin:0 0 27px;max-width:29ch}
+html[lang="ar"] .a-method__tag{display:inline-flex;margin-top:auto;padding-top:12px;border-top:1px solid rgba(214,183,126,.21);font-size:clamp(.75rem,.8vw,.87rem);color:#e2c896;line-height:1.9}
+html[lang="ar"] .a-method__closing{text-align:center;margin:clamp(30px,4vw,52px) auto 0;color:#e9e1c8;font-size:clamp(.9rem,1.2vw,1.15rem);line-height:1.9}
+html[lang="ar"] .a-method__closing span{color:#d9b874;margin-inline-end:9px}
+html[lang="ar"] .a-method__values{max-width:1150px;margin-top:clamp(43px,6vw,79px)}
+html[lang="ar"] .a-method__values h3{font-size:clamp(1.15rem,1.7vw,1.6rem)}
+html[lang="ar"] .a-method__values li{background:rgba(30,71,47,.35);border-color:rgba(221,202,159,.26)}
+@media(max-width:1060px){html[lang="ar"] .a-method__grid{grid-template-columns:repeat(2,minmax(0,1fr))}html[lang="ar"] .a-method__grid .a-method__card{min-height:340px}}
+@media(max-width:560px){html[lang="ar"] .a-method{padding-block:65px 75px}html[lang="ar"] .a-method__grid{grid-template-columns:1fr;gap:13px}html[lang="ar"] .a-method__grid .a-method__card{min-height:260px;padding:26px}html[lang="ar"] .a-method__card-top{margin-bottom:20px}html[lang="ar"] .a-method__grid .a-method__card::after{font-size:140px}html[lang="ar"] .a-method__grid p{max-width:none;margin-bottom:19px}html[lang="ar"] .a-method .sec-head .h2{font-size:2.3rem}}
+@media(prefers-reduced-motion:reduce){html[lang="ar"] .a-method__grid .a-method__card{transition:none!important}html[lang="ar"] .a-method__grid .a-method__card:hover{transform:none}}
+
+/* source: client-review-bridge.css */
+/* A visible, tasteful entry to complete private review, not the published site. */
+html[lang="ar"] .a-client-review-bridge{position:relative;padding:clamp(40px,6vw,84px) clamp(18px,4.5vw,60px);background:linear-gradient(112deg,#0a2618,#123c27 58%,#092014);border-block:1px solid rgba(215,190,131,.34)}
+html[lang="ar"] .a-client-review-bridge__inner{display:grid;grid-template-columns:minmax(0,1fr) 230px;gap:24px;align-items:center;max-width:1150px;margin:auto}
+html[lang="ar"] .a-client-review-bridge__eyebrow{font-size:.74rem;font-weight:650;color:#e2c485;letter-spacing:.01em}
+html[lang="ar"] .a-client-review-bridge h2{font-size:clamp(2rem,3vw,3.45rem);line-height:1.43;color:#f9f5e9;margin:9px 0 13px;letter-spacing:-.03em}
+html[lang="ar"] .a-client-review-bridge p{max-width:72ch;font-size:clamp(.85rem,1vw,1rem);line-height:2;color:#d0dfd0;margin-bottom:26px}
+html[lang="ar"] .a-client-review-bridge__cta{display:inline-flex;align-items:center;gap:19px;text-decoration:none;border-radius:60px;background:#e1c78f;color:#15311e;font-weight:750;padding:13px 23px;font-size:.91rem}
+html[lang="ar"] .a-client-review-bridge__cta:hover{background:#f6dfaa}
+html[lang="ar"] .a-client-review-bridge__stamp{border:1px solid rgba(227,198,133,.43);border-radius:100%;width:207px;height:207px;display:flex;flex-direction:column;align-items:center;justify-content:center;background:rgba(7,23,12,.25)}
+html[lang="ar"] .a-client-review-bridge__stamp span{font:700 4.2rem/1 system-ui,sans-serif;color:#e7ce97}
+html[lang="ar"] .a-client-review-bridge__stamp b{font-size:.9rem;color:#f1e9cf}
+html[lang="ar"] .a-client-review-bridge__stamp small{font:.57rem system-ui,sans-serif;color:#bdcdbb;margin-top:8px;letter-spacing:.07em}
+html[lang="ar"] .a-hero__review-link{display:inline-flex;align-items:center;justify-content:center;color:#e1d2b3;text-decoration:underline;text-underline-offset:4px;font-size:.78rem;padding:12px 8px}
+html[lang="ar"] .a-hero__review-link:hover{color:#fff}
+@media(max-width:700px){html[lang="ar"] .a-client-review-bridge__inner{grid-template-columns:1fr}html[lang="ar"] .a-client-review-bridge__stamp{display:none}html[lang="ar"] .a-client-review-bridge__cta{font-size:.81rem;padding:13px 16px}html[lang="ar"] .a-hero__review-link{width:100%;justify-content:flex-start}}
+
+html[lang="ar"] .a-lang__pending{opacity:.58;cursor:not-allowed;font-size:.69rem;white-space:nowrap}
+
+html[lang="ar"] .a-client-review-bridge__stamp img{display:block;max-height:104px;object-fit:contain;opacity:.96;margin-bottom:11px}
+html[lang="ar"] .a-client-review-bridge__stamp small{letter-spacing:.04em;font-size:.51rem}
+
+/* source: contact-footer-polish.css */
+/* SMA PLAYER · PREMIUM CONTACT + KAMAYA FOOTER
+   Client direction 2026-11-11 · Arabic review. Inspired by the separate contact
+   conversion block and restrained design credit common in premium sports sites;
+   original design, original SMA and KAMAYA marks, no copied assets. */
+html[lang="ar"] .d-a .a-contact--editorial{
+  position:relative;isolation:isolate;overflow:hidden;
+  padding:clamp(78px,9vw,140px) clamp(19px,4vw,56px) clamp(76px,8.4vw,132px);
+  background:linear-gradient(125deg,#07140d,#0c2719 51%,#06130d);
+  border-top:1px solid rgba(201,168,106,.24);
+}
+html[lang="ar"] .d-a .a-contact--editorial:before{
+  content:"";position:absolute;inset:0;pointer-events:none;z-index:-1;
+  background:radial-gradient(ellipse 46% 78% at 83% 34%,rgba(48,126,74,.19),transparent 75%),
+  radial-gradient(ellipse 38% 44% at 6% 100%,rgba(201,168,106,.095),transparent 85%);
+}
+html[lang="ar"] .d-a .a-contact--editorial:after{
+  content:"S";position:absolute;right:-9vw;top:-11vw;z-index:-1;direction:ltr;
+  font:900 clamp(380px,48vw,860px)/.9 system-ui,sans-serif;opacity:.035;pointer-events:none;
+}
+html[lang="ar"] .d-a .a-contact--editorial .a-contact__inner{
+  max-width:1250px;padding:0;margin-inline:auto;display:grid;direction:rtl;
+  grid-template-columns:minmax(0,.88fr) minmax(0,1.12fr);
+  align-items:center;gap:clamp(34px,6vw,100px);
+}
+html[lang="ar"] .a-contact--editorial .a-contact__txt{position:relative;padding-block:20px}
+html[lang="ar"] .a-contact--editorial .a-contact__eyebrow{
+  display:inline-flex;align-items:center;gap:13px;color:#d9bc7c;font-size:.77rem;margin:0 0 17px;
+}
+html[lang="ar"] .a-contact--editorial .a-contact__eyebrow:before{content:"";height:1px;width:24px;background:#d9bc7c}
+html[lang="ar"] .a-contact--editorial #a-contact-title{
+  font-size:clamp(2.5rem,4.45vw,5.2rem);line-height:1.4;font-weight:790;
+  letter-spacing:-.047em;margin:0 0 24px;color:#f7f4eb;max-width:12ch;
+}
+html[lang="ar"] .a-contact--editorial #a-contact-title em{
+  font-style:normal;font-weight:740;color:#b7e0b7;
+}
+html[lang="ar"] .a-contact--editorial .a-contact__lede{
+  max-width:52ch;line-height:2.17;color:#c7d8c9;font-size:clamp(.93rem,1.1vw,1.075rem);margin:0;
+}
+html[lang="ar"] .a-contact__direct{margin-top:clamp(33px,5vw,59px)}
+html[lang="ar"] .a-contact__wa{
+  width:fit-content;max-width:100%;display:inline-flex;align-items:center;gap:11px;
+  color:#fff;background:linear-gradient(120deg,#26894b,#176a3d);text-decoration:none;
+  border:1px solid rgba(161,218,175,.43);border-radius:100px;padding:15px 22px;
+  font-weight:700;line-height:1.5;font-size:.88rem;
+  box-shadow:0 15px 28px rgba(0,0,0,.13);transition:transform .2s,border-color .2s;
+}
+html[lang="ar"] .a-contact__wa:hover{transform:translateY(-3px);border-color:#e1ce9d}
+html[lang="ar"] .a-contact__wa svg{width:23px;height:23px;flex:none}
+html[lang="ar"] .a-contact__direct>p{font-size:.71rem;line-height:1.7;color:#a4b8ab;margin:13px 4px 0}
+html[lang="ar"] .a-contact__line{width:72px;height:2px;background:linear-gradient(90deg,#d4b77a,transparent);margin:clamp(41px,5vw,72px) 0 19px}
+html[lang="ar"] .a-contact__aside{font-family:'El Messiri','Alexandria',sans-serif;font-size:clamp(1rem,1.5vw,1.4rem);color:#ebdbb9!important;line-height:1.8;margin:0}
+html[lang="ar"] .a-contact__form{
+  background:linear-gradient(143deg,#f6f3e9,#eaeadd);border:1px solid rgba(255,255,255,.77);
+  border-radius:22px;color:#173224;box-shadow:0 32px 70px rgba(0,0,0,.25);
+  padding:clamp(23px,3.4vw,49px);position:relative;overflow:hidden;
+}
+html[lang="ar"] .a-contact__form:before{
+  content:"";position:absolute;top:0;left:0;right:0;height:4px;
+  background:linear-gradient(90deg,#245f3c 0%,#d5ba81 50%,#245f3c 100%);
+}
+html[lang="ar"] .a-contact__form-head span{font-size:.7rem;font-weight:760;letter-spacing:.01em;color:#476e4e}
+html[lang="ar"] .a-contact__form-head h3{
+  font-size:clamp(1.55rem,2.05vw,2.25rem);line-height:1.4;margin:10px 0 8px;color:#153923;font-weight:760;
+}
+html[lang="ar"] .a-contact__form-head p{font-size:.82rem;color:#526c5a;line-height:1.8;margin:0 0 24px}
+html[lang="ar"] .a-contact__fields{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));column-gap:15px;row-gap:18px}
+html[lang="ar"] .a-contact__fields>label{min-width:0;display:flex;flex-direction:column;gap:9px;font-size:.79rem;font-weight:690;color:#25402e;line-height:1.6}
+html[lang="ar"] .a-contact__fields label small{display:inline;color:#82917f;font-weight:430;font-size:.68rem}
+html[lang="ar"] .a-contact__req{color:#b67d31;display:inline}
+html[lang="ar"] .a-contact__fields input,
+html[lang="ar"] .a-contact__fields select,
+html[lang="ar"] .a-contact__fields textarea{
+  appearance:none;display:block;width:100%;border:1px solid #c6d0be;border-radius:9px;
+  outline:0;background:rgba(255,255,255,.72);color:#163824;
+  padding:12px 14px;min-height:52px;line-height:1.7;font-family:'Alexandria',system-ui,sans-serif;
+  font-weight:480;font-size:.82rem;transition:border-color .15s,box-shadow .15s;
+}
+html[lang="ar"] .a-contact__fields :is(input,select,textarea):focus{border-color:#397d51;box-shadow:0 0 0 3px rgba(43,120,71,.12)}
+html[lang="ar"] .a-contact__fields :is(input,textarea)::placeholder{color:#8f9c8d}
+html[lang="ar"] .a-contact__fields :is(input,select,textarea)[aria-invalid="true"]{border-color:#b85143}
+html[lang="ar"] .a-contact__fields .a-contact__message{grid-column:1/-1}
+html[lang="ar"] .a-contact__message textarea{min-height:124px;resize:vertical}
+html[lang="ar"] .a-contact__send-row{margin-top:21px;display:flex;flex-direction:column;align-items:stretch;gap:10px}
+html[lang="ar"] .a-contact__submit{
+  display:flex;align-items:center;justify-content:space-between;gap:14px;
+  background:#184f30;color:#fff;cursor:pointer;border:1px solid #184f30;
+  border-radius:10px;padding:15px 20px;line-height:1.6;font-weight:760;font-size:.93rem;
+  transition:transform .2s,background .2s;
+}
+html[lang="ar"] .a-contact__submit:hover:not(:disabled){transform:translateY(-2px);background:#256e45}
+html[lang="ar"] .a-contact__submit:disabled{opacity:.68;cursor:wait}
+html[lang="ar"] .a-contact__submit-icon{border:1px solid rgba(255,255,255,.4);display:flex;width:33px;height:33px;justify-content:center;align-items:center;border-radius:100%;font:600 1rem system-ui}
+html[lang="ar"] .a-contact__send-note{font-size:.69rem;color:#6d8271;line-height:1.8;margin:0}
+html[lang="ar"] .a-contact__result{display:block;font-size:.76rem;line-height:1.9;font-weight:620;color:#2f6a42;margin-top:9px;min-height:0}
+html[lang="ar"] .a-contact__result[data-state="err"]{color:#a14737}
+html[lang="ar"] .a-contact__manual{margin-top:11px;padding:15px;border:1px solid #bfceba;border-radius:12px;background:#e8eee4}
+html[lang="ar"] .a-contact__manual[hidden]{display:none}
+html[lang="ar"] .a-contact__manual label{display:block;color:#264a34;font-size:.75rem;margin-bottom:9px}
+html[lang="ar"] .a-contact__manual textarea{width:100%;border-radius:7px;border:1px solid #b9c9b5;background:#fff;padding:10px;font-size:.75rem;line-height:1.7;color:#193727;resize:vertical}
+html[lang="ar"] .a-contact__manual button{border:1px solid #5a9b6c;background:#206d43;color:#fff;border-radius:7px;padding:8px 15px;margin-top:9px;cursor:pointer}
+/* Footer: editorial CTA → a legible information hierarchy → tiny bespoke KAMAYA signature. */
+html[lang="ar"] .d-a .a-foot--editorial{background:#040e08;color:#f2f0e8;border-top:1px solid rgba(214,184,122,.29);position:relative;overflow:hidden}
+html[lang="ar"] .a-foot__wrap{max-width:1440px;padding-inline:clamp(19px,5vw,74px);margin:auto}
+html[lang="ar"] .a-foot__invitation{
+  position:relative;display:flex;align-items:center;justify-content:space-between;gap:34px;
+  padding:clamp(65px,8vw,115px) 0 clamp(53px,6vw,90px);border-bottom:1px solid rgba(206,185,139,.2);
+}
+html[lang="ar"] .a-foot__invitation:before{
+  content:"";position:absolute;z-index:0;inset:0 auto 0 14%;
+  width:50%;background:radial-gradient(ellipse,rgba(43,111,67,.14),transparent 73%);pointer-events:none;
+}
+html[lang="ar"] .a-foot__invite-copy{position:relative;z-index:1}
+html[lang="ar"] .a-foot__eyebrow{color:#bda971;font:600 .7rem/1.7 system-ui,sans-serif;letter-spacing:.07em}
+html[lang="ar"] .a-foot__invite-copy h2{font-size:clamp(2.65rem,5vw,5.8rem);line-height:1.34;letter-spacing:-.04em;margin:13px 0 14px;color:#faf6ec;font-weight:760}
+html[lang="ar"] .a-foot__invite-copy h2 em{font-style:normal;color:#97cba0}
+html[lang="ar"] .a-foot__invite-copy p{font-size:clamp(.83rem,1.05vw,1rem);line-height:1.9;color:#b3c1b4;max-width:61ch}
+html[lang="ar"] .a-foot__invite-action{
+  display:inline-flex;align-items:center;justify-content:space-between;gap:26px;
+  flex:0 0 auto;min-width:210px;max-width:100%;
+  background:#d9c08c;color:#173622;font-weight:750;text-decoration:none;
+  border:1px solid #e5d3a7;padding:17px 22px;border-radius:50px;
+  box-shadow:0 12px 28px rgba(0,0,0,.18);transition:transform .2s,background .2s;
+}
+html[lang="ar"] .a-foot__invite-action:hover{transform:translateY(-3px);background:#f1dda9}
+html[lang="ar"] .a-foot__body{
+  display:grid;grid-template-columns:minmax(0,1.5fr) minmax(150px,.5fr) minmax(0,.8fr);
+  align-items:start;gap:clamp(20px,4vw,70px);padding:clamp(40px,5vw,73px) 0 clamp(45px,5vw,70px);
+}
+html[lang="ar"] .a-foot__brand-block{display:flex;align-items:flex-start;gap:19px}
+html[lang="ar"] .a-foot__brand-block img{width:62px;height:79px;object-fit:contain;flex:none}
+html[lang="ar"] .a-foot__brand-block strong{font:750 1.2rem/1.4 system-ui,sans-serif;letter-spacing:.025em;display:block;color:#f9f5eb}
+html[lang="ar"] .a-foot__brand-block span{display:block;margin-top:5px;color:#d5bd88;font-size:.79rem}
+html[lang="ar"] .a-foot__brand-block p{font-size:.78rem;max-width:40ch;color:#93aa98;line-height:2;margin-top:13px}
+html[lang="ar"] .a-foot__col-title{display:block;font-size:.77rem;font-weight:700;color:#ddc28d;margin:0 0 18px}
+html[lang="ar"] .a-foot__nav{display:flex;flex-direction:column;gap:11px}
+html[lang="ar"] .a-foot__nav a{width:fit-content;color:#b9c9bb;font-size:.8rem;text-decoration:none;transition:color .15s}
+html[lang="ar"] .a-foot__nav a:hover{color:#f9dba0}
+html[lang="ar"] .a-foot__socials{display:flex;gap:8px;flex-wrap:wrap}
+html[lang="ar"] .a-foot__socials a{display:flex;align-items:center;justify-content:center;gap:6px;text-decoration:none;border:1px solid rgba(195,222,196,.23);border-radius:50px;min-height:43px;padding:9px 13px;color:#d9e5d6;font-size:.73rem;transition:background .2s,border-color .2s}
+html[lang="ar"] .a-foot__socials a:hover{border-color:#bcb187;background:#183524}
+html[lang="ar"] .a-foot__socials svg{width:18px;height:18px;flex:none}
+html[lang="ar"] .a-foot__wa-link{display:inline-flex;gap:10px;margin-top:19px;text-decoration:none;color:#d3c598;font-size:.76rem;line-height:1.8}
+html[lang="ar"] .a-foot__wa-link:hover{text-decoration:underline}
+html[lang="ar"] .a-foot__bottom{
+  padding:22px 0 30px;border-top:1px solid rgba(205,181,136,.2);
+  display:flex;align-items:center;justify-content:space-between;gap:26px;
+}
+html[lang="ar"] .a-foot__legal{display:flex;align-items:center;gap:12px;flex-wrap:wrap;color:#8d9f8d;font:500 .71rem/1.7 system-ui,sans-serif}
+html[lang="ar"] .a-foot__legal span+span:before{content:"·";padding-inline-end:11px;color:#897f65}
+html[lang="ar"] .a-foot__legal a{color:#b7c7b8;text-decoration:none;white-space:nowrap}
+html[lang="ar"] .a-foot__legal a:hover{color:#f4ddb0}
+html[lang="ar"] .a-foot__kamaya{display:flex;align-items:center;justify-content:flex-start;gap:14px;position:relative;flex:none;direction:rtl}
+html[lang="ar"] .a-foot__signature-caption{white-space:nowrap;font-size:.69rem;color:#9caa9b;line-height:1.6}
+html[lang="ar"] .a-foot__signature-mark{
+  position:relative;isolation:isolate;display:flex;align-items:center;
+  padding:11px 15px;border:1px solid rgba(194,176,138,.22);
+  border-radius:9px;background:linear-gradient(138deg,rgba(38,72,47,.22),rgba(19,33,25,.42));
+  box-shadow:inset 0 1px rgba(255,255,255,.04);overflow:hidden;
+  transition:border-color .25s,transform .25s;
+}
+html[lang="ar"] .a-foot__signature-mark:after{
+  content:"";position:absolute;inset:0;pointer-events:none;z-index:-1;
+  background:linear-gradient(112deg,transparent 20%,rgba(213,191,132,.08) 50%,transparent 80%);
+  transform:translateX(100%);transition:transform .65s;
+}
+html[lang="ar"] .a-foot__kamaya:hover .a-foot__signature-mark{border-color:rgba(212,187,123,.52);transform:translateY(-2px)}
+html[lang="ar"] .a-foot__kamaya:hover .a-foot__signature-mark:after{transform:translateX(-100%)}
+html[lang="ar"] .a-foot__signature-flare{height:5px;width:5px;border-radius:50%;background:#d5bd86;display:block;margin-inline-end:10px;box-shadow:0 0 11px rgba(213,189,134,.43)}
+html[lang="ar"] .a-foot__signature-mark img{display:block;width:120px;height:auto;aspect-ratio:634/162;object-fit:contain;opacity:.91}
+@media(max-width:1020px){
+  html[lang="ar"] .d-a .a-contact--editorial .a-contact__inner{grid-template-columns:1fr;gap:30px;max-width:690px}
+  html[lang="ar"] .a-contact--editorial .a-contact__txt{padding-block:0}
+  html[lang="ar"] .a-contact__line,html[lang="ar"] .a-contact__aside{display:none}
+  html[lang="ar"] .a-contact__direct{margin-top:22px}
+  html[lang="ar"] .a-foot__body{grid-template-columns:1.2fr .6fr;gap:40px}
+  html[lang="ar"] .a-foot__connect{grid-column:1/-1}
+}
+@media(max-width:690px){
+  html[lang="ar"] .d-a .a-contact--editorial{padding:68px 18px 75px}
+  html[lang="ar"] .a-contact--editorial #a-contact-title{font-size:clamp(2.55rem,10vw,3.8rem)}
+  html[lang="ar"] .a-contact__form{padding:22px 18px;border-radius:16px}
+  html[lang="ar"] .a-contact__fields{grid-template-columns:1fr;gap:14px}
+  html[lang="ar"] .a-contact__fields .a-contact__message{grid-column:auto}
+  html[lang="ar"] .a-contact__wa{font-size:.79rem;padding:13px 16px}
+  html[lang="ar"] .a-foot__invitation{flex-direction:column;align-items:flex-start;gap:22px;padding-block:64px 48px}
+  html[lang="ar"] .a-foot__invite-copy h2{font-size:clamp(2.55rem,10vw,3.7rem)}
+  html[lang="ar"] .a-foot__body{grid-template-columns:1fr 1fr;gap:33px 18px}
+  html[lang="ar"] .a-foot__brand-block{grid-column:1/-1}
+  html[lang="ar"] .a-foot__connect{grid-column:auto}
+  html[lang="ar"] .a-foot__bottom{align-items:flex-start;flex-direction:column-reverse;gap:20px}
+  html[lang="ar"] .a-foot__kamaya{justify-content:space-between;width:100%}
+}
+@media(max-width:400px){
+  html[lang="ar"] .a-foot__body{grid-template-columns:1fr;gap:27px}
+  html[lang="ar"] .a-foot__brand-block,html[lang="ar"] .a-foot__connect{grid-column:1}
+  html[lang="ar"] .a-foot__nav{display:grid;grid-template-columns:repeat(2,1fr)}
+  html[lang="ar"] .a-foot__col-title{grid-column:1/-1;margin-bottom:0}
+  html[lang="ar"] .a-foot__signature-caption{font-size:.63rem}
+  html[lang="ar"] .a-foot__signature-mark img{width:102px}
+  html[lang="ar"] .a-foot__signature-mark{padding:9px 11px}
+}
+@media(prefers-reduced-motion:reduce){
+  html[lang="ar"] :is(.a-contact__wa,.a-contact__submit,.a-foot__invite-action,.a-foot__signature-mark){transition:none!important;transform:none!important}
+}
+
+html[lang="ar"] .a-contact__fields .a-contact__field-caption{display:flex;flex-direction:row;align-items:center;flex-wrap:wrap;gap:7px;line-height:1.7;min-height:24px}
+html[lang="ar"] .a-contact__fields .a-contact__field-caption small{display:inline-flex;margin:0;font-size:.67rem;color:#718473}
+html[lang="ar"] .a-contact__fields .a-contact__field-caption em{font-style:normal;font-weight:700;color:#b47b31}
+
+/* source: homepage-ia.css */
+
+html[lang=ar] .sma-story-more{margin:18px 0}
+html[lang=ar] .sma-story-more a,html[lang=ar] .sma-section-detail a,html[lang=ar] .sma-source-archive-link a{display:inline-flex;align-items:center;gap:10px;padding:10px 17px;border:1px solid rgba(214,186,124,.45);border-radius:50px;text-decoration:none;color:#e7cd97;font-size:.84rem;font-weight:650;transition:background .2s}
+html[lang=ar] .sma-story-more a:hover,html[lang=ar] .sma-section-detail a:hover,html[lang=ar] .sma-source-archive-link a:hover{background:rgba(215,183,118,.12)}
+html[lang=ar] .sma-section-detail{margin:10px 0 22px}
+html[lang=ar] .a-camp--tall img[src*="dammam-camp-squad"]{object-position:center 25%}
+
+/* source: homepage-editorial-slim.css */
+
+/* SMA PLAYER — KAMAYA final editorial trim, Nov 2026.
+   More story, less repetition. Preserve four-axis visual and original images. */
+html[lang=ar] .sma-editorial-link{display:inline-flex;align-items:center;gap:12px;padding:11px 20px;text-decoration:none;border-radius:100px;font-size:.84rem;font-weight:710;color:#e3e9dc;border:1px solid rgba(215,225,207,.32);background:rgba(28,74,47,.2);transition:background .22s,border-color .22s,transform .22s;line-height:1.7}
+html[lang=ar] .sma-editorial-link:hover{background:rgba(44,114,69,.4);border-color:rgba(236,208,147,.7);transform:translateY(-2px)}
+html[lang=ar] .sma-editorial-link--gold{color:#ead4a3;border-color:rgba(224,191,121,.47)}
+html[lang=ar] .sma-identity-brief{padding-block:clamp(65px,8vw,118px);border-block:1px solid rgba(206,190,153,.15);background:linear-gradient(125deg,#08190f,#102f1b 55%,#07190e)}
+html[lang=ar] .sma-identity-brief__layout{max-width:1190px;margin:auto;display:grid;grid-template-columns:220px minmax(0,1fr);align-items:center;gap:clamp(27px,6vw,84px)}
+html[lang=ar] .sma-identity-brief__logo{display:flex;align-items:center;justify-content:center;position:relative;width:100%;min-height:240px;background:radial-gradient(circle,rgba(57,118,71,.3),transparent 68%);border:1px solid rgba(210,186,123,.22);border-radius:21px}
+html[lang=ar] .sma-identity-brief__logo img{width:135px;height:185px;object-fit:contain}
+html[lang=ar] .sma-identity-brief__copy .kicker{color:#e2c88a;margin-bottom:12px}
+html[lang=ar] .sma-identity-brief__copy h2{max-width:16ch;line-height:1.38;font-size:clamp(2rem,3.5vw,3.7rem);margin:0 0 17px}
+html[lang=ar] .sma-identity-brief__copy>p:not(.kicker){color:#cad9ca;font-size:clamp(.9rem,1.2vw,1.05rem);line-height:2;max-width:64ch}
+html[lang=ar] .sma-identity-brief__actions{display:flex;gap:10px;flex-wrap:wrap;margin-top:27px}
+html[lang=ar] .a-coach__txt .sma-editorial-link{margin-top:16px}
+html[lang=ar] .a-story__txt .sma-editorial-link{margin-top:22px}
+html[lang=ar] .a-story__quote{margin-top:26px}
+html[lang=ar] .a-camps .sma-camp-more{display:flex;justify-content:center;margin:30px 0 0}
+html[lang=ar] .sma-media-peek{padding:clamp(72px,9vw,122px) clamp(19px,5vw,65px);background:linear-gradient(160deg,#06130c,#112c1c);border-top:1px solid rgba(222,191,129,.19)}
+html[lang=ar] .sma-media-peek__head{display:flex;justify-content:space-between;align-items:end;gap:24px;max-width:1240px;margin:0 auto 35px}
+html[lang=ar] .sma-media-peek .kicker{color:#d9bc7e;margin:0 0 13px}
+html[lang=ar] .sma-media-peek h2{font-size:clamp(2rem,3.5vw,3.9rem);line-height:1.3;margin:0}
+html[lang=ar] .sma-media-peek__head>p{color:#b5c8b8;line-height:1.8;max-width:32ch;font-size:.9rem}
+html[lang=ar] .sma-media-peek__grid{max-width:1240px;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:clamp(9px,1.5vw,22px);margin:auto}
+html[lang=ar] .sma-media-peek__grid a{display:block;position:relative;overflow:hidden;border-radius:13px;min-height:200px;aspect-ratio:1.15;border:1px solid rgba(213,191,145,.18);background:#153324;color:#fff}
+html[lang=ar] .sma-media-peek__grid img{display:block;width:100%;height:100%;object-fit:cover;transition:transform .45s ease;position:absolute;inset:0}
+html[lang=ar] .sma-media-peek__grid a:hover img{transform:scale(1.055)}
+html[lang=ar] .sma-media-peek__grid a:after{content:"";position:absolute;inset:35% 0 0;background:linear-gradient(0deg,rgba(0,0,0,.72),transparent)}
+html[lang=ar] .sma-media-peek__grid a span{position:absolute;z-index:1;bottom:19px;right:20px;font-size:clamp(.86rem,1.2vw,1.15rem);font-weight:700}
+html[lang=ar] .sma-media-peek__links{max-width:1240px;margin:27px auto 0;display:flex;justify-content:flex-end;flex-wrap:wrap;gap:10px}
+html[lang=ar] .a-foot__body{padding-top:50px}
+html[lang=ar] .sma-principles-link a{color:#ead29b;text-decoration:underline;text-underline-offset:5px}
+@media(max-width:700px){html[lang=ar] .sma-identity-brief__layout{grid-template-columns:1fr}html[lang=ar] .sma-identity-brief__logo{min-height:170px}html[lang=ar] .sma-identity-brief__logo img{width:90px;height:128px}html[lang=ar] .sma-media-peek__head{display:block}html[lang=ar] .sma-media-peek__head>p{margin-top:14px}html[lang=ar] .sma-media-peek__grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:9px}html[lang=ar] .sma-media-peek__grid a:first-child{grid-column:1/-1;aspect-ratio:1.75}html[lang=ar] .sma-media-peek__grid a{min-height:145px}html[lang=ar] .sma-media-peek__links{justify-content:flex-start}}
+@media(prefers-reduced-motion:reduce){html[lang=ar] .sma-media-peek__grid img{transition:none}html[lang=ar] .sma-editorial-link{transition:none;transform:none!important}}
+
+/* Legacy hero decoration extends 11px beyond 320px viewports; visually clip it without affecting content. */
+html[lang=ar],html[lang=ar] body{overflow-x:clip}
+
+/* source: sma-client-revision.css */
+/* KAMAYA SMA PLAYER — client-requested group identity, strict location attribution */
+html[lang=ar],html[lang=ar] body{overflow-x:clip}
+.d-a .a-hero__media{background:#06180c}
+.d-a .a-hero__img,html[lang=ar] .d-a .a-hero__img{position:absolute!important;inset:0!important;left:0!important;right:0!important;width:100%!important;height:100%!important;object-fit:cover!important;object-position:center 43%!important;transform:none!important}
+.d-a .a-hero__veil{background:linear-gradient(0deg,#06140b 3%,rgba(3,18,9,.58) 28%,rgba(4,17,9,.2) 74%,rgba(4,17,9,.23) 100%)!important}
+.d-a .a-hero__body{position:relative;z-index:2}
+.d-a .a-hero__title{direction:ltr;text-align:right}
+.d-a .a-hero__title-family{font-size:.85em}
+.d-a .a-hero__lede{max-width:47ch}
+.d-a .a-top__inner{max-width:1600px}
+.d-a .a-nav{gap:0}
+.d-a .a-nav a{font-size:clamp(10px,.73vw,13px);padding:9px clamp(5px,.6vw,10px)}
+.d-a .a-nav__cta{margin-inline-start:5px}
+.d-a .a-brand__txt i{font-size:10px}
+.sma-verified-camps{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:14px;max-width:1360px;margin:30px auto}
+.sma-verified-camp{color:#fff;text-decoration:none;display:flex;flex-direction:column;overflow:hidden;border:1px solid rgba(208,185,126,.25);border-radius:17px;background:#102d1b;transition:transform .23s,border-color .23s}
+.sma-verified-camp:hover{transform:translateY(-4px);border-color:#dfc58e}
+.sma-verified-camp__photo{height:240px;background:radial-gradient(circle at center,#254f32,#06170d);position:relative;display:flex;align-items:center;justify-content:center;overflow:hidden}
+.sma-verified-camp__photo img{width:100%;height:100%;object-fit:cover;position:absolute;inset:0}
+.sma-verified-camp__photo b{color:rgba(232,206,144,.4);font-family:Arial,sans-serif;font-size:90px}
+.sma-verified-camp__photo small{position:absolute;bottom:15px;left:10px;right:10px;color:#f0ddb6;font-size:11px;text-align:center;line-height:1.7}
+.sma-verified-camp__copy{padding:21px;flex:1}
+.sma-verified-camp__copy>span{color:#e5ca8f;font-size:.75rem}
+.sma-verified-camp__copy h3{font-size:1.25rem;line-height:1.45;margin:9px 0}
+.sma-verified-camp__copy p{font-size:.88rem;line-height:1.85;color:#c6d4c8;margin:0}
+.sma-camp-more{display:flex;justify-content:center;margin-top:26px}
+.sma-home-opportunities{padding:68px clamp(20px,5vw,70px);background:#102d1c;border-top:1px solid rgba(213,191,132,.21)}
+.sma-home-opportunities__inner{max-width:1230px;margin:0 auto}
+.sma-home-opportunities__links{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px;margin-top:25px}
+.sma-home-opportunities__links a{padding:24px;border:1px solid rgba(231,206,142,.23);border-radius:16px;background:linear-gradient(130deg,#19422b,#0a1d11);display:grid;gap:11px;color:#fff;text-decoration:none}
+.sma-home-opportunities__links b{font-size:1.1rem}
+.sma-home-opportunities__links span{font-size:.88rem;color:#bed1c1}
+.topbar .sma-subnav{flex-wrap:wrap;gap:3px}
+.topbar .sma-subnav a{font-size:12px;padding:7px 9px;white-space:nowrap}
+.sma-content{width:min(1230px,calc(100% - 36px));margin:40px auto 95px}
+.sma-content .chapter{padding:40px 0 53px;border-top:1px solid rgba(218,200,155,.18)}
+.sma-content .chapter:first-child{border-top:0}
+.sma-location-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:20px}
+.sma-location-card,.sma-award{border:1px solid rgba(211,185,135,.24);border-radius:17px;background:#13301f;overflow:hidden;display:flex;flex-direction:column;color:#eef6ed}
+.sma-location-card>img,.sma-award>img{width:100%;height:270px;object-fit:cover;display:block}
+.sma-location-card>div:last-child,.sma-award>div:last-child{padding:23px 25px;flex:1}
+.sma-location-card span,.sma-award span{color:#e0c28b;font-size:.8rem}
+.sma-location-card h3,.sma-award h3{font-size:1.4rem;margin:12px 0}
+.sma-location-card p,.sma-award p{font-size:.94rem;line-height:1.85;color:#c6d7ca}
+.sma-location-card a{color:#ead18f;text-decoration:none}
+.sma-location-placeholder,.sma-award-placeholder{height:270px;display:flex;flex-direction:column;align-items:center;justify-content:center;background:radial-gradient(circle,#2c6242,#0a2113);position:relative}
+.sma-location-placeholder b{font-family:Arial,sans-serif;font-size:100px;color:rgba(231,205,152,.45)}
+.sma-location-placeholder small{position:absolute;bottom:20px;color:#e4d0a3;text-align:center;padding:0 12px;font-size:.83rem}
+.sma-award-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px}
+.sma-award-placeholder{color:#c1a569;font-size:115px}
+.sma-note{padding:22px 25px;background:#1a3724;border-inline-start:3px solid #bda36b;color:#d8e6d9;line-height:1.9;border-radius:6px;margin:24px 0}
+.sma-note a{color:#efd5a7}
+.sma-faq{display:grid;gap:10px}
+.sma-faq details{padding:18px 22px;border-radius:13px;background:#153723;border:1px solid rgba(226,199,138,.22)}
+.sma-faq summary{cursor:pointer;font-weight:700}
+.sma-faq p{line-height:1.9;color:#cbdacc}
+.sma-link-row a{background:#267748;color:#fff;border-radius:40px;padding:13px 24px;display:inline-block;text-decoration:none}
+.sma-player-form{display:grid;gap:16px}
+.sma-player-form fieldset{border:1px solid rgba(215,194,138,.23);border-radius:14px;padding:25px;display:grid;grid-template-columns:1fr 1fr;gap:18px}
+.sma-player-form legend{color:#e6cb8e;font-weight:700}
+.sma-player-form label{display:grid;gap:7px}
+.sma-player-form input,.sma-player-form select,.sma-player-form textarea{background:#0b2416;color:#fff;border:1px solid #497250;border-radius:9px;padding:12px;width:100%;font-family:inherit}
+.sma-player-form textarea{resize:vertical}
+.sma-player-form fieldset:disabled{opacity:.73}
+.sma-player-form button{padding:16px;background:#39694c;border-radius:10px;border:0;color:#fff;opacity:.6}
+@media(max-width:1200px){.d-a .a-nav a{font-size:11px;padding:8px 5px}.sma-verified-camps{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:760px){
+ .d-a .a-hero__media{height:auto!important;aspect-ratio:1.28!important;min-height:0!important}
+ .d-a .a-hero__img,html[lang=ar] .d-a .a-hero__img{object-fit:contain!important;object-position:center!important;position:absolute!important;left:0!important}
+ .d-a .a-hero__mobile-overlay{inset:auto 18px 8px!important}
+ .d-a .a-hero__mobile-overlay h1{font-size:clamp(37px,10vw,57px)!important;line-height:1!important}
+ .d-a .a-hero__mobile-overlay .a-hero__mobile-family{font-size:.65em!important}
+ .d-a .a-hero__body{padding-top:23px!important}
+ .d-a .a-hero__veil{background:linear-gradient(to top,rgba(5,18,11,.8),transparent 48%)!important}
+ .sma-verified-camps{gap:10px}
+ .sma-verified-camp__photo{height:165px}
+ .sma-verified-camp__copy{padding:13px}
+ .sma-verified-camp__copy h3{font-size:1rem}
+ .sma-verified-camp__copy p{font-size:.79rem}
+ .sma-location-grid,.sma-award-grid,.sma-home-opportunities__links{grid-template-columns:1fr}
+ .sma-player-form fieldset{grid-template-columns:1fr}
+}
+@media(max-width:420px){.sma-verified-camps{grid-template-columns:1fr}.sma-verified-camp__photo{height:210px}}
+
+
+/* Compact single-row mobile navigation; no three-line menu wall. */
+@media(max-width:960px){
+ .topbar{flex-wrap:wrap;gap:5px;justify-content:space-between;padding-bottom:0}
+ .topbar .brand{flex:1}
+ .topbar .back-link{display:none}
+ .topbar .sma-subnav{
+   order:3;width:100%;flex:0 0 100%;display:flex;flex-wrap:nowrap!important;
+   overflow-x:auto;overflow-y:hidden;overscroll-behavior-x:contain;
+   -webkit-overflow-scrolling:touch;scroll-snap-type:x proximity;
+   gap:4px;padding:8px 0 11px;scrollbar-width:none;
+   border-top:1px solid rgba(220,196,147,.13)
+ }
+ .topbar .sma-subnav::-webkit-scrollbar{display:none}
+ .topbar .sma-subnav a{flex:none;white-space:nowrap;padding:8px 11px;font-size:12px;scroll-snap-align:start}
+}
+@media(max-width:520px){
+ .topbar .brand img{width:37px;height:44px}
+ .topbar .brand b{font-size:13px}
+ .topbar .brand small{font-size:10px}
+ .sma-verified-camp__photo{height:190px}
+ .sma-location-card>img{height:230px}
+}
+/* Never style invalid/dormant intake as a working signup feature. */
+.sma-player-form :disabled{cursor:not-allowed}
+
+/* SMA STUDIO HERO — original, unmodified team studio portrait; not a Dammam camp claim. */
+@media(min-width:761px){
+ html[lang="ar"] .d-a .a-hero{background:#07170e}
+ html[lang="ar"] .d-a .a-hero__media{position:absolute;inset:0;overflow:hidden;background:radial-gradient(circle at 28% 50%,#25332d,#09180f 69%)}
+ html[lang="ar"] .d-a .a-hero__img{
+   position:absolute!important;top:0!important;bottom:0!important;left:0!important;right:auto!important;
+   width:65%!important;height:100%!important;object-fit:contain!important;object-position:left center!important;
+   transform:none!important;filter:contrast(1.03) saturate(.97)
+ }
+ html[lang="ar"] .d-a .a-hero__veil{
+   background:linear-gradient(to left,#06140b 1%,rgba(6,20,11,.98) 25%,rgba(6,20,11,.78) 42%,rgba(6,20,11,.12) 63%,rgba(6,20,11,.04) 100%),linear-gradient(to top,#06140b 0%,transparent 28%)!important
+ }
+ html[lang="ar"] .d-a .a-hero__beam{opacity:.17}
+ html[lang="ar"] .d-a .a-hero__body{max-width:min(640px,48vw)}
+}
+@media(max-width:760px){
+ html[lang="ar"] .d-a .a-hero__media{aspect-ratio:4 / 4.8!important;height:auto!important;min-height:0!important;background:#121a17}
+ html[lang="ar"] .d-a .a-hero__img{width:100%!important;height:100%!important;left:0!important;right:0!important;object-fit:cover!important;object-position:center 46%!important}
+ html[lang="ar"] .d-a .a-hero__veil{background:linear-gradient(to top,#06140b 0%,rgba(6,20,11,.48) 13%,transparent 35%)!important}
+ html[lang="ar"] .d-a .a-hero__mobile-overlay{bottom:20px!important}
+ html[lang="ar"] .d-a .a-hero__mobile-overlay h1{font-size:clamp(43px,11.1vw,70px)!important}
+}
+
+
+/* KAMAYA DESKTOP+MOBILE SEAMLESS FULL BLEED HERO, 2026-11-12 */
+/* Proof-of-concept: native full-bleed studio image extension, no split panel. */
+@media(min-width:961px) {
+ html[lang="ar"] .d-a .a-hero {
+   position:relative!important;
+   min-height:100svh!important;
+   isolation:isolate;
+   background:#101b16!important;
+ }
+ html[lang="ar"] .d-a .a-hero__media {
+   position:absolute!important;
+   inset:0!important;
+   width:100%!important;
+   height:100%!important;
+   background:#1d2825!important;
+   overflow:hidden!important;
+   isolation:isolate;
+ }
+ html[lang="ar"] .d-a .a-hero__media::before {
+   content:"";
+   position:absolute;
+   z-index:-1;
+   inset:-12%;
+   background-image:url("assets/hero/sma-studio-players.jpg");
+   background-size:cover;
+   background-position:48% 44%;
+   filter:blur(76px) brightness(.52) saturate(.45);
+   opacity:.96;
+   transform:scale(1.12);
+ }
+ html[lang="ar"] .d-a .a-hero__img {
+   position:absolute!important;
+   z-index:0;
+   left:0!important;
+   top:0!important;
+   right:auto!important;
+   bottom:0!important;
+   height:100%!important;
+   width:clamp(550px,55vw,860px)!important;
+   max-width:none!important;
+   object-fit:contain!important;
+   object-position:left center!important;
+   transform:none!important;
+   filter:saturate(.94) contrast(1.05)!important;
+   -webkit-mask-image:linear-gradient(to right,#000 0%,#000 82%,transparent 100%);
+   mask-image:linear-gradient(to right,#000 0%,#000 82%,transparent 100%);
+ }
+ html[lang="ar"] .d-a .a-hero__veil {
+   z-index:1;
+   background:
+     linear-gradient(to left,rgba(4,16,9,.94) 0%,rgba(5,20,13,.88) 31%,rgba(5,20,13,.62) 47%,rgba(5,20,13,.13) 68%,transparent 88%),
+     linear-gradient(to top,rgba(4,14,8,.68) 0%,transparent 22%),
+     radial-gradient(85% 80% at 85% 36%,rgba(45,91,64,.15),transparent 73%)!important;
+ }
+ html[lang="ar"] .d-a .a-hero__beam {opacity:.2!important;mix-blend-mode:screen}
+ html[lang="ar"] .d-a .a-hero__grain {z-index:2}
+ html[lang="ar"] .d-a .a-hero__body {
+   position:relative!important;
+   z-index:3!important;
+   max-width:min(600px,43vw)!important;
+   margin-left:auto!important;
+   margin-right:0!important;
+   justify-self:start;
+   padding-inline:0!important;
+ }
+}
+@media(max-width:960px){
+ html[lang="ar"] .d-a .a-hero {
+   position:relative!important;
+   display:block!important;
+   padding:0!important;
+   min-height:100svh!important;
+   background:#101c16!important;
+ }
+ html[lang="ar"] .d-a .a-hero__media {
+   position:absolute!important;
+   inset:0!important;
+   width:100%!important;height:100%!important;
+   min-height:0!important;
+   aspect-ratio:auto!important;
+   overflow:hidden!important;
+   background:#1a2720!important;
+   isolation:isolate;
+ }
+ html[lang="ar"] .d-a .a-hero__media::before {
+   content:"";
+   position:absolute;inset:-20%;z-index:-1;
+   background:url("assets/hero/sma-studio-players.jpg") center center / cover no-repeat;
+   filter:blur(46px) brightness(.38) saturate(.54);
+   opacity:.96;
+ }
+ html[lang="ar"] .d-a .a-hero__img {
+   position:absolute!important;
+   top:0!important;left:0!important;right:0!important;
+   width:100%!important;height:auto!important;
+   aspect-ratio:4/5!important;
+   object-fit:contain!important;
+   object-position:center top!important;
+   filter:contrast(1.04) saturate(.95)!important;
+   -webkit-mask-image:linear-gradient(to bottom,#000 0%,#000 80%,transparent 100%);
+   mask-image:linear-gradient(to bottom,#000 0%,#000 80%,transparent 100%);
+ }
+ html[lang="ar"] .d-a .a-hero__veil {
+   z-index:1;
+   background:linear-gradient(to top,#06140b 0%,rgba(6,20,11,.92) 25%,rgba(6,20,11,.3) 45%,transparent 70%)!important;
+ }
+ html[lang="ar"] .d-a .a-hero__mobile-overlay {display:none!important}
+ html[lang="ar"] .d-a .a-hero__body {
+   position:relative!important;
+   z-index:3!important;
+   display:block!important;
+   padding:calc(125vw + 20px) 24px 60px!important;
+   width:100%!important;
+   max-width:none!important;
+   margin:0!important;
+ }
+ html[lang="ar"] .d-a .a-hero__body .a-hero__title {
+   display:flex!important;
+   font-size:clamp(46px,12vw,72px)!important;
+   line-height:1!important;
+   gap:0!important;
+   flex-direction:column!important;
+   margin:0 0 19px!important;
+   text-align:right!important;
+ }
+ html[lang="ar"] .d-a .a-hero__body .a-hero__eyebrow {display:flex!important}
+ html[lang="ar"] .d-a .a-hero__body .a-hero__title-family{font-size:.68em!important}
+ html[lang="ar"] .d-a .a-hero__ident {font-size:12px!important}
+ html[lang="ar"] .d-a .a-hero__scroll{display:none!important}
+}
+
+/* Tablet balance: reveal the headline within the first screen, below player faces. */
+@media (min-width:601px) and (max-width:960px){
+ html[lang="ar"] .d-a .a-hero__img {
+   width:min(78vw,610px)!important;
+   height:auto!important;
+   left:0!important;right:auto!important;
+   object-fit:contain!important;
+   object-position:left top!important;
+   -webkit-mask-image:linear-gradient(to right,#000 0%,#000 83%,transparent 100%)!important;
+   mask-image:linear-gradient(to right,#000 0%,#000 83%,transparent 100%)!important;
+ }
+ html[lang="ar"] .d-a .a-hero__body {
+   padding-top:clamp(530px,67vw,660px)!important;
+   padding-left:clamp(26px,7vw,70px)!important;
+   padding-right:clamp(26px,7vw,70px)!important;
+ }
+ html[lang="ar"] .d-a .a-hero__body .a-hero__title{font-size:clamp(57px,8.6vw,78px)!important}
+ html[lang="ar"] .d-a .a-hero__lede{max-width:55ch}
+}
+
+/* SMA STAFF FOOTER ENTRY: discreet staff sign-in, not in athlete-facing main nav. */
+.sma-staff-entry{display:flex;align-items:center;justify-content:flex-start;gap:12px;flex-wrap:wrap;min-width:0}
+.sma-staff-entry a{font-size:11px!important;color:#d0d8c8!important;text-decoration:underline;text-underline-offset:4px;white-space:nowrap}
+.sma-staff-entry a:hover{color:#e4ce98!important}
+.a-foot__legal .sma-staff-entry{display:inline-flex;padding-inline:9px;border-inline-start:1px solid rgba(225,215,182,.3)}
+.sma-detail-footer__bottom .sma-staff-entry{display:inline-flex;align-items:center}
+@media(max-width:700px){.sma-staff-entry{gap:8px}.a-foot__legal .sma-staff-entry{padding-top:6px;border:0}}
+
+/* source: sma-experience.css */
+/* KAMAYA SMA PLAYER — global academy experience: no invented stats and no live registration promises. */
+.sma-global-journey{position:relative;isolation:isolate;overflow:hidden;background:#061c13;color:#f7f5ed;padding:clamp(72px,8.5vw,125px) clamp(20px,5.6vw,96px) clamp(60px,8vw,100px);border-block:1px solid rgba(230,206,153,.21)}
+.sma-global-journey:before{content:"";position:absolute;inset:-100px -40% auto auto;width:85%;height:600px;background:radial-gradient(ellipse,rgba(47,113,73,.24),transparent 68%);pointer-events:none;z-index:-1}
+.sma-global-journey__inner{max-width:1350px;margin:auto}
+.sma-global-journey__intro{display:grid;grid-template-columns:minmax(0,1.6fr) minmax(260px,.85fr);gap:40px;align-items:end;margin-bottom:54px}
+.sma-global-kicker{display:flex;align-items:center;gap:11px;color:#ceb88c;font:600 clamp(9px,.95vw,12px)/1.8 Arial,sans-serif;letter-spacing:.11em;margin:0 0 18px}
+.sma-global-kicker span{color:rgba(228,208,167,.36);font-weight:300}
+.sma-global-journey__head h2{margin:0;max-width:650px;font-size:clamp(34px,4.6vw,66px);line-height:1.28;font-weight:780;letter-spacing:-.035em;color:#fbf7ea}
+.sma-global-journey__lead{max-width:46ch;color:#b8d0bd;font-size:clamp(13px,1.15vw,16px);line-height:2.1;margin:0 0 5px}
+.sma-global-journey__steps{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:14px;position:relative}
+.sma-global-journey__steps:before{content:"";position:absolute;top:24px;right:6%;left:6%;height:1px;background:linear-gradient(to left,rgba(224,201,154,.5),rgba(224,201,154,.07));z-index:0}
+.sma-journey-step{position:relative;z-index:1;min-height:250px;padding:19px 22px 26px;border:1px solid rgba(210,216,190,.16);border-radius:17px;background:linear-gradient(150deg,rgba(29,70,47,.68),rgba(11,35,23,.94));transition:transform .2s,border-color .2s}
+.sma-journey-step:hover{transform:translateY(-5px);border-color:rgba(224,199,144,.45)}
+.sma-journey-step__number{display:inline-flex;align-items:center;justify-content:center;width:47px;height:47px;border-radius:50%;border:1px solid rgba(223,202,161,.4);background:#103321;color:#d2b782;font:600 13px/1 Arial,sans-serif;position:relative;z-index:1;letter-spacing:.03em}
+.sma-journey-step__icon{position:absolute;top:25px;left:22px;display:grid;place-items:center;width:26px;height:26px;font:21px/1 Arial,sans-serif;color:#89ab8e}
+.sma-journey-step h3{font-size:clamp(18px,1.65vw,24px);line-height:1.45;margin:35px 0 10px;color:#f0ead9}
+.sma-journey-step p{color:#aec4b3;font-size:clamp(11px,.9vw,14px);line-height:2;margin:0}
+.sma-global-journey__foot{margin-top:27px;padding:24px 27px;border:1px solid rgba(210,190,145,.24);border-radius:14px;background:linear-gradient(90deg,rgba(39,84,57,.27),rgba(9,38,25,.55));display:flex;gap:22px;align-items:center;justify-content:space-between}
+.sma-global-journey__foot>div{display:grid;gap:6px}.sma-global-journey__foot b{font-size:16px;color:#efe7cf}.sma-global-journey__foot span{font-size:12px;color:#b6cbb7;line-height:1.8}
+.sma-global-journey__foot .sma-journey-cta{flex:0 0 auto;display:inline-flex;align-items:center;gap:13px;background:#eee7d7;color:#153c27;padding:13px 19px;border-radius:10px;text-decoration:none;font-size:12px;font-weight:760;transition:transform .2s,background .2s}
+.sma-global-journey__foot .sma-journey-cta:hover{transform:translateY(-2px);background:#fff8e9}
+.sma-global-journey__foot .sma-journey-cta span{font:19px Arial;color:#153c27}
+.sma-camp-apply-teaser{display:flex;justify-content:space-between;align-items:center;gap:30px;padding:28px 32px;background:linear-gradient(130deg,#103b25,#092a1b);color:#f7f1e1;border-radius:16px;border:1px solid rgba(235,212,164,.27);margin:0 0 55px}
+.sma-camp-apply-teaser>div>span{display:inline-block;font-size:10px;color:#d9c18c;letter-spacing:.06em;margin-bottom:10px}.sma-camp-apply-teaser h2{margin:0;font-size:clamp(18px,2.2vw,28px)}.sma-camp-apply-teaser p{font-size:12px;color:#b8d0bf;margin:9px 0 0;line-height:1.9}
+.sma-camp-apply-teaser>a{display:inline-flex;flex:0 0 auto;align-items:center;background:#e8dcc3;color:#123a24;text-decoration:none;border-radius:10px;padding:13px 19px;font-size:12px;font-weight:750}
+@media(max-width:1050px){.sma-global-journey__steps{grid-template-columns:repeat(2,minmax(0,1fr))}.sma-global-journey__intro{grid-template-columns:1fr;gap:17px;margin-bottom:35px}.sma-journey-step{min-height:205px}.sma-global-journey__steps:before{display:none}}
+@media(max-width:650px){.sma-global-journey{padding:65px 19px}.sma-global-journey__head h2{font-size:clamp(34px,9.5vw,48px)}.sma-global-journey__steps{grid-template-columns:1fr;gap:10px}.sma-journey-step{min-height:auto;padding:17px 19px 24px}.sma-journey-step h3{margin-top:17px;font-size:22px}.sma-journey-step__number{width:39px;height:39px;font-size:11px}.sma-journey-step__icon{top:20px}.sma-global-journey__foot{flex-direction:column;align-items:stretch;padding:19px 20px}.sma-global-journey__foot .sma-journey-cta{justify-content:center}.sma-camp-apply-teaser{flex-direction:column;align-items:stretch;padding:22px}.sma-camp-apply-teaser>a{justify-content:center}}
+
+/* Athlete follow-up beside the preview CV in a non-operational flow. */
+.sma-global-journey__foot .sma-journey-follow{display:inline-flex;align-items:center;gap:8px;padding:12px;color:#d6e8d6;text-decoration:underline;text-underline-offset:4px;font-size:12px;font-weight:650}
+.sma-global-journey__foot .sma-journey-follow span{font:18px Arial;color:#d6e8d6}
+@media(max-width:950px){.sma-global-journey__foot{flex-wrap:wrap}}
+
+/* source: hero-team-update.css */
+/* SMA Players team photo hero 2026-11-15 */
+html[lang="ar"] .d-a .a-hero__img {position:absolute!important;inset:0!important;width:100%!important;height:100%!important;object-fit:cover!important;object-position:center 52%!important;transform:none!important;filter:contrast(1.03) saturate(.96)!important}
+html[lang="ar"] .d-a .a-hero__veil {background:linear-gradient(270deg,rgba(5,18,14,.88),rgba(5,18,14,.55) 48%,rgba(5,18,14,.16) 100%),linear-gradient(0deg,rgba(5,18,14,.64),transparent 42%)!important}
+html[lang="ar"] .d-a .a-hero__beam{opacity:.22!important}
+html[lang="ar"] .d-a .a-hero__lede{max-width:55ch;line-height:1.9}
+@media(max-width:760px){html[lang="ar"] .d-a .a-hero__img{object-position:center 49%!important}html[lang="ar"] .d-a .a-hero__veil{background:linear-gradient(to top,#07100b,rgba(7,16,11,.76) 22%,rgba(7,16,11,.08) 67%)!important}}
+
+/* Keep both hero CTAs equal in shape and height */
+html[lang="ar"] .d-a .a-hero__acts > .btn{display:inline-flex;align-items:center;justify-content:center;gap:.65rem;min-height:48px;min-width:180px;text-align:center;text-decoration:none}
+@media(max-width:760px){html[lang="ar"] .d-a .a-hero__acts>.btn{flex:1 1 145px;min-width:0}}
+
+/* source: coach-legacy-restore.css */
+/* SMA Players · قسم المدرب — تحرير كامل (2026-11-15)
+   The second homepage section, directly under the team hero. Restores the
+   original photograph from the first site (assets/coach.jpg — the coach in a
+   black jacket, leaning on the goalpost with his notes) and replaces the
+   generic training copy with his own achievement: Portugal, the Saudi team he
+   chose, and the Moura cup.
+
+   Earlier revisions of this file ended in a block that assumed a landscape
+   white-jersey source — object-fit:contain, a bright green (#087e48) media
+   background and !important resets. That source is gone and so is that block:
+   the portrait is now framed deliberately inside an editorial panel, so it
+   needs no letterboxing and no colour behind it, and it sits on the page's own
+   Emerald Cinema dark ground (#07100b) instead of a brighter green.
+
+   Only the team hero above it opens the page; this band is a chapter, not a
+   second full-height hero. The CTA is the shared .btn.btn--ghost pill — no new
+   button, no new colour tokens. */
+
+.d-a .coach-legacy{
+  position:relative; isolation:isolate; overflow:hidden;
+  padding:clamp(4rem,7.5vw,7rem) clamp(1.25rem,5vw,5rem);
+  border-top:1px solid rgba(245,242,234,.08);
+  background:#07100b;
+  color:var(--ivory,#f5f2ea);
+}
+/* Emerald beam + champagne hint, placed by gradient stops only — never a box
+   edge, same rule the hero follows. */
+.d-a .coach-legacy::before{
+  content:""; position:absolute; inset:0; z-index:-2; pointer-events:none;
+  background:
+    radial-gradient(85% 70% at 82% 6%, rgba(55,168,99,.18), transparent 62%),
+    radial-gradient(70% 60% at 12% 96%, rgba(201,168,106,.10), transparent 68%);
+}
+.d-a .coach-legacy::after{
+  content:""; position:absolute; inset:0; z-index:-1; pointer-events:none;
+  opacity:.13; mix-blend-mode:overlay;
+  background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.82' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='160' height='160' filter='url(%23n)' opacity='.52'/%3E%3C/svg%3E");
+  background-size:160px 160px;
+}
+
+.d-a .coach-legacy__inner{
+  max-width:1180px; margin:0 auto;
+  display:grid; gap:clamp(1.9rem,4.5vw,4.5rem);
+  align-items:center;
+}
+
+/* ---- the photograph: framed, not letterboxed ----
+   Source is 854×1280 (2:3). The frame is 3:4, so cover trims ~11% of the
+   height only; the face stays well inside it and the goalpost keeps its full
+   width. No excessive crop, no contain, no colour band behind it. */
+.d-a .coach-legacy__portrait{
+  position:relative; margin:0; overflow:hidden; isolation:isolate;
+  aspect-ratio:3/4;
+  border-radius:4px;
+  border:1px solid rgba(245,242,234,.12);
+  background:#0b1710;
+  box-shadow:var(--shadow-lg,0 40px 90px -40px rgba(0,0,0,.65));
+}
+.d-a .coach-legacy__img{
+  display:block; width:100%; height:100%;
+  object-fit:cover; object-position:50% 20%;
+  filter:saturate(.93) contrast(1.05) brightness(.97);
+}
+/* reads the caption against the photograph, and ties the frame into the ground */
+.d-a .coach-legacy__portrait::after{
+  content:""; position:absolute; inset:42% 0 0; pointer-events:none;
+  background:linear-gradient(to top, rgba(7,16,11,.94) 4%, rgba(7,16,11,.45) 48%, transparent 100%);
+}
+.d-a .coach-legacy__caption{
+  position:absolute; z-index:1; inset:auto clamp(1.1rem,2.2vw,1.6rem) clamp(1rem,2vw,1.4rem);
+  display:grid; gap:.3rem; color:#fff;
+}
+/* Arabic connected glyphs are never stroked or outlined — client correction. */
+.d-a .coach-legacy__name{
+  font-family:var(--font-display); font-weight:800; letter-spacing:0;
+  font-size:clamp(1.45rem,2.4vw,2rem); line-height:1.35;
+  -webkit-text-stroke:0; text-shadow:none;
+}
+.d-a .coach-legacy__caption small{
+  font-family:var(--font-sans);
+  font-size:.78rem; line-height:1.6; color:var(--gold-soft,#e3cfa3);
+}
+
+/* ---- body ---- */
+.d-a .coach-legacy__body{ min-width:0; }
+
+.d-a .coach-legacy__eyebrow{
+  display:flex; align-items:center; gap:.6rem;
+  font-family:var(--font-sans); font-weight:500; letter-spacing:0;
+  font-size:clamp(12px,1vw,14px);
+  color:rgba(245,242,234,.74);
+  margin:0 0 1.15rem;
+}
+.d-a .coach-legacy__eyebrow .dot{
+  width:7px; height:7px; border-radius:50%; background:var(--sma-lift,#37a863);
+  box-shadow:0 0 0 5px rgba(55,168,99,.22);
+}
+
+.d-a .coach-legacy__title{
+  text-wrap:balance; margin:0 0 1.25rem;
+  font-family:var(--font-display); font-weight:800; letter-spacing:0;
+  font-size:clamp(2.1rem,4.2vw,3.5rem); line-height:1.38;
+  color:#fff;
+}
+.d-a .coach-legacy__title-sub{
+  display:block; margin-top:.55rem;
+  font-size:.56em; line-height:1.6; font-weight:650;
+  color:var(--sma-voice,#b8e8bf);
+}
+
+.d-a .coach-legacy__lead{
+  text-wrap:pretty; margin:0;
+  font-size:clamp(16px,1.35vw,20px); line-height:1.95;
+  color:rgba(245,242,234,.88);
+  max-width:50ch;
+}
+
+/* the one raised line in the section — his own words */
+.d-a .coach-legacy__quote{
+  margin:clamp(1.6rem,3vw,2.2rem) 0;
+  padding-inline-start:clamp(1rem,1.6vw,1.4rem);
+  border-inline-start:2px solid var(--gold,#c9a86a);
+  max-width:34ch;
+}
+.d-a .coach-legacy__quote p{
+  margin:0; text-wrap:balance;
+  font-family:var(--font-display); font-weight:650;
+  font-size:clamp(1.25rem,2.2vw,1.95rem); line-height:1.7;
+  color:#fff;
+}
+.d-a .coach-legacy__quote cite{
+  display:block; margin-top:.7rem; font-style:normal;
+  font-family:var(--font-sans); font-size:.8rem; letter-spacing:0;
+  color:var(--gold-soft,#e3cfa3);
+}
+
+.d-a .coach-legacy__copy{
+  text-wrap:pretty; margin:0;
+  font-size:clamp(15px,1.1vw,17px); line-height:2;
+  color:rgba(245,242,234,.78);
+  max-width:54ch;
+}
+
+/* four grounded facts — a documented row, not a stat wall */
+.d-a .coach-legacy__facts{
+  display:grid; grid-template-columns:repeat(2,minmax(0,1fr));
+  gap:clamp(1rem,2.2vw,1.6rem) clamp(1.2rem,3vw,2.4rem);
+  margin:clamp(1.9rem,3.4vw,2.6rem) 0 0; padding:0;
+  list-style:none;
+}
+.d-a .coach-legacy__facts li{
+  display:grid; gap:.3rem;
+  padding-top:.85rem;
+  border-top:1px solid rgba(201,168,106,.34);
+}
+.d-a .coach-legacy__facts b{
+  font-family:var(--font-display); font-weight:750;
+  font-size:clamp(1rem,1.45vw,1.2rem); line-height:1.5;
+  color:var(--gold,#c9a86a);
+}
+.d-a .coach-legacy__facts span{
+  font-size:.82rem; line-height:1.7; color:rgba(245,242,234,.72);
+}
+
+.d-a .coach-legacy__acts{
+  display:flex; flex-wrap:wrap; gap:1rem;
+  margin-top:clamp(2rem,3.4vw,2.8rem);
+}
+
+/* ---- desktop: photograph on the left of the RTL spread, type on the right.
+   DOM order stays photo-first so the mobile stack needs no reordering. ---- */
+@media(min-width:861px){
+  .d-a .coach-legacy__inner{
+    grid-template-columns:minmax(0,1.12fr) minmax(290px,.88fr);
+  }
+  .d-a .coach-legacy__portrait{ grid-column:2; grid-row:1; }
+  .d-a .coach-legacy__body{ grid-column:1; grid-row:1; }
+}
+
+/* ---- mobile: the portrait reads first, then one clean stack ending in the
+   story link. ---- */
+@media(max-width:860px){
+  .d-a .coach-legacy{ padding:clamp(2.8rem,9vw,4rem) clamp(1.1rem,5vw,2rem); }
+  .d-a .coach-legacy__inner{ grid-template-columns:1fr; }
+  .d-a .coach-legacy__portrait{ aspect-ratio:4/5; }
+  .d-a .coach-legacy__img{ object-position:50% 18%; }
+  .d-a .coach-legacy__title{ font-size:clamp(1.9rem,7.4vw,2.6rem); line-height:1.42; }
+  .d-a .coach-legacy__title-sub{ font-size:.6em; }
+  .d-a .coach-legacy__lead{ font-size:16px; line-height:1.9; max-width:none; }
+  .d-a .coach-legacy__copy{ font-size:15.5px; line-height:1.95; max-width:none; }
+  .d-a .coach-legacy__quote{ max-width:none; }
+  .d-a .coach-legacy__quote p{ font-size:clamp(1.15rem,5.4vw,1.5rem); }
+  .d-a .coach-legacy__acts .btn{ width:100%; justify-content:center; text-align:center; }
+}
+
+@media(max-width:520px){
+  .d-a .coach-legacy__facts{ grid-template-columns:1fr; gap:1rem; }
+}
+
+/* source: sma-home-classic-coach-restored.css */
+/* Restore pre-hero-change coach feature while retaining latest header image and all other homepage sections. */
+html[lang="ar"] .d-a #a-coach{scroll-margin-top:95px}
+html[lang="ar"] .d-a #a-coach .a-coach__grid{max-width:1240px;margin-inline:auto;align-items:center}
+html[lang="ar"] .d-a #a-coach .a-coach__frame img{display:block;width:100%;height:auto;object-fit:cover;object-position:center 20%}
+html[lang="ar"] .d-a #a-coach .a-coach__txt{min-width:0}
+html[lang="ar"] .d-a #a-coach .a-coach__txt .sma-restored-coach-link{margin-top:1.7rem}
+html[lang="ar"] .d-a #a-coach .sma-restored-coach-link a{color:#e2d6a5;display:inline-block;border-bottom:1px solid #cdbd83;padding-bottom:6px;text-decoration:none;font-weight:700}
+html[lang="ar"] .d-a #a-coach .sma-restored-coach-link a:hover{color:#fff}
+@media(max-width:760px){html[lang="ar"] .d-a #a-coach .a-coach__grid{grid-template-columns:minmax(0,1fr)}html[lang="ar"] .d-a #a-coach .a-coach__frame{max-width:480px;margin-inline:auto}html[lang="ar"] .d-a #a-coach .a-coach__frame img{max-height:600px;object-fit:cover}}
+
+/* Mobile paint optimization: preserve composition, avoid costly live blur layers. */
+@media(max-width:760px){
+  .d-a .a-hero__grain{opacity:.22!important}
+  .d-a .a-hero__media img{animation:none!important}
+  .a-top{backdrop-filter:none!important;-webkit-backdrop-filter:none!important}
+  .a-nav{backdrop-filter:none!important;-webkit-backdrop-filter:none!important}
+}
+@media(prefers-reduced-motion:reduce){
+  .d-a .a-hero__media img{animation:none!important}
+}
