@@ -19,3 +19,8 @@
 .sma-premium-camp .sma-live-hero+.sma-exp-section{padding-top:clamp(95px,10vw,140px)}
 @media(max-width:700px){.sma-premium-camp .sma-live-hero{min-height:790px;padding-bottom:110px}.sma-premium-camp .sma-live-hero__media img{object-position:37% center;transform:scaleX(-1) scale(1.02)}.sma-premium-camp .sma-live-hero__media:after{background:linear-gradient(0deg,#05140ef7 0%,#06150fba 44%,#06150f21 90%)}.sma-premium-camp .sma-live-hero h1{font-size:clamp(42px,10vw,62px)}}
 @media(prefers-reduced-motion:reduce){.sma-premium-camp .sma-live-hero__media img{animation:none!important}}
+
+/* 2026-11-18: dedicated action hero, not mirrored, original player photograph */
+.sma-premium-camp .sma-live-hero__media img{transform:scale(1.035)!important;object-position:43% 50%!important;filter:brightness(.90) contrast(1.05) saturate(1.03)}
+.sma-premium-camp .sma-live-hero__media:after{background:linear-gradient(270deg,#05140eef 0%,#05140ebf 34%,#05140e1c 80%),linear-gradient(0deg,#05140ee9 0%,transparent 58%)}
+@media(max-width:700px){.sma-premium-camp .sma-live-hero__media img{object-position:39% center!important;transform:scale(1.04)!important}}
