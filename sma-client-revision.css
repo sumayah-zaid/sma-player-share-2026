@@ -1,0 +1,292 @@
+/* KAMAYA SMA PLAYER — client-requested group identity, strict location attribution */
+html[lang=ar],html[lang=ar] body{overflow-x:clip}
+.d-a .a-hero__media{background:#06180c}
+.d-a .a-hero__img,html[lang=ar] .d-a .a-hero__img{position:absolute!important;inset:0!important;left:0!important;right:0!important;width:100%!important;height:100%!important;object-fit:cover!important;object-position:center 43%!important;transform:none!important}
+.d-a .a-hero__veil{background:linear-gradient(0deg,#06140b 3%,rgba(3,18,9,.58) 28%,rgba(4,17,9,.2) 74%,rgba(4,17,9,.23) 100%)!important}
+.d-a .a-hero__body{position:relative;z-index:2}
+.d-a .a-hero__title{direction:ltr;text-align:right}
+.d-a .a-hero__title-family{font-size:.85em}
+.d-a .a-hero__lede{max-width:47ch}
+.d-a .a-top__inner{max-width:1600px}
+.d-a .a-nav{gap:0}
+.d-a .a-nav a{font-size:clamp(10px,.73vw,13px);padding:9px clamp(5px,.6vw,10px)}
+.d-a .a-nav__cta{margin-inline-start:5px}
+.d-a .a-brand__txt i{font-size:10px}
+.sma-verified-camps{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:14px;max-width:1360px;margin:30px auto}
+.sma-verified-camp{color:#fff;text-decoration:none;display:flex;flex-direction:column;overflow:hidden;border:1px solid rgba(208,185,126,.25);border-radius:17px;background:#102d1b;transition:transform .23s,border-color .23s}
+.sma-verified-camp:hover{transform:translateY(-4px);border-color:#dfc58e}
+.sma-verified-camp__photo{height:240px;background:radial-gradient(circle at center,#254f32,#06170d);position:relative;display:flex;align-items:center;justify-content:center;overflow:hidden}
+.sma-verified-camp__photo img{width:100%;height:100%;object-fit:cover;position:absolute;inset:0}
+.sma-verified-camp__photo b{color:rgba(232,206,144,.4);font-family:Arial,sans-serif;font-size:90px}
+.sma-verified-camp__photo small{position:absolute;bottom:15px;left:10px;right:10px;color:#f0ddb6;font-size:11px;text-align:center;line-height:1.7}
+.sma-verified-camp__copy{padding:21px;flex:1}
+.sma-verified-camp__copy>span{color:#e5ca8f;font-size:.75rem}
+.sma-verified-camp__copy h3{font-size:1.25rem;line-height:1.45;margin:9px 0}
+.sma-verified-camp__copy p{font-size:.88rem;line-height:1.85;color:#c6d4c8;margin:0}
+.sma-camp-more{display:flex;justify-content:center;margin-top:26px}
+.sma-home-opportunities{padding:68px clamp(20px,5vw,70px);background:#102d1c;border-top:1px solid rgba(213,191,132,.21)}
+.sma-home-opportunities__inner{max-width:1230px;margin:0 auto}
+.sma-home-opportunities__links{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px;margin-top:25px}
+.sma-home-opportunities__links a{padding:24px;border:1px solid rgba(231,206,142,.23);border-radius:16px;background:linear-gradient(130deg,#19422b,#0a1d11);display:grid;gap:11px;color:#fff;text-decoration:none}
+.sma-home-opportunities__links b{font-size:1.1rem}
+.sma-home-opportunities__links span{font-size:.88rem;color:#bed1c1}
+.topbar .sma-subnav{flex-wrap:wrap;gap:3px}
+.topbar .sma-subnav a{font-size:12px;padding:7px 9px;white-space:nowrap}
+.sma-content{width:min(1230px,calc(100% - 36px));margin:40px auto 95px}
+.sma-content .chapter{padding:40px 0 53px;border-top:1px solid rgba(218,200,155,.18)}
+.sma-content .chapter:first-child{border-top:0}
+.sma-location-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:20px}
+.sma-location-card,.sma-award{border:1px solid rgba(211,185,135,.24);border-radius:17px;background:#13301f;overflow:hidden;display:flex;flex-direction:column;color:#eef6ed}
+.sma-location-card>img,.sma-award>img{width:100%;height:270px;object-fit:cover;display:block}
+.sma-location-card>div:last-child,.sma-award>div:last-child{padding:23px 25px;flex:1}
+.sma-location-card span,.sma-award span{color:#e0c28b;font-size:.8rem}
+.sma-location-card h3,.sma-award h3{font-size:1.4rem;margin:12px 0}
+.sma-location-card p,.sma-award p{font-size:.94rem;line-height:1.85;color:#c6d7ca}
+.sma-location-card a{color:#ead18f;text-decoration:none}
+.sma-location-placeholder,.sma-award-placeholder{height:270px;display:flex;flex-direction:column;align-items:center;justify-content:center;background:radial-gradient(circle,#2c6242,#0a2113);position:relative}
+.sma-location-placeholder b{font-family:Arial,sans-serif;font-size:100px;color:rgba(231,205,152,.45)}
+.sma-location-placeholder small{position:absolute;bottom:20px;color:#e4d0a3;text-align:center;padding:0 12px;font-size:.83rem}
+.sma-award-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px}
+.sma-award-placeholder{color:#c1a569;font-size:115px}
+.sma-note{padding:22px 25px;background:#1a3724;border-inline-start:3px solid #bda36b;color:#d8e6d9;line-height:1.9;border-radius:6px;margin:24px 0}
+.sma-note a{color:#efd5a7}
+.sma-faq{display:grid;gap:10px}
+.sma-faq details{padding:18px 22px;border-radius:13px;background:#153723;border:1px solid rgba(226,199,138,.22)}
+.sma-faq summary{cursor:pointer;font-weight:700}
+.sma-faq p{line-height:1.9;color:#cbdacc}
+.sma-link-row a{background:#267748;color:#fff;border-radius:40px;padding:13px 24px;display:inline-block;text-decoration:none}
+.sma-player-form{display:grid;gap:16px}
+.sma-player-form fieldset{border:1px solid rgba(215,194,138,.23);border-radius:14px;padding:25px;display:grid;grid-template-columns:1fr 1fr;gap:18px}
+.sma-player-form legend{color:#e6cb8e;font-weight:700}
+.sma-player-form label{display:grid;gap:7px}
+.sma-player-form input,.sma-player-form select,.sma-player-form textarea{background:#0b2416;color:#fff;border:1px solid #497250;border-radius:9px;padding:12px;width:100%;font-family:inherit}
+.sma-player-form textarea{resize:vertical}
+.sma-player-form fieldset:disabled{opacity:.73}
+.sma-player-form button{padding:16px;background:#39694c;border-radius:10px;border:0;color:#fff;opacity:.6}
+@media(max-width:1200px){.d-a .a-nav a{font-size:11px;padding:8px 5px}.sma-verified-camps{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:760px){
+ .d-a .a-hero__media{height:auto!important;aspect-ratio:1.28!important;min-height:0!important}
+ .d-a .a-hero__img,html[lang=ar] .d-a .a-hero__img{object-fit:contain!important;object-position:center!important;position:absolute!important;left:0!important}
+ .d-a .a-hero__mobile-overlay{inset:auto 18px 8px!important}
+ .d-a .a-hero__mobile-overlay h1{font-size:clamp(37px,10vw,57px)!important;line-height:1!important}
+ .d-a .a-hero__mobile-overlay .a-hero__mobile-family{font-size:.65em!important}
+ .d-a .a-hero__body{padding-top:23px!important}
+ .d-a .a-hero__veil{background:linear-gradient(to top,rgba(5,18,11,.8),transparent 48%)!important}
+ .sma-verified-camps{gap:10px}
+ .sma-verified-camp__photo{height:165px}
+ .sma-verified-camp__copy{padding:13px}
+ .sma-verified-camp__copy h3{font-size:1rem}
+ .sma-verified-camp__copy p{font-size:.79rem}
+ .sma-location-grid,.sma-award-grid,.sma-home-opportunities__links{grid-template-columns:1fr}
+ .sma-player-form fieldset{grid-template-columns:1fr}
+}
+@media(max-width:420px){.sma-verified-camps{grid-template-columns:1fr}.sma-verified-camp__photo{height:210px}}
+
+
+/* Compact single-row mobile navigation; no three-line menu wall. */
+@media(max-width:960px){
+ .topbar{flex-wrap:wrap;gap:5px;justify-content:space-between;padding-bottom:0}
+ .topbar .brand{flex:1}
+ .topbar .back-link{display:none}
+ .topbar .sma-subnav{
+   order:3;width:100%;flex:0 0 100%;display:flex;flex-wrap:nowrap!important;
+   overflow-x:auto;overflow-y:hidden;overscroll-behavior-x:contain;
+   -webkit-overflow-scrolling:touch;scroll-snap-type:x proximity;
+   gap:4px;padding:8px 0 11px;scrollbar-width:none;
+   border-top:1px solid rgba(220,196,147,.13)
+ }
+ .topbar .sma-subnav::-webkit-scrollbar{display:none}
+ .topbar .sma-subnav a{flex:none;white-space:nowrap;padding:8px 11px;font-size:12px;scroll-snap-align:start}
+}
+@media(max-width:520px){
+ .topbar .brand img{width:37px;height:44px}
+ .topbar .brand b{font-size:13px}
+ .topbar .brand small{font-size:10px}
+ .sma-verified-camp__photo{height:190px}
+ .sma-location-card>img{height:230px}
+}
+/* Never style invalid/dormant intake as a working signup feature. */
+.sma-player-form :disabled{cursor:not-allowed}
+
+/* SMA STUDIO HERO — original, unmodified team studio portrait; not a Dammam camp claim. */
+@media(min-width:761px){
+ html[lang="ar"] .d-a .a-hero{background:#07170e}
+ html[lang="ar"] .d-a .a-hero__media{position:absolute;inset:0;overflow:hidden;background:radial-gradient(circle at 28% 50%,#25332d,#09180f 69%)}
+ html[lang="ar"] .d-a .a-hero__img{
+   position:absolute!important;top:0!important;bottom:0!important;left:0!important;right:auto!important;
+   width:65%!important;height:100%!important;object-fit:contain!important;object-position:left center!important;
+   transform:none!important;filter:contrast(1.03) saturate(.97)
+ }
+ html[lang="ar"] .d-a .a-hero__veil{
+   background:linear-gradient(to left,#06140b 1%,rgba(6,20,11,.98) 25%,rgba(6,20,11,.78) 42%,rgba(6,20,11,.12) 63%,rgba(6,20,11,.04) 100%),linear-gradient(to top,#06140b 0%,transparent 28%)!important
+ }
+ html[lang="ar"] .d-a .a-hero__beam{opacity:.17}
+ html[lang="ar"] .d-a .a-hero__body{max-width:min(640px,48vw)}
+}
+@media(max-width:760px){
+ html[lang="ar"] .d-a .a-hero__media{aspect-ratio:4 / 4.8!important;height:auto!important;min-height:0!important;background:#121a17}
+ html[lang="ar"] .d-a .a-hero__img{width:100%!important;height:100%!important;left:0!important;right:0!important;object-fit:cover!important;object-position:center 46%!important}
+ html[lang="ar"] .d-a .a-hero__veil{background:linear-gradient(to top,#06140b 0%,rgba(6,20,11,.48) 13%,transparent 35%)!important}
+ html[lang="ar"] .d-a .a-hero__mobile-overlay{bottom:20px!important}
+ html[lang="ar"] .d-a .a-hero__mobile-overlay h1{font-size:clamp(43px,11.1vw,70px)!important}
+}
+
+
+/* KAMAYA DESKTOP+MOBILE SEAMLESS FULL BLEED HERO, 2026-11-12 */
+/* Proof-of-concept: native full-bleed studio image extension, no split panel. */
+@media(min-width:961px) {
+ html[lang="ar"] .d-a .a-hero {
+   position:relative!important;
+   min-height:100svh!important;
+   isolation:isolate;
+   background:#101b16!important;
+ }
+ html[lang="ar"] .d-a .a-hero__media {
+   position:absolute!important;
+   inset:0!important;
+   width:100%!important;
+   height:100%!important;
+   background:#1d2825!important;
+   overflow:hidden!important;
+   isolation:isolate;
+ }
+ html[lang="ar"] .d-a .a-hero__media::before {
+   content:"";
+   position:absolute;
+   z-index:-1;
+   inset:-12%;
+   background-image:url("assets/hero/sma-studio-players.jpg");
+   background-size:cover;
+   background-position:48% 44%;
+   filter:blur(76px) brightness(.52) saturate(.45);
+   opacity:.96;
+   transform:scale(1.12);
+ }
+ html[lang="ar"] .d-a .a-hero__img {
+   position:absolute!important;
+   z-index:0;
+   left:0!important;
+   top:0!important;
+   right:auto!important;
+   bottom:0!important;
+   height:100%!important;
+   width:clamp(550px,55vw,860px)!important;
+   max-width:none!important;
+   object-fit:contain!important;
+   object-position:left center!important;
+   transform:none!important;
+   filter:saturate(.94) contrast(1.05)!important;
+   -webkit-mask-image:linear-gradient(to right,#000 0%,#000 82%,transparent 100%);
+   mask-image:linear-gradient(to right,#000 0%,#000 82%,transparent 100%);
+ }
+ html[lang="ar"] .d-a .a-hero__veil {
+   z-index:1;
+   background:
+     linear-gradient(to left,rgba(4,16,9,.94) 0%,rgba(5,20,13,.88) 31%,rgba(5,20,13,.62) 47%,rgba(5,20,13,.13) 68%,transparent 88%),
+     linear-gradient(to top,rgba(4,14,8,.68) 0%,transparent 22%),
+     radial-gradient(85% 80% at 85% 36%,rgba(45,91,64,.15),transparent 73%)!important;
+ }
+ html[lang="ar"] .d-a .a-hero__beam {opacity:.2!important;mix-blend-mode:screen}
+ html[lang="ar"] .d-a .a-hero__grain {z-index:2}
+ html[lang="ar"] .d-a .a-hero__body {
+   position:relative!important;
+   z-index:3!important;
+   max-width:min(600px,43vw)!important;
+   margin-left:auto!important;
+   margin-right:0!important;
+   justify-self:start;
+   padding-inline:0!important;
+ }
+}
+@media(max-width:960px){
+ html[lang="ar"] .d-a .a-hero {
+   position:relative!important;
+   display:block!important;
+   padding:0!important;
+   min-height:100svh!important;
+   background:#101c16!important;
+ }
+ html[lang="ar"] .d-a .a-hero__media {
+   position:absolute!important;
+   inset:0!important;
+   width:100%!important;height:100%!important;
+   min-height:0!important;
+   aspect-ratio:auto!important;
+   overflow:hidden!important;
+   background:#1a2720!important;
+   isolation:isolate;
+ }
+ html[lang="ar"] .d-a .a-hero__media::before {
+   content:"";
+   position:absolute;inset:-20%;z-index:-1;
+   background:url("assets/hero/sma-studio-players.jpg") center center / cover no-repeat;
+   filter:blur(46px) brightness(.38) saturate(.54);
+   opacity:.96;
+ }
+ html[lang="ar"] .d-a .a-hero__img {
+   position:absolute!important;
+   top:0!important;left:0!important;right:0!important;
+   width:100%!important;height:auto!important;
+   aspect-ratio:4/5!important;
+   object-fit:contain!important;
+   object-position:center top!important;
+   filter:contrast(1.04) saturate(.95)!important;
+   -webkit-mask-image:linear-gradient(to bottom,#000 0%,#000 80%,transparent 100%);
+   mask-image:linear-gradient(to bottom,#000 0%,#000 80%,transparent 100%);
+ }
+ html[lang="ar"] .d-a .a-hero__veil {
+   z-index:1;
+   background:linear-gradient(to top,#06140b 0%,rgba(6,20,11,.92) 25%,rgba(6,20,11,.3) 45%,transparent 70%)!important;
+ }
+ html[lang="ar"] .d-a .a-hero__mobile-overlay {display:none!important}
+ html[lang="ar"] .d-a .a-hero__body {
+   position:relative!important;
+   z-index:3!important;
+   display:block!important;
+   padding:calc(125vw + 20px) 24px 60px!important;
+   width:100%!important;
+   max-width:none!important;
+   margin:0!important;
+ }
+ html[lang="ar"] .d-a .a-hero__body .a-hero__title {
+   display:flex!important;
+   font-size:clamp(46px,12vw,72px)!important;
+   line-height:1!important;
+   gap:0!important;
+   flex-direction:column!important;
+   margin:0 0 19px!important;
+   text-align:right!important;
+ }
+ html[lang="ar"] .d-a .a-hero__body .a-hero__eyebrow {display:flex!important}
+ html[lang="ar"] .d-a .a-hero__body .a-hero__title-family{font-size:.68em!important}
+ html[lang="ar"] .d-a .a-hero__ident {font-size:12px!important}
+ html[lang="ar"] .d-a .a-hero__scroll{display:none!important}
+}
+
+/* Tablet balance: reveal the headline within the first screen, below player faces. */
+@media (min-width:601px) and (max-width:960px){
+ html[lang="ar"] .d-a .a-hero__img {
+   width:min(78vw,610px)!important;
+   height:auto!important;
+   left:0!important;right:auto!important;
+   object-fit:contain!important;
+   object-position:left top!important;
+   -webkit-mask-image:linear-gradient(to right,#000 0%,#000 83%,transparent 100%)!important;
+   mask-image:linear-gradient(to right,#000 0%,#000 83%,transparent 100%)!important;
+ }
+ html[lang="ar"] .d-a .a-hero__body {
+   padding-top:clamp(530px,67vw,660px)!important;
+   padding-left:clamp(26px,7vw,70px)!important;
+   padding-right:clamp(26px,7vw,70px)!important;
+ }
+ html[lang="ar"] .d-a .a-hero__body .a-hero__title{font-size:clamp(57px,8.6vw,78px)!important}
+ html[lang="ar"] .d-a .a-hero__lede{max-width:55ch}
+}
+
+/* SMA STAFF FOOTER ENTRY: discreet staff sign-in, not in athlete-facing main nav. */
+.sma-staff-entry{display:flex;align-items:center;justify-content:flex-start;gap:12px;flex-wrap:wrap;min-width:0}
+.sma-staff-entry a{font-size:11px!important;color:#d0d8c8!important;text-decoration:underline;text-underline-offset:4px;white-space:nowrap}
+.sma-staff-entry a:hover{color:#e4ce98!important}
+.a-foot__legal .sma-staff-entry{display:inline-flex;padding-inline:9px;border-inline-start:1px solid rgba(225,215,182,.3)}
+.sma-detail-footer__bottom .sma-staff-entry{display:inline-flex;align-items:center}
+@media(max-width:700px){.sma-staff-entry{gap:8px}.a-foot__legal .sma-staff-entry{padding-top:6px;border:0}}

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1268" height="324" viewBox="0 0 634 162" role="img" aria-labelledby="title desc">
+  <title id="title">KAMAYA horizontal bilingual logo - white</title>
+  <desc id="desc">Vector artwork for the KAMAYA brand identity. Production-refined 2026-08-17: symbol and both wordmarks now share one scale factor (.92) so the mark's proportion matches the master bilingual lockup.</desc>
+  <g transform="translate(12 18) scale(.92)">
+  <g id="kamaya-symbol" fill="#FFFFFF">
+    <circle cx="23" cy="58" r="12.5" fill="none" stroke="#FFFFFF" stroke-width="4"/>
+    <path d="M42 45
+      C66 15 95 10 121 37
+      C148 66 181 73 222 31
+      L234 18
+      C197 74 157 91 115 54
+      C91 32 67 27 42 45 Z"/>
+    <circle cx="250" cy="15" r="12"/>
+  </g></g><path d="M284 14V146" stroke="#FFFFFF" stroke-width="1.6"/><g transform="translate(312 11) scale(.92)">
+  <g id="kamaya-english" fill="none" stroke="#FFFFFF" stroke-width="5.5" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M3 3 V47 M4 26 L30 3 M4 26 L32 47"/>
+    <path d="M48 47 L65 3 L82 47"/>
+    <path d="M101 47 V14 C101 7 106 3 112 3 C119 3 123 7 123 14 V23 C123 30 128 34 134 34 C141 34 146 30 146 23 V14 C146 7 151 3 157 3 C164 3 168 7 168 14 V47"/>
+    <path d="M188 47 L205 3 L222 47"/>
+    <path d="M239 3 L256 26 L273 3 M256 26 V47"/>
+    <path d="M290 47 L307 3 L324 47"/>
+  </g></g><g transform="translate(312 66) scale(.92)">
+  <g id="kamaya-arabic" fill="none" stroke="#FFFFFF" stroke-width="5.5" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M5 6 V45 C5 55 11 61 22 61 H74 C84 61 89 56 89 46 V31"/>
+    <path d="M103 6 V45 C103 55 109 61 120 61 H194"/>
+    <path d="M194 61 C203 61 207 55 207 46 C207 33 215 24 226 24 C238 24 246 34 246 46 C246 56 240 62 229 62 C218 62 211 56 207 48 C209 56 215 61 226 61 H324 V46 L294 37 L324 23"/>
+    <circle cx="67" cy="80" r="4" fill="#FFFFFF" stroke="none"/>
+    <circle cx="78" cy="80" r="4" fill="#FFFFFF" stroke="none"/>
+  </g></g>
+</svg>

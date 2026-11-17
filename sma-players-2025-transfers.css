@@ -1,0 +1,26 @@
+/* SMA 2025 annual transfer posters — actual source portraits and exact source vector crests */
+#players-2025 .sma-transfer-2025-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:clamp(14px,1.7vw,24px);max-width:1260px;margin:auto}
+#players-2025 .sma-transfer-2025-card{min-width:0;--t25-club:#bc815e;--t25-dark:#08090a;border:1px solid #a9ad8a4f;box-shadow:0 18px 38px #0008;background:#00170e;overflow:hidden}
+#players-2025 .sma-transfer-2025-card.is-salam{--t25-club:#dac090;--t25-dark:#4a9784}
+#players-2025 .sma-transfer-2025-poster{position:relative;isolation:isolate;aspect-ratio:9/16;background:radial-gradient(ellipse at 47% 38%,#13815977,transparent 50%),linear-gradient(95deg,#00170f 0%,#00412c 49%,var(--t25-dark) 51%,#09100f 100%);overflow:hidden;color:white}
+#players-2025 .sma-t25-clubside{position:absolute;inset:0 0 0 50%;background:radial-gradient(ellipse at 63% 47%,color-mix(in srgb,var(--t25-club),transparent 55%),transparent 68%),linear-gradient(155deg,#161515,var(--t25-dark));z-index:1}
+#players-2025 .is-salam .sma-t25-clubside{background:radial-gradient(ellipse at 50% 44%,#e2dab8,transparent 73%),linear-gradient(145deg,#83caba,#23584b 92%)}
+#players-2025 .sma-t25-stadium{position:absolute;z-index:2;inset:46% -3% 14% 32%;opacity:.28;transform:skewY(-11deg);background:repeating-linear-gradient(0deg,transparent 0 8px,#fff8 9px 10px,transparent 11px 20px),repeating-linear-gradient(90deg,transparent 0 38px,#ffffff70 39px 40px)}
+#players-2025 .sma-t25-seam{position:absolute;z-index:3;top:-4%;bottom:10%;left:48%;width:8px;background:linear-gradient(#e8fff1,#fff,#eebd8c);transform:rotate(1.5deg);box-shadow:0 0 19px #fff8;clip-path:polygon(0 0,100% 10%,5% 21%,100% 31%,0 45%,90% 57%,0 70%,100% 81%,0 100%)}
+#players-2025 .sma-t25-speckles{position:absolute;z-index:2;inset:0;background-image:radial-gradient(#f6e9c26e 0.7px,transparent 1.2px);background-size:17px 22px;opacity:.4;mask-image:linear-gradient(#000 0%,transparent 70%)}
+#players-2025 .sma-t25-year{position:absolute;top:2%;left:25%;right:25%;z-index:12;padding:7px 1px;border:1px solid var(--t25-club);background:#00150ff0;color:#f7ead0;font-weight:900;font-size:clamp(11px,1.35vw,19px);text-align:center}
+#players-2025 .sma-t25-sma-logo{position:absolute;z-index:10;left:5%;top:5%;width:22%;height:16%;object-fit:contain}
+#players-2025 .sma-t25-brand{position:absolute;z-index:10;top:22%;left:5%;width:24%;text-align:center;font-size:clamp(10px,1.25vw,17px);font-weight:700}
+#players-2025 .sma-t25-club-logo{position:absolute;z-index:10;right:5%;top:5%;width:22%;height:16%;object-fit:contain;filter:drop-shadow(0 0 6px #0005)}
+#players-2025 .sma-t25-destination{position:absolute;z-index:10;right:5%;top:22%;width:34%;text-align:center;font-size:clamp(9px,1.15vw,15px)}
+#players-2025 .sma-t25-club-name{position:absolute;z-index:10;right:3%;top:26%;width:38%;text-align:center;font-size:clamp(14px,2.05vw,27px);font-weight:900}
+#players-2025 .sma-t25-ghost{position:absolute;z-index:4;top:26%;left:-21%;width:73%;height:51%;object-fit:contain;filter:grayscale(1) sepia(1) hue-rotate(80deg) brightness(.55);opacity:.5}
+#players-2025 .sma-t25-player{position:absolute;z-index:5;top:23%;left:3%;width:92%;height:60%;object-fit:contain;object-position:center bottom;filter:drop-shadow(5px 5px 12px #000e)}
+#players-2025 .sma-t25-arrow{position:absolute;z-index:8;left:10%;right:2%;top:54%;font-size:clamp(75px,13vw,190px);font-family:Arial,sans-serif;font-weight:900;font-style:italic;text-align:center;line-height:1;transform:scaleX(-1) rotate(-11deg);color:#fff;text-shadow:0 0 16px #eaffed9a;opacity:.93;pointer-events:none}
+#players-2025 .sma-t25-bottom{position:absolute;z-index:9;left:0;right:0;bottom:0;height:35%;padding:13% 4% 4%;background:linear-gradient(transparent,#00150f 24%,#000e0b 80%);text-align:center;display:flex;flex-direction:column;align-items:center;justify-content:flex-end;gap:4%}
+#players-2025 .sma-t25-route{margin:0;font-weight:700;font-size:clamp(11px,1.3vw,18px);color:#e2d2b5}
+#players-2025 .sma-t25-bottom h3{margin:0;color:var(--t25-club);font-size:clamp(22px,2.65vw,37px);line-height:1.2;font-weight:1000;text-shadow:0 2px 5px #000}
+#players-2025 .sma-t25-birth{font-size:clamp(11px,1.45vw,19px);margin:0;color:#fff}
+#players-2025 .sma-t25-next{width:77%;margin:1% auto 0;border:1px solid var(--t25-club);padding:7px;font-size:clamp(11px,1.35vw,19px);font-weight:700}
+@media(max-width:900px){#players-2025 .sma-transfer-2025-grid{grid-template-columns:repeat(2,minmax(0,1fr))}#players-2025 .sma-t25-arrow{font-size:clamp(95px,20vw,190px)}#players-2025 .sma-t25-bottom h3{font-size:clamp(24px,4vw,42px)}}
+@media(max-width:570px){#players-2025 .sma-transfer-2025-grid{grid-template-columns:minmax(0,1fr);max-width:410px;gap:20px}#players-2025 .sma-t25-year{font-size:19px}#players-2025 .sma-t25-brand{font-size:17px}#players-2025 .sma-t25-destination{font-size:15px}#players-2025 .sma-t25-club-name{font-size:25px}#players-2025 .sma-t25-route{font-size:17px}#players-2025 .sma-t25-bottom h3{font-size:34px}#players-2025 .sma-t25-birth,#players-2025 .sma-t25-next{font-size:17px}#players-2025 .sma-t25-arrow{font-size:160px}}

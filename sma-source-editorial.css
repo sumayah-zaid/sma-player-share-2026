@@ -1,0 +1,51 @@
+/* KAMAYA — restrained source-photo editorial sections. Images curated from
+   client-provided Drive inventory; original IDs in assets/editorial/source-provenance.json.
+   No implied attribution of players, awards or camp city absent confirmation. */
+.sma-source-story-belt,.sma-source-identity,.sma-source-achievement,.sma-source-support{
+  isolation:isolate;position:relative;overflow:hidden;display:grid;grid-template-columns:1fr 1fr;
+  gap:clamp(25px,4vw,65px);align-items:center;direction:ltr;
+  margin:45px 0 65px;border:1px solid rgba(230,203,149,.23);
+  background:linear-gradient(130deg,#153927,#081d13);border-radius:16px;
+}
+.sma-source-story-belt__media,.sma-source-identity__images,.sma-source-achievement__image{min-width:0;height:clamp(290px,31vw,430px)}
+.sma-source-story-belt__media img,.sma-source-achievement__image img,.sma-source-identity__images img{
+ display:block;width:100%;height:100%;object-fit:cover;filter:saturate(.88);
+}
+.sma-source-story-belt__media img{object-position:50% 35%}
+.sma-source-achievement__image img{object-position:50% 54%}
+.sma-source-story-belt__copy,.sma-source-identity__body,.sma-source-achievement__body,
+.sma-source-support>div{direction:rtl;text-align:right;padding:clamp(22px,3vw,42px)}
+.sma-source-story-belt__copy>span,.sma-source-identity__body>span,.sma-source-achievement__body>span,
+.sma-source-support>div>span{font-size:12px;color:#d9bd81;font-weight:750}
+.sma-source-story-belt h2,.sma-source-identity h2,.sma-source-achievement h2,.sma-source-support h2{
+ margin:14px 0;color:#fcfcf6;font-size:clamp(26px,2.9vw,42px);line-height:1.36;
+}
+.sma-source-story-belt p,.sma-source-identity p,.sma-source-achievement p,.sma-source-support p{
+ color:#c4d6cb;max-width:48ch;font-size:14px;line-height:2;
+}
+.sma-source-story-belt a,.sma-source-identity a,.sma-source-achievement a,.sma-source-support a{
+ display:inline-block;color:#e4c58c;text-decoration:none;font-weight:750;font-size:13px;
+ margin-top:16px;line-height:1.8;border-bottom:1px solid rgba(222,192,125,.52);
+}
+.sma-source-story-belt a:hover,.sma-source-identity a:hover,.sma-source-achievement a:hover,.sma-source-support a:hover{
+ color:#ffe5a8;border-bottom-color:#ffe5a8;
+}
+.sma-source-identity__images{display:grid;grid-template-columns:1.2fr .8fr;gap:7px}
+.sma-source-identity__images img:first-child{object-position:50% 40%}
+.sma-source-identity__images img:last-child{object-position:50% 35%}
+.sma-source-players-photo{margin:50px 0 65px;overflow:hidden;border:1px solid rgba(222,193,133,.28);border-radius:14px;background:#0c2c1e}
+.sma-source-players-photo img{display:block;width:100%;height:clamp(280px,35vw,470px);object-fit:cover;object-position:50% 54%}
+.sma-source-players-photo figcaption{padding:16px 22px;font-size:12px;color:#c9d3c7;line-height:1.8}
+.sma-source-support{margin:55px 0 35px;min-height:340px;grid-template-columns:1.15fr .85fr;direction:rtl}
+.sma-source-support>div{direction:rtl;z-index:1}
+.sma-source-support>img{display:block;width:100%;height:100%;max-height:420px;min-height:340px;object-fit:cover;object-position:center}
+@media(max-width:760px){
+ .sma-source-story-belt,.sma-source-identity,.sma-source-achievement,.sma-source-support{
+  grid-template-columns:1fr;gap:0;margin:30px 0 50px;
+ }
+ .sma-source-story-belt__media,.sma-source-identity__images,.sma-source-achievement__image{height:260px}
+ .sma-source-story-belt__copy,.sma-source-identity__body,.sma-source-achievement__body,
+ .sma-source-support>div{padding:25px}
+ .sma-source-support>img{height:220px;min-height:220px;max-height:220px}
+ .sma-source-players-photo img{height:270px}
+}

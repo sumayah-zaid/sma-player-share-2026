@@ -1,0 +1,246 @@
+/* KAMAYA player transfer catalogue — batches 2024 → 2025 → 2026
+   All imagery is original SMA material displayed unmodified; this file only
+   builds the frame around it (no generated faces, no synthesised club logos). */
+.sma-premium-players .sma-players-by-year{display:block}
+.sma-premium-players .sma-players-overview{margin-bottom:42px}
+.sma-premium-players .sma-player-year-nav{display:flex;flex-wrap:wrap;gap:12px;margin-top:22px}
+.sma-premium-players .sma-player-year-nav a{display:inline-flex;align-items:center;gap:13px;padding:14px 25px;border-radius:999px;border:1px solid #64795b;background:#103622;color:#f7ead0;font:750 22px/1.2 Tahoma,Arial,sans-serif;text-decoration:none;transition:background .2s,border-color .2s}
+.sma-premium-players .sma-player-year-nav a span{font-size:12px;color:#d6c59d;font-weight:400}
+.sma-premium-players .sma-player-year-nav a:hover{background:#226843;border-color:#d6b77c}
+.sma-premium-players .sma-player-year-section{scroll-margin-top:110px;margin:0 0 75px;padding-top:12px}
+.sma-premium-players .sma-player-year-section .chapter-head{margin-bottom:27px}
+
+/* Birth year under every name — the batch number is never a birth year */
+.sma-premium-players .sma-player-birth{display:block;color:#b9cdb8;font-weight:400;letter-spacing:.2px}
+
+/* ---- 2024 batch: existing approved SMA poster designs ---- */
+.sma-premium-players .sma-year-player-cards{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px}
+.sma-premium-players .sma-year-player-cards article{min-width:0;padding:13px 13px 15px;border-radius:14px;background:linear-gradient(145deg,#143522,#0c251a);border:1px solid rgba(208,185,126,.33);box-shadow:0 12px 20px rgba(0,0,0,.13)}
+.sma-premium-players .sma-year-player-cards article img{width:100%;height:auto;aspect-ratio:9/16;object-fit:cover;border-radius:9px}
+.sma-premium-players .sma-year-player-cards article b{font-size:clamp(15px,1.3vw,20px);margin:14px 6px 5px}
+.sma-premium-players .sma-year-player-cards article span{font-size:clamp(12px,1vw,14px);color:#dec187;margin:0 6px 9px;line-height:1.7}
+.sma-premium-players .sma-year-player-cards article .sma-player-birth{font-size:clamp(11px,.9vw,13px);margin:0 6px 2px}
+
+/* ---- 2025 batch: original archive photos; designed announcement card when none exists ---- */
+.sma-premium-players .sma-player-roster-cards{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px}
+.sma-premium-players .sma-roster-card{min-width:0;display:flex;flex-direction:column;padding:13px 13px 17px;border-radius:14px;background:linear-gradient(145deg,#143522,#0c251a);border:1px solid rgba(208,185,126,.33);box-shadow:0 12px 20px rgba(0,0,0,.13)}
+.sma-premium-players .sma-roster-card__frame{position:relative;flex:1 1 auto;min-height:0;width:100%;aspect-ratio:3/4;border-radius:10px;overflow:hidden;background:radial-gradient(circle at 50% 30%,#1a4a2f,#0a1d13);display:flex;align-items:center;justify-content:center}
+.sma-premium-players .sma-roster-card__frame img{width:100%;height:100%;object-fit:contain}
+.sma-premium-players .sma-roster-card b{font-size:clamp(15px,1.25vw,20px);color:#f7ead0;margin:14px 6px 5px}
+.sma-premium-players .sma-roster-card .sma-player-birth{font-size:clamp(12px,1vw,14px);color:#dec187;margin:0 6px 2px}
+.sma-premium-players .sma-roster-card__club{display:block;font-size:clamp(12px,1vw,14px);color:#b9cdb8;margin:5px 6px 0;line-height:1.7}
+
+/* ---- 2026 batch: the eight original posters, framed in their own template ----
+   Split rule = SMA green half + club-colour half, white arrow, name + birth year. */
+.sma-premium-players .sma-transfer-cards{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:18px}
+.sma-premium-players .sma-transfer-card{--club:#d6b77c;--club-soft:rgba(214,183,124,.26);position:relative;min-width:0;display:flex;flex-direction:column;overflow:hidden;border-radius:16px;background:linear-gradient(145deg,#143522,#0c251a);border:1px solid rgba(208,185,126,.33);box-shadow:0 14px 26px rgba(0,0,0,.18);transition:transform .22s ease,border-color .22s ease,box-shadow .22s ease}
+.sma-premium-players .sma-transfer-card::before{content:"";position:absolute;inset-inline:0;top:0;height:4px;background:linear-gradient(90deg,#1d8a52 0 50%,var(--club) 50% 100%);z-index:2}
+.sma-premium-players .sma-transfer-card:hover{transform:translateY(-3px);border-color:var(--club);box-shadow:0 18px 34px rgba(0,0,0,.26)}
+.sma-premium-players .sma-transfer-card__poster{position:relative;margin:4px 4px 0;border-radius:12px;overflow:hidden;background:#07150e}
+.sma-premium-players .sma-transfer-card__poster img{display:block;width:100%;height:auto;aspect-ratio:9/16;object-fit:cover}
+.sma-premium-players .sma-pro-contract{align-self:flex-start;margin:10px 0 0;display:inline-flex;align-items:center;gap:6px;padding:6px 12px;border-radius:999px;background:linear-gradient(135deg,#e2bb62,#b8872c);border:1px solid rgba(255,244,214,.6);color:#20150a;font-size:clamp(10px,.85vw,12px);font-weight:800;letter-spacing:.2px;box-shadow:0 6px 14px rgba(0,0,0,.35)}
+.sma-premium-players .sma-transfer-card__body{display:flex;flex-direction:column;padding:12px 13px 15px;background:linear-gradient(170deg,var(--club-soft),transparent 70%)}
+.sma-premium-players .sma-transfer-card__route{display:flex;align-items:center;gap:6px;flex-wrap:wrap;margin:0;font-size:clamp(10px,.85vw,12px);color:#cfe0cf;letter-spacing:.2px}
+.sma-premium-players .sma-transfer-card__route b{font-size:inherit;margin:0;color:#f7ead0;font-weight:700}
+.sma-premium-players .sma-transfer-card__route b:last-of-type{color:var(--club)}
+.sma-premium-players .sma-transfer-card__arrow{display:inline-block;width:20px;height:8px;background:#fff;transform:scaleX(-1);clip-path:polygon(0 34%,60% 34%,60% 0,100% 50%,60% 100%,60% 66%,0 66%)}
+.sma-premium-players .sma-transfer-card__name{font-size:clamp(16px,1.35vw,21px);color:#f7ead0;margin:9px 0 4px;line-height:1.35}
+.sma-premium-players .sma-transfer-card .sma-player-birth{font-size:clamp(12px,1vw,14px);color:#dec187;margin:0}
+.sma-premium-players .sma-transfer-card__club{display:block;font-size:clamp(12px,1vw,14px);color:#cfe0cf;margin:6px 0 0;line-height:1.7}
+
+/* Club accents taken from each original poster's own destination half */
+.sma-premium-players .sma-transfer-card.is-alnahda{--club:#19a7e3;--club-soft:rgba(25,167,227,.24)}
+.sma-premium-players .sma-transfer-card.is-jubail{--club:#e8b21f;--club-soft:rgba(232,178,31,.22)}
+.sma-premium-players .sma-transfer-card.is-altaawoun{--club:#d7a52b;--club-soft:rgba(215,165,43,.22)}
+.sma-premium-players .sma-transfer-card.is-alqwarah{--club:#e04141;--club-soft:rgba(224,65,65,.22)}
+.sma-premium-players .sma-transfer-card.is-alqadsiah{--club:#d9a441;--club-soft:rgba(217,164,65,.22)}
+.sma-premium-players .sma-transfer-card.is-damac{--club:#d4393f;--club-soft:rgba(212,57,63,.22)}
+.sma-premium-players .sma-transfer-card.is-alnassr{--club:#f1c400;--club-soft:rgba(241,196,0,.2)}
+
+/* ---- Responsive: posters stay readable all the way down to small phones ---- */
+@media (max-width:1180px){.sma-premium-players .sma-transfer-cards{grid-template-columns:repeat(3,minmax(0,1fr))}}
+@media (max-width:1000px){.sma-premium-players .sma-year-player-cards,.sma-premium-players .sma-player-roster-cards{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media (max-width:860px){.sma-premium-players .sma-transfer-cards{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media (max-width:620px){
+  .sma-premium-players .sma-player-year-section{margin-bottom:52px}
+  .sma-premium-players .sma-player-year-nav{gap:9px}
+  .sma-premium-players .sma-player-year-nav a{flex:1 1 calc(50% - 9px);justify-content:center;gap:8px;font-size:18px;padding:12px 14px}
+  .sma-premium-players .sma-player-year-nav a span{font-size:11px}
+  .sma-premium-players .sma-year-player-cards,.sma-premium-players .sma-player-roster-cards,.sma-premium-players .sma-transfer-cards{gap:11px}
+  .sma-premium-players .sma-year-player-cards article{padding:7px 7px 12px}
+  .sma-premium-players .sma-year-player-cards article b{font-size:13px}
+  .sma-premium-players .sma-year-player-cards article span{font-size:11px}
+  .sma-premium-players .sma-roster-card{padding:8px 8px 13px}
+  .sma-premium-players .sma-roster-card b{font-size:14px;margin:11px 4px 4px}
+  .sma-premium-players .sma-roster-card .sma-player-birth,.sma-premium-players .sma-roster-card__club{font-size:12px;margin-inline:4px}
+  .sma-premium-players .sma-transfer-card__body{padding:10px 10px 13px}
+  .sma-premium-players .sma-transfer-card__name{font-size:15px;margin:7px 0 3px}
+  .sma-premium-players .sma-transfer-card__route{font-size:10px;gap:5px}
+  .sma-premium-players .sma-transfer-card .sma-player-birth,.sma-premium-players .sma-transfer-card__club{font-size:12px}
+  .sma-premium-players .sma-pro-contract{margin-top:8px;padding:5px 9px;font-size:10px}
+}
+@media (max-width:480px){
+  .sma-premium-players .sma-player-year-nav a{flex:1 1 100%}
+  .sma-premium-players .sma-year-player-cards,.sma-premium-players .sma-player-roster-cards,.sma-premium-players .sma-transfer-cards{grid-template-columns:minmax(0,1fr);gap:14px}
+  .sma-premium-players .sma-year-player-cards article b,.sma-premium-players .sma-roster-card b,.sma-premium-players .sma-transfer-card__name{font-size:18px}
+  .sma-premium-players .sma-year-player-cards article span,.sma-premium-players .sma-roster-card .sma-player-birth,.sma-premium-players .sma-roster-card__club,.sma-premium-players .sma-transfer-card .sma-player-birth,.sma-premium-players .sma-transfer-card__club{font-size:13px}
+  .sma-premium-players .sma-transfer-card__route{font-size:11px}
+  .sma-premium-players .sma-roster-card__frame{aspect-ratio:4/5}
+}
+@media (prefers-reduced-motion:reduce){.sma-premium-players .sma-transfer-card{transition:none}.sma-premium-players .sma-transfer-card:hover{transform:none}}
+
+/* ---- 2025 batch · designed announcement card (players with no original archive photo) ----
+   Checked first: assets/, the 180-item client-review archive, the Drive master index and the
+   original 2026 poster source folders hold no photo of these three players, and no original
+   Moura club logo file exists anywhere in the project. So the card is drawn from CSS/SVG only:
+   the original SMA mark, type, and the posters' own green/neutral split — no face, no body,
+   no invented crest, no club colour that is not documented. */
+.sma-premium-players .sma-roster-card--announce{--club-ink:#cfdbe4;--club-mid:#39434e;--club-deep:#141a21;padding:4px 4px 16px}
+.sma-premium-players .sma-roster-card--announce > b{margin-top:14px}
+.sma-premium-players .sma-announce--path{--club-ink:#cfe0cf;--club-mid:#2f4438;--club-deep:#101c15}
+
+.sma-premium-players .sma-announce__poster{position:relative;flex:0 0 auto;width:100%;aspect-ratio:9/16;border-radius:11px;overflow:hidden;isolation:isolate;container-type:inline-size;font-family:var(--sans,Tahoma,Arial,sans-serif);line-height:1.3;text-align:center;color:#f7ead0;background:linear-gradient(200deg,var(--club-mid) 0%,var(--club-deep) 52%,#070b0e 100%)}
+.sma-premium-players .sma-announce__poster > *{position:absolute}
+
+/* Destination (right) half: stadium light only — never an invented club colour or crest */
+.sma-premium-players .sma-announce__club-side{inset:0;z-index:0;background:radial-gradient(ellipse 58% 40% at 76% 56%,rgba(207,219,228,.3),transparent 64%),radial-gradient(circle at 88% 14%,rgba(207,219,228,.2),transparent 44%)}
+/* SMA (left) half: the posters' torn green seam, drawn as a clip-path */
+.sma-premium-players .sma-announce__sma-side{inset:0;z-index:1;background:radial-gradient(ellipse 70% 38% at 26% 30%,rgba(78,214,142,.3),transparent 62%),linear-gradient(168deg,#17955b 0%,#0c6a3e 40%,#074326 74%,#042a19 100%);filter:drop-shadow(2px 0 1px rgba(247,234,208,.45));clip-path:polygon(0 0,56% 0,52% 6%,57% 12%,51% 19%,56% 26%,50% 33%,55% 40%,49% 47%,54% 54%,48% 61%,53% 68%,47% 75%,52% 82%,46% 89%,51% 96%,47% 100%,0 100%)}
+.sma-premium-players .sma-announce__texture{inset:0;z-index:2;pointer-events:none;background:repeating-linear-gradient(118deg,rgba(255,255,255,.03) 0 1px,transparent 1px 7px),linear-gradient(to bottom,rgba(0,0,0,.34),transparent 20%,transparent 46%,rgba(3,10,7,.72) 86%,rgba(2,7,5,.9) 100%)}
+
+/* The original SMA mark appears once, unmodified, on a cream medallion in the brand lockup.
+   Lower-left "S.M.A" sigil, as on the 2026 originals — sits behind the player figure. */
+.sma-premium-players .sma-announce__ghost{z-index:3;left:4.5%;bottom:35%;font-size:18px;font-size:9cqi;font-weight:900;letter-spacing:.02em;line-height:1;color:rgba(60,193,130,.17);-webkit-text-stroke:1px rgba(104,214,159,.3)}
+.sma-premium-players .sma-announce__wordmark{z-index:4;right:5%;top:26.5%;width:58%;white-space:nowrap;font-size:13px;font-size:9.5cqi;font-weight:900;line-height:.94;letter-spacing:-.01em;text-align:right;color:rgba(207,219,228,.1);color:color-mix(in srgb,var(--club-ink) 12%,transparent);-webkit-text-stroke:1px var(--club-ink)}
+.sma-premium-players .sma-announce__wordmark b{display:block;font-weight:900}
+.sma-premium-players .sma-announce--wide .sma-announce__wordmark{font-size:7.4cqi}
+
+.sma-premium-players .sma-announce__swoosh{z-index:5;left:8%;top:46%;width:82%;height:auto;overflow:visible;filter:drop-shadow(0 3px 7px rgba(0,0,0,.55))}
+.sma-premium-players .sma-announce__swoosh-arc{fill:none;stroke:#fff;stroke-width:9.5;stroke-linecap:round}
+.sma-premium-players .sma-announce__swoosh-trail{fill:none;stroke:rgba(214,255,232,.55);stroke-width:3.5;stroke-linecap:round}
+.sma-premium-players .sma-announce__swoosh-head{fill:#fff}
+
+.sma-premium-players .sma-announce__brand{z-index:6;left:5%;top:5%;width:35%;text-align:center}
+.sma-premium-players .sma-announce__medallion{display:flex;align-items:center;justify-content:center;width:54%;margin:0 auto;aspect-ratio:1;border-radius:50%;background:radial-gradient(circle at 36% 28%,#fbf4e4,#e2d5b6 72%,#c9b98f);box-shadow:0 2px 7px rgba(0,0,0,.45),inset 0 0 0 1px rgba(255,255,255,.6)}
+.sma-premium-players .sma-announce__medallion img{width:72%;height:auto}
+.sma-premium-players .sma-announce__brand b{display:block;margin:4% 0 0;font-size:11px;font-size:4cqi;font-weight:700;letter-spacing:.04em;color:#eef3e9}
+.sma-premium-players .sma-announce__brand em{display:block;margin-top:9%;font-size:14px;font-size:5.4cqi;font-style:normal;font-weight:800;color:#f7ead0}
+.sma-premium-players .sma-announce__brand small{display:block;font-size:9px;font-size:3.2cqi;color:#bcd2c0}
+
+.sma-premium-players .sma-announce__dest{z-index:6;right:6%;top:5.5%;width:46%;text-align:right}
+.sma-premium-players .sma-announce__dest span{display:block;font-size:9px;font-size:3.4cqi;color:#c6d3dc}
+.sma-premium-players .sma-announce__dest b{display:block;margin:2% 0 1%;font-size:22px;font-size:8.6cqi;font-weight:800;line-height:1.15;color:var(--club-ink);text-shadow:0 2px 6px rgba(0,0,0,.5)}
+.sma-premium-players .sma-announce__dest small{display:block;font-size:9px;font-size:3.2cqi;color:#aebcc7}
+
+.sma-premium-players .sma-announce__chevrons{z-index:6;bottom:3.5%;width:6.4%;height:auto}
+.sma-premium-players .sma-announce__chevrons--sma{left:5%;fill:#3cc182}
+.sma-premium-players .sma-announce__chevrons--club{right:5%;fill:var(--club-ink)}
+
+.sma-premium-players .sma-announce__copy{z-index:7;left:4%;right:4%;bottom:6.5%}
+.sma-premium-players .sma-announce__route{display:flex;align-items:center;justify-content:center;gap:1.4%;font-size:10px;font-size:3.5cqi;color:#dbe7db}
+.sma-premium-players .sma-announce__route b{font-weight:700;color:#f7ead0}
+.sma-premium-players .sma-announce__route b:last-of-type{color:var(--club-ink)}
+.sma-premium-players .sma-announce__arrow{display:inline-block;width:14px;width:5cqi;height:5px;height:1.9cqi;background:#fff;transform:scaleX(-1);clip-path:polygon(0 34%,60% 34%,60% 0,100% 50%,60% 100%,60% 66%,0 66%)}
+.sma-premium-players .sma-announce__name{display:block;margin:3% 0 0;font-size:24px;font-size:9.2cqi;font-weight:800;line-height:1.12;color:#f7ead0;text-shadow:0 3px 8px rgba(0,0,0,.6)}
+.sma-premium-players .sma-announce__name i{display:block;font-style:normal;color:var(--club-ink)}
+.sma-premium-players .sma-announce--long .sma-announce__name{font-size:21px;font-size:8cqi}
+.sma-premium-players .sma-announce__year{display:flex;align-items:center;justify-content:center;gap:4%;margin-top:2.5%;font-size:14px;font-size:5.1cqi;font-weight:700;letter-spacing:.08em;color:#f3e6cc}
+.sma-premium-players .sma-announce__year::before,.sma-premium-players .sma-announce__year::after{content:"";width:11%;height:1px;background:linear-gradient(90deg,transparent,rgba(247,234,208,.75),transparent)}
+.sma-premium-players .sma-announce__step{display:inline-block;margin-top:4%;padding:1.8% 6.5%;font-size:10px;font-size:3.6cqi;color:#eef3e9;border:1px solid rgba(247,234,208,.42);border-radius:4px;background:rgba(4,12,8,.4)}
+
+@container (max-width:170px){
+  .sma-premium-players .sma-announce__brand small,.sma-premium-players .sma-announce__dest small{display:none}
+  .sma-premium-players .sma-announce__copy{bottom:10%}
+}
+
+/* ---- 2025 batch · the original archive photos, composited INTO the same poster ----
+   Every 2025 card now uses one template, structurally mirroring the 2026 originals:
+   SMA green "البداية" half vs. destination half across a torn seam, original SMA mark on a
+   cream medallion top-left, destination plate top-right, outlined destination wordmark,
+   white speed arrow, lower-left S.M.A sigil, name + birth year + step banner, chevrons.
+
+   The photos are the untouched archive files (assets/awards/*). They are placed with
+   object-fit:contain inside the poster and blended with CSS gradients / vignettes only —
+   no generated faces, no reshaping, no retouching, no pose or body edit. Two of them also
+   have an alpha matte (assets/clubs/2025-posters/, see its provenance.json): that pass
+   writes the ALPHA channel only, so every visible RGB pixel is the original photograph.
+
+   Destination accent for clubs whose brand colours are not documented in the project is
+   SMA's own cream — deliberately NOT a guessed club colour and never a synthesised crest. */
+.sma-premium-players .sma-announce--cream{--club-ink:#edd6a2;--club-mid:#3b3426;--club-deep:#161209}
+
+/* Centre figure — the matted archive portrait, contained, never cropped through a face */
+.sma-premium-players .sma-announce__figure{z-index:4;left:7%;right:7%;top:25%;bottom:19%;pointer-events:none}
+.sma-premium-players .sma-announce__figure img{width:100%;height:100%;object-fit:contain;object-position:bottom center;filter:drop-shadow(0 6px 14px rgba(0,0,0,.6)) drop-shadow(0 0 26px rgba(0,0,0,.35))}
+
+/* "البداية" echo on the green half — the same photo as a green duotone, exactly the role the
+   2026 posters give it. Tinting is a CSS filter on a copy; the source file is unchanged. */
+.sma-premium-players .sma-announce__echo{z-index:2;left:-9%;width:52%;top:30%;bottom:13%;pointer-events:none;opacity:.52;mix-blend-mode:screen;filter:grayscale(1) sepia(1) hue-rotate(78deg) saturate(2.5) brightness(.5) contrast(1.18);-webkit-mask-image:linear-gradient(to left,transparent 2%,#000 46%);mask-image:linear-gradient(to left,transparent 2%,#000 46%)}
+.sma-premium-players .sma-announce__echo img{width:100%;height:100%;object-fit:contain;object-position:bottom left}
+
+/* Full-frame photographic ground, for an archive photo that cannot be matted cleanly
+   (an on-pitch shot, not a studio portrait). The frame itself becomes the poster's
+   photography, graded down with gradients so the poster furniture reads on top of it. */
+.sma-premium-players .sma-announce__plate{inset:0;z-index:1;overflow:hidden;pointer-events:none}
+.sma-premium-players .sma-announce__plate img{position:absolute;left:-20%;top:-32%;width:160%;height:160%;max-width:none;object-fit:cover;filter:grayscale(1) contrast(1.26) brightness(.8)}
+.sma-premium-players .sma-announce__plate::before{content:"";position:absolute;inset:0;z-index:1;background:radial-gradient(ellipse 40% 26% at 50% 36%,rgba(255,247,226,.3),transparent 70%),radial-gradient(ellipse 76% 58% at 50% 40%,transparent 0 38%,rgba(2,9,6,.8) 100%)}
+.sma-premium-players .sma-announce--plate .sma-announce__sma-side{z-index:2;opacity:.84;mix-blend-mode:multiply;filter:none}
+.sma-premium-players .sma-announce--plate .sma-announce__club-side{z-index:2;mix-blend-mode:soft-light;background:radial-gradient(ellipse 62% 46% at 74% 42%,rgba(237,214,162,.45),transparent 72%),linear-gradient(200deg,rgba(237,214,162,.26),rgba(30,26,14,.5) 60%,rgba(6,12,8,.66))}
+
+/* Vignette that sits ABOVE the figure, so the portrait sinks into the poster instead of
+   floating on it, and the name block reads against solid ink. Photo cards only. */
+.sma-premium-players .sma-announce--photo .sma-announce__poster::after{content:"";position:absolute;inset:0;z-index:5;pointer-events:none;background:radial-gradient(ellipse 62% 40% at 50% 42%,transparent 0 48%,rgba(3,12,8,.52) 100%),linear-gradient(to bottom,rgba(3,12,8,.6) 0 7%,transparent 22%,transparent 46%,rgba(3,11,7,.72) 64%,rgba(2,9,6,.95) 79%,rgba(1,6,4,.99) 100%)}
+/* On a photo card the arrow, the outlined wordmark and the grain all pass BEHIND the
+   player, exactly as they do on the 2026 originals; only the vignette sits above. */
+.sma-premium-players .sma-announce--photo .sma-announce__texture,
+.sma-premium-players .sma-announce--photo .sma-announce__swoosh,
+.sma-premium-players .sma-announce--photo .sma-announce__wordmark{z-index:3}
+.sma-premium-players .sma-announce--photo .sma-announce__wordmark{top:25%}
+.sma-premium-players .sma-announce--photo .sma-announce__swoosh{opacity:.9}
+
+/* No-photo cards keep a sports mark in the figure slot instead — never an invented face */
+.sma-premium-players .sma-announce__sigil{z-index:4;left:50%;top:52%;width:17%;transform:translateX(-50%);opacity:.9;filter:drop-shadow(0 6px 14px rgba(0,0,0,.55))}
+.sma-premium-players .sma-announce__sigil .ball-shell{fill:none;stroke:rgba(247,234,208,.5);stroke-width:3}
+.sma-premium-players .sma-announce__sigil .ball-seam{fill:none;stroke:var(--club-ink);stroke-width:2.6;stroke-linejoin:round;opacity:.85}
+.sma-premium-players .sma-announce__sigil .ball-core{fill:rgba(247,234,208,.08)}
+.sma-premium-players .sma-announce__monogram{z-index:4;left:0;right:0;top:38%;font-size:20px;font-size:13cqi;font-weight:900;line-height:1;letter-spacing:.06em;color:transparent;-webkit-text-stroke:1.2px rgba(247,234,208,.3);text-stroke:1.2px rgba(247,234,208,.3)}
+
+@media (max-width:620px){
+  .sma-premium-players .sma-announce__figure{left:9%;right:9%;top:26%;bottom:20%}
+}
+
+.sma-premium-players .sma-all-2025>article:not(.sma-roster-card){min-width:0;display:flex;flex-direction:column;padding:13px;border-radius:14px;background:linear-gradient(145deg,#143522,#0c251a);border:1px solid rgba(208,185,126,.33)}
+.sma-premium-players .sma-all-2025>article:not(.sma-roster-card)>img{width:100%;aspect-ratio:9/16;object-fit:cover;border-radius:10px}
+.sma-premium-players .sma-all-2025>article:not(.sma-roster-card)>b{display:block;color:#f7ead0;margin:12px 5px 4px;font-size:17px}
+.sma-premium-players .sma-all-2025>article:not(.sma-roster-card)>span{display:block;color:#dec187;margin:3px 5px;font-size:13px}
+
+/* SMA original-photo player artwork: crop is isolated to the original silhouette;
+   no generative substitution, club-logo fabrication, or face/body retouch. */
+.sma-premium-players .sma-player-profile{overflow:hidden;border:1px solid rgba(212,180,104,.38);border-radius:17px;background:#0c2318;min-width:0}
+.sma-player-profile__poster{position:relative;isolation:isolate;overflow:hidden;aspect-ratio:9/16;background:radial-gradient(ellipse at 55% 42%,#2a6f43 0%,#0d3724 48%,#07190f 95%)}
+.sma-player-profile__poster::before{content:"SMA";position:absolute;inset-inline-start:5%;top:24%;font:900 clamp(65px,10vw,155px)/1 Arial,sans-serif;color:rgba(255,255,255,.035);transform:rotate(-90deg);pointer-events:none}
+.sma-player-profile__poster::after{content:"";position:absolute;inset:40% 0 0;background:linear-gradient(0deg,#081c13 1%,rgba(8,28,19,.66) 25%,transparent 85%);pointer-events:none;z-index:2}
+.sma-player-profile__top{position:absolute;z-index:4;display:flex;align-items:center;gap:8px;inset-inline-start:6%;top:3%;color:#f4e6c4;font:700 12px/1.2 Arial,sans-serif;letter-spacing:1.8px}
+.sma-player-profile__top img{width:clamp(30px,3vw,48px);height:auto;object-fit:contain}
+.sma-player-profile__batch{position:absolute;z-index:4;top:5%;inset-inline-end:7%;font:800 clamp(14px,2vw,24px)/1 Arial,sans-serif;color:#dbbf80}
+.sma-player-profile__portrait{position:absolute;inset:12% 1% 13%;width:98%;height:78%;object-fit:contain;object-position:center bottom;z-index:1;filter:drop-shadow(0 12px 16px rgba(0,0,0,.25))}
+.sma-player-profile__title{position:absolute;z-index:4;inset-inline:8%;bottom:5%;display:flex;flex-direction:column;align-items:flex-start;gap:5px;color:#f6efd9}
+.sma-player-profile__title strong{font-size:clamp(18px,2.2vw,30px);line-height:1.3}
+.sma-player-profile__title small{font-size:clamp(12px,1vw,15px);color:#e7cd93}
+.sma-player-profile__title span{font-size:clamp(12px,1vw,15px);color:#c7dbc7}
+@media(max-width:620px){.sma-player-profile__top{font-size:9px;letter-spacing:1px}.sma-player-profile__top img{width:28px}.sma-player-profile__title strong{font-size:15px}.sma-player-profile__title small,.sma-player-profile__title span{font-size:11px}}
+
+/* 2025: display higher-resolution original photography instead of enlarging small cutout thumbnails. */
+.sma-premium-players #players-2025 .sma-announce--hires .sma-announce__poster{isolation:isolate}
+.sma-premium-players #players-2025 .sma-announce__source-photo{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center 18%;opacity:.98;z-index:1}
+.sma-premium-players #players-2025 .sma-announce--hires .sma-announce__poster::after{content:"";position:absolute;inset:0;z-index:2;background:linear-gradient(to top,#04170e 0%,rgba(4,23,14,.91) 21%,rgba(4,23,14,.26) 55%,rgba(4,23,14,.15) 100%);pointer-events:none}
+.sma-premium-players #players-2025 .sma-announce--hires .sma-announce__copy{z-index:7}
+.sma-premium-players #players-2025 .sma-announce--hires .sma-announce__brand,.sma-premium-players #players-2025 .sma-announce--hires .sma-announce__dest{z-index:7}
+.sma-premium-players #players-2025 .sma-announce--hires .sma-announce__ghost,.sma-premium-players #players-2025 .sma-announce--hires .sma-announce__wordmark{opacity:.14}
+.sma-premium-players #players-2025 .sma-announce--identity .sma-announce__poster{background:radial-gradient(ellipse at 55% 40%,#235f3e,#0b2d1e 65%,#06190f)}
+@media(max-width:620px){.sma-premium-players #players-2025 .sma-announce__source-photo{object-position:center 12%}}
+
+/* 2024 roster includes three photo cards and six SMA announcement cards. */
+.sma-premium-players .sma-all-2024{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px}
+@media(max-width:1000px){.sma-premium-players .sma-all-2024{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:620px){.sma-premium-players .sma-all-2024{gap:11px}}

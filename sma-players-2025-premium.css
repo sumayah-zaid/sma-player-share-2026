@@ -1,0 +1,40 @@
+
+.sma-players-premium-2025 .sma-transfer-gallery{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:20px}
+.sma-25-card{min-width:0;overflow:hidden;background:#0a2318;border:1px solid #c6a56a55;border-radius:18px;box-shadow:0 16px 35px #0005;transition:transform .2s ease,border-color .2s ease}
+.sma-25-card:hover{transform:translateY(-3px);border-color:#d9bc7d}
+.sma-25-card__media{aspect-ratio:9/13;position:relative;overflow:hidden;background:radial-gradient(ellipse at 50% 38%,#286342,#0a2e1e 66%,#06190f)}
+.sma-25-card__photo{width:100%;height:100%;display:block;object-fit:cover;object-position:center 20%}
+.sma-25-card__placeholder{position:absolute;inset:0;display:grid;place-items:center;font:900 clamp(65px,9vw,160px) Arial,sans-serif;color:#d9c59613;letter-spacing:-.07em}
+.sma-25-card__placeholder:before{content:"";position:absolute;width:60%;aspect-ratio:1;border:2px solid #d3ac642b;border-radius:50%;box-shadow:0 0 0 28px #d3ac6412}
+.sma-25-card__shade{position:absolute;inset:0;background:linear-gradient(180deg,#07190f9a 0%,transparent 26%,transparent 38%,#06170fba 75%,#05160eff 100%);pointer-events:none}
+.sma-25-card__header{position:absolute;inset-inline:16px;top:15px;display:flex;justify-content:space-between;align-items:center;color:#f1d499;font:900 19px/1 Arial,sans-serif}
+.sma-25-card__brand{width:48px;height:48px;object-fit:contain;filter:drop-shadow(0 2px 4px #0008)}
+.sma-25-card__headline{position:absolute;inset-inline:18px;bottom:19px;color:#fff6df}
+.sma-25-card__headline h3{font-size:clamp(18px,1.75vw,25px);line-height:1.35;margin:0 0 8px;font-weight:850}
+.sma-25-card__headline span{font-size:13px;color:#e1bd78}
+.sma-25-card__destination{min-height:91px;display:flex;align-items:center;gap:12px;padding:15px;background:linear-gradient(115deg,#0d3424,#082116);border-top:1px solid #d0af7055}
+.sma-25-card__clubmark{flex:0 0 58px;height:58px;border:1px solid #dccb9873;border-radius:15px;background:#f8f3e7;display:grid;place-items:center;padding:6px}
+.sma-25-card__clubmark img{max-width:100%;max-height:100%;object-fit:contain}
+.sma-25-card__clubinitial{font:900 25px Arial,sans-serif;color:#164930}
+.sma-25-card__clubname{display:flex;flex-direction:column;gap:5px;min-width:0}
+.sma-25-card__clubname small{color:#c1cbb8;font-size:11px}
+.sma-25-card__clubname strong{color:#fff3d8;font-size:clamp(14px,1.35vw,19px)}
+.sma-25-card__direction{margin-inline-start:auto;color:#c8a76b;font-size:22px}
+@media(max-width:920px){.sma-players-premium-2025 .sma-transfer-gallery{grid-template-columns:repeat(2,minmax(0,1fr));gap:13px}}
+@media(max-width:500px){.sma-players-premium-2025 .sma-transfer-gallery{gap:10px}.sma-25-card{border-radius:12px}.sma-25-card__header{inset-inline:9px;top:8px;font-size:13px}.sma-25-card__brand{width:30px;height:30px}.sma-25-card__headline{inset-inline:10px;bottom:12px}.sma-25-card__headline h3{font-size:14px;margin-bottom:3px}.sma-25-card__headline span{font-size:10px}.sma-25-card__destination{padding:9px;gap:7px;min-height:66px}.sma-25-card__clubmark{flex-basis:37px;height:37px;border-radius:10px;padding:4px}.sma-25-card__clubinitial{font-size:17px}.sma-25-card__clubname small{font-size:9px}.sma-25-card__clubname strong{font-size:12px}.sma-25-card__direction{font-size:16px}}
+
+/* Transfers 2025 — isolated true-photo portraits without changing the original subject. */
+.sma-25-card__media--transfer{isolation:isolate;background:linear-gradient(117deg,#0e4b31 0 49.5%,#d9c7a0 49.5% 50.5%,#142b20 50.5% 100%);border-radius:0}
+.sma-25-card__media--transfer::before{content:"";position:absolute;inset:0;z-index:0;background:radial-gradient(ellipse at 72% 24%,#ead8a345,transparent 51%),linear-gradient(170deg,#032216 7%,transparent 45%,#061c14 92%);pointer-events:none}
+.sma-25-card__media--transfer::after{content:"S.M.A";position:absolute;top:30%;inset-inline-end:1%;z-index:0;color:#ffffff14;font:900 clamp(45px,6vw,106px)/1 Arial,sans-serif;transform:rotate(-90deg)}
+.sma-25-card__cutout{position:absolute;inset:9% 0 0;width:100%;height:92%;object-fit:contain;object-position:center bottom;z-index:1;filter:drop-shadow(0 16px 16px #0008)}
+.sma-25-card__media--transfer .sma-25-card__shade{z-index:2;background:linear-gradient(180deg,#04180f95 0%,transparent 24%,transparent 48%,#05170fdb 86%,#04150eff 100%)}
+.sma-25-card__header{z-index:5}
+.sma-25-card__transfer{position:absolute;inset-inline:15px;bottom:112px;z-index:4;display:flex;align-items:center;gap:7px;flex-wrap:wrap;color:#f4e6c9;font-weight:750;text-shadow:0 2px 4px #0008;font-size:clamp(12px,1vw,15px)}
+.sma-25-card__transfer strong{color:#e9c77c}
+.sma-25-card__transfer [aria-hidden]{font-size:22px;color:#f4d183}
+.sma-25-card__headline{z-index:5;bottom:16px}
+.sma-25-card__placeholder{z-index:1}
+.sma-25-card--pending-photo .sma-25-card__media{background:radial-gradient(ellipse at 50% 45%,#285f40,#062015 75%)}
+.sma-25-card__clubinitial{font-size:22px}
+@media(max-width:500px){.sma-25-card__transfer{bottom:74px;inset-inline:8px;font-size:10px;gap:3px}.sma-25-card__transfer [aria-hidden]{font-size:14px}.sma-25-card__cutout{inset-block-start:12%;height:89%}}

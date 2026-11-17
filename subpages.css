@@ -1,0 +1,37 @@
+
+/* KAMAYA / SMA: editorial companion pages, no review tools */
+body{background:#06120c;color:#f5f1e7}
+.topbar{flex-wrap:wrap;gap:13px;padding-block:13px}
+.topbar .brand{flex:none}
+.sma-subnav{display:flex;flex-wrap:wrap;justify-content:center;gap:5px 13px;align-items:center}
+.sma-subnav a{font-size:.76rem;color:#b6c9b7;padding:7px 10px;border-radius:30px;text-decoration:none}
+.sma-subnav a:hover,.sma-subnav a.is-active{color:#f3e4c1;background:rgba(45,121,67,.28)}
+.sma-cover{min-height:500px}
+.sma-cover .cover-picture img{object-position:center 32%}
+.sma-cover .cover-copy h1{font-size:clamp(2.65rem,4.7vw,5rem);max-width:16ch;line-height:1.35}
+.sma-cover .cover-copy p{max-width:61ch}
+.chapters .chapter{scroll-margin-top:110px}
+.sma-next-steps{display:flex;flex-wrap:wrap;gap:12px;margin:42px 0 20px}
+.sma-next-steps p{flex:0 0 100%;font-size:1.1rem;color:#ead7a5;font-weight:700}
+.sma-next-steps a{display:flex;align-items:center;gap:13px;border:1px solid rgba(220,193,137,.33);border-radius:60px;padding:13px 18px;color:#eee7d3;text-decoration:none;font-size:.85rem;background:rgba(31,77,47,.25)}
+.sma-next-steps a:hover{background:#1a4c2c}
+.sma-detail-footer{max-width:none!important;display:block!important;background:#030b07;color:#e4e4d8;border-top:1px solid rgba(221,195,129,.25);padding:0!important}
+.sma-detail-footer__top,.sma-detail-footer__bottom{max-width:1380px;margin:auto;padding-inline:clamp(18px,5vw,70px);display:flex;align-items:center;justify-content:space-between;gap:20px}
+.sma-detail-footer__top{padding-block:50px;border-bottom:1px solid rgba(221,195,129,.2)}
+.sma-detail-footer__top b{font:700 1.28rem system-ui,sans-serif;letter-spacing:.04em}
+.sma-detail-footer__top p{margin:6px 0;color:#e6d09d}
+.sma-detail-footer__top small{font-size:.76rem;color:#9bb7a0}
+.sma-detail-footer__top a{display:inline-flex;gap:12px;background:#d9c08c;color:#10311f;text-decoration:none;border-radius:50px;padding:12px 20px;font-weight:700;white-space:nowrap}
+.sma-detail-footer__bottom{padding-block:21px;font-size:.73rem;color:#9aa99a}
+.sma-detail-footer__credit{display:flex;align-items:center;gap:12px}
+.sma-detail-footer__credit span{white-space:nowrap}
+.sma-detail-footer__credit img{width:115px;height:auto}
+.sma-story-more,.sma-section-detail,.sma-source-archive-link{padding-block:12px}
+.sma-story-more a,.sma-section-detail a,.sma-source-archive-link a{display:inline-flex;gap:10px;align-items:center;border:1px solid rgba(200,171,114,.35);border-radius:50px;padding:11px 18px;color:#e7cf99;text-decoration:none;font-weight:700;font-size:.82rem}
+.sma-story-more a:hover,.sma-section-detail a:hover,.sma-source-archive-link a:hover{border-color:#d1b674}
+html[lang=ar] .a-camp--tall img[src*="dammam-camp-squad"]{object-position:center 26%}
+@media(max-width:960px){.sma-subnav{order:3;width:100%;justify-content:flex-start;overflow-x:auto;flex-wrap:nowrap;padding-bottom:4px}.sma-subnav a{flex:none;white-space:nowrap}}
+@media(max-width:690px){.sma-detail-footer__top{flex-direction:column;align-items:flex-start}.sma-detail-footer__bottom{align-items:flex-start;flex-direction:column-reverse}.sma-cover{min-height:0}.sma-cover .cover-picture{height:310px}}
+
+.sma-interview-link a{display:inline-flex;align-items:center;gap:12px;border-radius:40px;background:rgba(28,89,50,.4);border:1px solid rgba(221,197,138,.4);padding:12px 20px;color:#ead7a1;text-decoration:none;font-weight:650}
+.sma-interview-link a:hover{background:rgba(29,103,58,.7)}
