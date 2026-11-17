@@ -1,0 +1,14 @@
+/* Source documents: preserves original client identity and full 28-page profile. */
+html[lang="ar"] .a-source-files{
+  display:grid;grid-template-columns:1fr auto;align-items:center;gap:28px;
+  margin:42px auto 32px;max-width:1130px;padding:25px clamp(20px,3vw,38px);
+  border:1px solid rgba(209,178,110,.35);border-radius:16px;
+  background:linear-gradient(118deg,rgba(29,60,42,.46),rgba(7,20,13,.6));
+}
+html[lang="ar"] .a-source-files__intro h3{margin:.35rem 0 .6rem;font-size:clamp(1.15rem,1.6vw,1.55rem);color:#f3e8d1}
+html[lang="ar"] .a-source-files__intro p:last-child{max-width:62ch;margin:0;color:#c6d0c8;font-size:.91rem;line-height:1.85}
+html[lang="ar"] .a-source-files__links{display:flex;flex-direction:column;gap:10px;min-width:225px}
+html[lang="ar"] .a-source-files__links a{display:block;border:1px solid rgba(206,178,118,.5);border-radius:10px;padding:12px 17px;color:#f6e7bf;text-decoration:none;font-weight:700;line-height:1.5;background:rgba(8,20,14,.5)}
+html[lang="ar"] .a-source-files__links a:hover, html[lang="ar"] .a-source-files__links a:focus-visible{background:#1c4430;border-color:#d9c18c}
+html[lang="ar"] .a-source-files__links small{display:block;font-weight:400;color:#c8d2c6;font-size:.73rem}
+@media(max-width:740px){html[lang="ar"] .a-source-files{grid-template-columns:1fr;gap:16px;margin:28px 0}html[lang="ar"] .a-source-files__links{min-width:0}}

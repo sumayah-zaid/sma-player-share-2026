@@ -1,0 +1,1571 @@
+@charset "UTF-8";
+/* ============================================================
+   SMA PLAYER — سيف آل نمرة
+   Direction A — سينما زمردية / Emerald Cinema (client-selected 2026-11-10).
+   Single-direction build. B and C were retired from this production
+   candidate after the client's selection; they remain in the historical
+   public comparison at commit fb56dd2, not here.
+   No dependencies. No build step. RTL-first.
+
+   TYPEFACE NOTE — خط ثمانية (Thmanyah)
+   The client-approved typeface is "ثمانية 'Thmanyah'" (font.thmanyah.com).
+   It is NOT installed here and its licence does not permit rehosting or
+   bundling, so nothing is packaged or fetched. It is declared first in the
+   stacks below so that authorising it later is a no-op change.
+   Shipping type is Alexandria + IBM Plex Sans Arabic, self-hosted under OFL.
+   ============================================================ */
+:root{
+  /* ---- Fonts: Thmanyah first, then the honest fallbacks actually available ---- */
+  --font-sans:
+    "Thmanyah", "Thmanyah Sans", "ثمانية",
+    "Noto Sans Arabic", "Noto Kufi Arabic",
+    "SF Arabic", "Geeza Pro", system-ui, -apple-system, "Segoe UI", sans-serif;
+  --font-display:
+    "Thmanyah Serif Display", "Thmanyah", "ثمانية",
+    "Noto Naskh Arabic", "Noto Sans Arabic",
+    "Al Bayan", "Geeza Pro", Georgia, serif;
+  --font-latin: "Thmanyah", ui-sans-serif, -apple-system, "Helvetica Neue", Arial, sans-serif;
+
+  /* ---- Brand colour, sampled from the untouched original SMA logo ---- */
+  --sma-deep:   #1b522e;   /* rgb(10.72%, 32.01%, 18.05%) */
+  --sma-green:  #2a8950;   /* rgb(16.56%, 53.64%, 31.32%) */
+  --sma-lift:   #37a863;
+  --gold:       #c9a86a;   /* restrained champagne accent */
+  --gold-soft:  #e3cfa3;
+  --ink:        #0c0f0d;
+  --graphite:   #14171a;
+  --graphite-2: #1d2124;
+  --ivory:      #f5f2ea;
+  --ivory-2:    #ebe6da;
+  --paper:      #fdfcf9;
+
+  --ease: cubic-bezier(.2,.75,.25,1);
+  --shadow-lg: 0 40px 90px -40px rgba(0,0,0,.65);
+  --shadow-md: 0 24px 60px -30px rgba(0,0,0,.5);
+  --nav-h: 76px;
+
+  /* R5 — the voice tier: this mint is his family name, and nothing else. */
+  --sma-voice: #b8e8bf;
+}
+
+*, *::before, *::after{ box-sizing:border-box; }
+
+html{
+  scroll-behavior:smooth;
+  -webkit-text-size-adjust:100%;
+}
+@media (prefers-reduced-motion:reduce){
+  html{ scroll-behavior:auto; }
+  *, *::before, *::after{ animation-duration:.001ms !important; transition-duration:.001ms !important; }}
+
+body{
+  margin:0;
+  font-family:var(--font-sans);
+  font-size:clamp(15.5px,.45vw + 14px,17.5px);
+  line-height:1.85;
+  background:var(--ink);
+  color:var(--ivory);
+  overflow-x:clip;
+  text-rendering:optimizeLegibility;
+  -webkit-font-smoothing:antialiased;
+}
+
+img, svg{ max-width:100%; display:block; }
+a{ color:inherit; }
+button{ font:inherit; color:inherit; }
+h1, h2, h3{ margin:0; line-height:1.18; font-weight:800; letter-spacing:-.005em; }
+p{ margin:0 0 1em; }
+ul, ol, dl{ margin:0; padding:0; list-style:none; }
+
+:focus-visible{
+  outline:2px solid var(--sma-lift);
+  outline-offset:3px;
+  border-radius:3px;
+}
+
+.sr-only{
+  position:absolute; width:1px; height:1px; padding:0; margin:-1px;
+  overflow:hidden; clip-path:inset(50%); white-space:nowrap; border:0;
+}
+.skip-link{
+  position:fixed; inset-inline-start:50%; top:-100px; transform:translateX(50%);
+  z-index:200; background:var(--sma-green); color:#fff;
+  padding:.7rem 1.4rem; border-radius:0 0 12px 12px; font-weight:700;
+  transition:top .22s var(--ease);
+}
+.skip-link:focus{ top:0; }
+
+/* Latin / numerals keep their own face so Arabic metrics stay clean.
+   BILINGUAL: `:not(html)` matters. On /en/ the root element itself carries
+   lang="en", and an unscoped `[lang="en"]` would hand the entire English
+   document the Latin *fallback* stack instead of the locale's own type system
+   (see the English type system block at the end of this file). */
+.latin, [lang="en"]:not(html){ font-family:var(--font-latin); }
+
+/* ============================================================
+   DESIGN SWITCHER  (shared chrome, sits above all three)
+   ============================================================ */
+.design[hidden]{ display:none !important; }
+/* PD §3.1 — the open mobile menu is modal: the page behind it must not scroll. */
+body.nav-locked{ overflow:hidden; }
+
+/* ============================================================
+   LOGO PLAQUE
+   The original SMA logo contains white glyph parts, so it is never
+   recoloured, filtered or redrawn — it is only ever placed on a deep
+   green plaque so every part of it stays legible, on dark and light alike.
+   ============================================================ */
+.logo-plaque{
+  display:inline-grid; place-items:center;
+  background:linear-gradient(160deg,#20603a,var(--sma-deep) 70%);
+  border:1px solid rgba(201,168,106,.3);
+  border-radius:14px; padding:.6rem .7rem;
+  box-shadow:0 10px 26px -14px rgba(0,0,0,.75), inset 0 1px 0 rgba(255,255,255,.08);
+}
+.logo-plaque img{ width:40px; height:auto; }
+.logo-plaque--sm{ border-radius:11px; padding:.4rem .48rem; }
+.logo-plaque--sm img{ width:26px; }
+
+/* ============================================================
+   SHARED PRIMITIVES
+   ============================================================ */
+.btn{
+  display:inline-flex; align-items:center; justify-content:center; gap:.5rem;
+  padding:.95rem 1.9rem; border:1px solid transparent; border-radius:999px;
+  font-weight:700; text-decoration:none; cursor:pointer;
+  transition:transform .3s var(--ease), box-shadow .3s var(--ease),
+             background .3s var(--ease), color .3s var(--ease), border-color .3s var(--ease);
+}
+.btn:hover{ transform:translateY(-2px); }
+.btn--emerald{
+  background:linear-gradient(135deg,var(--sma-lift),var(--sma-deep));
+  color:#fff; box-shadow:0 18px 38px -18px rgba(42,137,80,.9);
+}
+.btn--emerald:hover{ box-shadow:0 26px 50px -18px rgba(42,137,80,1); }
+.btn--ghost{
+  border-color:rgba(245,242,234,.3); color:var(--ivory);
+  background:rgba(255,255,255,.03); backdrop-filter:blur(6px);
+}
+.btn--ghost:hover{ border-color:var(--gold); color:#fff; }
+.btn--gold{
+  background:transparent; color:var(--gold-soft);
+  border-color:rgba(201,168,106,.6); border-radius:4px;
+  letter-spacing:.04em;
+}
+.btn--gold:hover{ background:var(--gold); color:#171310; border-color:var(--gold); }
+.btn--ink{
+  background:var(--sma-deep); color:#fff; border-radius:4px;
+  box-shadow:0 14px 30px -16px rgba(27,82,46,.8);
+}
+.btn--ink:hover{ background:var(--ink); }
+
+.kicker{
+  font-size:.74rem; letter-spacing:.3em; text-transform:uppercase;
+  color:var(--sma-lift); margin:0 0 1rem;
+}
+.kicker--gold{ color:var(--gold); }
+
+.h2{ font-size:clamp(1.9rem,3.4vw,3.1rem); }
+.h2--serif{ font-family:var(--font-display); font-weight:700; letter-spacing:0; }
+
+.section{ padding:clamp(4.5rem,9vw,9rem) 0; }
+.sec-head{ max-width:48ch; margin:0 auto clamp(2.5rem,5vw,4rem); padding-inline:clamp(1.25rem,5vw,2rem); }
+.sec-head--center{ text-align:center; }
+.sec-head__sub{ color:rgba(245,242,234,.6); margin:1rem 0 0; }
+
+.claim{
+  display:grid; gap:.5rem;
+  border-inline-start:3px solid var(--gold);
+  background:rgba(201,168,106,.09);
+  padding:.95rem 1.2rem; border-radius:0 10px 10px 0;
+  margin:1.4rem 0;
+}
+.claim p{ margin:0; font-size:.95rem; }
+.claim b{ font-size:1.15rem; color:var(--gold-soft); }
+.claim__tag{
+  justify-self:start;
+  font-size:.66rem; letter-spacing:.18em;
+  background:var(--gold); color:#1a1510;
+  padding:.18rem .6rem; border-radius:3px; font-weight:800;
+}
+.verify{
+  font-size:.83rem; line-height:1.7;
+  color:rgba(245,242,234,.55);
+  border-top:1px dashed rgba(245,242,234,.18);
+  padding-top:.8rem; margin-top:1.2rem;
+}
+
+/* reveal on scroll */
+.reveal{ opacity:0; transform:translateY(26px); transition:opacity .9s var(--ease), transform .9s var(--ease); }
+.reveal.is-in{ opacity:1; transform:none; }
+
+/* ---------------- forms ---------------- */
+.form{ display:grid; gap:1rem; }
+.form__row{ display:grid; gap:1rem; grid-template-columns:1fr 1fr; }
+.form label{ display:grid; gap:.45rem; font-size:.82rem; letter-spacing:.06em; color:rgba(245,242,234,.7); }
+.form input, .form textarea{
+  font:inherit; font-size:.95rem; color:var(--ivory);
+  background:rgba(255,255,255,.05);
+  border:1px solid rgba(245,242,234,.18);
+  border-radius:10px; padding:.8rem .95rem; width:100%;
+  transition:border-color .25s var(--ease), background .25s var(--ease);
+}
+.form textarea{ resize:vertical; min-height:110px; }
+.form input:focus, .form textarea:focus{ border-color:var(--sma-lift); background:rgba(255,255,255,.08); }
+.form input:focus-visible, .form textarea:focus-visible{ outline:2px solid var(--sma-lift); outline-offset:2px; }
+.form input:user-invalid, .form textarea:user-invalid{ border-color:#c7684f; }
+.form__acts{ display:flex; align-items:center; gap:1rem; flex-wrap:wrap; }
+.form__out{ font-size:.85rem; color:var(--sma-lift); }
+.form__out[data-state="err"]{ color:#e39379; }
+
+/* ---------------- burger ---------------- */
+.burger{
+  display:none; width:46px; height:46px; border:1px solid rgba(245,242,234,.22);
+  border-radius:12px; background:rgba(0,0,0,.25); cursor:pointer;
+  position:relative; flex:0 0 auto;
+}
+.burger span{
+  position:absolute; inset-inline:12px; height:1.6px; background:var(--ivory);
+  transition:transform .3s var(--ease), opacity .25s var(--ease);
+}
+.burger span:nth-child(1){ top:16px; }
+.burger span:nth-child(2){ top:22px; }
+.burger span:nth-child(3){ top:28px; }
+.burger--gold{ border-radius:3px; border-color:rgba(201,168,106,.45); }
+.burger--gold span{ background:var(--gold-soft); }
+.burger--dark{ border-color:rgba(12,15,13,.2); background:rgba(255,255,255,.6); border-radius:3px; }
+.burger--dark span{ background:var(--ink); }
+.nav-open .burger span:nth-child(1){ transform:translateY(6px) rotate(45deg); }
+.nav-open .burger span:nth-child(2){ opacity:0; }
+.nav-open .burger span:nth-child(3){ transform:translateY(-6px) rotate(-45deg); }
+
+/* ---------------- lightbox ---------------- */
+.lightbox{
+  position:fixed; inset:0; z-index:300;
+  background:rgba(6,8,7,.94);
+  display:grid; place-items:center; padding:clamp(1rem,4vw,3rem);
+  backdrop-filter:blur(10px);
+  animation:lbIn .3s var(--ease);
+}
+.lightbox[hidden]{ display:none; }
+@keyframes lbIn{ from{opacity:0} to{opacity:1} }
+.lightbox__fig{ margin:0; max-width:min(1100px,100%); }
+.lightbox__fig img{
+  max-height:78vh; width:auto; margin-inline:auto; border-radius:6px;
+  box-shadow:var(--shadow-lg);
+}
+.lightbox__fig figcaption{
+  text-align:center; margin-top:1rem; font-size:.85rem;
+  color:rgba(245,242,234,.65); letter-spacing:.06em;
+}
+.lightbox__close{
+  position:absolute; top:clamp(1rem,3vw,2rem); inset-inline-end:clamp(1rem,3vw,2rem);
+  width:46px; height:46px; border-radius:50%; cursor:pointer;
+  border:1px solid rgba(245,242,234,.3); background:rgba(255,255,255,.06);
+  font-size:1rem;
+}
+.lightbox__close:hover{ background:rgba(255,255,255,.14); }
+.lb{ cursor:zoom-in; }
+
+/* ============================================================
+   ██  A — EMERALD CINEMA
+   Full-bleed, photo-led, ambient overlays, ivory + deep SMA green.
+   ============================================================ */
+.d-a{ background:#07100b; }
+.d-a section{ scroll-margin-top:var(--nav-h); }
+
+.a-top{
+  position:fixed; inset-block-start:0; inset-inline:0; z-index:110;
+  transition:background .4s var(--ease), border-color .4s var(--ease), backdrop-filter .4s var(--ease);
+  border-bottom:1px solid transparent;
+}
+.a-top.is-stuck{
+  background:rgba(7,16,11,.82);
+  backdrop-filter:blur(16px) saturate(1.2);
+  -webkit-backdrop-filter:blur(16px) saturate(1.2);
+  border-bottom-color:rgba(245,242,234,.1);
+}
+.a-top__inner{
+  max-width:1480px; margin-inline:auto;
+  padding:.9rem clamp(1.1rem,3.5vw,2.6rem);
+  display:flex; align-items:center; gap:1.5rem;
+}
+.a-brand{ display:flex; align-items:center; gap:.75rem; text-decoration:none; }
+.a-brand__txt{ display:grid; line-height:1.3; }
+.a-brand__txt b{ font-family:var(--font-latin); font-size:.95rem; letter-spacing:.2em; }
+.a-brand__txt i{ font-style:normal; font-size:.78rem; color:rgba(245,242,234,.6); }
+
+.a-nav{ margin-inline-start:auto; display:flex; align-items:center; gap:.3rem; }
+.a-nav a{
+  text-decoration:none; font-size:.92rem; padding:.55rem .95rem; border-radius:999px;
+  color:rgba(245,242,234,.78);
+  transition:color .25s var(--ease), background .25s var(--ease);
+}
+.a-nav a:hover{ color:#fff; background:rgba(255,255,255,.07); }
+.a-nav a.is-active{ color:#fff; background:rgba(42,137,80,.26); }
+.a-nav__cta{
+  margin-inline-start:.6rem;
+  background:linear-gradient(135deg,var(--sma-lift),var(--sma-deep));
+  color:#fff !important; padding:.6rem 1.4rem !important;
+  box-shadow:0 12px 26px -14px rgba(42,137,80,.9);
+}
+
+/* ---- hero ---- */
+.a-hero{
+  position:relative; min-height:100svh;
+  display:grid; align-items:center;
+  padding:calc(var(--nav-h) + 3rem) clamp(1.25rem,5vw,5rem) clamp(5rem,9vw,8rem);
+  isolation:isolate; overflow:hidden;
+}
+.a-hero__media{ position:absolute; inset:0; z-index:-1; }
+.a-hero__img{
+  width:100%; height:100%; object-fit:cover; object-position:22% 18%;
+  filter:saturate(.92) contrast(1.06);
+  transform:scale(1.04);
+}
+.a-hero__veil{
+  position:absolute; inset:0;
+  background:
+    linear-gradient(255deg, rgba(7,16,11,.97) 8%, rgba(7,16,11,.86) 38%, rgba(7,16,11,.35) 66%, rgba(7,16,11,.6) 100%),
+    linear-gradient(to top, #07100b 2%, rgba(7,16,11,0) 46%),
+    radial-gradient(120% 90% at 85% 10%, rgba(42,137,80,.3), transparent 60%);
+}
+/* R1 — the beam backs the TYPE, never the face.
+   The document is dir="rtl", so `inset-inline-end:-10%` resolved to the
+   physical LEFT edge — putting a blurred, screen-blended emerald wash directly
+   over Saif's face and producing the plasticky green cast the client rejected.
+
+   The beam is now full-bleed rather than a 62%-wide box: its emerald is placed
+   by the gradients' own stops (70%/75% from the physical left = the type side),
+   not by the element's edge. A 62% box re-pinned to the right left a hard
+   vertical seam down the middle of the frame that blur(12px) could not soften —
+   this is the same full-bleed approach the mobile breakpoint already used, and
+   which renders without any cast.
+
+   The photograph itself is untouched. The cast was light that was never in the
+   frame, not a grading problem — and the portrait's rights/provenance are still
+   OPEN, so altering the asset is doubly out of bounds. */
+.a-hero__beam{
+  position:absolute; inset:0; width:100%;
+  background:
+    conic-gradient(from 210deg at 70% 0%, rgba(55,168,99,.22), transparent 38%),
+    radial-gradient(60% 70% at 75% 15%, rgba(201,168,106,.2), transparent 70%);
+  filter:blur(12px);
+  mask-image:linear-gradient(to bottom,#000,transparent 85%);
+  -webkit-mask-image:linear-gradient(to bottom,#000,transparent 85%);
+  mix-blend-mode:screen;
+}
+/* R2 — film grain, not a screen door.
+   The previous 3px radial-gradient lattice was strictly periodic, so at .3 it
+   read as a dot grid on the face and moiréd against the net in the photograph's
+   own background. feTurbulence is non-periodic, so it reads as grain. Kept
+   present and deliberately low: the film texture is part of A's cinema
+   character and removing it outright would flatten the mood. */
+.a-hero__grain{
+  position:absolute; inset:0; opacity:.16; mix-blend-mode:overlay;
+  background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.82' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='160' height='160' filter='url(%23n)' opacity='.52'/%3E%3C/svg%3E");
+  background-size:160px 160px;
+}
+
+.a-hero__body{ max-width:min(640px,100%); }
+.a-hero__eyebrow{
+  display:flex; align-items:center; gap:.6rem;
+  font-size:.8rem; letter-spacing:.2em; color:rgba(245,242,234,.78);
+  margin:0 0 1.5rem;
+}
+.a-hero__eyebrow .dot{
+  width:7px; height:7px; border-radius:50%; background:var(--sma-lift);
+  box-shadow:0 0 0 5px rgba(55,168,99,.22);
+}
+.a-hero__title{
+  font-size:clamp(3.2rem,10.5vw,8rem);
+  line-height:.94; letter-spacing:-.03em; margin:0 0 1.6rem;
+  display:grid;
+}
+.a-hero__lede{
+  text-wrap:pretty;
+  font-size:clamp(1rem,1.25vw,1.2rem);
+  color:rgba(245,242,234,.86);
+  max-width:46ch; margin:0 0 2.3rem;
+}
+.a-hero__acts{ display:flex; gap:.9rem; flex-wrap:wrap; }
+.a-hero__rail{
+  display:flex; gap:clamp(1rem,3vw,2.6rem); flex-wrap:wrap;
+  margin-top:clamp(2.5rem,5vw,4rem);
+  padding-top:1.6rem; border-top:1px solid rgba(245,242,234,.16);
+}
+.a-hero__rail li{ display:grid; gap:.15rem; }
+.a-hero__rail b{ font-size:1.02rem; }
+.a-hero__rail span{ font-size:.82rem; color:rgba(245,242,234,.68); }
+
+.a-hero__scroll{
+  position:absolute; inset-block-end:2.5rem; inset-inline-end:clamp(1.25rem,5vw,5rem);
+  display:none; align-items:center; gap:.6rem;
+  font-size:.78rem; letter-spacing:.2em; text-decoration:none;
+  color:rgba(245,242,234,.6);
+}
+.a-hero__scroll span{
+  width:1px; height:44px; background:linear-gradient(to bottom,var(--sma-lift),transparent);
+}
+@media (min-width:1100px){ .a-hero__scroll{ display:flex; }}
+
+/* ---- coach ---- */
+.a-coach__grid{
+  max-width:1320px; margin-inline:auto;
+  padding-inline:clamp(1.25rem,5vw,3rem);
+  display:grid; gap:clamp(2rem,5vw,4.5rem);
+  grid-template-columns:minmax(0,.9fr) minmax(0,1.1fr);
+  align-items:center;
+}
+.a-coach__frame{ margin:0; position:relative; }
+.a-coach__frame::before{
+  content:""; position:absolute; inset:-14px -14px auto auto; width:58%; height:58%;
+  border:1px solid rgba(201,168,106,.42); border-radius:20px 20px 0 0; z-index:0;
+}
+.a-coach__frame img{
+  position:relative; z-index:1;
+  width:100%; aspect-ratio:4/5; object-fit:cover; object-position:30% 20%;
+  border-radius:18px; box-shadow:var(--shadow-lg);
+}
+.a-coach__frame figcaption{
+  position:absolute; z-index:2; inset-block-end:-1px; inset-inline-start:-1px;
+  background:linear-gradient(135deg,var(--sma-green),var(--sma-deep));
+  padding:.6rem 1.2rem; border-radius:18px 0 18px 0;
+  font-size:.86rem; font-weight:700;
+}
+.a-coach__txt p{ color:rgba(245,242,234,.76); max-width:52ch; }
+.a-coach__txt .h2{ margin-bottom:1.5rem; }
+.a-coach__list{ display:grid; gap:1.1rem; margin-top:2.2rem; }
+.a-coach__list li{ display:grid; grid-template-columns:auto 1fr; gap:1rem; align-items:start; }
+.a-coach__list span{
+  display:grid; place-items:center; width:38px; height:38px; border-radius:50%;
+  border:1px solid rgba(55,168,99,.5); color:var(--sma-lift); font-weight:800;
+  background:rgba(42,137,80,.12);
+}
+.a-coach__list b{ display:block; }
+.a-coach__list p{ margin:.15rem 0 0; font-size:.92rem; }
+
+/* ---- moura ---- */
+.a-moura{ position:relative; padding:clamp(4.5rem,9vw,8rem) 0; isolation:isolate; overflow:hidden; }
+.a-moura__bg{ position:absolute; inset:0; z-index:-1; }
+.a-moura__bg img{
+  width:100%; height:100%; object-fit:cover; object-position:center 30%;
+  opacity:.4; filter:grayscale(.3) contrast(1.1);
+  mask-image:radial-gradient(85% 70% at 70% 40%, #000 20%, transparent 78%);
+  -webkit-mask-image:radial-gradient(85% 70% at 70% 40%, #000 20%, transparent 78%);
+}
+.a-moura::after{
+  content:""; position:absolute; inset:0; z-index:-1;
+  background:linear-gradient(to left, rgba(7,16,11,.2), rgba(7,16,11,.92) 55%);
+}
+.a-moura__inner{
+  max-width:1320px; margin-inline:auto; padding-inline:clamp(1.25rem,5vw,3rem);
+  display:grid; gap:clamp(2rem,4vw,3.5rem); grid-template-columns:1.05fr .95fr; align-items:center;
+}
+.a-moura__card{
+  background:rgba(10,20,14,.72);
+  border:1px solid rgba(201,168,106,.26);
+  border-radius:20px; padding:clamp(1.6rem,3.5vw,2.8rem);
+  backdrop-filter:blur(14px); box-shadow:var(--shadow-md);
+}
+.a-moura__note{ color:rgba(245,242,234,.78); margin-bottom:0; }
+.a-moura__card .h2{ margin-bottom:1.1rem; }
+.a-moura__shot{ margin:0; }
+.a-moura__shot img{
+  width:100%; aspect-ratio:3/4; object-fit:cover;
+  border-radius:200px 200px 20px 20px;
+  border:1px solid rgba(245,242,234,.14);
+  box-shadow:var(--shadow-lg);
+}
+
+/* ---- story: the coach's own published account ----
+   Sits between a-coach (institutional, third person) and a-moura (the result).
+   Narrower measure and a gold-ruled pull-quote so a reported quotation reads as
+   quotation, never as the page's own voice. No hero token is touched. */
+.a-story{
+  padding:clamp(4rem,8vw,7rem) 0;
+  background:linear-gradient(#07100b,#081610);
+  border-block:1px solid rgba(245,242,234,.08);
+}
+.a-story__inner{
+  max-width:1200px; margin-inline:auto;
+  padding-inline:clamp(1.25rem,5vw,3rem);
+  display:grid; gap:clamp(2rem,5vw,3.5rem);
+  grid-template-columns:.9fr 1.1fr; align-items:center;
+}
+.a-story__shot{ margin:0; }
+.a-story__shot img{
+  width:100%; aspect-ratio:4/5; object-fit:cover; object-position:50% 32%;
+  border-radius:20px;
+  border:1px solid rgba(245,242,234,.14);
+  box-shadow:var(--shadow-lg);
+}
+.a-story__txt p{ color:rgba(245,242,234,.78); max-width:54ch; }
+.a-story__quote{
+  margin:1.6rem 0; padding-top:1.2rem;
+  border-top:1px solid rgba(201,168,106,.3);
+}
+.a-story__quote blockquote{
+  margin:0; max-width:46ch;
+  font-size:clamp(1.02rem,1.6vw,1.22rem); line-height:1.8; color:#f5f2ea;
+}
+.a-story__quote cite{
+  display:block; margin-top:.85rem; font-style:normal;
+  font-size:.82rem; color:rgba(245,242,234,.55);
+}
+.a-story__src{
+  display:inline-flex; align-items:center; min-height:44px;
+  font-size:.85rem; font-weight:700; color:var(--gold-soft); text-decoration:none;
+  border-bottom:1px solid rgba(201,168,106,.45); padding-bottom:2px;
+}
+.a-story__src:hover{ color:#fff; border-color:#fff; }
+
+/* ---- camps ---- */
+.a-camps__grid{
+  max-width:1320px; margin-inline:auto; padding-inline:clamp(1.25rem,5vw,3rem);
+  display:grid; gap:1.2rem;
+  grid-template-columns:repeat(3,1fr);
+  grid-template-rows:auto;
+}
+.a-camp{
+  position:relative; overflow:hidden; border-radius:18px; min-height:340px;
+  display:flex; align-items:flex-end; isolation:isolate;
+  border:1px solid rgba(245,242,234,.1);
+}
+.a-camp--tall{ grid-row:span 2; min-height:520px; }
+.a-camp img{
+  position:absolute; inset:0; z-index:-1; width:100%; height:100%;
+  object-fit:cover; transition:transform 1.1s var(--ease), filter .6s var(--ease);
+  filter:saturate(.9);
+}
+/* Portrait trophy frame in a landscape card — bias the crop up to the rim and handles
+   so the card actually shows the cup it names. Scoped to this one card; the Moura
+   section's own 3/4 plate keeps the full composition. */
+.a-camp--trophy img{ object-position:50% 24%; }
+.a-camp::after{
+  content:""; position:absolute; inset:0; z-index:-1;
+  background:linear-gradient(to top, rgba(5,12,8,.95) 6%, rgba(5,12,8,.45) 46%, rgba(5,12,8,.08) 85%);
+}
+.a-camp:hover img{ transform:scale(1.06); filter:saturate(1.05); }
+.a-camp__body{ padding:clamp(1.2rem,2.5vw,2rem); }
+.a-camp__body h3{ font-size:1.35rem; margin-bottom:.5rem; }
+.a-camp__body p{ font-size:.93rem; color:rgba(245,242,234,.78); max-width:34ch; }
+.a-camp__body a{
+  display:inline-flex; align-items:center; min-height:44px;
+  font-size:.85rem; font-weight:700; color:var(--gold-soft); text-decoration:none;
+  border-bottom:1px solid rgba(201,168,106,.45); padding-bottom:2px;
+}
+.a-camp__body a:hover{ color:#fff; border-color:#fff; }
+@media (min-width:860px){
+  /* feature card beside a stacked pair — no empty cell */
+  .a-camps__grid{ grid-template-columns:1.15fr .85fr; }
+  .a-camp--tall{ grid-row:1 / span 2; grid-column:1; min-height:620px; }
+  .a-camp{ min-height:298px; }}
+
+/* ---- method ---- */
+.a-method{
+  padding:clamp(4.5rem,9vw,8rem) 0;
+  background:
+    radial-gradient(90% 60% at 50% 0%, rgba(42,137,80,.2), transparent 70%),
+    linear-gradient(#081610,#07100b);
+  border-block:1px solid rgba(245,242,234,.08);
+}
+.a-method__inner{ max-width:1200px; margin-inline:auto; padding-inline:clamp(1.25rem,5vw,3rem); }
+.a-method__grid{ display:grid; gap:1.2rem; grid-template-columns:repeat(4,1fr); }
+.a-method__grid article{
+  background:rgba(255,255,255,.035);
+  border:1px solid rgba(245,242,234,.1);
+  border-radius:16px; padding:1.6rem 1.5rem;
+  transition:transform .4s var(--ease), border-color .4s var(--ease), background .4s var(--ease);
+}
+.a-method__grid article:hover{
+  transform:translateY(-6px); border-color:rgba(55,168,99,.5); background:rgba(42,137,80,.1);
+}
+.a-method__grid h3{ font-size:1.15rem; margin-bottom:.6rem; color:#fff; }
+.a-method__grid p{ font-size:.92rem; color:rgba(245,242,234,.7); margin:0; }
+
+/* ---- media ---- */
+.a-media__list{
+  max-width:1000px; margin-inline:auto; padding-inline:clamp(1.25rem,5vw,3rem);
+  display:grid; gap:1rem;
+}
+.a-media__list a, .a-media__list div{
+  display:grid; gap:.3rem; text-decoration:none;
+  border:1px solid rgba(245,242,234,.12); border-radius:16px;
+  padding:1.4rem 1.6rem; background:rgba(255,255,255,.03);
+  transition:border-color .3s var(--ease), background .3s var(--ease), transform .3s var(--ease);
+}
+.a-media__list a:hover{ border-color:var(--sma-lift); background:rgba(42,137,80,.1); transform:translateX(-5px); }
+.a-media__list .src{ font-family:var(--font-latin); font-size:.76rem; letter-spacing:.16em; color:var(--sma-lift); }
+/* The .src token was authored as a Latin micro-label. On the Arabic page it carries
+   Arabic outlet names, and A-PRODUCTION-COPY-AR.md's fixed writing rules forbid
+   letter-spacing in Arabic outright — tracked Arabic breaks the joins. Family and
+   tracking are therefore dropped in RTL; the English page keeps the Latin token. */
+[dir="rtl"] .a-media__list .src{ font-family:inherit; letter-spacing:0; font-size:.8rem; }
+.a-media__list b{ font-size:1.06rem; }
+.a-media__list em{ font-style:normal; font-size:.86rem; color:rgba(245,242,234,.55); }
+.a-media__list .is-empty div{ border-style:dashed; background:transparent; }
+
+/* ---- contact ---- */
+.a-contact{
+  padding:clamp(4.5rem,9vw,8rem) clamp(1.25rem,5vw,3rem) clamp(7rem,10vw,9rem);
+  background:radial-gradient(100% 80% at 80% 0%, rgba(42,137,80,.18), transparent 65%);
+}
+.a-contact__inner{
+  max-width:1200px; margin-inline:auto;
+  display:grid; gap:clamp(2rem,5vw,4rem); grid-template-columns:.85fr 1.15fr; align-items:start;
+}
+.a-contact__txt p{ color:rgba(245,242,234,.76); }
+.a-contact__txt .h2{ margin-bottom:1.2rem; }
+
+/* ---- footer ---- */
+.a-foot{ border-top:1px solid rgba(245,242,234,.1); background:#050c08; }
+.a-foot__inner{
+  max-width:1320px; margin-inline:auto;
+  padding:2.6rem clamp(1.25rem,5vw,3rem) 7rem;
+  display:grid; gap:1.4rem; grid-template-columns:auto 1fr auto; align-items:center;
+}
+.a-foot__inner b{ font-family:var(--font-latin); letter-spacing:.18em; }
+.a-foot__inner p{ margin:.3rem 0 0; font-size:.85rem; color:rgba(245,242,234,.5); max-width:60ch; }
+.a-foot__font{ font-size:.8rem !important; color:rgba(201,168,106,.8) !important; max-width:30ch; }
+
+/* ============================================================
+   ██  B — GRAPHITE PRESTIGE
+   Asymmetric luxury editorial. Dark graphite, champagne gold hairlines,
+   dominant portrait, offset typographic grid, numbered chapters.
+   ============================================================ */
+
+
+/* ---- hero: asymmetric split, type leading ---- */
+
+
+/* ---- chapter index marker ---- */
+
+
+/* ---- coach: 12-col asymmetric ---- */
+
+
+/* ---- moura ---- */
+
+
+/* ---- camps: numbered editorial rows ---- */
+
+
+/* ---- method ---- */
+
+
+/* ---- media ---- */
+
+
+/* ---- contact ---- */
+
+
+/* ============================================================
+   ██  C — EDITORIAL LIGHT
+   Off-white premium magazine. Deep green chapters, rules, serif display,
+   wide margins, a structurally different (column-rule) grid.
+   ============================================================ */
+
+
+/* ---- hero: centred masthead + offset plate ---- */
+
+
+/* ---- chapters ---- */
+
+
+/* ---- moura: inverted deep-green chapter ---- */
+
+.verify--inv{ color:rgba(245,242,234,.6); border-top-color:rgba(245,242,234,.25); }
+
+/* ---- camps ---- */
+
+
+/* ---- principles: 2x2 with column rules ---- */
+
+
+/* ---- media ---- */
+
+
+@media (max-width:1024px){
+  .a-coach__grid, .a-story__inner, .a-moura__inner, .a-contact__inner{ grid-template-columns:1fr; }
+  /* Stacked, the portrait becomes a wide plate rather than a tall one, so the
+     text below it is still above the fold on a phone. */
+  .a-story__shot img{ aspect-ratio:4/3; object-position:50% 26%; }
+
+  .a-method__grid{ grid-template-columns:repeat(2,1fr); }
+  .a-camps__grid{ grid-template-columns:repeat(2,1fr); }
+  .a-camp--tall{ grid-row:span 1; grid-column:1/-1; min-height:400px; }}
+
+@media (max-width:860px){
+  :root{ --nav-h:68px; }
+  .a-nav{
+    position:absolute; inset-inline:0; inset-block-start:100%;
+    flex-direction:column; align-items:stretch; gap:0;
+    padding:.6rem clamp(1.25rem,5vw,2rem) 1.4rem;
+    opacity:0; visibility:hidden; transform:translateY(-10px);
+    /* visibility is stepped, not eased: delayed on close so the fade-out is
+       still seen, immediate on open so the panel is focusable in the same
+       frame the class lands. Transitioning it eased left the menu
+       computed-hidden — and therefore unfocusable — for ~50ms after opening. */
+    transition:opacity .28s var(--ease), transform .28s var(--ease), visibility 0s .28s;
+    max-height:min(76svh,560px); overflow-y:auto;
+  }
+  .a-nav{
+    background:rgba(7,16,11,.97); border-bottom:1px solid rgba(245,242,234,.14);
+    backdrop-filter:blur(18px); margin-inline-start:0;
+  }
+  .nav-open .a-nav{
+    opacity:1; visibility:visible; transform:none;
+    transition:opacity .28s var(--ease), transform .28s var(--ease), visibility 0s;
+  }
+  .a-nav a{
+    padding:.95rem .4rem; border-radius:0; font-size:1rem;
+  }
+  .a-nav a{ border-bottom:1px solid rgba(245,242,234,.1); }
+  .a-nav__cta{ margin:.9rem 0 0; border-radius:999px; text-align:center; justify-content:center; }
+  .burger{ display:block; margin-inline-start:auto; }
+  .a-nav{ margin-inline-start:0; }
+
+  .a-top{ position:sticky; background:rgba(7,16,11,.9); backdrop-filter:blur(14px); }
+  .a-top__inner{ position:relative; }
+
+  .a-method__grid, .a-camps__grid{ grid-template-columns:1fr; }
+
+  .a-camp--tall{ min-height:340px; }
+  .a-hero{ min-height:auto; padding-block:calc(var(--nav-h) + 2.5rem) 4.5rem; }
+  .a-hero__img{ object-position:30% 12%; }
+  .a-hero__veil{
+    background:
+      linear-gradient(195deg, rgba(7,16,11,.6) 0%, rgba(7,16,11,.9) 42%, #07100b 88%),
+      radial-gradient(90% 60% at 80% 5%, rgba(42,137,80,.3), transparent 65%);
+  }
+
+  .form__row{ grid-template-columns:1fr; }
+  .a-foot__inner{ grid-template-columns:auto 1fr; }
+  .a-foot__font{ grid-column:1/-1; max-width:none; }}
+
+@media (max-width:560px){
+  body{ line-height:1.8; }
+  .a-hero__rail{ gap:1.2rem 2rem; }
+  .a-hero__rail li{ min-width:40%; }
+  .btn{ width:100%; }
+  .form__acts .btn{ width:auto; }
+  .a-hero__acts .btn{ width:100%; }
+  .lightbox__fig img{ max-height:68vh; }}
+
+/* print: give the client a sane PDF of whichever direction is on screen */
+@media print{
+  .burger, .a-hero__scroll, .lightbox{ display:none !important; }
+  body{ background:#fff; color:#000; }
+  .a-top{ position:static; }}
+
+
+/* ============================================================
+   2026-11-10 · KAMAYA art-direction quality upgrade
+   A kept structurally/stylistically unchanged except KAMAYA credit.
+   B: Luxury sports editorial / C: football journal.
+   All new motion is reduced-motion friendly.
+   ============================================================ */
+.kamaya-credit{display:flex;justify-content:flex-end;align-items:center;gap:.5rem;padding:14px max(26px,5vw);border-bottom:1px solid currentColor;opacity:.65;font:500 10px/1.6 Arial,sans-serif;letter-spacing:.16em;direction:ltr}
+.kamaya-credit strong{font-weight:900;letter-spacing:.28em}
+.kamaya-credit--a{color:#9cc7a9;background:#091911}
+/* B — sharper personal editorial identity with deliberate depth */
+
+@keyframes b-line-reveal{from{transform:scaleX(0)}to{transform:scaleX(1)}}
+@keyframes b-photo-in{from{opacity:0;transform:translateY(22px)}to{opacity:1;transform:translateY(0)}}
+@keyframes b-copy-in{from{opacity:0;transform:translateY(17px)}to{opacity:1;transform:translateY(0)}}
+/* C — art-directed, gallery-like football journal */
+
+@keyframes c-headline-in{from{opacity:0;transform:translateY(16px)}to{opacity:1;transform:translateY(0)}}
+/* interactive on-scroll effects for all choices, A markup remains unmodified */
+
+@media(max-width:480px){
+ .kamaya-credit{font-size:8px}}
+
+/* Mobile art-direction correction 2026-11-10: Saif's portrait must be its
+   own editorial frame, never a backdrop behind text on small screens. */
+@media (max-width:760px){
+ .a-hero{display:flex;flex-direction:column;align-items:stretch;min-height:0;padding:0 0 2.5rem;background:#07100b;overflow:hidden;isolation:isolate}
+ .a-hero__media{position:relative;inset:auto;z-index:0;flex:none;width:100%;height:clamp(355px,102vw,495px);overflow:hidden;background:#162b20}
+ .a-hero__img{width:100%;height:100%;object-fit:cover;object-position:center 23%;animation:none;transform:none;filter:saturate(.92) contrast(1.04)}
+ .a-hero__veil{background:linear-gradient(to top,rgba(7,16,11,.84) 0%,rgba(7,16,11,.09) 36%,transparent 77%)}
+ .a-hero__beam{opacity:.42;inset:0;width:100%}
+ /* text-align:start, not :right — identical in Arabic, correctly left in English. */
+ .a-hero__body{position:relative;z-index:2;max-width:none;margin:0;padding:clamp(22px,5vw,36px) clamp(22px,6vw,42px) 0;text-align:start}
+ .a-hero__eyebrow{margin:0 0 1.2rem}
+ .a-hero__title{font-size:clamp(3.4rem,15vw,5.5rem);line-height:1.1;letter-spacing:-.035em;margin:0 0 1.1rem}
+ .a-hero__lede{font-size:1rem;max-width:38ch;line-height:1.85;margin-bottom:1.4rem}
+ .a-hero__rail{margin-top:1.8rem;padding-top:1.2rem}}
+
+
+/* Professional Arabic type system · 2026-11-10. 
+   All 3 families self-hosted under OFL (license files included).
+   Thmanyah proprietary font is not shipped or implied here. */
+.d-a{
+  --font-sans: 'IBM Plex Sans Arabic',system-ui,sans-serif;
+  --font-display: 'Alexandria','IBM Plex Sans Arabic',system-ui,sans-serif;
+}
+.d-a{font-family:var(--font-sans);font-synthesis:none}
+.d-a .a-hero__title{font-family:var(--font-display);font-weight:800;letter-spacing:0;line-height:1.17}
+.d-a .a-hero__eyebrow{letter-spacing:0;font-family:var(--font-sans);font-weight:500;font-size:clamp(12px,1vw,15px)}
+.d-a p{letter-spacing:0}
+.d-a .a-hero__lede{font-size:clamp(16px,1.4vw,21px);line-height:1.85}
+.d-a .btn{font-family:var(--font-sans);font-weight:650}
+.d-a nav a{font-family:var(--font-sans);letter-spacing:0}
+/* Calibrated, intentional cinematic movement - no shimmer or infinite bounce */
+.d-a .a-hero__body{animation:sma-soft-arrive 850ms cubic-bezier(.2,.72,.17,1) both}
+.d-a .a-hero__acts .btn{transition:transform .3s ease,box-shadow .3s ease,background .3s ease}
+.d-a .a-hero__acts .btn:hover{transform:translateY(-3px);box-shadow:0 16px 35px -18px #4fac6d}
+@keyframes sma-soft-arrive{from{opacity:.3;transform:translateY(19px)}to{opacity:1;transform:translateY(0)}}
+/* Scroll chapter entrance is driven by IntersectionObserver for all directions,
+   once each (no replay to avoid distracting the client). */
+.sma-motion-in{transition:opacity 630ms cubic-bezier(.2,.72,.17,1),transform 630ms cubic-bezier(.2,.72,.17,1)}
+.sma-motion-in:not(.sma-motion-visible){opacity:0;transform:translateY(22px)}
+.sma-motion-in.sma-motion-visible{opacity:1;transform:none}
+@media(max-width:760px){
+ .d-a .a-hero__body{animation:sma-soft-arrive 650ms both}
+ .d-a .a-hero__title{font-size:clamp(3.1rem,13vw,5rem);line-height:1.22;letter-spacing:0}}
+@media(prefers-reduced-motion:reduce){
+ .sma-motion-in, .d-a .a-hero__body{opacity:1!important;transform:none!important;transition:none!important;animation:none!important}}
+
+
+/* RELEASE QA 2026-11-10: Arabic script must NEVER use character tracking.
+   BILINGUAL 2026-11-10: the blanket `.d-a` arm is scoped to the Arabic document.
+   Unscoped it also stripped tracking from the English locale, where letterspaced
+   Latin kickers and the SMA PLAYER wordmark are correct typography rather than a
+   defect. `[lang="ar"]` stays global and unscoped, so an Arabic run inside the
+   English page — the language switch, the Moura Cup sub-line — is still never
+   tracked. The Arabic page's rendering is unchanged: html[lang="ar"] always matches there. */
+[lang="ar"],
+html[lang="ar"] .d-a,
+html[lang="ar"] .d-a :not(.latin):not([lang="en"]){
+  letter-spacing:0!important;
+}
+/* B keywords were tracked, in a tiny muted strip: replace with a real, readable
+   elegant list rather than six letterspaced labels. */
+
+/* Chapter labels are elegant small-caps only for Latin, never for Arabic. */
+
+/* Cinematic scroll sequence: actual scroll-triggered movement with distinct
+   reveal styling and visual section separators, not merely hover effects. */
+.motion-stage{
+  transition: opacity .94s cubic-bezier(.19,1,.22,1),
+              transform .94s cubic-bezier(.19,1,.22,1),
+              filter .94s cubic-bezier(.19,1,.22,1);
+  will-change:opacity,transform;
+}
+.motion-stage.is-pending{
+  opacity:.13;
+  transform:translate3d(0,44px,0);
+  filter:blur(3px);
+}
+.motion-stage.is-shown{opacity:1;transform:none;filter:none}
+.d-a .a-hero__media img{animation:cinema-film-move 12s cubic-bezier(.3,.1,.3,.9) both}
+.d-a .a-hero__title{
+  animation:coach-title-reveal 1.05s cubic-bezier(.19,1,.22,1) both;
+}
+@keyframes coach-title-reveal {
+  0%{opacity:0;transform:translate3d(0,25px,0);filter:blur(2px)}
+  100%{opacity:1;transform:none;filter:none}
+}
+@keyframes coach-push-in{0%{opacity:.55;filter:saturate(.55);transform:scale(1.065)}100%{opacity:1;filter:saturate(.9);transform:scale(1)}}
+@keyframes cinema-film-move{0%{transform:scale(1.09) translateY(1.1%)}100%{transform:scale(1.035) translateY(0)}}
+.d-a .a-camp img{
+  transition:transform .9s cubic-bezier(.19,1,.22,1),filter .9s;
+}
+.d-a .a-camp:hover img{transform:scale(1.04);filter:saturate(1.1)}
+/* High visibility on touch: animate photo clip plates on entrance. */
+.motion-stage.is-shown:after{transition:transform .9s}
+@media(max-width:760px){
+  .motion-stage.is-pending{transform:translateY(26px);filter:none;opacity:.18}}
+@media(prefers-reduced-motion:reduce){
+ .motion-stage, .motion-stage.is-pending, .motion-stage.is-shown{transition:none!important;transform:none!important;opacity:1!important;filter:none!important}
+ .d-a .a-hero__media img, .d-a .a-hero__title{animation:none!important}}
+
+/* Client review correction: never stroke or outline Arabic connected glyphs.
+   The original outlined lettering overlaps Arabic joins and looks broken. */
+.d-a .a-hero__title .a-hero__title-family{
+  -webkit-text-stroke:0 !important;
+  -webkit-text-fill-color:var(--sma-voice) !important;
+  color:var(--sma-voice) !important;
+  text-shadow:none !important;
+  font-family:'Alexandria','IBM Plex Sans Arabic',system-ui,sans-serif !important;
+  font-weight:650 !important;
+  letter-spacing:0 !important;
+  font-size:.85em;
+  line-height:1.32;
+  display:block;
+  overflow:visible;
+}
+@media(max-width:760px) {
+ .d-a .a-hero__title{font-size:clamp(48px,12.5vw,74px);line-height:1.32!important;}
+}
+
+
+/* ============================================================
+   KAMAYA confirmed brand identity · November 10, 2026
+   THREE ACTUALLY DIFFERENT DIRECTIONS:
+   A Emerald Cinema (original approved)
+   B Ivory Prestige (warm off-white and emerald)
+   C Monochrome Performance (black, white, signal green)
+   ============================================================ */
+.kamaya-credit{width:100%;justify-content:flex-end;gap:14px;padding:12px clamp(22px,5vw,65px);opacity:1;font-family:'IBM Plex Sans Arabic',system-ui,sans-serif!important;letter-spacing:0!important}
+.kamaya-credit .kamaya-credit__role{font-size:12px;letter-spacing:0;color:inherit;font-weight:600}
+/* Box matches the canonical v1.0 lockup ratio (viewBox 634x162) at h=38, so
+   `contain` letterboxes nothing and the signature sits optically correct. */
+.kamaya-credit img{display:block;width:clamp(112px,12vw,149px);height:38px;object-fit:contain;object-position:center;opacity:.86}
+.kamaya-credit--a{background:#07140d;color:#a4c3ae}
+/* -------- B — Bright gallery-grade editorial, not another dark-green site -------- */
+
+/* -------- C — Monochrome Performance: high-contrast sports editorial -------- */
+
+/* Ensure original SMA mark remains prominent on a fixed green plaque */
+
+@media(max-width:900px){
+ .kamaya-credit{padding:10px 20px}}
+
+
+/* 2026-11-10 DIRECT CLIENT FIX: original A has photo-overlay text on mobile.
+   Face is clear in top two-thirds and name is legibly at the lower edge. */
+.a-hero__mobile-overlay{display:none}
+@media(max-width:760px){
+ .d-a .a-hero{display:flex;flex-direction:column;background:#07100b;isolation:isolate}
+ .d-a .a-hero__media{height:clamp(510px,147vw,740px);min-height:0;position:relative;isolation:isolate;overflow:hidden}
+ .d-a .a-hero__img{object-fit:cover;object-position:center 24%;width:100%;height:100%;filter:contrast(1.055) saturate(.93)}
+ .d-a .a-hero__veil{background:linear-gradient(to top,#07100b 0%,rgba(7,16,11,.88) 17%,rgba(7,16,11,.34) 42%,transparent 69%)!important}
+ .d-a .a-hero__mobile-overlay{
+  position:absolute;z-index:4;inset:auto clamp(20px,6vw,40px) 27px;display:flex;flex-direction:column;align-items:flex-start;
+  color:#fff;text-align:start;pointer-events:none;animation:sma-soft-arrive .75s .2s both;
+ }
+ .d-a .a-hero__mobile-kicker{font-family:'IBM Plex Sans Arabic',sans-serif;color:#e1e7db;font-size:clamp(14px,3.5vw,18px);margin-bottom:4px}
+ .d-a .a-hero__mobile-overlay h1{font-family:'Alexandria',sans-serif;display:flex;gap:3px;flex-direction:column;font-size:clamp(48px,12vw,84px);line-height:1.22;margin:0;text-align:start;letter-spacing:0!important}
+ .d-a .a-hero__mobile-overlay .a-hero__mobile-given{color:#fff;font-weight:800}
+ .d-a .a-hero__mobile-overlay .a-hero__mobile-family{color:var(--sma-voice);font-weight:750;font-size:.78em}
+ .d-a .a-hero__mobile-tag{align-self:flex-end;direction:ltr;font:600 11px 'IBM Plex Sans','IBM Plex Sans Arabic',system-ui,sans-serif;letter-spacing:.16em;margin-top:3px;color:#a1c4a6}
+ .d-a .a-hero__body{padding:28px clamp(20px,6vw,40px) 54px;max-width:none}
+ .d-a .a-hero__body .a-hero__eyebrow, .d-a .a-hero__body .a-hero__title{display:none!important}
+ .d-a .a-hero__lede{font-size:16px;line-height:1.85;margin:0 0 24px;max-width:40ch}}
+/* C — ATLAS OF THE JOURNEY · warm sandstone / copper / forest green.
+   An intentionally DIFFERENT design, not monochrome or Ivory Prestige.
+   Landscape editorial, asymmetric documentary photography and warm color. */
+
+
+
+/* Editorial motion system: Neves Academy reference studied visually; original
+   implementation, using SMA's own layout, genuine photography and typography.
+   Progress line, staggered reveal, chapter rules and image masks. */
+.sma-scrollbar{
+ position:fixed;inset:0 0 auto; height:3px;z-index:2000;pointer-events:none;
+ background:transparent;overflow:hidden;
+}
+.sma-scrollbar__fill{
+ display:block;width:100%;height:100%;background:linear-gradient(90deg,#b9e6bd,#208d55);
+ transform-origin:right;transform:scaleX(0);will-change:transform;
+}
+/* One chapter per row: lines grow from 0 to full length during reveal. */
+.sma-chapter-motion{
+ transition:opacity 750ms cubic-bezier(.19,1,.22,1),transform 750ms cubic-bezier(.19,1,.22,1);
+ will-change:opacity,transform;
+}
+.sma-chapter-motion.sma-chapter--before{opacity:0;transform:translate3d(0,44px,0)}
+.sma-chapter-motion.sma-chapter--visible{opacity:1;transform:translate3d(0,0,0)}
+.sma-photo-mask{position:relative;isolation:isolate;overflow:hidden}
+.sma-photo-mask:after{
+ content:'';pointer-events:none;position:absolute;inset:0;z-index:3;background:#276440;
+ transform-origin:right;transform:scaleX(1);
+ transition:transform 960ms cubic-bezier(.19,1,.22,1);mix-blend-mode:normal;
+}
+.sma-photo-mask.sma-photo--visible:after{transform:scaleX(0)}
+.sma-photo-mask img{
+ transform:scale(1.09);transition:transform 1.5s cubic-bezier(.19,1,.22,1);
+}
+.sma-photo-mask.sma-photo--visible img{transform:scale(1)}
+/* Mobile hero A already builds over Saif's real portrait. Layered arrival. */
+.d-a .a-hero__mobile-overlay h1 span{
+ display:block;animation:sma-hero-letters 780ms cubic-bezier(.19,1,.22,1) both;
+}
+.d-a .a-hero__mobile-overlay .a-hero__mobile-family{animation-delay:130ms}
+@keyframes sma-hero-letters{from{opacity:0;transform:translateY(26px)}to{opacity:1;transform:none}}
+/* Soft image shift on scroll: script only changes this custom property, and only
+   when element is in view; capped at 18px, no scroll hijacking. */
+.d-a .a-coach__grid figure img{
+ translate:0 var(--sma-scroll-depth,0px);will-change:translate;
+}
+/* C: Neves-inspired chapter-by-chapter progression, adapted to SMA atlas. */
+
+@keyframes sma-photo-arrive{from{opacity:.1;transform:translateY(25px) scale(1.03)}to{opacity:1;transform:none}}
+/* Lower intensity on smaller devices and requested reduced-motion. */
+@media(max-width:760px){
+ .sma-chapter-motion.sma-chapter--before{transform:translateY(24px)}
+ .sma-photo-mask:after{transition-duration:760ms}}
+@media(prefers-reduced-motion:reduce){
+ .sma-scrollbar__fill{transform:scaleX(0)!important}
+ .sma-chapter-motion, .sma-chapter-motion.sma-chapter--before, .sma-chapter-motion.sma-chapter--visible{transform:none!important;opacity:1!important;transition:none!important}
+ .sma-photo-mask:after{display:none!important}
+ .sma-photo-mask img, .sma-photo-mask.sma-photo--visible img{transform:none!important;transition:none!important}
+ .d-a .a-hero__mobile-overlay h1 span, .d-a .a-hero__mobile-overlay, .d-a .a-hero__mobile-overlay *{animation:none!important}
+ .d-a .a-coach__grid figure img{translate:0!important}}
+
+/* ════════════════════════════════════════════════════════════════════════
+   BILINGUAL LAYER · 2026-11-10
+   Arabic `/` (dir=rtl, default) + English `/en/` (dir=ltr), one stylesheet.
+
+   Governing constraint: direction A's *composition* was selected by the client
+   and is not up for redesign here. So this layer only does three things —
+     1. styles the elements the sourced copy introduced,
+     2. gives the English locale a real self-hosted type system,
+     3. corrects the handful of PHYSICAL-axis declarations that logical
+        properties could not mirror on their own.
+   Everything else already mirrors for free: the build is written in logical
+   properties throughout, so the grids, the nav, the footer and the reading
+   order flip to a genuine LTR layout without a single extra rule.
+   ════════════════════════════════════════════════════════════════════════ */
+
+/* ---- 1 · elements introduced by the sourced copy -------------------- */
+
+/* Full name + territory strip, one quiet line under the display name.
+   Negative top margin pulls it into the title's own leading so the lede
+   does not move down and the hero's vertical rhythm is preserved. */
+.a-hero__ident{
+  display:flex; flex-wrap:wrap; align-items:center;
+  gap:.5rem .9rem;
+  margin:-1.1rem 0 1.7rem;
+  font-size:.95rem; line-height:1.6;
+  color:rgba(245,242,234,.72);
+}
+.a-hero__latin{
+  display:inline-flex; align-items:center; gap:.9rem;
+  font-family:var(--font-latin);
+  font-size:.74rem; letter-spacing:.2em;
+  color:rgba(201,168,106,.85);
+}
+.a-hero__latin::before{
+  content:""; width:28px; height:1px; background:rgba(201,168,106,.45);
+}
+@media (max-width:760px){ .d-a .a-hero__body .a-hero__ident{ display:none; } }
+
+/* Moura: the tournament's other-script name, set as a quiet second line so the
+   card keeps the two-line display rhythm it was selected with. */
+.a-moura__latin{
+  display:block; margin-top:.35rem;
+  font-size:.42em; font-weight:600;
+  color:rgba(201,168,106,.85);
+}
+[lang="en"].a-moura__latin{ font-family:var(--font-latin); letter-spacing:.22em; }
+.a-moura__close{
+  margin:1.4rem 0 0; padding-top:1.1rem;
+  border-top:1px solid rgba(201,168,106,.26);
+  font-size:.95rem; color:rgba(245,242,234,.6);
+}
+.a-camps__note{
+  max-width:1320px; margin:1.6rem auto 0;
+  padding-inline:clamp(1.25rem,5vw,3rem);
+  font-size:.86rem; color:rgba(245,242,234,.5);
+}
+/* Attribution line under the press cards — same quiet register as the camps note,
+   but on the media section's own 1000px measure so it aligns with the cards. */
+.a-media__note{
+  max-width:1000px; margin:1.4rem auto 0;
+  padding-inline:clamp(1.25rem,5vw,3rem);
+  font-size:.82rem; color:rgba(245,242,234,.45);
+}
+
+/* ---- 2 · language switch ------------------------------------------- */
+/* Lives inside <nav>, so it is in the desktop bar AND inside the mobile
+   menu — and inside the menu's existing focus trap — without a second
+   control to keep in sync. */
+/* Specificity note: these are written as `.a-nav .a-lang__*` (0,2,0) because
+   `.a-nav a` (0,1,1) already gives every link in the bar a 999px pill. Left to
+   inherit it, the switch's underline followed that radius and rendered as a
+   stray arc under the word rather than a rule. */
+.a-lang{
+  display:inline-flex; align-items:center; gap:.2rem;
+  margin-inline-start:1rem;
+  font-size:.8rem;
+  border:1px solid rgba(245,242,234,.2);
+  border-radius:999px;
+  background:rgba(7,16,11,.45);
+  -webkit-backdrop-filter:blur(10px); backdrop-filter:blur(10px);
+}
+.a-nav .a-lang__cur{
+  display:inline-flex; align-items:center; min-height:44px;
+  padding:0 .85rem; border-radius:999px;
+  color:rgba(245,242,234,.58);
+  white-space:nowrap;
+}
+.a-lang__sep{ display:none; }
+.a-nav .a-lang__alt{
+  display:inline-flex; align-items:center; min-height:44px;
+  padding:0 .9rem; margin:0; border:0; border-radius:999px;
+  background:rgba(245,242,234,.1);
+  color:#fff; font-size:.82rem; text-decoration:none;
+  white-space:nowrap;
+  transition:background .25s var(--ease), color .25s var(--ease);
+}
+.a-nav .a-lang__alt:hover{ background:rgba(42,137,80,.55); color:#fff; }
+@media (max-width:860px){
+  /* In the open menu the switch is a full-width pair of equal halves, so the
+     language you are not in is as easy to hit as any nav row. */
+  .a-lang{ display:flex; margin:1rem 0 .2rem; font-size:.95rem; }
+  .a-nav .a-lang__cur,
+  .a-nav .a-lang__alt{ flex:1 1 0; justify-content:center; min-height:48px; font-size:.95rem; }
+}
+
+/* ---- 3 · prepared, not yet rendered (blocked on confirmation D-1) ---- */
+/* These rules are live but currently match nothing: the markup they dress
+   sits inside <template> in both locales until the real WhatsApp number and
+   the real profile URLs arrive. Styling them now keeps activation to a
+   markup move, with no styling pass needed at that point. */
+.a-social{ margin-top:2.2rem; }
+.a-social__head{
+  font-size:.74rem; letter-spacing:.3em; text-transform:uppercase;
+  color:var(--sma-lift); margin:0 0 .9rem;
+}
+.a-social ul{ display:flex; flex-wrap:wrap; gap:.6rem; }
+.a-social a{
+  display:inline-flex; align-items:center; justify-content:center;
+  min-width:44px; min-height:44px; padding:0 1rem;
+  border:1px solid rgba(245,242,234,.18); border-radius:999px;
+  font-size:.82rem; text-decoration:none; color:rgba(245,242,234,.85);
+  transition:border-color .25s var(--ease), color .25s var(--ease);
+}
+.a-social a:hover{ border-color:var(--sma-lift); color:#fff; }
+
+/* ---- 4 · English type system --------------------------------------- */
+/* Both shipped OFL families carry a Latin subset as well as an Arabic one
+   (see webfonts.css), so English is set in the SAME two faces as Arabic —
+   Alexandria for display, IBM Plex Sans for text. No new font is fetched,
+   nothing proprietary is implied, and the two locales stay one typeface
+   system rather than two unrelated ones.
+   Thmanyah stays first in --font-latin exactly as the stylesheet header
+   describes: it is never fetched, and authorising it later stays a no-op. */
+html[lang="en"] .d-a{
+  --font-sans:    'IBM Plex Sans Arabic', ui-sans-serif, system-ui, -apple-system, 'Segoe UI', sans-serif;
+  --font-display: 'Alexandria', 'IBM Plex Sans Arabic', ui-sans-serif, system-ui, sans-serif;
+}
+/* The small letterspaced Latin lockups — the header wordmark, the footer
+   wordmark, the hero's territory strip — are given a real, self-hosted face
+   in BOTH locales. Previously --font-latin resolved to whatever sans the
+   operating system happened to offer, so "SMA PLAYER" rendered differently
+   on every machine; Alexandria is already the display face of this build. */
+:root{
+  --font-latin: "Thmanyah", "Alexandria", ui-sans-serif, -apple-system, "Helvetica Neue", Arial, sans-serif;
+}
+/* English body copy wants a touch more leading than the Arabic setting and
+   does not want Arabic's optical size compensation. */
+html[lang="en"] .d-a p{ text-wrap:pretty; }
+html[lang="en"] .d-a .a-hero__title{ letter-spacing:-.025em; }
+html[lang="en"] .d-a .a-hero__eyebrow,
+html[lang="en"] .d-a .kicker{ letter-spacing:.2em; }
+
+/* ---- 5 · LTR: the physical-axis declarations logical properties miss -- */
+
+/* transform is physical, so a centred fixed element needs the opposite sign. */
+[dir="ltr"] .skip-link{ transform:translateX(-50%); }
+
+/* transform-origin is physical: progress must grow from the reading origin. */
+[dir="ltr"] .sma-scrollbar__fill{ transform-origin:left; }
+[dir="ltr"] .sma-photo-mask:after{ transform-origin:left; }
+
+/* nudge-on-hover travels with the reading direction. */
+[dir="ltr"] .a-media__list a:hover{ transform:translateX(5px); }
+
+/* The bracket on the portrait frame is a mirrored ornament, not a fixed mark. */
+[dir="ltr"] .a-coach__frame::before{ inset:-14px auto auto -14px; }
+[dir="ltr"] .a-coach__frame figcaption{ border-radius:0 18px 0 18px; }
+
+/* Hand-tuned gradient geometry: these carry percentages and angles measured
+   from the physical left, so each one is mirrored explicitly. */
+[dir="ltr"] .a-moura::after{
+  background:linear-gradient(to right, rgba(7,16,11,.2), rgba(7,16,11,.92) 55%);
+}
+[dir="ltr"] .a-moura__bg img{
+  mask-image:radial-gradient(85% 70% at 30% 40%, #000 20%, transparent 78%);
+  -webkit-mask-image:radial-gradient(85% 70% at 30% 40%, #000 20%, transparent 78%);
+}
+[dir="ltr"] .a-contact{
+  background:radial-gradient(100% 80% at 20% 0%, rgba(42,137,80,.18), transparent 65%);
+}
+
+/* THE HERO IS HANDLED IN ITS OWN FILE — `hero-direction.css`, loaded after
+   this one by both locales. Deliberately NOT duplicated here.
+
+   The problem it solves: A's veil and beam are cut so one physical side of the
+   frame stays clear for Saif and the other is heavily veiled to carry the type.
+   Those are hand-tuned physical angles and percentages, and the photograph
+   underneath them is of a real person — so it is never mirrored. Flipping an
+   identity portrait would falsify it, and its rights/provenance are open besides.
+
+   An earlier revision of this file pinned the English type block to the same
+   physical side it occupies in Arabic (`justify-self:end`) and left the crop
+   alone. That was the conservative answer, and it was superseded: panning the
+   crop moves the subject to the opposite side of the frame instead, so English
+   gets a true LTR composition — copy left, subject right — with the veil and
+   beam mirrored to match and the photograph still untouched. The two rules
+   fought (`justify-self:start !important` vs `:end`), so the weaker one is
+   withdrawn here rather than left to win by accident.
+
+   `.a-hero__scroll` is likewise left to its own `inset-inline-end`: with the
+   subject mirrored, that resolves to the clear side of the frame in both
+   locales on its own, which is exactly where it belongs.
+   Provenance and the open question on the Arabic crop: A-BILINGUAL-QA.md §6. */
+
+/* ---- 6 · camps cards: text-over-photography legibility -------------- */
+/* A-PRODUCTION-REVIEW.md §7.5 carried "text over photography is not
+   contrast-computable" as an open item. It is computable from the real
+   render, and `qa/photo-contrast.mjs` now measures it: 13 of 36 text runs
+   over the camp photographs failed WCAG AA, the worst at 1.25:1 — the Spain
+   card's heading over the pale turtleneck in the portrait. Both locales,
+   identically; the sourced copy is longer than the placeholder copy it
+   replaced, which pushed more text up into the bright part of each frame.
+
+   The card-wide `::after` scrim could not fix this on its own: it is a
+   percentage gradient, so darkening it enough for the short cards also
+   drowns the tall feature card, which already passed. This wash is anchored
+   to the text block instead, so it scales with the amount of copy rather
+   than with the card — the 620px Dammam card keeps its photograph open and
+   the 298px cards get the density exactly where their text sits. */
+.a-camp__body{
+  flex:1 1 auto;
+  background:linear-gradient(to top,
+    rgba(5,12,8,.96) 0%,
+    rgba(5,12,8,.9) 55%,
+    rgba(5,12,8,.72) 82%,
+    rgba(5,12,8,.28) 94%,
+    rgba(5,12,8,0) 100%);
+}
+
+/* ============================================================
+   ██  IDENTITY · GALLERY · CHANNELS            added 2026-11-10
+   Three blocks commissioned by the Founder on top of the
+   client-selected A build: the organisation behind Saif, the
+   photographic archive, and the contact-channel placement.
+   Written to live inside Emerald Cinema, not beside it — same
+   container widths, same 16px radii, same ivory-on-deep-green
+   value structure, same single gold accent used sparingly.
+   ============================================================ */
+
+/* ---- shared sub-heading for the stacked blocks inside a section ---- */
+.a-sub{
+  font-size:clamp(1.15rem,1.7vw,1.45rem);
+  color:#fff; margin:0 0 1.4rem;
+  display:flex; align-items:center; gap:.9rem;
+}
+.a-sub::after{
+  content:""; flex:1 1 auto; height:1px;
+  background:linear-gradient(to left, transparent, rgba(245,242,234,.16));
+}
+
+/* ============================ IDENTITY ============================ */
+.a-identity{ background:linear-gradient(to bottom, #07100b, #081611 55%, #07100b); }
+.a-identity > *:not(.sec-head){
+  max-width:1200px; margin-inline:auto;
+  padding-inline:clamp(1.25rem,5vw,3rem);
+}
+
+/* The vision statement is the one piece of the client's own language that
+   deserves to be read as language, not as a card. It gets the page's only
+   large-measure pull quote, with the gold rule the Moura card also uses. */
+.a-vision{
+  margin:0 auto clamp(3rem,6vw,4.5rem);
+  border-inline-start:3px solid var(--gold);
+  background:linear-gradient(to left, rgba(201,168,106,.07), rgba(201,168,106,0) 70%);
+  padding-block:1.6rem;
+}
+.a-vision__label{
+  font-size:.72rem; letter-spacing:.3em; color:var(--gold);
+  margin:0 0 1.1rem; text-transform:uppercase;
+}
+.a-vision__label span{ opacity:.5; margin-inline-start:.5rem; letter-spacing:.2em; }
+.a-vision blockquote{
+  margin:0; font-family:var(--font-display);
+  font-size:clamp(1.12rem,1.9vw,1.6rem); line-height:1.9;
+  color:var(--ivory); max-width:62ch;
+}
+.a-vision figcaption{
+  margin-top:1.2rem; font-size:.8rem; letter-spacing:.06em;
+  color:rgba(245,242,234,.45);
+}
+
+.a-offer{ margin-bottom:clamp(3rem,6vw,4.5rem); }
+.a-offer__list{ display:grid; gap:1rem; grid-template-columns:repeat(5,1fr); }
+.a-offer__list li{
+  background:rgba(255,255,255,.035);
+  border:1px solid rgba(245,242,234,.1);
+  border-radius:16px; padding:1.4rem 1.3rem;
+  display:grid; gap:.5rem; align-content:start;
+  transition:transform .4s var(--ease), border-color .4s var(--ease), background .4s var(--ease);
+}
+.a-offer__list li:hover{
+  transform:translateY(-4px); border-color:rgba(55,168,99,.45);
+  background:rgba(42,137,80,.09);
+}
+.a-offer__list b{ color:#fff; font-size:1rem; line-height:1.5; }
+.a-offer__list span{ font-size:.9rem; color:rgba(245,242,234,.68); line-height:1.75; }
+
+/* ---- leadership ---- */
+.a-lead{ margin-bottom:clamp(3rem,6vw,4.5rem); }
+.a-lead__note{
+  max-width:62ch; color:rgba(245,242,234,.72);
+  font-size:.98rem; margin:0 0 1.8rem;
+}
+.a-lead__note b{ color:var(--sma-voice); font-weight:700; }
+.a-lead__grid{ display:grid; gap:1.2rem; grid-template-columns:repeat(3,1fr); }
+.a-lead__card{
+  background:rgba(255,255,255,.035);
+  border:1px solid rgba(245,242,234,.1);
+  border-radius:16px; padding:1.7rem 1.5rem;
+}
+/* Saif's card is the only one lifted, because this is his profile — but it is
+   lifted by one border and one tint, not by being bigger or first. The order
+   on the page is the profile's own order of seniority. */
+.a-lead__card--focus{
+  border-color:rgba(55,168,99,.4);
+  background:linear-gradient(to bottom, rgba(42,137,80,.12), rgba(255,255,255,.03));
+}
+.a-lead__role{
+  font-size:.7rem; letter-spacing:.26em; text-transform:uppercase;
+  color:var(--sma-lift); margin:0 0 .7rem;
+}
+.a-lead__card--focus .a-lead__role{ color:var(--gold); }
+.a-lead__card h4{
+  margin:0 0 1.1rem; font-size:1.1rem; font-weight:800;
+  color:#fff; line-height:1.5;
+}
+.a-lead__card > ul{ display:grid; gap:.65rem; }
+.a-lead__card > ul li{
+  font-size:.9rem; line-height:1.7; color:rgba(245,242,234,.7);
+  padding-inline-start:1.1rem; position:relative;
+}
+.a-lead__card > ul li::before{
+  content:""; position:absolute; inset-inline-start:0; inset-block-start:.68em;
+  width:5px; height:5px; border-radius:50%; background:var(--sma-lift);
+}
+.a-lead__card--focus > ul li::before{ background:var(--gold); }
+
+/* ---- successes ---- */
+.a-wins__list{ display:grid; gap:1rem; grid-template-columns:repeat(3,1fr); }
+.a-wins__list li{
+  display:flex; gap:1rem; align-items:flex-start;
+  background:rgba(255,255,255,.03);
+  border:1px solid rgba(245,242,234,.09);
+  border-radius:16px; padding:1.5rem 1.4rem;
+}
+.a-wins__list span{
+  flex:0 0 auto; width:34px; height:34px; border-radius:50%;
+  display:grid; place-items:center; font-weight:800; font-size:.95rem;
+  background:rgba(201,168,106,.14); color:var(--gold-soft);
+  border:1px solid rgba(201,168,106,.3);
+}
+.a-wins__list p{ margin:0; font-size:.95rem; line-height:1.8; color:rgba(245,242,234,.82); }
+.a-wins__note{
+  margin:1.4rem 0 0; font-size:.82rem; color:rgba(245,242,234,.45);
+}
+
+/* ============================= GALLERY ============================= */
+.a-gallery{ background:#060d09; }
+.a-gallery__note,
+.a-gallery__tools,
+.a-gallery__grid,
+.a-gallery__more,
+.a-gallery__empty{
+  max-width:1320px; margin-inline:auto;
+  padding-inline:clamp(1.25rem,5vw,3rem);
+}
+.a-gallery__note{
+  max-width:min(70ch, 1320px); font-size:.86rem; line-height:1.85;
+  color:rgba(245,242,234,.5);
+  margin:-1.5rem auto 2rem; text-align:center;
+}
+.a-gallery__tools{ margin-bottom:1.8rem; }
+.a-gallery__filters{
+  display:flex; flex-wrap:wrap; gap:.6rem; justify-content:center;
+}
+.a-gallery__filter{
+  cursor:pointer; border-radius:999px;
+  padding:.55rem 1.15rem; font-size:.86rem; font-weight:600;
+  background:rgba(255,255,255,.04);
+  border:1px solid rgba(245,242,234,.14);
+  color:rgba(245,242,234,.72);
+  transition:background .3s var(--ease), border-color .3s var(--ease), color .3s var(--ease);
+  min-height:44px;                       /* real tap target on mobile */
+}
+.a-gallery__filter:hover{ color:#fff; border-color:rgba(55,168,99,.5); }
+.a-gallery__filter[aria-pressed="true"]{
+  background:var(--sma-green); border-color:var(--sma-lift); color:#fff;
+}
+.a-gallery__filter em{ font-style:normal; opacity:.6; margin-inline-start:.4rem; font-size:.8em; }
+
+/* A dense, even archive grid. Deliberately NOT a masonry of hero-sized
+   frames: this is 99 photographs, and the page already has its heroes. */
+.a-gallery__grid{
+  display:grid; gap:.7rem;
+  grid-template-columns:repeat(auto-fill, minmax(190px, 1fr));
+  grid-auto-rows:1fr;
+}
+.a-gallery__item{ margin:0; }
+.a-gallery__item[hidden]{ display:none; }
+/* The sixteen curated frames carry the section; the archive sits under them
+   at the same size, so «عرض جميع الصور» reads as more of the same thing
+   rather than as a second, lesser gallery. */
+.a-gallery__item--featured{ grid-column:span 2; grid-row:span 2; }
+.a-gallery__btn{
+  display:block; width:100%; height:100%; padding:0; cursor:zoom-in;
+  background:none; border:0; border-radius:12px; overflow:hidden;
+  position:relative; line-height:0;
+}
+.a-gallery__btn img{
+  width:100%; height:100%; object-fit:cover; aspect-ratio:1/1;
+  transition:transform .7s var(--ease), filter .5s var(--ease);
+  background:rgba(255,255,255,.04);
+}
+.a-gallery__item--featured .a-gallery__btn img{ aspect-ratio:1/1; }
+.a-gallery__btn::after{
+  content:""; position:absolute; inset:0; border-radius:12px;
+  box-shadow:inset 0 0 0 1px rgba(245,242,234,.1);
+  transition:box-shadow .4s var(--ease);
+}
+.a-gallery__btn:hover img, .a-gallery__btn:focus-visible img{ transform:scale(1.05); }
+.a-gallery__btn:hover::after, .a-gallery__btn:focus-visible::after{
+  box-shadow:inset 0 0 0 2px var(--sma-lift);
+}
+.a-gallery__empty{ text-align:center; color:rgba(245,242,234,.5); padding-block:3rem; }
+
+.a-gallery__more{ text-align:center; margin-top:2.2rem; }
+.a-gallery__rights{
+  margin:1.4rem auto 0; max-width:60ch;
+  font-size:.78rem; line-height:1.8; color:rgba(201,168,106,.72);
+}
+
+/* ---- lightbox: gallery navigation ---- */
+.lightbox__nav{
+  position:absolute; inset-block-start:50%; translate:0 -50%;
+  width:52px; height:52px; border-radius:50%; cursor:pointer;
+  display:grid; place-items:center;
+  border:1px solid rgba(245,242,234,.26); background:rgba(255,255,255,.07);
+  transition:background .3s var(--ease), border-color .3s var(--ease);
+}
+.lightbox__nav[hidden]{ display:none; }
+.lightbox__nav:hover{ background:rgba(255,255,255,.16); border-color:var(--sma-lift); }
+.lightbox__nav svg{ width:22px; height:22px; }
+/* RTL: «previous» sits on the right, where the reading order starts. */
+.lightbox__nav--prev{ inset-inline-end:clamp(.6rem,2.5vw,2rem); }
+.lightbox__nav--next{ inset-inline-start:clamp(.6rem,2.5vw,2rem); }
+.lightbox__nav--next svg{ transform:scaleX(-1); }
+html[dir="ltr"] .lightbox__nav--prev svg{ transform:scaleX(-1); }
+html[dir="ltr"] .lightbox__nav--next svg{ transform:none; }
+.lightbox__count{
+  position:absolute; inset-block-end:clamp(.8rem,3vw,1.8rem); inset-inline:0;
+  text-align:center; margin:0; font-size:.78rem; letter-spacing:.14em;
+  color:rgba(245,242,234,.5);
+}
+.lightbox__count[hidden]{ display:none; }
+
+/* ============================= CHANNELS ============================= */
+/* Everything in this block is an inert <span>/<li>. The styling says
+   "this is where the control goes", never "this control works": no pointer
+   cursor, no hover lift, no link colour, and a permanent state chip. */
+.a-channels{
+  max-width:1100px; margin:clamp(3rem,6vw,4.5rem) auto 0;
+  padding-inline:clamp(1.25rem,5vw,3rem);
+  display:grid; gap:2.5rem; grid-template-columns:1fr 1fr; align-items:start;
+}
+.a-channels__head{
+  font-size:.72rem; letter-spacing:.28em; text-transform:uppercase;
+  color:var(--sma-lift); margin:0 0 1rem;
+}
+.a-channels__note{
+  margin:1rem 0 0; font-size:.8rem; line-height:1.8;
+  color:rgba(245,242,234,.46); max-width:46ch;
+}
+.a-chip{
+  display:inline-block; font-style:normal;
+  font-size:.68rem; letter-spacing:.1em; font-weight:700;
+  background:rgba(201,168,106,.16); color:var(--gold-soft);
+  border:1px dashed rgba(201,168,106,.5);
+  border-radius:999px; padding:.22rem .7rem; white-space:nowrap;
+}
+.a-chip--block{ margin-top:1rem; }
+
+.a-wa{
+  display:inline-flex; align-items:center; gap:.7rem; flex-wrap:wrap;
+  border-radius:999px; padding:.85rem 1.3rem;
+  background:rgba(42,137,80,.16);
+  border:1px dashed rgba(55,168,99,.55);
+  color:rgba(245,242,234,.82);
+  cursor:default;                       /* it is not a link, and must not look like one */
+}
+.a-wa b{ font-weight:700; font-size:.98rem; }
+.a-wa .a-ic{ width:22px; height:22px; fill:var(--sma-lift); }
+/* The activated state, used by script.js once D-1 lands: a real <a> with a
+   real href replaces the span, and these rules make it read as the primary
+   action it is. Kept here so activation is a data change, not a CSS change. */
+.a-wa.is-live{
+  background:var(--sma-green); border:1px solid var(--sma-lift);
+  color:#fff; cursor:pointer; text-decoration:none;
+  transition:background .3s var(--ease), transform .3s var(--ease);
+}
+.a-wa.is-live:hover{ background:var(--sma-lift); transform:translateY(-2px); }
+.a-wa.is-live .a-ic{ fill:#fff; }
+
+.a-social{ display:flex; flex-wrap:wrap; gap:.6rem; }
+.a-social li{
+  display:inline-flex; align-items:center; gap:.5rem;
+  border-radius:12px; padding:.6rem .9rem;
+  min-height:44px;
+  background:rgba(255,255,255,.04);
+  border:1px dashed rgba(245,242,234,.22);
+  color:rgba(245,242,234,.62);
+  font-size:.85rem;
+}
+.a-social .a-ic{ width:19px; height:19px; fill:currentColor; }
+.a-social--sm li{ padding:.5rem; border-radius:10px; }
+.a-foot__social{ margin-top:1.2rem; }
+/* Live state, again applied by script.js only when a real https URL exists. */
+.a-social li.is-live{
+  border-style:solid; border-color:rgba(245,242,234,.2); color:var(--ivory);
+}
+.a-social li.is-live a{
+  display:inline-flex; align-items:center; gap:.5rem;
+  text-decoration:none; color:inherit;
+}
+.a-social li.is-live:hover{ border-color:var(--sma-lift); color:#fff; }
+
+/* ---------------------------- responsive --------------------------- */
+@media (max-width:1100px){
+  .a-offer__list{ grid-template-columns:repeat(3,1fr); }
+}
+@media (max-width:900px){
+  .a-lead__grid, .a-wins__list{ grid-template-columns:1fr; }
+  .a-channels{ grid-template-columns:1fr; gap:2.2rem; }
+}
+@media (max-width:760px){
+  .a-offer__list{ grid-template-columns:repeat(2,1fr); }
+  .a-gallery__grid{ grid-template-columns:repeat(auto-fill, minmax(130px,1fr)); gap:.5rem; }
+  .a-gallery__note{ margin-top:-.5rem; }
+  .a-vision blockquote{ font-size:1.06rem; line-height:1.95; }
+}
+@media (max-width:480px){
+  .a-offer__list{ grid-template-columns:1fr; }
+  /* Below 480 the featured frames stop spanning: a 2×2 span inside a 2-column
+     grid is just a single full-width image, which starves the archive. */
+  .a-gallery__item--featured{ grid-column:span 1; grid-row:span 1; }
+  .a-gallery__filter{ font-size:.8rem; padding:.5rem .85rem; }
+  .a-wa{ width:100%; justify-content:center; text-align:center; }
+}
+@media (prefers-reduced-motion:reduce){
+  .a-gallery__btn img{ transition:none; }
+  .a-gallery__btn:hover img, .a-gallery__btn:focus-visible img{ transform:none; }
+  .a-offer__list li:hover{ transform:none; }
+}
+@media print{
+  .a-gallery__tools, .a-gallery__more{ display:none !important; }
+}
+
+/* The archive loader's sentinel row: a zero-height full-width grid item the
+   IntersectionObserver watches so batches append as the visitor reaches the
+   end, rather than all at once. Never shown, never focusable. */
+.a-gallery__sentinel{
+  grid-column:1 / -1; height:1px; margin:0; padding:0;
+  pointer-events:none; visibility:hidden;
+}

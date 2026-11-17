@@ -1,0 +1,131 @@
+/* SMA PLAYER A · original five client-provided player-to-club posters.
+   Source-backed and intentionally high-prominence. No new illustration or faces.
+   Founder art direction: a hero-like chapter, just ahead of Moura Cup. */
+html[lang="ar"] .a-clubs{
+ position:relative;isolation:isolate;overflow:hidden;
+ background:
+  radial-gradient(ellipse 69% 62% at 8% 5%,rgba(107,155,89,.13),transparent 73%),
+  radial-gradient(ellipse 50% 75% at 100% 94%,rgba(195,156,77,.14),transparent 73%),
+  linear-gradient(157deg,#08130d 0%,#14281b 52%,#08120d 100%);
+ color:#f5f3e8;padding:clamp(78px,9vw,145px) 0 clamp(75px,7vw,120px);
+ border-top:1px solid rgba(200,180,126,.2);
+ border-bottom:1px solid rgba(200,180,126,.18);
+}
+html[lang="ar"] .a-clubs::before{
+ content:"";position:absolute;z-index:-1;inset:0;opacity:.18;pointer-events:none;
+ background-image:repeating-linear-gradient(120deg,transparent 0,transparent 53px,rgba(235,222,176,.07) 54px,transparent 55px);
+}
+html[lang="ar"] .a-clubs__halo{
+ position:absolute;inset:auto 0 0 auto;pointer-events:none;width:min(60vw,720px);
+ aspect-ratio:1;transform:translate(20%,30%);border-radius:50%;
+ background:radial-gradient(circle,rgba(115,174,101,.09),transparent 66%);
+}
+html[lang="ar"] .a-clubs__inner{width:min(100% - 64px,1320px);margin-inline:auto;position:relative}
+html[lang="ar"] .a-clubs__head{display:flex;justify-content:space-between;gap:clamp(25px,5vw,80px);align-items:center;margin-bottom:50px}
+html[lang="ar"] .a-clubs__intro{max-width:860px;min-width:0}
+html[lang="ar"] .a-clubs .kicker{margin-bottom:18px;color:#d2b87c}
+html[lang="ar"] .a-clubs h2{
+ font-family:inherit;font-size:clamp(2.65rem,5.6vw,6.1rem);
+ font-weight:800;line-height:1.25;letter-spacing:0;
+ color:#f7f5eb;margin:0 0 20px;text-wrap:balance;
+}
+html[lang="ar"] .a-clubs h2 strong{display:block;font-weight:800;color:#d8bc84}
+html[lang="ar"] .a-clubs__lede{
+ font-size:clamp(1rem,1.45vw,1.22rem);line-height:2;color:#c4d0c0;
+ max-width:650px;font-weight:430;margin:0;
+}
+html[lang="ar"] .a-clubs__count{
+ display:flex;flex-direction:column;align-items:center;justify-content:center;flex-shrink:0;
+ width:clamp(100px,16vw,225px);height:clamp(100px,16vw,225px);
+ border:1px solid rgba(218,194,130,.5);border-radius:50%;
+ background:radial-gradient(circle at 30% 25%,rgba(214,178,106,.14),transparent 71%);
+ transform:rotate(-6deg)
+}
+html[lang="ar"] .a-clubs__count span{
+ font-size:clamp(3.4rem,7vw,7.6rem);font-weight:740;line-height:1;
+ letter-spacing:-.06em;color:#f0d59b;font-family:Georgia,serif
+}
+html[lang="ar"] .a-clubs__count small{font-size:.83rem;color:#d9d7c6;letter-spacing:0;margin-top:6px;font-weight:650}
+html[lang="ar"] .a-clubs__toolbar{
+ display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap;
+ padding:0 2px 17px;margin-bottom:14px;border-bottom:1px solid rgba(219,203,156,.18)
+}
+html[lang="ar"] .a-clubs__toolbar>p{margin:0;font-size:.85rem;color:#aebeb0}
+html[lang="ar"] .a-clubs__controls{display:flex;gap:10px;align-items:center}
+html[lang="ar"] .a-clubs__progress{font-size:.85rem;color:#decb9a;min-width:65px}
+html[lang="ar"] .a-clubs__arrow{
+ display:grid;place-items:center;width:44px;height:44px;border-radius:50%;cursor:pointer;
+ border:1px solid rgba(205,187,126,.45);background:rgba(34,59,40,.8);
+ color:#f4ecda;transition:background .2s,border-color .2s;
+}
+html[lang="ar"] .a-clubs__arrow:hover{background:#375c40;border-color:#d6b875}
+html[lang="ar"] .a-clubs__arrow span{font-size:1.8rem;line-height:1}
+html[lang="ar"] .a-clubs__arrow:focus-visible,html[lang="ar"] .a-clubs__rail:focus-visible{outline:2px solid #f7d690;outline-offset:3px}
+html[lang="ar"] .a-clubs__rail{
+ display:flex;gap:clamp(14px,2vw,28px);
+ overflow-x:auto;overflow-y:hidden;overscroll-behavior-x:contain;
+ padding:6px 3px 23px;scroll-snap-type:x mandatory;
+ scroll-padding-inline:3px;scrollbar-width:thin;
+ scrollbar-color:#68836a rgba(12,33,18,.6);
+ -webkit-overflow-scrolling:touch;touch-action:pan-x pan-y;
+}
+html[lang="ar"] .a-clubs__card{
+ flex:0 0 clamp(230px,24vw,350px);min-width:0;max-width:350px;
+ scroll-snap-align:start;margin:0;position:relative;
+}
+html[lang="ar"] .a-clubs__poster{
+ position:relative;overflow:hidden;border-radius:19px;aspect-ratio:720/1280;
+ border:1px solid rgba(209,182,113,.29);
+ background:#0b160f;box-shadow:0 24px 65px -35px #000;
+ transition:transform .25s,border-color .25s;
+}
+html[lang="ar"] .a-clubs__card:hover .a-clubs__poster{transform:translateY(-4px);border-color:#d1b47a}
+html[lang="ar"] .a-clubs__poster img{
+ width:100%;height:100%;object-fit:cover;display:block;
+ cursor:zoom-in;user-select:none;
+}
+html[lang="ar"] .a-clubs__card figcaption{
+ padding:21px 3px 6px;display:flex;justify-content:space-between;
+ align-items:baseline;gap:14px;flex-wrap:wrap;
+}
+html[lang="ar"] .a-clubs__player{font-weight:750;color:#f6f6ef;font-size:clamp(1.04rem,1.45vw,1.27rem)}
+html[lang="ar"] .a-clubs__dest{font-weight:570;color:#d8ba80;font-size:.91rem}
+html[lang="ar"] .a-clubs__contract{
+ position:absolute;top:16px;inset-inline-start:15px;z-index:1;
+ background:#e4c78c;color:#132013;font-weight:800;font-size:.82rem;
+ padding:8px 15px;border-radius:40px;pointer-events:none;
+ box-shadow:0 5px 15px rgba(0,0,0,.26);
+}
+html[lang="ar"] .a-clubs__end{
+ margin-top:35px;padding-top:22px;border-top:1px solid rgba(217,204,170,.19);
+ display:flex;align-items:flex-start;justify-content:space-between;gap:24px;
+}
+html[lang="ar"] .a-clubs__end p{color:#98ab9b;font-size:.79rem;line-height:1.95;max-width:730px;margin:0}
+html[lang="ar"] .a-clubs__index{font-weight:650;color:#dbbe8c;font-size:.81rem;white-space:nowrap;direction:ltr}
+@media(max-width:920px){
+ html[lang="ar"] .a-clubs__head{margin-bottom:35px}
+ html[lang="ar"] .a-clubs__count{width:125px;height:125px}
+ html[lang="ar"] .a-clubs__card{flex-basis:clamp(250px,38vw,330px)}
+}
+@media(max-width:620px){
+ html[lang="ar"] .a-clubs{padding-block:74px 74px}
+ html[lang="ar"] .a-clubs__inner{width:min(100% - 36px,1320px)}
+ html[lang="ar"] .a-clubs__head{gap:14px;align-items:flex-start}
+ html[lang="ar"] .a-clubs h2{font-size:clamp(2.4rem,10vw,3.8rem);line-height:1.25}
+ html[lang="ar"] .a-clubs__lede{font-size:.91rem;line-height:1.85}
+ html[lang="ar"] .a-clubs__count{width:78px;height:78px;margin-top:16px}
+ html[lang="ar"] .a-clubs__count span{font-size:2.75rem}
+ html[lang="ar"] .a-clubs__count small{font-size:.68rem}
+ html[lang="ar"] .a-clubs__toolbar>p{font-size:.77rem;max-width:155px}
+ html[lang="ar"] .a-clubs__card{flex:0 0 min(76vw,330px)}
+ html[lang="ar"] .a-clubs__end{flex-wrap:wrap;gap:7px}
+ html[lang="ar"] .a-clubs__poster{border-radius:14px}
+}
+@media(max-width:350px){
+ html[lang="ar"] .a-clubs__count{display:none}
+ html[lang="ar"] .a-clubs__card{flex-basis:82vw}
+}
+@media(prefers-reduced-motion:reduce){
+ html[lang="ar"] .a-clubs__rail{scroll-behavior:auto}
+ html[lang="ar"] .a-clubs__poster{transition:none}
+}

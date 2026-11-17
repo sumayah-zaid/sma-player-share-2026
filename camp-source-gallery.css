@@ -1,0 +1,58 @@
+/* KAMAYA — Founder-approved camp-folder swipe gallery, Arabic site only. */
+html[lang="ar"] .a-gallery__filters{justify-content:flex-start;flex-wrap:nowrap;overflow-x:auto;scrollbar-width:thin;padding:8px 2px 14px;scroll-snap-type:x proximity}
+html[lang="ar"] .a-gallery__folder-filter{white-space:nowrap;flex:0 0 auto;scroll-snap-align:start}
+html[lang="ar"] .a-gallery__grid[data-swipe-gallery]{
+ display:flex;align-items:stretch;flex-wrap:nowrap;
+ gap:14px;overflow-x:auto;overflow-y:hidden;
+ scroll-snap-type:x mandatory;scroll-padding-inline:clamp(12px,4vw,36px);
+ overscroll-behavior-inline:contain;-webkit-overflow-scrolling:touch;
+ padding-block:12px 21px;user-select:none;
+ scrollbar-color:#3e7550 #13271a;scrollbar-width:thin;
+}
+html[lang="ar"] .a-gallery__grid[data-swipe-gallery] .a-gallery__item{
+ flex:0 0 clamp(220px,36vw,345px);min-width:0;
+ grid-column:auto!important;grid-row:auto!important;
+ scroll-snap-align:start;scroll-snap-stop:normal;
+}
+html[lang="ar"] .a-gallery__grid[data-swipe-gallery] .a-gallery__item[hidden]{display:none!important}
+html[lang="ar"] .a-gallery__grid[data-swipe-gallery] .a-gallery__btn{width:100%;height:100%;aspect-ratio:3/3.75;cursor:zoom-in}
+html[lang="ar"] .a-gallery__grid[data-swipe-gallery] .a-gallery__btn img,
+html[lang="ar"] .a-gallery__grid[data-swipe-gallery] .a-gallery__item--featured .a-gallery__btn img{
+ height:100%;width:100%;aspect-ratio:auto;object-fit:cover;
+}
+html[lang="ar"] .a-gallery__swipebar{
+ max-width:1320px;margin:0 auto 9px;
+ padding-inline:clamp(1.25rem,5vw,3rem);
+ display:flex;align-items:center;gap:12px;flex-wrap:wrap;
+}
+html[lang="ar"] .a-gallery__swipehint{
+ font-size:.85rem;font-weight:650;color:#cee1c3;
+}
+html[lang="ar"] .a-gallery__swipetotal{
+ margin-inline-start:auto;color:#a6c3a9;font-size:.81rem;
+}
+html[lang="ar"] .a-gallery__swipecontrols{display:flex;gap:8px}
+html[lang="ar"] .a-gallery__slide-arrow{
+ border:1px solid rgba(201,168,106,.4);border-radius:999px;
+ width:44px;height:44px;display:inline-grid;place-items:center;
+ background:#14261a;color:#eef5e8;cursor:pointer;font-size:1.65rem;line-height:1;
+}
+html[lang="ar"] .a-gallery__slide-arrow:hover{background:#275b39}
+html[lang="ar"] .a-gallery__slide-arrow:focus-visible{outline:2px solid #a8c78e}
+html[lang="ar"] .a-camp__photo-links{display:flex;flex-wrap:wrap;gap:11px}
+html[lang="ar"] .a-camp__photo-links .a-camp__photo-link{display:inline-flex;align-items:center}
+html[lang="ar"] .a-camp__photo-links .a-camp__photo-link:first-child{margin-inline-end:8px}
+html[lang="ar"] .a-gallery__more[hidden]{display:none!important}
+@media(max-width:600px){
+ html[lang="ar"] .a-gallery__grid[data-swipe-gallery]{
+  padding-inline:18px!important;scroll-padding-inline:18px;
+ }
+ html[lang="ar"] .a-gallery__grid[data-swipe-gallery] .a-gallery__item{
+  flex-basis:min(75vw,300px);
+ }
+ html[lang="ar"] .a-gallery__swipehint{font-size:.8rem}
+ html[lang="ar"] .a-gallery__slide-arrow{width:40px;height:40px}
+}
+@media(prefers-reduced-motion:reduce){
+ html[lang="ar"] .a-gallery__grid[data-swipe-gallery]{scroll-behavior:auto}
+}

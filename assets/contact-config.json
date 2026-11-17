@@ -1,0 +1,8 @@
+{
+  "_README_AR": "ربط بريد المدرب لا يزال قيد تزويدنا بالبريد الرسمي. لا تستخدم بريداً افتراضياً. لتفعيل الإرسال التلقائي، أنشئ نموذجًا لدى خدمة Formspree مرتبطًا ببريد سيف، فعّل البريد والتحقق بالجهة المستقبلة، ضع endpoint الحقيقي وrecipient_email هنا ثم غير mode إلى email بعد إجراء اختبار إرسال حقيقي. عند غياب ذلك، يفتح النموذج واتساب الرسمي مع نسخ النص؛ لا يسجل أو يرسل إلى أي خادم.",
+  "mode": "whatsapp",
+  "recipient_email": "",
+  "formspree_endpoint": "",
+  "recipient_verified": false,
+  "whatsapp_url": "https://wa.me/message/VFFUXVLVYHTOM1"
+}

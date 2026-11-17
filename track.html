@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex,nofollow,noarchive"><meta name="theme-color" content="#0c2c1b">
+<title>متابعة طلب اللاعب | SMA PLAYER — نموذج توضيحي</title>
+<meta name="description" content="تجربة توضيحية لمتابعة طلب الانضمام إلى معسكرات SMA PLAYER.">
+<link rel="icon" type="image/svg+xml" href="assets/sma-logo.svg"><link rel="stylesheet" href="webfonts.css">
+<link rel="stylesheet" href="sma-tracking.css"><script src="sma-tracking.js" defer></script>
+</head>
+<body class="tracking-app" data-view="track">
+<header class="tracking-header">
+ <a class="tracking-brand" href="index.html"><img src="assets/sma-logo.svg" alt="SMA PLAYER" width="52" height="58"><span><b>SMA PLAYER</b><small>رحلة اللاعب</small></span></a>
+ <nav aria-label="روابط المتابعة"><a href="apply.html">تسجيل اللاعبين</a><a href="track.html" aria-current="page">متابعة الطلب</a></nav>
+</header>
+<main class="tracking-main">
+ <section class="tracking-intro">
+  <div class="tracking-intro__text"><p class="tracking-eyebrow"><span>PLAYER JOURNEY</span> / متابعة الطلب</p><h1>خطوتك القادمة.<br><em>واضحة دائمًا.</em></h1><p>تابع مرحلة مراجعة طلبك واختبار الأداء وقرار القبول. هذه معاينة للشكل النهائي، وليست خدمة تتبع مفعّلة بعد.</p></div>
+  <div class="tracking-intro__ornament" aria-hidden="true"><span>SMA</span><small>FROM TALENT TO OPPORTUNITY</small></div>
+ </section>
+ <div class="demo-alert" role="status"><span>◈</span><div><strong>بيئة تجريبية</strong><p>كل أرقام الطلبات والحالات هنا افتراضية. لا يوجد طلب حقيقي أو قاعدة بيانات أو خدمة رسائل مفعلة.</p></div></div>
+ <div class="tracking-two-col">
+  <section class="tracking-card tracking-lookup" aria-labelledby="lookup-title">
+   <p class="tracking-card-kicker">SECURE ACCESS / 01</p><h2 id="lookup-title">التحقق من الطلب</h2>
+   <p class="tracking-card-subtitle">بعد تشغيل النظام، تُدخل رقم طلبك ورقم جوالك، ثم يصلك رمز تحقق لمرة واحدة قبل عرض النتيجة.</p>
+   <form id="tracking-lookup-form" class="tracking-lookup-form" action="#" method="post" autocomplete="off">
+    <label for="tracking-reference">رقم الطلب
+     <input id="tracking-reference" name="reference" placeholder="مثال: SMA-2026-00124" type="text" disabled>
+    </label>
+    <label for="tracking-phone">رقم الجوال المرتبط بالطلب
+     <input id="tracking-phone" name="contact_phone" type="tel" placeholder="05xxxxxxxx" inputmode="tel" disabled>
+    </label>
+    <button type="submit" disabled>إرسال رمز التحقق <span aria-hidden="true">←</span></button>
+    <div class="otp-preview"><span>◎</span>الخطوة التالية بعد تفعيل النظام: إدخال رمز تحقق مؤقت يصل للجوال.</div>
+   </form>
+   <div class="tracking-lookup-note">لن نعرض بيانات أي لاعب بمجرد معرفة رقم الطلب؛ يلزم تحقق من ملكية الجوال.</div>
+  </section>
+  <section class="tracking-card tracking-simulator" aria-labelledby="simulator-title">
+    <p class="tracking-card-kicker">DEMO MODE / 02</p><h2 id="simulator-title">جرّب رحلة اللاعب</h2>
+    <p class="tracking-card-subtitle">اختاري مرحلة من المراحل لتري شكل صفحة اللاعب عند وصول نتيجة جديدة من الإدارة.</p>
+    <div class="tracking-scenarios" role="group" aria-label="مراحل الطلب التجريبية">
+      <button type="button" data-demo-status="received">تم الاستلام</button>
+      <button type="button" data-demo-status="review">قيد المراجعة</button>
+      <button type="button" data-demo-status="trial">دعوة للاختبار</button>
+      <button type="button" data-demo-status="accepted">مقبول</button>
+      <button type="button" data-demo-status="waitlist">قائمة الانتظار</button>
+      <button type="button" data-demo-status="rejected">غير مقبول</button>
+    </div>
+    <p class="tracking-scenarios-note">هذه الأزرار تغير حالة لاعب افتراضي على هذه الشاشة فقط؛ لا تغيّر أي طلب في لوحة إدارة حقيقية.</p>
+  </section>
+ </div>
+ <section class="tracking-result" id="tracking-result" aria-label="نتيجة طلب تجريبي" hidden>
+  <div class="result-heading">
+   <div><p class="tracking-card-kicker">SMA PLAYER / APPLICATION STATUS</p><h2>حالة طلبك</h2></div>
+   <span class="result-demo-label">عرض تجريبي</span>
+  </div>
+  <div class="tracking-result-grid">
+   <div class="result-main">
+    <div class="result-overline">رقم الطلب <strong dir="ltr">SMA-DEMO-00124</strong></div>
+    <div class="result-current-status"><span class="result-status-symbol" id="result-status-symbol" aria-hidden="true">◎</span><div><span>الحالة الحالية</span><h3 id="result-status-text">قيد المراجعة</h3></div></div>
+    <p id="result-description">يجري الفريق الفني مراجعة البيانات والمقاطع المرفقة.</p>
+    <div class="result-next-step"><span>الخطوة التالية</span><strong id="result-next">انتظار تحديث حالة الطلب</strong></div>
+    <div class="result-timeline" id="result-timeline" aria-label="مراحل طلب اللاعب"></div>
+   </div>
+   <aside class="result-side">
+    <h3>تفاصيل الطلب</h3>
+    <dl><div><dt>اللاعب</dt><dd>لاعب تجريبي</dd></div><div><dt>نوع الطلب</dt><dd>طلب انضمام لمعسكر</dd></div><div><dt>المركز</dt><dd>وسط (مثال)</dd></div><div><dt>التحديث</dt><dd>مثال توضيحي</dd></div></dl>
+    <div class="result-sms"><span aria-hidden="true">✉</span><div><strong>النتيجة عبر الجوال</strong><p>عند التشغيل، يصل إشعار للرقم المسجّل مع رابط متابعة آمن. لا تُرسل أي رسائل الآن.</p></div></div>
+   </aside>
+  </div>
+  <section id="post-acceptance" class="accepted-profile" hidden>
+    <div><p class="tracking-card-kicker">PHASE TWO / ATHLETE PROFILE</p><h3>ملف اللاعب بعد القبول</h3><p>تُفتح صفحة خاصة للبرنامج بعد التحقق من هوية اللاعب عند تفعيل حساباته، ثم تظهر تفاصيل معسكره وتقييماته حسب نطاق المشروع المعتمد.</p></div>
+    <div class="accepted-profile-grid"><span>المعسكر والجدول <b>لاحقًا</b></span><span>التقييمات الفنية <b>لاحقًا</b></span><span>دقائق اللعب <b>لاحقًا</b></span><span>تقرير قبل وبعد <b>لاحقًا</b></span></div>
+    <small>هذه الميزات لم تُنفذ تشغيليًا ولا تحتوي بيانات لاعب.</small>
+  </section>
+ </section>
+</main>
+<footer class="tracking-footer"><span>© 2026 SMA PLAYER · معاينة غير منشورة</span><span>صُمّم بواسطة <strong>KAMAYA</strong></span></footer>
+</body></html>

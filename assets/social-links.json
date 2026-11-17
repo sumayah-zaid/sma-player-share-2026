@@ -1,0 +1,21 @@
+{
+  "_README": "Links supplied directly by SMA PLAYER project owner on 2026-11-11. WhatsApp is an official wa.me/message short chat link, not a phone number. Unprovided X and YouTube links are left inactive. Do not invent URLs.",
+  "_RULES": [
+    "whatsapp.direct_url: accepts only exact HTTPS wa.me/message/ID official click-to-chat format.",
+    "whatsapp.number: optional international number only; direct_url takes precedence.",
+    "social: HTTPS URLs to actual accounts only; unprovided channels remain hidden after activation.",
+    "Do not assume Instagram/TikTok tracking query strings are part of profile identity; canonical direct profile URLs are used."
+  ],
+  "whatsapp": {
+    "number": "",
+    "prefill": "السلام عليكم، وصلت إلى حسابك من موقع SMA PLAYER وأرغب في التواصل معك.",
+    "direct_url": "https://wa.me/message/VFFUXVLVYHTOM1"
+  },
+  "social": {
+    "instagram": "https://www.instagram.com/sma.players/",
+    "x": "",
+    "tiktok": "https://www.tiktok.com/@sma.players",
+    "snapchat": "https://snapchat.com/t/MmwHA0ov",
+    "youtube": ""
+  }
+}

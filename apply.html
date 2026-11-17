@@ -1,0 +1,145 @@
+<!doctype html><html lang="ar" dir="rtl"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="robots" content="noindex,nofollow,noarchive"><meta name="theme-color" content="#06130d">
+<title>تسجيل اللاعبين | SMA PLAYER</title><meta name="description" content="طلب الانضمام للمعسكر وتزويد SMA ببيانات اللاعب ومقاطع الأداء والصور الرياضية.">
+<link rel="icon" href="assets/sma-logo.svg" type="image/svg+xml"><link rel="stylesheet" href="webfonts.css">
+<link rel="stylesheet" href="client-review.css"><link rel="stylesheet" href="subpages.css"><link rel="stylesheet" href="sma-client-revision.css"><link rel="stylesheet" href="sma-intake.css">
+</head><body><header class="topbar"><a class="brand" href="index.html"><img src="assets/sma-logo.svg" alt="SMA PLAYER" width="48" height="58"><span><b>SMA PLAYER</b><small>المواهب والمعسكرات · 2026</small></span></a><nav class="sma-subnav" aria-label="القائمة الرئيسية"><a href="index.html">الرئيسية</a><a href="journey.html">قصتنا</a><a href="camps.html">المعسكرات</a><a href="achievements.html">الإنجازات</a><a href="players.html">اللاعبون والانتقالات</a><a href="about.html">من نحن</a><a href="support.html">الدعم والاستفسار</a><a href="index.html#a-contact">تواصل معنا</a></nav><a class="back-link" href="index.html">الرئيسية ↗</a></header><main><section class="cover sma-cover" id="intro"><div class="cover-picture"><img src="assets/story/sma-team-balanced.webp" alt="فريق SMA PLAYER" fetchpriority="high"></div>
+<div class="cover-copy"><span class="eyebrow">SMA PLAYER · 2026</span><h1>تسجيل اللاعبين</h1><p class="lead">طلب الانضمام للمعسكر وتزويد SMA ببيانات اللاعب ومقاطع الأداء والصور الرياضية.</p><div class="cover-cta"><a class="solid" href="#chapters">عرض نموذج التسجيل</a><a class="outline" href="index.html">الرئيسية</a></div></div></section>
+<div class="sma-content" id="chapters"><section class="chapter sma-application" id="registration" aria-labelledby="application-title">
+<header class="chapter-head sma-application__head">
+  <span>01 / طلب الانضمام</span>
+  <h2 id="application-title">ملف اللاعب الرياضي</h2>
+  <p>نموذج المشاركة في معسكرات SMA PLAYER. جهّز معلوماتك الأساسية وسجلّك الرياضي ومقاطع الأداء والصور الرياضية.</p>
+</header>
+<div class="sma-intake-banner" role="status">
+ <span class="sma-intake-banner__dot" aria-hidden="true"></span>
+ <div><strong>معاينة نموذج التسجيل</strong>
+ <p>يمكنك تجربة الحقول هنا، لكن إرسال الطلبات ورفع الملفات غير مفعّلين حتى تجهيز نظام إدارة وتخزين آمن. لا تُحفظ البيانات التي تُدخلها.</p></div>
+</div>
+<form class="sma-player-form sma-player-intake" id="sma-player-intake" action="#" method="post" enctype="multipart/form-data" autocomplete="off">
+  <fieldset class="sma-intake-section">
+    <legend><span class="sma-intake-num">01</span> المعلومات الشخصية</legend>
+    <div class="sma-intake-grid">
+      <label for="intake-fullname"><span class="sma-field-label">الاسم الرباعي <em aria-hidden="true">*</em></span>
+        <input id="intake-fullname" name="full_name" type="text" autocomplete="off" maxlength="160" required placeholder="الاسم الرباعي كما في الهوية">
+      </label>
+      <label for="intake-birth-year"><span class="sma-field-label">سنة الميلاد <em aria-hidden="true">*</em></span>
+        <input id="intake-birth-year" name="birth_year" type="number" min="1980" max="2026" step="1" inputmode="numeric" required placeholder="مثال: 2010">
+      </label>
+      <label for="intake-nationality"><span class="sma-field-label">الجنسية <em aria-hidden="true">*</em></span>
+        <input id="intake-nationality" name="nationality" type="text" maxlength="80" required placeholder="الجنسية">
+      </label>
+      <label for="intake-city"><span class="sma-field-label">المدينة <em aria-hidden="true">*</em></span>
+        <input id="intake-city" name="city" type="text" maxlength="100" required placeholder="مدينة الإقامة">
+      </label>
+      <label for="intake-height"><span class="sma-field-label">الطول (سم) <em aria-hidden="true">*</em></span>
+        <input id="intake-height" name="height_cm" type="number" min="90" max="250" step="1" inputmode="decimal" required placeholder="مثال: 172">
+      </label>
+      <label for="intake-weight"><span class="sma-field-label">الوزن (كجم) <em aria-hidden="true">*</em></span>
+        <input id="intake-weight" name="weight_kg" type="number" min="20" max="230" step="0.1" inputmode="decimal" required placeholder="مثال: 65">
+      </label>
+      <label for="intake-position"><span class="sma-field-label">مركز اللعب <em aria-hidden="true">*</em></span>
+        <select id="intake-position" name="playing_position" required>
+          <option value="">اختر مركزك الأساسي</option>
+          <option value="goalkeeper">حارس مرمى</option>
+          <option value="defender">مدافع</option>
+          <option value="midfielder">لاعب وسط</option>
+          <option value="winger">جناح</option>
+          <option value="forward">مهاجم</option>
+        </select>
+      </label>
+    </div>
+  </fieldset>
+  <fieldset class="sma-intake-section" id="intake-contact-section">
+    <legend><span class="sma-intake-num">02</span> بيانات التواصل</legend>
+    <p class="sma-intake-hint">حتى تتمكن الإدارة من إرسال رقم الطلب ونتيجة المراجعة عند تشغيل النظام.</p>
+    <div class="sma-intake-grid">
+      <label for="intake-phone" class="sma-intake-wide">
+        <span class="sma-field-label">رقم جوال التواصل <em aria-hidden="true">*</em></span>
+        <input id="intake-phone" name="contact_phone" type="tel" inputmode="tel" autocomplete="tel"
+               minlength="9" maxlength="20" required placeholder="مثال: 05xxxxxxxx أو +9665xxxxxxxx">
+        <small class="sma-contact-help">سيُستخدم للتواصل بخصوص حالة الطلب فقط بعد تفعيل خدمة الإشعارات.</small>
+      </label>
+      <div class="sma-guardian-box sma-intake-wide" id="intake-guardian-wrap" hidden>
+        <div class="sma-guardian-box__head">
+          <strong>بيانات ولي الأمر</strong>
+          <p>تُطلب احترازيًا للاعبين المولودين عام 2008 أو بعده، لأن سنة الميلاد وحدها لا تحدد إتمام سن 18 بدقة.</p>
+        </div>
+        <div class="sma-intake-grid">
+          <label for="intake-guardian-name"><span class="sma-field-label">اسم ولي الأمر <em aria-hidden="true">*</em></span>
+            <input id="intake-guardian-name" name="guardian_name" type="text" maxlength="160" placeholder="الاسم الكامل" autocomplete="off" disabled>
+          </label>
+          <label for="intake-guardian-phone"><span class="sma-field-label">رقم جوال ولي الأمر <em aria-hidden="true">*</em></span>
+            <input id="intake-guardian-phone" name="guardian_phone" type="tel" inputmode="tel" autocomplete="off" minlength="9" maxlength="20" placeholder="رقم التواصل مع ولي الأمر" disabled>
+          </label>
+        </div>
+      </div>
+    </div>
+  </fieldset>
+  <fieldset class="sma-intake-section">
+    <legend><span class="sma-intake-num">03</span> الخبرة الرياضية</legend>
+    <div class="sma-intake-grid">
+      <fieldset class="sma-intake-choice">
+        <legend>هل سبق لك تمثيل أندية أو أكاديمية؟ <span aria-hidden="true">*</span></legend>
+        <div class="sma-choice-options">
+          <label><input type="radio" name="played_for_club_or_academy" value="yes" required aria-controls="intake-club-experience-wrap"> نعم</label>
+          <label><input type="radio" name="played_for_club_or_academy" value="no" aria-controls="intake-club-experience-wrap"> لا</label>
+        </div>
+        <div class="sma-intake-followup" id="intake-club-experience-wrap" hidden>
+          <label for="intake-club-experience"><span class="sma-field-label">تفاصيل تجربتك مع الأندية أو الأكاديميات <em aria-hidden="true">*</em></span>
+            <textarea id="intake-club-experience" name="club_academy_experience_details" rows="4" maxlength="800" placeholder="اذكر أسماء الأندية أو الأكاديميات التي مثّلتها، ومدة المشاركة، وأبرز خبراتك." disabled aria-describedby="intake-club-experience-hint"></textarea>
+          </label>
+          <small id="intake-club-experience-hint">يظهر هذا الحقل عند اختيار «نعم»، ويُطلب وصف التجربة قبل إرسال الطلب.</small>
+        </div>
+      </fieldset>
+      <fieldset class="sma-intake-choice">
+        <legend>هل سبق لك المشاركة في معسكرات خارجية؟ <span aria-hidden="true">*</span></legend>
+        <div class="sma-choice-options">
+          <label><input type="radio" name="joined_international_camps" value="yes" required aria-controls="intake-camp-experience-wrap"> نعم</label>
+          <label><input type="radio" name="joined_international_camps" value="no" aria-controls="intake-camp-experience-wrap"> لا</label>
+        </div>
+        <div class="sma-intake-followup" id="intake-camp-experience-wrap" hidden>
+          <label for="intake-camp-experience"><span class="sma-field-label">تفاصيل المعسكرات الخارجية التي شاركت فيها <em aria-hidden="true">*</em></span>
+            <textarea id="intake-camp-experience" name="international_camp_experience_details" rows="4" maxlength="800" placeholder="اذكر الدول أو المعسكرات التي شاركت فيها، والسنة، وأبرز ما استفدته من التجربة." disabled aria-describedby="intake-camp-experience-hint"></textarea>
+          </label>
+          <small id="intake-camp-experience-hint">يظهر هذا الحقل عند اختيار «نعم»، ويُطلب وصف التجربة قبل إرسال الطلب.</small>
+        </div>
+      </fieldset>
+      <label for="intake-goal" class="sma-intake-wide"><span class="sma-field-label">ما الهدف من الانضمام للمعسكر؟ <em aria-hidden="true">*</em></span>
+        <textarea id="intake-goal" name="goal_for_camp" rows="5" maxlength="1500" required placeholder="اكتب هدفك من الانضمام وما الذي تطمح إلى تطويره في مستواك الرياضي."></textarea>
+      </label>
+    </div>
+  </fieldset>
+  <fieldset class="sma-intake-section">
+    <legend><span class="sma-intake-num">04</span> المقاطع والصور الرياضية</legend>
+    <p class="sma-intake-hint">لإظهار مستواك الفني وتجربتك في الملعب، جهّز مقاطع الفيديو والصور الرياضية الخاصة بك. التحديد هنا للمعاينة فقط، ولا تُرفع الملفات.</p>
+    <div class="sma-intake-grid">
+      <label for="intake-clips" class="sma-media-drop">
+        <span class="sma-media-icon" aria-hidden="true">▶</span>
+        <strong>مقاطع أداء اللاعب</strong>
+        <small>اختر مقاطع الفيديو الرياضية — يمكنك تحديد أكثر من مقطع</small>
+        <span class="sma-file-prompt" aria-hidden="true">اختيار مقاطع الفيديو</span>
+        <input id="intake-clips" name="performance_videos[]" type="file" accept="video/*" multiple>
+        <small class="sma-intake-selected" id="intake-clips-selected" aria-live="polite">لم يتم اختيار مقاطع</small>
+      </label>
+      <label for="intake-photos" class="sma-media-drop">
+        <span class="sma-media-icon" aria-hidden="true">▧</span>
+        <strong>صور رياضية للاعب</strong>
+        <small>اختر صورًا واضحة لك أثناء التدريب أو المباريات</small>
+        <span class="sma-file-prompt" aria-hidden="true">اختيار الصور الرياضية</span>
+        <input id="intake-photos" name="sports_photos[]" type="file" accept="image/jpeg,image/png,image/webp,image/heic,image/heif" multiple>
+        <small class="sma-intake-selected" id="intake-photos-selected" aria-live="polite">لم يتم اختيار صور</small>
+      </label>
+    </div>
+  </fieldset>
+  <div class="sma-intake-footer">
+    <div class="sma-intake-privacy"><strong>خصوصية بيانات اللاعبين</strong>
+    <p>البيانات والمقاطع الرياضية مخصصة لمراجعة طلبات المعسكر من إدارة SMA فقط. قبل فتح التسجيل الفعلي ستُعتمد سياسة الخصوصية وآلية موافقة ولي الأمر عند الحاجة وطرق حفظ الملفات وحذفها.</p></div>
+    <button class="sma-intake-submit" type="submit" disabled aria-disabled="true">إرسال الطلب — سيتاح عند فتح التسجيل</button>
+    <div class="sma-intake-next-step">
+      <span>ماذا يرى اللاعب بعد إرسال طلبه؟</span>
+      <a href="receipt.html?demo=1" class="sma-intake-preview-link">استعرض شاشة رقم الطلب والتأكيد <span aria-hidden="true">↗</span></a>
+      <a href="track.html?demo=review" class="sma-intake-status-link">معاينة صفحة متابعة الطلب</a>
+    </div>
+  </div>
+</form>
+</section></div></main><footer class="sma-detail-footer"><div class="sma-detail-footer__top"><div><b>SMA PLAYER</b><p>تطوير المواهب الرياضية</p><small>المملكة العربية السعودية</small></div><a href="index.html#a-contact">تواصل معنا ↗</a></div><div class="sma-detail-footer__bottom"><span>© 2026 SMA PLAYER · جميع الحقوق محفوظة</span><div class="sma-detail-footer__credit"><span>صُمّم وطُوّر بعناية لدى</span><img src="assets/kamaya/kamaya-horizontal-bilingual-white.svg" alt="كمايا — التصميم والتطوير" width="119" height="30"></div></div></footer><script src="sma-cv-preview.js" defer></script></body></html>

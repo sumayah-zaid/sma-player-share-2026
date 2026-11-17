@@ -1,0 +1,20 @@
+/* A visible, tasteful entry to complete private review, not the published site. */
+html[lang="ar"] .a-client-review-bridge{position:relative;padding:clamp(40px,6vw,84px) clamp(18px,4.5vw,60px);background:linear-gradient(112deg,#0a2618,#123c27 58%,#092014);border-block:1px solid rgba(215,190,131,.34)}
+html[lang="ar"] .a-client-review-bridge__inner{display:grid;grid-template-columns:minmax(0,1fr) 230px;gap:24px;align-items:center;max-width:1150px;margin:auto}
+html[lang="ar"] .a-client-review-bridge__eyebrow{font-size:.74rem;font-weight:650;color:#e2c485;letter-spacing:.01em}
+html[lang="ar"] .a-client-review-bridge h2{font-size:clamp(2rem,3vw,3.45rem);line-height:1.43;color:#f9f5e9;margin:9px 0 13px;letter-spacing:-.03em}
+html[lang="ar"] .a-client-review-bridge p{max-width:72ch;font-size:clamp(.85rem,1vw,1rem);line-height:2;color:#d0dfd0;margin-bottom:26px}
+html[lang="ar"] .a-client-review-bridge__cta{display:inline-flex;align-items:center;gap:19px;text-decoration:none;border-radius:60px;background:#e1c78f;color:#15311e;font-weight:750;padding:13px 23px;font-size:.91rem}
+html[lang="ar"] .a-client-review-bridge__cta:hover{background:#f6dfaa}
+html[lang="ar"] .a-client-review-bridge__stamp{border:1px solid rgba(227,198,133,.43);border-radius:100%;width:207px;height:207px;display:flex;flex-direction:column;align-items:center;justify-content:center;background:rgba(7,23,12,.25)}
+html[lang="ar"] .a-client-review-bridge__stamp span{font:700 4.2rem/1 system-ui,sans-serif;color:#e7ce97}
+html[lang="ar"] .a-client-review-bridge__stamp b{font-size:.9rem;color:#f1e9cf}
+html[lang="ar"] .a-client-review-bridge__stamp small{font:.57rem system-ui,sans-serif;color:#bdcdbb;margin-top:8px;letter-spacing:.07em}
+html[lang="ar"] .a-hero__review-link{display:inline-flex;align-items:center;justify-content:center;color:#e1d2b3;text-decoration:underline;text-underline-offset:4px;font-size:.78rem;padding:12px 8px}
+html[lang="ar"] .a-hero__review-link:hover{color:#fff}
+@media(max-width:700px){html[lang="ar"] .a-client-review-bridge__inner{grid-template-columns:1fr}html[lang="ar"] .a-client-review-bridge__stamp{display:none}html[lang="ar"] .a-client-review-bridge__cta{font-size:.81rem;padding:13px 16px}html[lang="ar"] .a-hero__review-link{width:100%;justify-content:flex-start}}
+
+html[lang="ar"] .a-lang__pending{opacity:.58;cursor:not-allowed;font-size:.69rem;white-space:nowrap}
+
+html[lang="ar"] .a-client-review-bridge__stamp img{display:block;max-height:104px;object-fit:contain;opacity:.96;margin-bottom:11px}
+html[lang="ar"] .a-client-review-bridge__stamp small{letter-spacing:.04em;font-size:.51rem}

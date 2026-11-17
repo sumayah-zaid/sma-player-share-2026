@@ -1,0 +1,6 @@
+
+html[lang=ar] .sma-story-more{margin:18px 0}
+html[lang=ar] .sma-story-more a,html[lang=ar] .sma-section-detail a,html[lang=ar] .sma-source-archive-link a{display:inline-flex;align-items:center;gap:10px;padding:10px 17px;border:1px solid rgba(214,186,124,.45);border-radius:50px;text-decoration:none;color:#e7cd97;font-size:.84rem;font-weight:650;transition:background .2s}
+html[lang=ar] .sma-story-more a:hover,html[lang=ar] .sma-section-detail a:hover,html[lang=ar] .sma-source-archive-link a:hover{background:rgba(215,183,118,.12)}
+html[lang=ar] .sma-section-detail{margin:10px 0 22px}
+html[lang=ar] .a-camp--tall img[src*="dammam-camp-squad"]{object-position:center 25%}

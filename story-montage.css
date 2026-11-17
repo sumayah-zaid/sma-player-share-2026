@@ -1,0 +1,131 @@
+/* KAMAYA Design — Story of the Saudi squad, documentary two-image montage.
+   Pictures are two real supplied photographs, never merged/generated. Arabic only.
+   Keep full team visible: secondary Saif cup portrait overlaps only empty grass edge. */
+html[lang="ar"] #a-story .a-story__montage {
+  position:relative;
+  display:flex;
+  flex-direction:column;
+  align-items:stretch;
+  min-width:0;
+  padding:0 4px 2px;
+  margin:0;
+  isolation:isolate;
+}
+html[lang="ar"] #a-story .a-story__montage::before {
+  content:"";
+  z-index:-1;
+  pointer-events:none;
+  position:absolute;
+  inset:22px -17px 72px -15px;
+  border:1px solid rgba(208,177,110,.24);
+  border-radius:21px;
+  background:radial-gradient(circle at 30% 78%,rgba(31,89,50,.24),transparent 65%);
+}
+html[lang="ar"] #a-story .a-story__team-panel {
+  width:100%;
+  position:relative;
+  z-index:1;
+  padding:0;
+}
+html[lang="ar"] #a-story .a-story__montage .a-story__team-panel img {
+  display:block;
+  width:100%;
+  height:auto;
+  aspect-ratio:16/9;
+  object-fit:contain;
+  object-position:center;
+  border-radius:14px;
+  border:1px solid rgba(215,187,119,.38);
+  box-shadow:0 20px 55px rgba(0,0,0,.4);
+}
+html[lang="ar"] #a-story .a-story__portrait-panel {
+  align-self:flex-end;
+  margin-top:clamp(-51px,-4.4vw,-27px);
+  margin-inline-end:clamp(10px,4.5vw,45px);
+  width:clamp(186px,57%,318px);
+  max-width:68%;
+  position:relative;
+  z-index:2;
+  transform:rotate(-1.25deg);
+  background:#15251a;
+  border:5px solid #112218;
+  border-radius:14px;
+  box-shadow:0 26px 70px rgba(0,0,0,.65),0 0 0 1px rgba(223,187,107,.55);
+}
+html[lang="ar"] #a-story .a-story__montage .a-story__portrait-panel img {
+  width:100%;
+  aspect-ratio:674/824;
+  height:auto;
+  display:block;
+  object-fit:cover;
+  object-position:center;
+  border:0;
+  border-radius:8px;
+  box-shadow:none;
+}
+html[lang="ar"] #a-story .a-story__portrait-tag {
+  position:absolute;
+  bottom:14px;
+  inset-inline-end:11px;
+  background:rgba(6,28,14,.88);
+  color:#e9d6a9;
+  border:1px solid rgba(210,180,113,.44);
+  border-radius:50px;
+  padding:6px 12px;
+  font-size:clamp(.68rem,.85vw,.77rem);
+  line-height:1.35;
+  font-weight:650;
+  letter-spacing:0;
+  pointer-events:none;
+}
+html[lang="ar"] #a-story .a-story__montage figcaption {
+  display:block;
+  margin:24px 4px 0;
+  font-size:clamp(.72rem,.9vw,.83rem);
+  line-height:1.85;
+  text-align:start;
+  direction:rtl;
+  color:#b5c4b3;
+  max-width:unset;
+}
+html[lang="ar"] #a-story .a-story__montage figcaption::before {
+  content:"";
+  display:inline-block;
+  vertical-align:middle;
+  width:19px;
+  height:1px;
+  background:#d1b273;
+  margin-inline-end:8px;
+}
+@media(min-width:1200px){
+ html[lang="ar"] #a-story .a-story__inner {grid-template-columns:minmax(0,1.14fr) minmax(0,1fr);align-items:center}
+}
+@media(max-width:1024px){
+ html[lang="ar"] #a-story .a-story__inner{grid-template-columns:1fr}
+ html[lang="ar"] #a-story .a-story__montage {max-width:720px;margin-inline:auto}
+ html[lang="ar"] #a-story .a-story__portrait-panel{width:47%;margin-inline-end:5%}
+}
+@media(max-width:520px){
+ html[lang="ar"] #a-story .a-story__montage{padding:0}
+ html[lang="ar"] #a-story .a-story__montage::before{inset:10px -7px 52px;border-radius:16px}
+ html[lang="ar"] #a-story .a-story__montage .a-story__team-panel img{border-radius:12px}
+ html[lang="ar"] #a-story .a-story__portrait-panel{
+   width:59%;
+   max-width:65%;
+   margin-top:-20px;
+   margin-inline-end:6%;
+   border-width:3px;
+   transform:rotate(-.8deg);
+ }
+ html[lang="ar"] #a-story .a-story__portrait-tag {bottom:8px;inset-inline-end:7px;font-size:.67rem}
+ html[lang="ar"] #a-story .a-story__montage figcaption {margin-top:18px}
+}
+@media(prefers-reduced-motion:reduce){
+ html[lang="ar"] #a-story .a-story__portrait-panel {transform:none!important}
+}
+/* Daylight source, cinematic site: subdued sky only, not the team or flags. */
+html[lang="ar"] #a-story .a-story__team-panel::after {
+  content:"";position:absolute;inset:0;z-index:2;pointer-events:none;
+  border-radius:14px;
+  background:linear-gradient(180deg,rgba(4,19,13,.31) 0%,rgba(4,19,13,.1) 30%,transparent 53%);
+}

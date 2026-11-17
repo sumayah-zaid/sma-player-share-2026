@@ -1,0 +1,55 @@
+/* SMA PLAYER — authentic team photograph in the story chapter.
+   2026-11-11 editorial direction: team narrative deserves a team portrait.
+   Original client-provided image #169, non-generative light/tone adjustments only.
+   English page remains untouched until the Arabic source is approved. */
+html[lang="ar"] #a-story .a-story__inner{
+  grid-template-columns:minmax(0,1.14fr) minmax(0,1fr);
+  gap:clamp(30px,5vw,74px);
+  align-items:center;
+}
+html[lang="ar"] #a-story .a-story__shot{
+  min-width:0;
+  margin:0;
+  position:relative;
+  isolation:isolate;
+}
+html[lang="ar"] #a-story .a-story__shot::before{
+  content:"";position:absolute;inset:-27px -25px 40px -25px;
+  border:1px solid rgba(212,183,114,.22);
+  border-radius:21px;
+  pointer-events:none;z-index:-1;
+}
+html[lang="ar"] #a-story .a-story__shot img{
+  display:block;width:100%;height:auto;
+  aspect-ratio:16/9;
+  object-fit:cover;object-position:center center;
+  border-radius:17px;
+  border:1px solid rgba(213,187,128,.36);
+  box-shadow:0 23px 66px rgba(0,0,0,.4);
+}
+html[lang="ar"] #a-story .a-story__shot figcaption{
+  text-align:start;
+  margin:16px 3px 0;
+  font-size:clamp(.73rem,.9vw,.88rem);
+  line-height:1.75;
+  color:#bbc9b9;
+  letter-spacing:0;
+  direction:rtl;
+}
+html[lang="ar"] #a-story .a-story__shot figcaption::before{
+  content:"";display:inline-block;vertical-align:middle;
+  width:16px;height:1px;background:#d5b780;margin-inline-end:8px;
+}
+html[lang="ar"] #a-story .a-story__txt{min-width:0}
+@media(max-width:1024px){
+  html[lang="ar"] #a-story .a-story__inner{grid-template-columns:1fr}
+  html[lang="ar"] #a-story .a-story__shot{width:100%}
+  html[lang="ar"] #a-story .a-story__shot img{aspect-ratio:16/9;object-position:center}
+}
+@media(max-width:650px){
+  html[lang="ar"] #a-story .a-story__shot::before{inset:-9px -9px 25px -9px;border-radius:16px}
+  html[lang="ar"] #a-story .a-story__shot img{border-radius:13px}
+}
+@media(prefers-reduced-motion: reduce){
+  html[lang="ar"] #a-story .a-story__shot img{transition:none!important}
+}

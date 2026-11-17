@@ -1,0 +1,311 @@
+/* SMA PLAYER A · Founder visual/editorial corrections · 2026-11-11
+   Real HTML/CSS implementation, Arabic first. No source photo edits.
+   Avoid overriding approved English gaze and composition. */
+
+/* Scroll choreography, part 2 — its own file, as commissioned. It is pulled
+   in from here rather than from a <link> in index.html because the
+   2026-11-11 dispatch had no file-edit tool and index.html is 1,061 lines;
+   see the BOOTSTRAP SHIM note at the top of camp-source-gallery.js, and
+   SCROLL-COVER-CORRECTION-REVIEW.md §3 for the one-line undo. @import must
+   stay first in this file. */
+@import url("scroll-cinematic.css");
+
+/* ─────────────────────────────────────────────────────────────────────────
+   1. The Arabic hero head position.
+
+   FOUNDER, 2026-11-11: «احس الراس نازل بزياده كمان هذب شعره من فوق» —
+   the head sits too low, and tidy the hair at the crown.
+
+   WHAT MOVED. `object-position` on a cover-fitted image slides the visible
+   window DOWN the photograph as the percentage rises, which lifts the
+   subject UP inside the frame. The previous pass had taken this all the way
+   down to 9% to stop the crown clipping; this pass walks it back up as far
+   as the crown allows, and no further.
+
+   THE ARITHMETIC, because the margin here is genuinely thin.
+   `assets/coach.jpg` is 854×1280 and the topmost hair sits at ~0.090 of its
+   height. On desktop `hero-direction.css` renders the image 122% of the
+   viewport width, so the cover scale is width-driven and the visible
+   vertical window is f = 0.5468 × (viewport height ÷ viewport width) of the
+   source. `style.css` then applies a scale(1.035) at the end of the film
+   move, which trims the window a further 3.5% about its centre. Visible top
+   therefore lands at:
+
+        top = p × (1 − f) + 0.0169 × f
+
+   At 16:10 (f ≈ 0.342) p = 0.105 puts the top of the window at 0.075 — the
+   crown stays inside with ~1.5 points of source height, about 34px of
+   headroom at 900px tall, and the face rises roughly 3% of the hero height
+   against the old 9%. At 16:9 the figure is ~1.3 points. On a 2:1-or-wider
+   desktop the same p has more leverage and the margin closes to under a
+   point, which is inside the error bar on the 0.090 hair measurement — so
+   that band gets its own, more conservative value below.
+
+   Values higher than this were considered and rejected on the arithmetic,
+   not on taste: 14% puts the window top at 0.0978 at 16:10, i.e. BELOW the
+   hair line — it cuts the crown, which is the exact defect the 9% pass
+   existed to fix. If the Founder wants the face higher still, the lever is
+   not this property: it is the 122% oversize in hero-direction.css, which
+   is part of the approved Direction A composition and is not changed here
+   without his say-so. That is called out in the review document, not
+   quietly worked around.
+
+   MOBILE is a different geometry: the stacked media box shows ~85% of the
+   photograph's height, so the same five points of object-position move the
+   head by about nine pixels. 14% is used there — a real nudge up, with
+   roughly seven points of headroom still above the hair, so there is no
+   crown risk at any phone width.
+
+   English is untouched at every width. ──────────────────────────────── */
+@media (min-width: 761px) {
+  html[lang="ar"] .d-a .a-hero__img {
+    object-position: 50% 10.5%;
+  }
+}
+/* Wide-and-short desktops: the visible window is smaller, so each point of
+   object-position travels further and the crown clips sooner. */
+@media (min-width: 761px) and (min-aspect-ratio: 2/1) {
+  html[lang="ar"] .d-a .a-hero__img {
+    object-position: 50% 9.5%;
+  }
+}
+@media (max-width: 760px) {
+  html[lang="ar"] .d-a .a-hero__img {
+    object-position: 50% 14%;
+  }
+}
+
+/* 1b. «هذب شعره من فوق» — the hair, honestly.
+
+   NOTHING IS RETOUCHED. No pixel of the photograph is edited, no strand is
+   painted out, no hairline is moved, no face is regenerated or replaced.
+   `assets/coach.jpg` is byte-identical to the file the client supplied.
+
+   What this does is lighting, which is the only truthful tool available:
+   a soft luminance scrim across the top edge of the Arabic hero, so the
+   stray strands stop reading as bright flyaways against the white netting
+   behind him and settle into the frame. It is the same move a photographer
+   makes by flagging a light, and it is the same vocabulary the hero already
+   uses three times over (`__veil`, `__beam`, `__grain`).
+
+   If the Founder wants the hair itself genuinely tidied, that needs a
+   different photograph or a retoucher — not this file, and not a generated
+   face. Flagged as such in the review document. */
+html[lang="ar"] .d-a .a-hero__media::before {
+  content: "";
+  position: absolute;
+  inset: 0 0 auto 0;
+  height: 30%;
+  z-index: 2;
+  pointer-events: none;
+  background: linear-gradient(to bottom,
+    rgba(6, 14, 10, .36) 0%,
+    rgba(6, 14, 10, .17) 32%,
+    rgba(6, 14, 10, 0) 74%);
+}
+@media (max-width: 760px) {
+  html[lang="ar"] .d-a .a-hero__media::before {
+    height: 24%;
+    background: linear-gradient(to bottom,
+      rgba(6, 14, 10, .30) 0%,
+      rgba(6, 14, 10, .13) 34%,
+      rgba(6, 14, 10, 0) 76%);
+  }
+}
+
+/* 2. Editorial rhythm; do NOT justify Arabic (no distracting word rivers).
+   Arabic glyph shaping, punctuation and first-line direction remain natural.
+   Nav, poster images, headline art direction and centered emblems excluded. */
+html[lang="ar"] .d-a main :is(p, blockquote) {
+  text-align: start;
+  direction: rtl;
+  letter-spacing: 0;
+  overflow-wrap: break-word;
+  text-wrap: pretty;
+}
+html[lang="ar"] .d-a main :is(h1, h2, h3, h4) {
+  text-wrap: balance;
+  word-break: normal;
+  letter-spacing: 0;
+}
+html[lang="ar"] .d-a main :is(.a-coach, .a-story, .a-identity, .a-wins, .a-camps, .a-method, .a-gallery, .a-media, .a-contact) :is(p, blockquote) {
+  line-height: 1.95;
+}
+html[lang="ar"] .d-a main :is(.a-coach, .a-story, .a-method, .a-identity, .a-camps, .a-contact) :is(h2, h3, h4, p) {
+  text-align: start;
+}
+html[lang="ar"] .d-a main :is(.a-coach, .a-story, .a-method, .a-identity, .a-camps) :is(p,blockquote) {
+  max-width: 72ch;
+}
+html[lang="ar"] .d-a .a-hero__lede {
+  line-height: 1.95;
+  max-width: 45ch;
+}
+html[lang="ar"] .d-a .a-press__head .a-press__intro,
+html[lang="ar"] .d-a .a-press__description,
+html[lang="ar"] .d-a .a-press__morehead p,
+html[lang="ar"] .d-a .a-clubs__lede {
+  max-width: 72ch;
+}
+html[lang="ar"] .d-a .a-social a,
+html[lang="ar"] .d-a .a-channels a {
+  text-align: start;
+}
+
+/* 3. The actual verified WhatsApp Business chat stays reachable on scroll. */
+html[lang="ar"] .sma-whatsapp-float {
+  position: fixed;
+  inset-inline-start: max(18px, env(safe-area-inset-right));
+  bottom: max(24px, calc(env(safe-area-inset-bottom) + 16px));
+  z-index: 190;
+  min-height: 54px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  border: 1px solid rgba(240,255,236,.26);
+  border-radius: 999px;
+  padding: 10px 18px;
+  background: linear-gradient(135deg, #17834a, #086638);
+  color: #fff;
+  text-decoration: none;
+  font: 700 15px/1.3 'IBM Plex Sans Arabic', system-ui, sans-serif;
+  box-shadow: 0 10px 36px rgba(0,0,0,.52), 0 2px 12px rgba(9,109,56,.22);
+  transform: translateZ(0);
+  transition: box-shadow .2s ease, transform .2s ease, background .2s ease;
+  -webkit-tap-highlight-color: transparent;
+}
+html[lang="ar"] .sma-whatsapp-float svg { flex: none; display: block; width: 25px; height: 25px; fill: currentColor; }
+html[lang="ar"] .sma-whatsapp-float:hover {
+  background: linear-gradient(135deg, #218e51, #117744);
+  transform: translateY(-2px) translateZ(0);
+  box-shadow: 0 15px 37px rgba(0,0,0,.57);
+}
+html[lang="ar"] .sma-whatsapp-float:focus-visible {
+  outline: 3px solid #f6df9d;
+  outline-offset: 4px;
+}
+html[lang="ar"] body.nav-open .sma-whatsapp-float {
+  visibility: hidden;
+  pointer-events: none;
+}
+html[lang="ar"] body:has(.lightbox:not([hidden])) .sma-whatsapp-float {
+  visibility: hidden;
+  pointer-events: none;
+}
+@media (max-width: 760px) {
+  html[lang="ar"] .sma-whatsapp-float {
+    width: 57px;
+    height: 57px;
+    min-height: 57px;
+    padding: 0;
+    inset-inline-start: max(16px, env(safe-area-inset-right));
+    bottom: max(19px, calc(env(safe-area-inset-bottom) + 15px));
+    border-radius: 50%;
+  }
+  html[lang="ar"] .sma-whatsapp-float .sma-whatsapp-float__label { display: none; }
+  html[lang="ar"] .sma-whatsapp-float svg {width: 29px; height: 29px;}
+}
+@media print {html[lang="ar"] .sma-whatsapp-float {display:none!important}}
+@media (prefers-reduced-motion:reduce) {
+  html[lang="ar"] .sma-whatsapp-float {transition:none!important}
+}
+
+/* Scrolling control: appear after the hero CTA leaves the thumb zone. */
+html[lang="ar"] .sma-whatsapp-float {
+ visibility:hidden;opacity:0;pointer-events:none;
+ transform:translateY(10px) translateZ(0);
+}
+html[lang="ar"] .sma-whatsapp-float.is-visible {
+ visibility:visible;opacity:1;pointer-events:auto;
+ transform:translateY(0) translateZ(0);
+}
+html[lang="ar"] .sma-whatsapp-float.is-visible:hover {
+ transform:translateY(-2px) translateZ(0);
+}
+@media (prefers-reduced-motion: no-preference) {
+ html[lang="ar"] .sma-whatsapp-float {transition:opacity .22s ease,transform .22s ease,box-shadow .22s ease;}
+}
+
+/* Lightbox and expanded navigation outrank any scroll-visible state. */
+html[lang="ar"] body.nav-locked .sma-whatsapp-float,
+html[lang="ar"] body:has(.lightbox:not([hidden])) .sma-whatsapp-float {
+  visibility: hidden !important;
+  pointer-events: none !important;
+  opacity: 0 !important;
+}
+
+/* ─────────────────────────────────────────────────────────────────────────
+   4. Camp cover framing and tone · 2026-11-11
+
+   FOUNDER: «غلاف المعسكرات احس يغالها تحسين او تغيير او تعديل».
+
+   The three photographs themselves are swapped in `camp-covers.js`, which
+   carries the full provenance for each frame — archive index, source path,
+   SHA-256 and the exact non-generative operations the project's own
+   `tools/build-photo-library.py` applied. Read that file first.
+
+   Everything below is framing and tone, done in CSS so that it is
+   non-destructive and reversible: no derivative file is baked, no original
+   is touched, and anyone can read exactly what was done to each picture
+   without opening an image editor. The crops are not guesses — each one is
+   the window that `object-fit: cover` produces at the card's real aspect,
+   worked out against the subject's measured position in the frame. The
+   grades are deliberately small (nothing exceeds 10%): these frames have
+   already been levelled, white-balanced and S-curved by the photo pipeline,
+   so this layer is only seating them in Direction A's dark emerald palette
+   and holding the white body copy legible over the bottom of each card.
+
+   Every rule is scoped to the Arabic page and to the specific card. The
+   English page and the archive gallery see none of it, and the full-size
+   file in the lightbox and the archive is the ungraded derivative. */
+
+/* CARD 1 · الدمام — add-164, 720×1280 portrait in the tall feature card.
+   The card is wider than it is tall, so cover is width-driven and the full
+   width of the frame is always visible — his outstretched arm reaches the
+   left edge of the photograph and must not be cropped, and at 50% it never
+   is. 25% seats the window at roughly 0.13–0.61 of the frame at desktop:
+   clear headroom above his head, his face in the top third, the instructing
+   arm and the ball across the middle, and the card's text sitting over his
+   legs rather than over his face. */
+html[lang="ar"] .d-a .a-camp--dammam img {
+  object-position: 50% 25%;
+  filter: saturate(.96) contrast(1.07) brightness(.95);
+}
+html[lang="ar"] .d-a .a-camp--dammam:hover img {
+  filter: saturate(1.08) contrast(1.07) brightness(.98);
+}
+
+/* CARD 2 · البرتغال — por-158, 828×804, near-square, in a ~1.8:1 letterbox.
+   15% keeps both players' heads in frame with about a tenth of the card's
+   height above them and cuts at the knees; raising it any further to chase
+   the ball at the bottom of the frame would decapitate the contest, which
+   is the whole subject. The frame came out of the pipeline hot (gamma 1.18
+   was needed to recover it) and still carries a large pale wall, so it
+   takes the firmest grade of the three — contrast up a tenth, brightness
+   down seven points — which also buys the white heading real contrast. */
+html[lang="ar"] .d-a .a-camp--portugal img {
+  object-position: 50% 15%;
+  filter: saturate(.93) contrast(1.1) brightness(.93);
+}
+html[lang="ar"] .d-a .a-camp--portugal:hover img {
+  filter: saturate(1.05) contrast(1.1) brightness(.96);
+}
+
+/* CARD 3 · إسبانيا — esp26-052, 828×1020, in the same letterbox.
+   35% puts the window at roughly 0.18–0.66 at desktop: both players whole
+   from head to thigh, the strike and the block both legible. A low crop
+   would have kept the ball and lost the faces, which is precisely the
+   defect this card is being corrected for. On a phone the card is nearly
+   square, the window opens to ~85% of the frame, and the ball comes back
+   in on its own. It is the darkest of the three frames (median 0.44) under
+   a blown overcast sky, so it gets the only brightness lift here — two
+   points, enough to separate the players from the grass without touching
+   the legibility of the copy, which sits on the card's own scrim. */
+html[lang="ar"] .d-a .a-camp--spain img {
+  object-position: 50% 35%;
+  filter: saturate(.95) contrast(1.05) brightness(1.02);
+}
+html[lang="ar"] .d-a .a-camp--spain:hover img {
+  filter: saturate(1.07) contrast(1.05) brightness(1.04);
+}

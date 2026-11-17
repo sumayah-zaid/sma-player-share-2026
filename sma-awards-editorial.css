@@ -1,0 +1,26 @@
+
+/* SMA award editorial system: shared geometry, premium green/gold. */
+.sma-premium-achievements .sma-featured-trophy{display:grid;grid-template-columns:1.12fr 1fr;overflow:hidden;border-radius:22px;border:1px solid rgba(216,185,117,.27);background:linear-gradient(130deg,#133c29,#081d15);margin-bottom:clamp(30px,5vw,65px)}
+.sma-premium-achievements .sma-featured-trophy__visual{min-height:300px;position:relative;overflow:hidden}
+.sma-premium-achievements .sma-featured-trophy__visual img{width:100%;height:100%;position:absolute;inset:0;object-fit:cover}
+.sma-premium-achievements .sma-featured-trophy__copy{display:flex;flex-direction:column;justify-content:center;padding:clamp(25px,4vw,64px)}
+.sma-premium-achievements .sma-award-kicker,.sma-premium-achievements .sma-award-section-heading span{color:#e2c58b;font-size:13px;letter-spacing:.02em;font-weight:750}
+.sma-premium-achievements .sma-featured-trophy__copy h3{color:white;font-size:clamp(30px,3.5vw,47px);line-height:1.3;margin:12px 0}
+.sma-premium-achievements .sma-featured-trophy__copy p{color:#d9e4dd;line-height:1.9}
+.sma-premium-achievements .sma-award-section-heading{display:flex;align-items:end;justify-content:space-between;gap:20px;margin:0 0 22px}
+.sma-premium-achievements .sma-award-section-heading h3{margin:8px 0 0;font-size:clamp(24px,3vw,35px);color:#fff}
+.sma-premium-achievements .sma-award-section-heading p{color:#c8d6cc;margin:0}
+.sma-premium-achievements .sma-award-grid--individual{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px;align-items:stretch}
+.sma-premium-achievements .sma-award--individual{position:relative;overflow:hidden;border:1px solid rgba(224,195,133,.22);border-radius:17px;background:linear-gradient(160deg,#153d2a,#071911);transition:transform .25s,border-color .25s}
+.sma-premium-achievements .sma-award--individual:hover{transform:translateY(-5px);border-color:rgba(234,199,123,.65)}
+.sma-premium-achievements .sma-award-photo{height:clamp(265px,30vw,390px);position:relative;overflow:hidden;background:radial-gradient(circle at 50% 25%,#33654e,#0a2118 73%)}
+.sma-premium-achievements .sma-award-photo:after{content:"";position:absolute;inset:0;pointer-events:none;background:linear-gradient(to top,rgba(5,20,13,.72),transparent 50%)}
+.sma-premium-achievements .sma-award-photo>img{display:block;width:100%;height:100%;object-fit:cover;object-position:center 32%;transition:transform .4s}
+.sma-premium-achievements .sma-award--individual:hover .sma-award-photo>img{transform:scale(1.04)}
+.sma-premium-achievements .sma-award-photo__number{position:absolute;z-index:2;top:18px;right:18px;font-size:12px;letter-spacing:2px;color:#f5deac;border:1px solid rgba(245,222,172,.6);background:rgba(5,22,15,.65);padding:7px 11px;border-radius:8px}
+.sma-premium-achievements .sma-award-info{padding:22px 23px 25px;min-height:157px}
+.sma-premium-achievements .sma-award-info__title{font-size:14px;font-weight:800;color:#edce8a}
+.sma-premium-achievements .sma-award-info h3{margin:9px 0 4px;color:#fff;font-size:clamp(21px,2vw,28px);line-height:1.35}
+.sma-premium-achievements .sma-award-info p{font-size:13px;line-height:1.8;color:#c4d2c9;margin:0}
+@media(max-width:850px){.sma-premium-achievements .sma-award-grid--individual{gap:12px}.sma-premium-achievements .sma-award-info{padding:18px}.sma-premium-achievements .sma-award-photo{height:285px}}
+@media(max-width:650px){.sma-premium-achievements .sma-featured-trophy{grid-template-columns:1fr}.sma-premium-achievements .sma-featured-trophy__visual{min-height:225px}.sma-premium-achievements .sma-award-section-heading{display:block}.sma-premium-achievements .sma-award-section-heading p{margin-top:8px}.sma-premium-achievements .sma-award-grid--individual{grid-template-columns:1fr;gap:20px}.sma-premium-achievements .sma-award-photo{height:390px}.sma-premium-achievements .sma-award-info{min-height:unset;padding:22px}}

@@ -1,0 +1,209 @@
+/* SMA PLAYER · PREMIUM CONTACT + KAMAYA FOOTER
+   Client direction 2026-11-11 · Arabic review. Inspired by the separate contact
+   conversion block and restrained design credit common in premium sports sites;
+   original design, original SMA and KAMAYA marks, no copied assets. */
+html[lang="ar"] .d-a .a-contact--editorial{
+  position:relative;isolation:isolate;overflow:hidden;
+  padding:clamp(78px,9vw,140px) clamp(19px,4vw,56px) clamp(76px,8.4vw,132px);
+  background:linear-gradient(125deg,#07140d,#0c2719 51%,#06130d);
+  border-top:1px solid rgba(201,168,106,.24);
+}
+html[lang="ar"] .d-a .a-contact--editorial:before{
+  content:"";position:absolute;inset:0;pointer-events:none;z-index:-1;
+  background:radial-gradient(ellipse 46% 78% at 83% 34%,rgba(48,126,74,.19),transparent 75%),
+  radial-gradient(ellipse 38% 44% at 6% 100%,rgba(201,168,106,.095),transparent 85%);
+}
+html[lang="ar"] .d-a .a-contact--editorial:after{
+  content:"S";position:absolute;right:-9vw;top:-11vw;z-index:-1;direction:ltr;
+  font:900 clamp(380px,48vw,860px)/.9 system-ui,sans-serif;opacity:.035;pointer-events:none;
+}
+html[lang="ar"] .d-a .a-contact--editorial .a-contact__inner{
+  max-width:1250px;padding:0;margin-inline:auto;display:grid;direction:rtl;
+  grid-template-columns:minmax(0,.88fr) minmax(0,1.12fr);
+  align-items:center;gap:clamp(34px,6vw,100px);
+}
+html[lang="ar"] .a-contact--editorial .a-contact__txt{position:relative;padding-block:20px}
+html[lang="ar"] .a-contact--editorial .a-contact__eyebrow{
+  display:inline-flex;align-items:center;gap:13px;color:#d9bc7c;font-size:.77rem;margin:0 0 17px;
+}
+html[lang="ar"] .a-contact--editorial .a-contact__eyebrow:before{content:"";height:1px;width:24px;background:#d9bc7c}
+html[lang="ar"] .a-contact--editorial #a-contact-title{
+  font-size:clamp(2.5rem,4.45vw,5.2rem);line-height:1.4;font-weight:790;
+  letter-spacing:-.047em;margin:0 0 24px;color:#f7f4eb;max-width:12ch;
+}
+html[lang="ar"] .a-contact--editorial #a-contact-title em{
+  font-style:normal;font-weight:740;color:#b7e0b7;
+}
+html[lang="ar"] .a-contact--editorial .a-contact__lede{
+  max-width:52ch;line-height:2.17;color:#c7d8c9;font-size:clamp(.93rem,1.1vw,1.075rem);margin:0;
+}
+html[lang="ar"] .a-contact__direct{margin-top:clamp(33px,5vw,59px)}
+html[lang="ar"] .a-contact__wa{
+  width:fit-content;max-width:100%;display:inline-flex;align-items:center;gap:11px;
+  color:#fff;background:linear-gradient(120deg,#26894b,#176a3d);text-decoration:none;
+  border:1px solid rgba(161,218,175,.43);border-radius:100px;padding:15px 22px;
+  font-weight:700;line-height:1.5;font-size:.88rem;
+  box-shadow:0 15px 28px rgba(0,0,0,.13);transition:transform .2s,border-color .2s;
+}
+html[lang="ar"] .a-contact__wa:hover{transform:translateY(-3px);border-color:#e1ce9d}
+html[lang="ar"] .a-contact__wa svg{width:23px;height:23px;flex:none}
+html[lang="ar"] .a-contact__direct>p{font-size:.71rem;line-height:1.7;color:#a4b8ab;margin:13px 4px 0}
+html[lang="ar"] .a-contact__line{width:72px;height:2px;background:linear-gradient(90deg,#d4b77a,transparent);margin:clamp(41px,5vw,72px) 0 19px}
+html[lang="ar"] .a-contact__aside{font-family:'El Messiri','Alexandria',sans-serif;font-size:clamp(1rem,1.5vw,1.4rem);color:#ebdbb9!important;line-height:1.8;margin:0}
+html[lang="ar"] .a-contact__form{
+  background:linear-gradient(143deg,#f6f3e9,#eaeadd);border:1px solid rgba(255,255,255,.77);
+  border-radius:22px;color:#173224;box-shadow:0 32px 70px rgba(0,0,0,.25);
+  padding:clamp(23px,3.4vw,49px);position:relative;overflow:hidden;
+}
+html[lang="ar"] .a-contact__form:before{
+  content:"";position:absolute;top:0;left:0;right:0;height:4px;
+  background:linear-gradient(90deg,#245f3c 0%,#d5ba81 50%,#245f3c 100%);
+}
+html[lang="ar"] .a-contact__form-head span{font-size:.7rem;font-weight:760;letter-spacing:.01em;color:#476e4e}
+html[lang="ar"] .a-contact__form-head h3{
+  font-size:clamp(1.55rem,2.05vw,2.25rem);line-height:1.4;margin:10px 0 8px;color:#153923;font-weight:760;
+}
+html[lang="ar"] .a-contact__form-head p{font-size:.82rem;color:#526c5a;line-height:1.8;margin:0 0 24px}
+html[lang="ar"] .a-contact__fields{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));column-gap:15px;row-gap:18px}
+html[lang="ar"] .a-contact__fields>label{min-width:0;display:flex;flex-direction:column;gap:9px;font-size:.79rem;font-weight:690;color:#25402e;line-height:1.6}
+html[lang="ar"] .a-contact__fields label small{display:inline;color:#82917f;font-weight:430;font-size:.68rem}
+html[lang="ar"] .a-contact__req{color:#b67d31;display:inline}
+html[lang="ar"] .a-contact__fields input,
+html[lang="ar"] .a-contact__fields select,
+html[lang="ar"] .a-contact__fields textarea{
+  appearance:none;display:block;width:100%;border:1px solid #c6d0be;border-radius:9px;
+  outline:0;background:rgba(255,255,255,.72);color:#163824;
+  padding:12px 14px;min-height:52px;line-height:1.7;font-family:'Alexandria',system-ui,sans-serif;
+  font-weight:480;font-size:.82rem;transition:border-color .15s,box-shadow .15s;
+}
+html[lang="ar"] .a-contact__fields :is(input,select,textarea):focus{border-color:#397d51;box-shadow:0 0 0 3px rgba(43,120,71,.12)}
+html[lang="ar"] .a-contact__fields :is(input,textarea)::placeholder{color:#8f9c8d}
+html[lang="ar"] .a-contact__fields :is(input,select,textarea)[aria-invalid="true"]{border-color:#b85143}
+html[lang="ar"] .a-contact__fields .a-contact__message{grid-column:1/-1}
+html[lang="ar"] .a-contact__message textarea{min-height:124px;resize:vertical}
+html[lang="ar"] .a-contact__send-row{margin-top:21px;display:flex;flex-direction:column;align-items:stretch;gap:10px}
+html[lang="ar"] .a-contact__submit{
+  display:flex;align-items:center;justify-content:space-between;gap:14px;
+  background:#184f30;color:#fff;cursor:pointer;border:1px solid #184f30;
+  border-radius:10px;padding:15px 20px;line-height:1.6;font-weight:760;font-size:.93rem;
+  transition:transform .2s,background .2s;
+}
+html[lang="ar"] .a-contact__submit:hover:not(:disabled){transform:translateY(-2px);background:#256e45}
+html[lang="ar"] .a-contact__submit:disabled{opacity:.68;cursor:wait}
+html[lang="ar"] .a-contact__submit-icon{border:1px solid rgba(255,255,255,.4);display:flex;width:33px;height:33px;justify-content:center;align-items:center;border-radius:100%;font:600 1rem system-ui}
+html[lang="ar"] .a-contact__send-note{font-size:.69rem;color:#6d8271;line-height:1.8;margin:0}
+html[lang="ar"] .a-contact__result{display:block;font-size:.76rem;line-height:1.9;font-weight:620;color:#2f6a42;margin-top:9px;min-height:0}
+html[lang="ar"] .a-contact__result[data-state="err"]{color:#a14737}
+html[lang="ar"] .a-contact__manual{margin-top:11px;padding:15px;border:1px solid #bfceba;border-radius:12px;background:#e8eee4}
+html[lang="ar"] .a-contact__manual[hidden]{display:none}
+html[lang="ar"] .a-contact__manual label{display:block;color:#264a34;font-size:.75rem;margin-bottom:9px}
+html[lang="ar"] .a-contact__manual textarea{width:100%;border-radius:7px;border:1px solid #b9c9b5;background:#fff;padding:10px;font-size:.75rem;line-height:1.7;color:#193727;resize:vertical}
+html[lang="ar"] .a-contact__manual button{border:1px solid #5a9b6c;background:#206d43;color:#fff;border-radius:7px;padding:8px 15px;margin-top:9px;cursor:pointer}
+/* Footer: editorial CTA → a legible information hierarchy → tiny bespoke KAMAYA signature. */
+html[lang="ar"] .d-a .a-foot--editorial{background:#040e08;color:#f2f0e8;border-top:1px solid rgba(214,184,122,.29);position:relative;overflow:hidden}
+html[lang="ar"] .a-foot__wrap{max-width:1440px;padding-inline:clamp(19px,5vw,74px);margin:auto}
+html[lang="ar"] .a-foot__invitation{
+  position:relative;display:flex;align-items:center;justify-content:space-between;gap:34px;
+  padding:clamp(65px,8vw,115px) 0 clamp(53px,6vw,90px);border-bottom:1px solid rgba(206,185,139,.2);
+}
+html[lang="ar"] .a-foot__invitation:before{
+  content:"";position:absolute;z-index:0;inset:0 auto 0 14%;
+  width:50%;background:radial-gradient(ellipse,rgba(43,111,67,.14),transparent 73%);pointer-events:none;
+}
+html[lang="ar"] .a-foot__invite-copy{position:relative;z-index:1}
+html[lang="ar"] .a-foot__eyebrow{color:#bda971;font:600 .7rem/1.7 system-ui,sans-serif;letter-spacing:.07em}
+html[lang="ar"] .a-foot__invite-copy h2{font-size:clamp(2.65rem,5vw,5.8rem);line-height:1.34;letter-spacing:-.04em;margin:13px 0 14px;color:#faf6ec;font-weight:760}
+html[lang="ar"] .a-foot__invite-copy h2 em{font-style:normal;color:#97cba0}
+html[lang="ar"] .a-foot__invite-copy p{font-size:clamp(.83rem,1.05vw,1rem);line-height:1.9;color:#b3c1b4;max-width:61ch}
+html[lang="ar"] .a-foot__invite-action{
+  display:inline-flex;align-items:center;justify-content:space-between;gap:26px;
+  flex:0 0 auto;min-width:210px;max-width:100%;
+  background:#d9c08c;color:#173622;font-weight:750;text-decoration:none;
+  border:1px solid #e5d3a7;padding:17px 22px;border-radius:50px;
+  box-shadow:0 12px 28px rgba(0,0,0,.18);transition:transform .2s,background .2s;
+}
+html[lang="ar"] .a-foot__invite-action:hover{transform:translateY(-3px);background:#f1dda9}
+html[lang="ar"] .a-foot__body{
+  display:grid;grid-template-columns:minmax(0,1.5fr) minmax(150px,.5fr) minmax(0,.8fr);
+  align-items:start;gap:clamp(20px,4vw,70px);padding:clamp(40px,5vw,73px) 0 clamp(45px,5vw,70px);
+}
+html[lang="ar"] .a-foot__brand-block{display:flex;align-items:flex-start;gap:19px}
+html[lang="ar"] .a-foot__brand-block img{width:62px;height:79px;object-fit:contain;flex:none}
+html[lang="ar"] .a-foot__brand-block strong{font:750 1.2rem/1.4 system-ui,sans-serif;letter-spacing:.025em;display:block;color:#f9f5eb}
+html[lang="ar"] .a-foot__brand-block span{display:block;margin-top:5px;color:#d5bd88;font-size:.79rem}
+html[lang="ar"] .a-foot__brand-block p{font-size:.78rem;max-width:40ch;color:#93aa98;line-height:2;margin-top:13px}
+html[lang="ar"] .a-foot__col-title{display:block;font-size:.77rem;font-weight:700;color:#ddc28d;margin:0 0 18px}
+html[lang="ar"] .a-foot__nav{display:flex;flex-direction:column;gap:11px}
+html[lang="ar"] .a-foot__nav a{width:fit-content;color:#b9c9bb;font-size:.8rem;text-decoration:none;transition:color .15s}
+html[lang="ar"] .a-foot__nav a:hover{color:#f9dba0}
+html[lang="ar"] .a-foot__socials{display:flex;gap:8px;flex-wrap:wrap}
+html[lang="ar"] .a-foot__socials a{display:flex;align-items:center;justify-content:center;gap:6px;text-decoration:none;border:1px solid rgba(195,222,196,.23);border-radius:50px;min-height:43px;padding:9px 13px;color:#d9e5d6;font-size:.73rem;transition:background .2s,border-color .2s}
+html[lang="ar"] .a-foot__socials a:hover{border-color:#bcb187;background:#183524}
+html[lang="ar"] .a-foot__socials svg{width:18px;height:18px;flex:none}
+html[lang="ar"] .a-foot__wa-link{display:inline-flex;gap:10px;margin-top:19px;text-decoration:none;color:#d3c598;font-size:.76rem;line-height:1.8}
+html[lang="ar"] .a-foot__wa-link:hover{text-decoration:underline}
+html[lang="ar"] .a-foot__bottom{
+  padding:22px 0 30px;border-top:1px solid rgba(205,181,136,.2);
+  display:flex;align-items:center;justify-content:space-between;gap:26px;
+}
+html[lang="ar"] .a-foot__legal{display:flex;align-items:center;gap:12px;flex-wrap:wrap;color:#8d9f8d;font:500 .71rem/1.7 system-ui,sans-serif}
+html[lang="ar"] .a-foot__legal span+span:before{content:"·";padding-inline-end:11px;color:#897f65}
+html[lang="ar"] .a-foot__legal a{color:#b7c7b8;text-decoration:none;white-space:nowrap}
+html[lang="ar"] .a-foot__legal a:hover{color:#f4ddb0}
+html[lang="ar"] .a-foot__kamaya{display:flex;align-items:center;justify-content:flex-start;gap:14px;position:relative;flex:none;direction:rtl}
+html[lang="ar"] .a-foot__signature-caption{white-space:nowrap;font-size:.69rem;color:#9caa9b;line-height:1.6}
+html[lang="ar"] .a-foot__signature-mark{
+  position:relative;isolation:isolate;display:flex;align-items:center;
+  padding:11px 15px;border:1px solid rgba(194,176,138,.22);
+  border-radius:9px;background:linear-gradient(138deg,rgba(38,72,47,.22),rgba(19,33,25,.42));
+  box-shadow:inset 0 1px rgba(255,255,255,.04);overflow:hidden;
+  transition:border-color .25s,transform .25s;
+}
+html[lang="ar"] .a-foot__signature-mark:after{
+  content:"";position:absolute;inset:0;pointer-events:none;z-index:-1;
+  background:linear-gradient(112deg,transparent 20%,rgba(213,191,132,.08) 50%,transparent 80%);
+  transform:translateX(100%);transition:transform .65s;
+}
+html[lang="ar"] .a-foot__kamaya:hover .a-foot__signature-mark{border-color:rgba(212,187,123,.52);transform:translateY(-2px)}
+html[lang="ar"] .a-foot__kamaya:hover .a-foot__signature-mark:after{transform:translateX(-100%)}
+html[lang="ar"] .a-foot__signature-flare{height:5px;width:5px;border-radius:50%;background:#d5bd86;display:block;margin-inline-end:10px;box-shadow:0 0 11px rgba(213,189,134,.43)}
+html[lang="ar"] .a-foot__signature-mark img{display:block;width:120px;height:auto;aspect-ratio:634/162;object-fit:contain;opacity:.91}
+@media(max-width:1020px){
+  html[lang="ar"] .d-a .a-contact--editorial .a-contact__inner{grid-template-columns:1fr;gap:30px;max-width:690px}
+  html[lang="ar"] .a-contact--editorial .a-contact__txt{padding-block:0}
+  html[lang="ar"] .a-contact__line,html[lang="ar"] .a-contact__aside{display:none}
+  html[lang="ar"] .a-contact__direct{margin-top:22px}
+  html[lang="ar"] .a-foot__body{grid-template-columns:1.2fr .6fr;gap:40px}
+  html[lang="ar"] .a-foot__connect{grid-column:1/-1}
+}
+@media(max-width:690px){
+  html[lang="ar"] .d-a .a-contact--editorial{padding:68px 18px 75px}
+  html[lang="ar"] .a-contact--editorial #a-contact-title{font-size:clamp(2.55rem,10vw,3.8rem)}
+  html[lang="ar"] .a-contact__form{padding:22px 18px;border-radius:16px}
+  html[lang="ar"] .a-contact__fields{grid-template-columns:1fr;gap:14px}
+  html[lang="ar"] .a-contact__fields .a-contact__message{grid-column:auto}
+  html[lang="ar"] .a-contact__wa{font-size:.79rem;padding:13px 16px}
+  html[lang="ar"] .a-foot__invitation{flex-direction:column;align-items:flex-start;gap:22px;padding-block:64px 48px}
+  html[lang="ar"] .a-foot__invite-copy h2{font-size:clamp(2.55rem,10vw,3.7rem)}
+  html[lang="ar"] .a-foot__body{grid-template-columns:1fr 1fr;gap:33px 18px}
+  html[lang="ar"] .a-foot__brand-block{grid-column:1/-1}
+  html[lang="ar"] .a-foot__connect{grid-column:auto}
+  html[lang="ar"] .a-foot__bottom{align-items:flex-start;flex-direction:column-reverse;gap:20px}
+  html[lang="ar"] .a-foot__kamaya{justify-content:space-between;width:100%}
+}
+@media(max-width:400px){
+  html[lang="ar"] .a-foot__body{grid-template-columns:1fr;gap:27px}
+  html[lang="ar"] .a-foot__brand-block,html[lang="ar"] .a-foot__connect{grid-column:1}
+  html[lang="ar"] .a-foot__nav{display:grid;grid-template-columns:repeat(2,1fr)}
+  html[lang="ar"] .a-foot__col-title{grid-column:1/-1;margin-bottom:0}
+  html[lang="ar"] .a-foot__signature-caption{font-size:.63rem}
+  html[lang="ar"] .a-foot__signature-mark img{width:102px}
+  html[lang="ar"] .a-foot__signature-mark{padding:9px 11px}
+}
+@media(prefers-reduced-motion:reduce){
+  html[lang="ar"] :is(.a-contact__wa,.a-contact__submit,.a-foot__invite-action,.a-foot__signature-mark){transition:none!important;transform:none!important}
+}
+
+html[lang="ar"] .a-contact__fields .a-contact__field-caption{display:flex;flex-direction:row;align-items:center;flex-wrap:wrap;gap:7px;line-height:1.7;min-height:24px}
+html[lang="ar"] .a-contact__fields .a-contact__field-caption small{display:inline-flex;margin:0;font-size:.67rem;color:#718473}
+html[lang="ar"] .a-contact__fields .a-contact__field-caption em{font-style:normal;font-weight:700;color:#b47b31}

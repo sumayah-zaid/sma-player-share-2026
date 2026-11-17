@@ -1,0 +1,151 @@
+/* SMA PLAYER Direction A — founder-approved directional hero composition
+   2026-11-10. Language-specific positioning and luminance scrim put Saif's
+   face on the opposite side of the text from the copy.
+   Kept separate from the KAMAYA Claude Code bilingual base to avoid file races.
+
+   AMENDED 2026-11-10, founder correction FOUNDER-ENGLISH-FACE-ORIENTATION:
+   the Arabic hero is accepted and is byte-for-byte untouched below. The
+   English hero is corrected — the earlier revision moved Saif to the physical
+   right but left his head turned the same way, so in English he addressed the
+   empty right-hand edge and turned his back on the copy. The English image is
+   now horizontally mirrored, on a crop proven to exclude the uniform marks.
+   See ENGLISH-FACE-CORRECTION-REVIEW.md for the evidence, and for the
+   disclosure that the English desktop portrait is a MIRRORED rendering of the
+   authentic photograph, not an authentic-orientation photograph. The source
+   file assets/coach.jpg is unmodified. */
+
+/* ---- 1 · the accepted Arabic hero. Do not touch. ------------------- */
+@media (min-width: 761px) {
+  html[lang="ar"] .a-hero__img {
+    position: absolute;
+    max-width: none;
+    width: 122%;
+    height: 100%;
+    left: -22%;
+    right: auto;
+  }
+}
+@media (max-width: 760px) {
+  html[lang="ar"] .d-a .a-hero__img {
+    position: absolute;
+    max-width: none;
+    width: 116%;
+    height: 100%;
+    left: -16%;
+    right: auto;
+  }
+}
+
+/* ---- 2 · English mobile. Also deliberately unchanged. --------------- */
+/* Below 761px the hero stacks — photograph above, copy beneath — so there is
+   no left/right relationship between his gaze and the text to correct, and
+   nothing is gained by mirroring. There is a great deal to lose: at this crop
+   the adidas wordmark and the Moura Atletico Clube crest are both plainly
+   legible, and a flip would render both backwards. English mobile therefore
+   keeps the accepted, unmirrored portrait exactly as it is. */
+@media (max-width: 760px) {
+  html[lang="en"] .d-a .a-hero__img {
+    position: absolute;
+    max-width: none;
+    width: 116%;
+    height: 100%;
+    left: 0;
+    right: auto;
+  }
+}
+
+/* ---- 3 · English desktop: the corrected composition ----------------- */
+/* THE CROP IS THE SAFETY MECHANISM, and it is geometric, not eyeballed.
+   Measured off the source: the Moura Atletico crest begins at y 0.486 of the
+   source height and the adidas trefoil at 0.509. Nothing below 0.46 may ever
+   enter the frame, or the flip puts reversed lettering on the page.
+
+   With object-fit:cover on a box far wider than the 854x1280 source the scale
+   is width-governed, so the visible source band is 0.667 x heroHeight /
+   boxWidth deep. A percentage width cannot hold that steady — this hero is
+   content-tall, so its height drifts with viewport width and the band drifts
+   with it, which is how the marks walk into frame at laptop widths. Pinning
+   the box to aspect-ratio 37/25 against height:100% makes boxWidth track the
+   hero's own height, and the band collapses to a constant 0.45 of the source
+   at every size. object-position 1% then seats that band at 0.005-0.456:
+   clear above the 0.486 crest, and starting above the 0.085 crown so the
+   scalp is never cut. Verified at 761/900/1024/1280/1440/1680/1920 by
+   qa/english-face-correction/bandcheck.cjs. */
+@media (min-width: 761px) {
+  html[lang="en"] .a-hero__img {
+    position: absolute;
+    max-width: none;
+    width: auto;
+    height: 100%;
+    aspect-ratio: 37 / 25;
+    object-position: 50% 1%;
+    /* 761-1279: the hero is tall here, so the box is far wider than the
+       viewport and his head alone is most of the frame — "subject on the
+       right" is not physically available. Centre him instead. The mirror
+       still turns him toward the copy, which is the correction that matters. */
+    right: 50%;
+    left: auto;
+    transform: translateX(43.9%) scaleX(-1) scale(1.04);
+  }
+  html[lang="en"] .d-a .a-hero__media img {
+    animation-name: cinema-film-move-mirror-centred;
+  }
+
+  /* The left column. The block keeps its 640px so the name still sets as
+     "Saif / Al Namrah" over two lines; it is the lede that takes a real
+     measure, and that is what opens the air between the copy and his face. */
+  html[lang="en"] .a-hero__body { justify-self: start !important; }
+  html[lang="en"] .a-hero__lede { max-width: 32ch; }
+
+  /* Mirroring swaps the photograph's luminance across the frame: the bright
+     window side lands on the physical LEFT, under the copy, and the dark
+     jacket on the right — the opposite of what A's veil was cut for. These
+     stops put the weight back over the type and take the glare off the top
+     right. */
+  html[lang="en"] .a-hero__veil {
+    background:
+      linear-gradient(105deg,
+        rgba(7,16,11,.985) 6%,
+        rgba(7,16,11,.93) 34%,
+        rgba(7,16,11,.42) 64%,
+        rgba(7,16,11,.68) 100%),
+      linear-gradient(to top, #07100b 2%, rgba(7,16,11,0) 46%),
+      radial-gradient(85% 60% at 88% 0%, rgba(7,16,11,.6), transparent 70%),
+      radial-gradient(120% 90% at 15% 10%, rgba(42,137,80,.3), transparent 60%);
+  }
+  html[lang="en"] .a-hero__beam {
+    background:
+      conic-gradient(from 150deg at 30% 0%, rgba(55,168,99,.22), transparent 38%),
+      radial-gradient(60% 70% at 25% 15%, rgba(201,168,106,.2), transparent 70%);
+  }
+}
+
+@media (min-width: 1280px) {
+  html[lang="en"] .a-hero__img {
+    /* Wide enough for the real composition: subject right, copy left. His
+       mirrored head centres at 0.561 of the box, so a box 1.29x the hero width
+       seats his face near 72% with the box's left edge still flush at 0 — no
+       uncovered strip, and no seam against the #07100b page behind it. */
+    left: 0;
+    right: auto;
+    min-width: 129%;
+    transform: scaleX(-1) scale(1.04);
+  }
+  html[lang="en"] .d-a .a-hero__media img {
+    animation-name: cinema-film-move-mirror;
+  }
+}
+
+/* The hero's cinematic push-in is a transform animation, so it overrides any
+   static transform while it runs. The mirror has to live inside the keyframes
+   or the photograph un-flips the moment the animation starts. Under
+   prefers-reduced-motion style.css sets animation:none on this image and the
+   static transform above takes over, mirror included. */
+@keyframes cinema-film-move-mirror {
+  0%   { transform: scaleX(-1) scale(1.09) translateY(1.1%); }
+  100% { transform: scaleX(-1) scale(1.035) translateY(0); }
+}
+@keyframes cinema-film-move-mirror-centred {
+  0%   { transform: translateX(43.9%) scaleX(-1) scale(1.09) translateY(1.1%); }
+  100% { transform: translateX(43.9%) scaleX(-1) scale(1.035) translateY(0); }
+}

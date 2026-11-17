@@ -1,0 +1,144 @@
+/* ═══════════════════════════════════════════════════════════════════════
+   SMA PLAYER · Direction A (Emerald Cinema) — scroll choreography, part 2
+   KAMAYA Design · Senior Creative Director · 2026-11-11
+   Commission: projects/SMA-PLAYER/FOUNDER-SCROLL-ANIMATION-CAMP-COVERS-2026-11-11.md
+
+   ARABIC PAGE ONLY. This file is linked from `/index.html` and from nowhere
+   else; `/en/index.html` is untouched until Saif approves the Arabic.
+
+   WHAT THIS IS NOT
+   ----------------
+   It is not a second reveal system. `script.js` §3 already owns `.reveal`
+   (coach grid, Moura card/shot, THE THREE CAMP CARDS, method articles,
+   vision, offer list, leadership cards, wins list, channels) and §6 already
+   owns the chapter motion on `.a-coach__grid, .a-camps__grid,
+   .a-method__grid`, the scroll-progress bar, and the hero film move.
+   Nothing in this file touches any of those elements. It covers only the
+   four sections that were added after that choreography was written and
+   that therefore arrive completely still —
+
+     #a-identity (section head) · #a-clubs (head/count/toolbar)
+     #a-gallery (section head)  · #a-media (head, total, press cards)
+
+   — plus one new idea the page did not have at all: real photographic depth
+   on the three camp covers.
+
+   TWO RULES THIS FILE OBEYS
+   -------------------------
+   1. Nothing is hidden unless JavaScript is running. Every pre-state below
+      is scoped under `html.sc-on`, a class only `scroll-cinematic.js` adds.
+      With JS off, or if the script throws, the page renders exactly as it
+      does today — no invisible paragraphs, ever.
+   2. One arrival per section, then the element is left alone. No element
+      animates twice, nothing re-hides on scroll-up, and no transform is
+      left running when it is off screen.
+   ═══════════════════════════════════════════════════════════════════════ */
+
+
+/* ── 1 · Section arrival ────────────────────────────────────────────────
+   A 16px rise and a fade. Deliberately not a blur, not a scale, not a
+   clip-path wipe: this page already carries a film move, a push-in and a
+   chapter lift, and a fourth texture of motion would read as noise rather
+   than as direction. The curve is the same cubic-bezier(.19,1,.22,1) the
+   existing choreography uses, so the new sections feel like the same hand.
+   Opacity and translate only — no property here can move the layout. */
+html.sc-on .sc-rise {
+  opacity: 0;
+  transform: translate3d(0, 16px, 0);
+  transition:
+    opacity .60s cubic-bezier(.19, 1, .22, 1),
+    transform .78s cubic-bezier(.19, 1, .22, 1);
+  will-change: opacity, transform;
+}
+html.sc-on .sc-rise.sc-in {
+  opacity: 1;
+  transform: none;
+  will-change: auto;
+}
+
+/* Headlines carry a touch more travel than the small print under them;
+   that difference is what makes the stagger read as one gesture instead of
+   three separate fades. */
+html.sc-on .sc-rise.sc-rise--lead { transform: translate3d(0, 22px, 0); }
+html.sc-on .sc-rise.sc-rise--lead.sc-in { transform: none; }
+
+@media (max-width: 760px) {
+  /* Shorter travel on a short viewport: 16px of rise inside a 640px window
+     is a lurch, 10px is a settle. */
+  html.sc-on .sc-rise { transform: translate3d(0, 10px, 0); }
+  html.sc-on .sc-rise.sc-rise--lead { transform: translate3d(0, 14px, 0); }
+  html.sc-on .sc-rise.sc-in,
+  html.sc-on .sc-rise.sc-rise--lead.sc-in { transform: none; }
+}
+
+
+/* ── 2 · Camp cover depth ───────────────────────────────────────────────
+   The one genuinely new move. As a camp card crosses the viewport its
+   photograph drifts vertically against the card by at most ±10px (the
+   commission caps this at 12px), which gives the three covers a shallow
+   physical depth instead of three flat rectangles.
+
+   HOW IT STAYS OUT OF THE WAY OF THE EXISTING HOVER ZOOM
+   `style.css` animates `transform` on `.a-camp img` over .9s and uses it
+   for the hover `scale(1.04)`. Driving the parallax through `transform`
+   would therefore either fight that rule or inherit a .9s lag on every
+   frame. So the parallax is written to the INDEPENDENT `translate`
+   property instead. `translate` is composited with `transform`, is not
+   covered by the existing `transition: transform .9s`, and is applied with
+   no transition of its own — so it tracks the scroll exactly, and the hover
+   zoom keeps working untouched. Not one line of the hover rule is overridden.
+
+   THE BLEED IS LOAD-BEARING. `.a-camp img` is `inset:0; height:100%`, i.e.
+   the photograph exactly fills the card. Translating it by 10px without
+   compensation would expose a 10px strip of bare card. The 14px of bleed
+   top and bottom (28px of extra height) covers the full ±10px of travel
+   with 4px to spare at both ends. */
+.d-a .a-camp img {
+  top: -14px;
+  bottom: auto;
+  height: calc(100% + 28px);
+}
+html.sc-on .d-a .a-camp img { will-change: translate; }
+
+
+/* ── 3 · Reduced motion ─────────────────────────────────────────────────
+   Belt and braces. `scroll-cinematic.js` watches the media query live and
+   also reveals everything and clears every translate the moment it flips —
+   but the CSS alone is enough: if the script never runs, nothing was hidden
+   in the first place, and if it ran before the preference changed, these
+   rules win anyway.
+
+   `[data-sc-motion="off"]` is the QA hook. `tools/qa-scroll-cover.html`
+   loads the page with `?scmotion=off` so the reduced-motion path can be
+   proved in a browser that cannot be told to emulate the OS setting. It is
+   never set by the page itself. */
+@media (prefers-reduced-motion: reduce) {
+  html.sc-on .sc-rise,
+  html.sc-on .sc-rise.sc-rise--lead {
+    opacity: 1 !important;
+    transform: none !important;
+    transition: none !important;
+    will-change: auto !important;
+  }
+  .d-a .a-camp img {
+    translate: none !important;
+    will-change: auto !important;
+  }
+}
+html[data-sc-motion="off"].sc-on .sc-rise,
+html[data-sc-motion="off"].sc-on .sc-rise.sc-rise--lead {
+  opacity: 1 !important;
+  transform: none !important;
+  transition: none !important;
+  will-change: auto !important;
+}
+html[data-sc-motion="off"] .d-a .a-camp img {
+  translate: none !important;
+  will-change: auto !important;
+}
+
+/* Printing is not scrolling. */
+@media print {
+  html.sc-on .sc-rise { opacity: 1 !important; transform: none !important; }
+  .d-a .a-camp img { translate: none !important; }
+}
