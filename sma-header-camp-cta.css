@@ -1,0 +1,36 @@
+/* SMA global camp CTA — compact editorial jewel, no sharp gold blocks */
+.a-nav a.sma-camp-nav-cta,.sma-subnav a.sma-camp-nav-cta{
+  display:inline-flex;align-items:center;gap:10px;justify-content:center;
+  white-space:nowrap;flex-shrink:0;
+  padding:9px 16px!important;margin-inline-start:8px;
+  border:1px solid rgba(233,214,165,.64)!important;border-radius:999px!important;
+  color:#f9f7f1!important;background:linear-gradient(120deg,#174e31,#0b3521)!important;
+  font-family:'Alexandria','IBM Plex Sans Arabic',sans-serif!important;
+  font-weight:700;font-size:12px!important;line-height:1.55;
+  box-shadow:0 5px 22px rgba(0,0,0,.13),inset 0 1px 0 rgba(255,255,255,.14);
+  text-decoration:none;transition:transform .22s ease,background .25s ease,box-shadow .25s ease!important;
+}
+.a-nav a.sma-camp-nav-cta:before,.sma-subnav a.sma-camp-nav-cta:before{
+  content:'✦';color:#e5d09b;font-size:13px
+}
+.a-nav a.sma-camp-nav-cta span,.sma-subnav a.sma-camp-nav-cta span{
+  color:#e4d1a5;font-size:10px;font-weight:500;border-inline-start:1px solid #ffffff3b;padding-inline-start:10px
+}
+.a-nav a.sma-camp-nav-cta:hover,.sma-subnav a.sma-camp-nav-cta:hover{
+  transform:translateY(-2px);
+  background:linear-gradient(120deg,#1d6240,#12452d)!important;
+  box-shadow:0 9px 24px rgba(0,0,0,.25)
+}
+.a-nav a.sma-camp-nav-cta:focus-visible,.sma-subnav a.sma-camp-nav-cta:focus-visible{outline:2px solid #e9d7b0;outline-offset:3px}
+@media(max-width:1250px) and (min-width:861px){
+ .a-nav a.sma-camp-nav-cta,.sma-subnav a.sma-camp-nav-cta{padding:8px 10px!important;font-size:11px!important;gap:6px}
+ .a-nav a.sma-camp-nav-cta span,.sma-subnav a.sma-camp-nav-cta span{display:none}
+}
+@media(max-width:860px){
+ .a-nav a.sma-camp-nav-cta{margin:14px 0 8px!important;width:100%;padding:14px 18px!important;white-space:normal;border-radius:999px!important}
+ .a-nav a.sma-camp-nav-cta span{display:inline;font-size:11px}
+ .sma-subnav a.sma-camp-nav-cta{margin:12px 4px!important;padding:11px 14px!important}
+}
+@media(prefers-reduced-motion:reduce){
+ .a-nav a.sma-camp-nav-cta,.sma-subnav a.sma-camp-nav-cta{transition:none!important}
+}
